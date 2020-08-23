@@ -1,0 +1,17 @@
+{
+  "name": "el_aroma",
+  "version": "1.0.0",
+  "description": "Restaurant",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "keywords": [
+    "restaurant"
+  ],
+  "author": "wolfie",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
