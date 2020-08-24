@@ -12,6 +12,7 @@ $grey-three: #8C8C8C;
 $grey-four: #404040;
 $grey-five: #383838;
 $white: #fff;
+$yellow: #FCC000;
 
 
 // Imported SCSS Files
@@ -60,7 +61,7 @@ ul {
 }
 
 .container {
-    max-width: 1408px;
+    max-width: 1670px;
     margin: 0 auto;
 }
 
@@ -74,10 +75,12 @@ img {
     .top {
         // background: $grey-five;
         // background: $dim-dark;
-        background: $dark;
+        // background: $dark;
+        background: $dark url('../images/header/header26.png') no-repeat center center / cover;
+       
 
 
-        .container {
+        // .container {
             .navigation {
                 // background: $dark;
                 display: flex;
@@ -88,6 +91,9 @@ img {
                 font-weight: 500;
                 font-size: 25px;
                 padding: 30px 0;
+                li{
+                    // padding: 0 100px;
+                }
 
                 .logo-holder {
                     a {
@@ -119,7 +125,61 @@ img {
                     }
                 }
             }
-        }
+        // }
     }
 
+
+    // INTRO BEGINS
+        #intro{
+            color: black;
+            height: 500px;
+            border: 1px solid black;
+        }
+    // INTRO ENDS
 }
+
+// MAIN AREA BEGINS
+#main-area{
+    // START SECTION BEGINS
+    #start-section{
+        padding: 0 70px;
+        .container{
+            .start{
+                background: $white url('../images/steaks/steak65.jpg') no-repeat center center / cover;
+                height: 30vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-transform: uppercase;
+                h3{
+                    font-size: 35px;
+                    letter-spacing: 3px;
+                    margin-bottom: 40px;
+                }
+                .options{
+                    // margin-top: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    
+                    .delivery, .pickup{
+                        color: $dark;
+                        font-size: 22px;
+                        font-weight: 800;
+                        background: $yellow;
+                        padding: 10px 0;
+                        border-radius: 3px;
+                        width: 150px;
+                        text-align: center;
+                    }
+                    span{
+                        margin: 0 10px;
+                    }
+                }
+            }
+        }
+    }
+    // START SECTION ENDS
+}
+// MAIN ARE ENDS

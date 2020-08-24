@@ -23,15 +23,15 @@ ul {
   list-style: none; }
 
 .container {
-  max-width: 1408px;
+  max-width: 1670px;
   margin: 0 auto; }
 
 img {
   width: 100%; }
 
 #header .top {
-  background: #000; }
-  #header .top .container .navigation {
+  background: #000 url("../images/header/header26.png") no-repeat center center/cover; }
+  #header .top .navigation {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -40,20 +40,55 @@ img {
     font-weight: 500;
     font-size: 25px;
     padding: 30px 0; }
-    #header .top .container .navigation .logo-holder a {
+    #header .top .navigation .logo-holder a {
       display: flex;
       align-items: center;
       justify-content: center;
       vertical-align: middle; }
-      #header .top .container .navigation .logo-holder a .chef {
+      #header .top .navigation .logo-holder a .chef {
         width: 50px;
         display: inline-block; }
-      #header .top .container .navigation .logo-holder a .logo {
+      #header .top .navigation .logo-holder a .logo {
         display: flex;
         flex-direction: column;
         font-family: 'Carter One', cursive; }
-        #header .top .container .navigation .logo-holder a .logo span {
+        #header .top .navigation .logo-holder a .logo span {
           margin-top: -12px;
           font-size: 10px;
           letter-spacing: 2px;
           font-family: 'Oswald', sans-serif; }
+
+#header #intro {
+  color: black;
+  height: 500px;
+  border: 1px solid black; }
+
+#main-area #start-section {
+  padding: 0 70px; }
+  #main-area #start-section .container .start {
+    background: #fff url("../images/steaks/steak65.jpg") no-repeat center center/cover;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase; }
+    #main-area #start-section .container .start h3 {
+      font-size: 35px;
+      letter-spacing: 3px;
+      margin-bottom: 40px; }
+    #main-area #start-section .container .start .options {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      #main-area #start-section .container .start .options .delivery, #main-area #start-section .container .start .options .pickup {
+        color: #000;
+        font-size: 22px;
+        font-weight: 800;
+        background: #FCC000;
+        padding: 10px 0;
+        border-radius: 3px;
+        width: 150px;
+        text-align: center; }
+      #main-area #start-section .container .start .options span {
+        margin: 0 10px; }
