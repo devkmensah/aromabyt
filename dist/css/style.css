@@ -103,12 +103,11 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     text-transform: uppercase; }
     #main-area #start-section .container .start h3 {
       font-size: 35px;
       letter-spacing: 3px;
-      margin-bottom: 40px; }
+      margin: 40px 0 40px; }
     #main-area #start-section .container .start .options {
       display: flex;
       justify-content: center;
@@ -122,6 +121,11 @@ img {
         padding: 10px 0;
         border-radius: 3px;
         width: 150px;
-        text-align: center; }
+        text-align: center;
+        transition: 0.35s ease-out; }
+        #main-area #start-section .container .start .options .delivery:hover,
+        #main-area #start-section .container .start .options .pickup:hover {
+          background-color: #FCC000;
+          opacity: 0.8; }
       #main-area #start-section .container .start .options span {
         margin: 0 10px; }

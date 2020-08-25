@@ -200,17 +200,16 @@ img {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                justify-content: center;
+                // justify-content: center;
                 text-transform: uppercase;
 
                 h3 {
                     font-size: 35px;
                     letter-spacing: 3px;
-                    margin-bottom: 40px;
+                    margin: 40px 0 40px;
                 }
 
                 .options {
-                    // margin-top: 20px;
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -225,6 +224,12 @@ img {
                         border-radius: 3px;
                         width: 150px;
                         text-align: center;
+                        transition: 0.35s ease-out;
+
+                        &:hover{
+                            background-color: $yellow;
+                            opacity: 0.8;
+                        }
                     }
 
                     span {
