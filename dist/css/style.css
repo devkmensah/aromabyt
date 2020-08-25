@@ -32,7 +32,10 @@ img {
 #header .top {
   background: url("../images/header/header6.jpg") no-repeat center center/cover;
   display: block;
-  position: relative; }
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0; }
   #header .top::after {
     content: '';
     position: absolute;
@@ -90,25 +93,26 @@ img {
           letter-spacing: 2px;
           font-family: 'Oswald', sans-serif; }
 
-#header #intro {
+#header #bottom {
   color: black;
-  height: 500px;
-  border: 1px solid black; }
+  padding: 150px 50px 0;
+  height: 500px; }
 
 #main-area #start-section {
   padding: 0 70px; }
   #main-area #start-section .container .start {
     background: #fff url("../images/steaks/steak65.jpg") no-repeat center center/cover;
-    height: 30vh;
+    height: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     text-transform: uppercase; }
     #main-area #start-section .container .start h3 {
       font-size: 35px;
-      letter-spacing: 3px;
-      margin: 40px 0 40px; }
+      letter-spacing: 3px; }
     #main-area #start-section .container .start .options {
+      margin-top: 40px;
       display: flex;
       justify-content: center;
       align-items: center; }
