@@ -30,7 +30,19 @@ img {
   width: 100%; }
 
 #header .top {
-  background: #000 url("../images/header/header26.png") no-repeat center center/cover; }
+  background: url("../images/header/header6.jpg") no-repeat center center/cover;
+  display: block;
+  position: relative; }
+  #header .top::after {
+    content: '';
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0; }
+  #header .top * {
+    z-index: 1; }
   #header .top .navigation {
     display: flex;
     justify-content: space-evenly;
@@ -39,7 +51,27 @@ img {
     text-transform: uppercase;
     font-weight: 500;
     font-size: 25px;
-    padding: 30px 0; }
+    padding: 25px 0; }
+    #header .top .navigation li {
+      border: none;
+      padding: 1px 15px; }
+      #header .top .navigation li a {
+        position: relative;
+        overflow: hidden;
+        border: none; }
+        #header .top .navigation li a::after {
+          content: '';
+          position: absolute;
+          background: #FCC000;
+          height: 1px;
+          width: 0%;
+          transform: translateX(-50%);
+          left: 50%;
+          bottom: -5px;
+          border: none;
+          transition: .55s ease-in-out; }
+        #header .top .navigation li a:hover:after {
+          width: 100%; }
     #header .top .navigation .logo-holder a {
       display: flex;
       align-items: center;
@@ -81,7 +113,8 @@ img {
       display: flex;
       justify-content: center;
       align-items: center; }
-      #main-area #start-section .container .start .options .delivery, #main-area #start-section .container .start .options .pickup {
+      #main-area #start-section .container .start .options .delivery,
+      #main-area #start-section .container .start .options .pickup {
         color: #000;
         font-size: 22px;
         font-weight: 800;

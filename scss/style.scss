@@ -76,75 +76,125 @@ img {
         // background: $grey-five;
         // background: $dim-dark;
         // background: $dark;
-        background: $dark url('../images/header/header26.png') no-repeat center center / cover;
-       
+        background: url('../images/header/header6.jpg') no-repeat center center / cover;
+        display: block;
+        position: relative;
 
+        &::after {
+            content: '';
+            position: absolute;
+            background: rgba(0, 0, 0, 0.6);
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+        }
+
+        * {
+            z-index: 1;
+        }
 
         // .container {
-            .navigation {
-                // background: $dark;
-                display: flex;
-                justify-content: space-evenly;
-                align-items: center;
-                text-align: center;
-                text-transform: uppercase;
-                font-weight: 500;
-                font-size: 25px;
-                padding: 30px 0;
-                li{
-                    // padding: 0 100px;
+        .navigation {
+            // background: $dark;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 25px;
+            padding: 25px 0;
+
+            li {
+                border: none;
+                  padding: 1px 15px;
+                a {
+                    position: relative;
+                    overflow: hidden;
+                    border: none;
+                  
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        background: $yellow;
+                        // border-bottom: 1px solid $yellow;
+                        height: 1px;
+                        width: 0%;
+                        transform: translateX(-50%);
+                        left: 50%;
+                        bottom: -5px;
+                        border: none;
+                        transition: .55s ease-in-out;
+
+                        // margin: 0 auto;
+                    }
+
+                    &:hover:after{
+                        width: 100%;
+                    }
+                   
+
                 }
+            }
 
-                .logo-holder {
-                    a {
+            .logo-holder {
+                a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    vertical-align: middle;
+
+                    // text-align: center;
+                    .chef {
+                        width: 50px;
+                        display: inline-block;
+                    }
+
+                    .logo {
                         display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        vertical-align: middle;
-                        // text-align: center;
-                        .chef {
-                            width: 50px;
-                            display: inline-block;
-                        }
-                        .logo {
-                            display: flex;
-                            flex-direction: column;
-                            // font-family: 'Lemon', cursive;
-                            // font-family: 'Rye', cursive;
-                            font-family: 'Carter One', cursive;
-                            // font-family: 'Aclonica', sans-serif;
-                            // font-family: 'Oleo Script', cursive;
+                        flex-direction: column;
+                        // font-family: 'Lemon', cursive;
+                        // font-family: 'Rye', cursive;
+                        font-family: 'Carter One', cursive;
+                        // font-family: 'Aclonica', sans-serif;
+                        // font-family: 'Oleo Script', cursive;
 
-                           span{
-                               margin-top: -12px;
-                               font-size: 10px;
-                               letter-spacing: 2px;
-                               font-family: 'Oswald', sans-serif;
-                           }
+                        span {
+                            margin-top: -12px;
+                            font-size: 10px;
+                            letter-spacing: 2px;
+                            font-family: 'Oswald', sans-serif;
                         }
                     }
                 }
             }
+        }
+
         // }
     }
 
 
     // INTRO BEGINS
-        #intro{
-            color: black;
-            height: 500px;
-            border: 1px solid black;
-        }
+    #intro {
+        color: black;
+        height: 500px;
+        border: 1px solid black;
+    }
+
     // INTRO ENDS
 }
 
 // MAIN AREA BEGINS
-#main-area{
+#main-area {
+
     // START SECTION BEGINS
-    #start-section{
+    #start-section {
         padding: 0 70px;
-        .container{
-            .start{
+
+        .container {
+            .start {
                 background: $white url('../images/steaks/steak65.jpg') no-repeat center center / cover;
                 height: 30vh;
                 display: flex;
@@ -152,18 +202,21 @@ img {
                 align-items: center;
                 justify-content: center;
                 text-transform: uppercase;
-                h3{
+
+                h3 {
                     font-size: 35px;
                     letter-spacing: 3px;
                     margin-bottom: 40px;
                 }
-                .options{
+
+                .options {
                     // margin-top: 20px;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    
-                    .delivery, .pickup{
+
+                    .delivery,
+                    .pickup {
                         color: $dark;
                         font-size: 22px;
                         font-weight: 800;
@@ -173,13 +226,16 @@ img {
                         width: 150px;
                         text-align: center;
                     }
-                    span{
+
+                    span {
                         margin: 0 10px;
                     }
                 }
             }
         }
     }
+
     // START SECTION ENDS
 }
+
 // MAIN ARE ENDS
