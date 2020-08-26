@@ -93,10 +93,9 @@ img {
           letter-spacing: 2px;
           font-family: 'Oswald', sans-serif; }
 
-#header #bottom {
+#header #carousel {
   color: black;
-  padding: 150px 50px 0;
-  height: 500px; }
+  padding: 150px 50px 0; }
 
 #main-area #start-section {
   padding: 0 70px; }
