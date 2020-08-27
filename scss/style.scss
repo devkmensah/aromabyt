@@ -79,7 +79,9 @@ img {
         top: 0;
         right: 0;
         left: 0;
-        // bottom: 0;
+        height: 120px;
+        width: 100%;
+        z-index: 2;
 
 
         &::after {
@@ -97,7 +99,6 @@ img {
         }
 
         .navigation {
-            // background: $dark;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
@@ -109,18 +110,18 @@ img {
 
             li {
                 border: none;
-                  padding: 1px 15px;
+                padding: 1px 15px;
+
                 a {
                     position: relative;
                     overflow: hidden;
                     border: none;
-                  
+
 
                     &::after {
                         content: '';
                         position: absolute;
                         background: $yellow;
-                        // border-bottom: 1px solid $yellow;
                         height: 1px;
                         width: 0%;
                         transform: translateX(-50%);
@@ -128,14 +129,12 @@ img {
                         bottom: -5px;
                         border: none;
                         transition: .55s ease-in-out;
-
-                        // margin: 0 auto;
                     }
 
-                    &:hover:after{
+                    &:hover:after {
                         width: 100%;
                     }
-                   
+
 
                 }
             }
@@ -147,7 +146,6 @@ img {
                     justify-content: center;
                     vertical-align: middle;
 
-                    // text-align: center;
                     .chef {
                         width: 50px;
                         display: inline-block;
@@ -156,11 +154,7 @@ img {
                     .logo {
                         display: flex;
                         flex-direction: column;
-                        // font-family: 'Lemon', cursive;
-                        // font-family: 'Rye', cursive;
                         font-family: 'Carter One', cursive;
-                        // font-family: 'Aclonica', sans-serif;
-                        // font-family: 'Oleo Script', cursive;
 
                         span {
                             margin-top: -12px;
@@ -178,15 +172,55 @@ img {
 
     // INTRO BEGINS
     #carousel {
-        color: black;
-        padding: 150px 50px 0;
-        // height: 500px;
+        // color: black;
+        // background-color: $dark;
+        // padding: 145px 50px 0px;
+        top: 120px;
+        overflow: hidden;
+        position: relative;
+        height: 530px;
+        // width: 100vw;
+        z-index: 1;
+
+        .slider.current{
+            opacity: 1;
+            .content{
+                opacity: 1;
+            }
+        }
+
+        .slider {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+
+            .content{
+                position: absolute;
+                width: 50%;
+                height: 100%;
+                color: $white;
+                background-color: $dark;
+                opacity: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                
+            }
+
+            .content.corona{
+                width: 100%;
+            }
+           
+        }
+
         
-    //    position: absolute;
-    //    top: 0;
-    //    bottom: 0;
-    //    left: 0;
-    //    right: 0;
+
+       
     }
 
     // INTRO ENDS
@@ -194,6 +228,7 @@ img {
 
 // MAIN AREA BEGINS
 #main-area {
+    margin-top: 120px;
 
     // START SECTION BEGINS
     #start-section {
@@ -233,7 +268,7 @@ img {
                         text-align: center;
                         transition: 0.35s ease-out;
 
-                        &:hover{
+                        &:hover {
                             background-color: $yellow;
                             opacity: 0.8;
                         }
