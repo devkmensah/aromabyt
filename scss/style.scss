@@ -13,6 +13,9 @@ $grey-four: #404040;
 $grey-five: #383838;
 $white: #fff;
 $yellow: #FCC000;
+$trial: #73020C;
+// $trial: #591C05;
+// $trial: #F28963;
 
 
 // Imported SCSS Files
@@ -177,36 +180,31 @@ img {
     // margin-top: 120px;
      // CAROUSEL BEGINS
      #carousel {
-       background-color: $yellow;
-        top: 120px;
-        overflow: hidden;
         position: relative;
+        top: 120px;
+       background-color: #FCFCF3;
+        overflow: hidden;
         height: 530px;
-        // width: 100vw;
-        // height: 100vh;
+        width: 100vw;
         z-index: 1;
-
-        .slider.current {
-            opacity: 1;
-
-            .content {
-                opacity: 1;
-            }
-        }
 
         .slider {
             position: absolute;
             top: 0;
             left: 0;
+            right: 0;
+            bottom: 0;
             opacity: 0;
             width: 100%;
             height: 100%;
+            // background-color: #FCFCF3;
+            background-color: $light-dark;
 
             .content {
                 position: absolute;
                 width: 50%;
                 height: 100%;
-                color: $dark;
+                color: $white;
                 opacity: 0;
                 display: flex;
                 flex-direction: column;
@@ -221,7 +219,30 @@ img {
             }
 
             .content.delicious{
-                
+                text-transform: uppercase;
+                // align-items: flex-end;
+                h3{
+                    font-size: 65px;
+                    line-height: 1.2;
+                    // color: $light-grey;
+                    color: $white;
+                    .menu{
+                        color: $trial;
+                    }
+                }
+                a{
+                    background: $trial;
+                    // background: $white;
+                    // background: $light-dark;
+                    padding: 10px 50px;
+                    font-size: 35px;
+                    font-weight: 800;
+                    border-radius: 3px;
+                    color: $white;
+                    // color: $dark;
+                    // color: $white;
+                    margin: 20px 0 20px;
+                }
             }
 
             .content.break{
@@ -234,10 +255,15 @@ img {
 
         }
 
+        .slider.current {
+            opacity: 1;
+
+            .content {
+                opacity: 1;
+            }
+        }
+
         .buttons {
-            // position: absolute;
-            // top: 50%;
-            // text-align: center;
           
                 .previous {
                     position: absolute;
@@ -254,7 +280,23 @@ img {
 
         // SLIDER IMAGES
         .slider:first-child{
-            // background: url(../images/steaks/steak3.jpg) no-repeat center center/cover;
+            background: url(../images/steaks/steak17.jpg) no-repeat center center/cover;
+            position: relative;
+            &::after{
+                content: '';
+                position: absolute;
+                // background: rgba(0, 0, 0, 0.2);
+                width: 100%;
+                height: 100%;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+            }
+
+            *{
+                z-index: 2;
+            }
         }
     }
 
