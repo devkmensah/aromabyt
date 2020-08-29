@@ -99,7 +99,7 @@ img {
 #main-area #carousel {
   position: relative;
   top: 120px;
-  background-color: #FCFCF3;
+  background-color: #24262A;
   overflow: hidden;
   height: 530px;
   width: 100vw;
@@ -112,8 +112,7 @@ img {
     bottom: 0;
     opacity: 0;
     width: 100%;
-    height: 100%;
-    background-color: #24262A; }
+    height: 100%; }
     #main-area #carousel .slider .content {
       position: absolute;
       width: 50%;
@@ -126,7 +125,8 @@ img {
       justify-content: center;
       text-align: center; }
       #main-area #carousel .slider .content a {
-        color: #000; }
+        color: #000;
+        display: block; }
     #main-area #carousel .slider .content.delicious {
       text-transform: uppercase; }
       #main-area #carousel .slider .content.delicious h3 {
@@ -143,8 +143,65 @@ img {
         border-radius: 3px;
         color: #fff;
         margin: 20px 0 20px; }
+    #main-area #carousel .slider .content.break {
+      text-transform: uppercase; }
+      #main-area #carousel .slider .content.break h3 {
+        font-size: 65px;
+        line-height: 1.1;
+        color: #fff; }
+        #main-area #carousel .slider .content.break h3 .break {
+          color: #FCC000; }
+      #main-area #carousel .slider .content.break p {
+        margin: 10px 0 -6px; }
+      #main-area #carousel .slider .content.break a {
+        display: block;
+        background: #73020C;
+        padding: 10px 50px;
+        font-size: 35px;
+        font-weight: 800;
+        border-radius: 3px;
+        color: #fff;
+        margin: 20px 0 20px; }
     #main-area #carousel .slider .content.corona {
-      width: 100%; }
+      background-color: #24262A;
+      width: 100%;
+      color: #fff;
+      margin-top: -35px; }
+      #main-area #carousel .slider .content.corona .safe {
+        color: #FCC000; }
+      #main-area #carousel .slider .content.corona h3 {
+        font-size: 70px;
+        text-transform: uppercase; }
+      #main-area #carousel .slider .content.corona p {
+        padding: 0 80px;
+        font-size: 27px; }
+      #main-area #carousel .slider .content.corona .measures {
+        display: flex;
+        margin: 20px 0 0; }
+        #main-area #carousel .slider .content.corona .measures .measure {
+          display: flex;
+          flex-direction: column;
+          flex-wrap: nowrap;
+          align-items: center;
+          text-align: center;
+          justify-content: center;
+          margin: 0 20px; }
+          #main-area #carousel .slider .content.corona .measures .measure i {
+            color: #fff;
+            background: #73020C;
+            border-radius: 50%;
+            width: 130px;
+            height: 130px;
+            text-align: center;
+            font-size: 50px;
+            line-height: 130px;
+            margin-bottom: 10px; }
+          #main-area #carousel .slider .content.corona .measures .measure .guidelines {
+            font-size: 20px;
+            text-align: center;
+            line-height: 1.2;
+            text-transform: uppercase;
+            font-weight: 450; }
   #main-area #carousel .slider.current {
     opacity: 1; }
     #main-area #carousel .slider.current .content {
@@ -158,8 +215,7 @@ img {
     top: 50%;
     right: 17px; }
   #main-area #carousel .slider:first-child {
-    background: url(../images/steaks/steak17.jpg) no-repeat center center/cover;
-    position: relative; }
+    background: url(../images/steaks/steak17.jpg) no-repeat center center/cover; }
     #main-area #carousel .slider:first-child::after {
       content: '';
       position: absolute;
@@ -170,4 +226,18 @@ img {
       bottom: 0;
       left: 0; }
     #main-area #carousel .slider:first-child * {
+      z-index: 2; }
+  #main-area #carousel .slider:nth-child(2) {
+    background: url(../images/steaks/oma.jpg) no-repeat center center/cover; }
+    #main-area #carousel .slider:nth-child(2)::after {
+      content: '';
+      position: absolute;
+      background: rgba(0, 0, 0, 0.2);
+      width: 100%;
+      height: 100%;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0; }
+    #main-area #carousel .slider:nth-child(2) * {
       z-index: 2; }
