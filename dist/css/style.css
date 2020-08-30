@@ -30,7 +30,7 @@ img {
   width: 100%; }
 
 #header .top {
-  background: url("../images/header/header6.jpg") no-repeat center center/cover;
+  background-color: #0c0c0c;
   display: block;
   position: fixed;
   top: 0;
@@ -38,11 +38,11 @@ img {
   left: 0;
   height: 120px;
   width: 100%;
-  z-index: 2; }
+  z-index: 2;
+  overflow: hidden; }
   #header .top::after {
     content: '';
     position: absolute;
-    background: rgba(0, 0, 0, 0.6);
     top: 0;
     right: 0;
     left: 0;
@@ -68,7 +68,7 @@ img {
         #header .top .navigation li a::after {
           content: '';
           position: absolute;
-          background: #FCC000;
+          background: #73020C;
           height: 1px;
           width: 0%;
           transform: translateX(-50%);
@@ -99,7 +99,6 @@ img {
 #main-area #carousel {
   position: relative;
   top: 120px;
-  background-color: #24262A;
   overflow: hidden;
   height: 530px;
   width: 100vw;
@@ -125,7 +124,7 @@ img {
       justify-content: center;
       text-align: center; }
       #main-area #carousel .slider .content a {
-        color: #000;
+        color: #0c0c0c;
         display: block; }
     #main-area #carousel .slider .content.delicious {
       text-transform: uppercase; }
@@ -150,7 +149,7 @@ img {
         line-height: 1.1;
         color: #fff; }
         #main-area #carousel .slider .content.break h3 .break {
-          color: #FCC000; }
+          color: #73020C; }
       #main-area #carousel .slider .content.break p {
         margin: 10px 0 -6px; }
       #main-area #carousel .slider .content.break a {
@@ -163,12 +162,21 @@ img {
         color: #fff;
         margin: 20px 0 20px; }
     #main-area #carousel .slider .content.corona {
-      background-color: #24262A;
+      background-color: #FCFCF3;
       width: 100%;
-      color: #fff;
-      margin-top: -35px; }
+      color: #0c0c0c;
+      margin-top: -35px;
+      position: relative; }
+      #main-area #carousel .slider .content.corona::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.2); }
       #main-area #carousel .slider .content.corona .safe {
-        color: #FCC000; }
+        color: #73020C; }
       #main-area #carousel .slider .content.corona h3 {
         font-size: 70px;
         text-transform: uppercase; }
@@ -205,20 +213,33 @@ img {
   #main-area #carousel .slider.current {
     opacity: 1; }
     #main-area #carousel .slider.current .content {
-      opacity: 1; }
+      opacity: 3; }
+  #main-area #carousel .buttons button {
+    padding: 14px 16px;
+    border-radius: 50%;
+    border: 1.5px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    z-index: 2; }
+    #main-area #carousel .buttons button:hover {
+      background-color: #fff;
+      color: #73020C; }
   #main-area #carousel .buttons .previous {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 17px; }
   #main-area #carousel .buttons .next {
     position: absolute;
-    top: 50%;
+    top: 45%;
     right: 17px; }
   #main-area #carousel .slider:first-child {
-    background: url(../images/steaks/steak17.jpg) no-repeat center center/cover; }
+    background: url(../images/steaks/steaky12.jpg) no-repeat center center/cover; }
     #main-area #carousel .slider:first-child::after {
       content: '';
       position: absolute;
+      background: rgba(0, 0, 0, 0.4);
       width: 100%;
       height: 100%;
       top: 0;
@@ -241,3 +262,40 @@ img {
       left: 0; }
     #main-area #carousel .slider:nth-child(2) * {
       z-index: 2; }
+
+#main-area #start-section {
+  margin-top: 180px;
+  padding: 0 70px; }
+  #main-area #start-section .container .start {
+    background: #fff url("../images/steaks/steaky25.jpg") no-repeat center center/cover;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase; }
+    #main-area #start-section .container .start h3 {
+      font-size: 35px;
+      letter-spacing: 3px; }
+    #main-area #start-section .container .start .options {
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      #main-area #start-section .container .start .options .delivery,
+      #main-area #start-section .container .start .options .pickup {
+        color: #fff;
+        font-size: 22px;
+        font-weight: 800;
+        background: #73020C;
+        padding: 10px 0;
+        border-radius: 3px;
+        width: 150px;
+        text-align: center;
+        transition: 0.35s ease-out; }
+        #main-area #start-section .container .start .options .delivery:hover,
+        #main-area #start-section .container .start .options .pickup:hover {
+          background-color: #73020C;
+          opacity: 0.8; }
+      #main-area #start-section .container .start .options span {
+        margin: 0 10px; }
