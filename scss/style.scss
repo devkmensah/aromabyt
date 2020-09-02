@@ -479,6 +479,7 @@ img {
 
                     .delivery,
                     .pickup {
+                        display: inline-block;
                         color: $white;
                         font-size: 22px;
                         font-weight: 800;
@@ -510,52 +511,97 @@ img {
         margin-top: 40px;
         padding: 0 70px;
         color: $dark;
+        padding-bottom: 200px;
+      
 
         .container {
+            background-color: $ivory;
+            padding: 50px 0 70px;
             a {
                 color: $dark;
             }
 
-            // display: flex;
             display: grid;
             grid-template-columns: 2fr 1fr;
             grid-column-gap: 50px;
+            justify-content: center;
+            align-items: center;
 
             .left {
-                background-color: $ivory;
+                //  background-color: $ivory;
+                // background-color: $white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                vertical-align: middle;
+                text-align: center;
+                height: 100%;
+                width: 100%;
+              h3{
+                //   margin-bottom: 40px;
+                  font-size: 32px;
+              }
+
+                .partners {
+                    // background-color: $ivory;
+                    width: 100%;
+                    height: 100%;
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0px 10px;
+                    overflow: hidden;
+                    grid-gap: 10px;
+
+
+                    .partner {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        // width: 200px;
+                        // height: 200px;
+                        width: 100%;
+                        height: 100%;
+                        // margin: 0 10px;
+                        // background-color: $dark;
+                       a{
+                            img{
+                                 display: block;
+                        //            width: 100px;
+                        // height: 100px;
+                            }
+                       }
+                      
+                    }
+                }
             }
 
             .right {
+                // width: 100%;
+                // height: 100%;
 
                 h3 {
                     font-size: 32px;
                     margin-bottom: 12px;
                 }
 
-                p {
-                    // font-family: 'Open Sans', sans-serif;
-                    & + &:first-child {
+              
 
-                        // font-family: 'Open Sans', sans-serif;
-                        // margin-bottom: 35px;
-                    }
-                    &::nth-child(2){
-                        // margin-top: 50px;
-                    }
-                }
-                p.convenience{
-                     font-family: 'Open Sans', sans-serif;
+                p.convenience {
+                    font-family: 'Open Sans', sans-serif;
                 }
 
-                p.cost{
+                p.cost {
                     font-family: 'Open Sans', sans-serif;
                     margin: 15px 0 35px;
                     font-size: 12px;
                 }
-               
+
 
                 a {
-                    // display: block;
+                    display: inline-block;
                     background: $trial;
                     padding: 12px 60px;
                     text-align: center;

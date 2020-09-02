@@ -281,6 +281,7 @@ img {
       align-items: center; }
       #main-area #start-section .container .start .options .delivery,
       #main-area #start-section .container .start .options .pickup {
+        display: inline-block;
         color: #fff;
         font-size: 22px;
         font-weight: 800;
@@ -300,15 +301,47 @@ img {
 #main-area #app {
   margin-top: 40px;
   padding: 0 70px;
-  color: #0c0c0c; }
+  color: #0c0c0c;
+  padding-bottom: 200px; }
   #main-area #app .container {
+    background-color: #FCFCF3;
+    padding: 50px 0 70px;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-column-gap: 50px; }
+    grid-column-gap: 50px;
+    justify-content: center;
+    align-items: center; }
     #main-area #app .container a {
       color: #0c0c0c; }
     #main-area #app .container .left {
-      background-color: #FCFCF3; }
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      vertical-align: middle;
+      text-align: center;
+      height: 100%;
+      width: 100%; }
+      #main-area #app .container .left h3 {
+        font-size: 32px; }
+      #main-area #app .container .left .partners {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
+        align-items: center;
+        padding: 0px 10px;
+        overflow: hidden;
+        grid-gap: 10px; }
+        #main-area #app .container .left .partners .partner {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 100%; }
+          #main-area #app .container .left .partners .partner a img {
+            display: block; }
     #main-area #app .container .right h3 {
       font-size: 32px;
       margin-bottom: 12px; }
@@ -319,6 +352,7 @@ img {
       margin: 15px 0 35px;
       font-size: 12px; }
     #main-area #app .container .right a {
+      display: inline-block;
       background: #73020C;
       padding: 12px 60px;
       text-align: center;
