@@ -511,7 +511,7 @@ img {
         margin-top: 40px;
         padding: 0 70px;
         color: $dark;
-        padding-bottom: 200px;
+        // background-color: $ivory;
       
 
         .container {
@@ -569,8 +569,7 @@ img {
                        a{
                             img{
                                  display: block;
-                        //            width: 100px;
-                        // height: 100px;
+                                 border-radius: 10%;
                             }
                        }
                       
@@ -615,6 +614,38 @@ img {
     }
 
     // APP SECTION ENDS
+
+    // LUNCH-DINNER SECTION BEGINS
+    #lunch-dinner{
+        margin-top: 0;
+        padding: 0 70px;
+        // background-color: $ivory;
+        .container{
+            padding: 0 0 70px;
+            background-color: $ivory;
+            .lunch-dinner{
+                background-color: $ivory;
+                // color: $dark;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                justify-content: center;
+                align-items: center;
+                grid-gap: 20px;
+
+                .lunch{
+                    background: url('../images/steaks/steak3.jpg') no-repeat center center / cover;
+                    height: 100%;
+                    width: 100%;
+                }
+                .dinner{
+                    background: url('../images/steaks/steak3.jpg') no-repeat center center / cover;
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    // LUNCH-DINNER SECTION ENDS
 }
 
 // MAIN ARE ENDS
