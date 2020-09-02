@@ -21,23 +21,20 @@ $trial: #73020C;
 
 // Imported SCSS Files
 
-
-// Core Styling
-// font-family: TradeGothicLTPro-BoldCondTwenty,sans-serif; GENERAL FONT
-// font-family: obsGlyphs,sans-serif; LOGO FONT
-
 // lemon
-@import url('https://fonts.googleapis.com/css2?family=Lemon&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Lemon&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 // rye
-@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
 
 // carter
 @import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 // aclonica
-@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
 // oleo
-@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap');
 
 
 * {
@@ -170,7 +167,7 @@ img {
 
                         span {
                             margin-top: -12px;
-                            font-size: 10px;
+                            font-size: 9px;
                             letter-spacing: 2px;
                             font-family: 'Oswald', sans-serif;
                         }
@@ -263,6 +260,7 @@ img {
 
             .content.break {
                 text-transform: uppercase;
+                // width: 50%;
                 // background: $light-dark;
 
                 h3 {
@@ -283,15 +281,11 @@ img {
                 a {
                     display: block;
                     background: $trial;
-                    // background: $white;
-                    // background: $light-dark;
                     padding: 10px 50px;
                     font-size: 35px;
                     font-weight: 800;
                     border-radius: 3px;
                     color: $white;
-                    // color: $dark;
-                    // color: $white;
                     margin: 20px 0 20px;
                 }
             }
@@ -303,17 +297,17 @@ img {
                 margin-top: -35px;
                 position: relative;
 
-               &::after{
-                   content: '';
-                   position: absolute;
-                   top: 0;
-                   left: 0;
-                   bottom: 0;
-                   right: 0;
-                   background-color: rgba(0, 0, 0, 0.2);
-               }
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    background-color: rgba(0, 0, 0, 0.2);
+                }
 
-               
+
 
                 .safe {
                     color: $trial;
@@ -377,6 +371,7 @@ img {
         }
 
         .buttons {
+
             // position: absolute;
             // top: 50%;
             // left: 17px;
@@ -389,7 +384,8 @@ img {
                 outline: none;
                 cursor: pointer;
                 z-index: 2;
-                &:hover{
+
+                &:hover {
                     background-color: $white;
                     color: $trial;
                 }
@@ -508,6 +504,71 @@ img {
     }
 
     // START SECTION ENDS
+
+    // APP SECTION STARTS
+    #app {
+        margin-top: 40px;
+        padding: 0 70px;
+        color: $dark;
+
+        .container {
+            a {
+                color: $dark;
+            }
+
+            // display: flex;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-column-gap: 50px;
+
+            .left {
+                background-color: $ivory;
+            }
+
+            .right {
+
+                h3 {
+                    font-size: 32px;
+                    margin-bottom: 12px;
+                }
+
+                p {
+                    // font-family: 'Open Sans', sans-serif;
+                    & + &:first-child {
+
+                        // font-family: 'Open Sans', sans-serif;
+                        // margin-bottom: 35px;
+                    }
+                    &::nth-child(2){
+                        // margin-top: 50px;
+                    }
+                }
+                p.convenience{
+                     font-family: 'Open Sans', sans-serif;
+                }
+
+                p.cost{
+                    font-family: 'Open Sans', sans-serif;
+                    margin: 15px 0 35px;
+                    font-size: 12px;
+                }
+               
+
+                a {
+                    // display: block;
+                    background: $trial;
+                    padding: 12px 60px;
+                    text-align: center;
+                    // font-size: 35px;
+                    // font-weight: 800;
+                    border-radius: 3px;
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    // APP SECTION ENDS
 }
 
 // MAIN ARE ENDS
