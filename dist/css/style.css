@@ -352,41 +352,41 @@ img {
         display: flex;
         justify-content: space-between;
         align-items: center; }
-        #main-area #app .container .left #postcode input {
-          width: 100%;
-          display: inline-block;
-          padding: 20px 10px;
-          border: 1px solid transparent;
-          text-transform: uppercase;
-          font-size: 20px;
-          font-weight: 800;
-          color: #0c0c0c;
-          background-color: #FCFCF3;
-          font-family: 'Oswald', sans-serif;
-          vertical-align: middle; }
-          #main-area #app .container .left #postcode input:focus {
-            outline: none;
-            border: 1px solid transparent; }
-        #main-area #app .container .left #postcode ::placeholder {
-          color: #0c0c0c;
-          opacity: 1;
-          /* Firefox */ }
-        #main-area #app .container .left #postcode :-ms-input-placeholder {
-          /* Internet Explorer 10-11 */
-          color: #0c0c0c; }
-        #main-area #app .container .left #postcode ::-ms-input-placeholder {
-          /* Microsoft Edge */
-          color: #0c0c0c; }
-        #main-area #app .container .left #postcode button {
-          display: inline-block;
+        #main-area #app .container .left #postcode .input-label {
+          width: 100%; }
+          #main-area #app .container .left #postcode .input-label input {
+            width: 100%;
+            padding: 20px 10px;
+            border: 1px solid transparent;
+            text-transform: uppercase;
+            font-size: 20px;
+            font-weight: 800;
+            color: #0c0c0c;
+            background-color: #FCFCF3;
+            font-family: 'Oswald', sans-serif;
+            vertical-align: middle; }
+            #main-area #app .container .left #postcode .input-label input:focus {
+              outline: none;
+              border: 1px solid transparent; }
+          #main-area #app .container .left #postcode .input-label ::placeholder {
+            color: #0c0c0c;
+            opacity: 1;
+            /* Firefox */ }
+          #main-area #app .container .left #postcode .input-label :-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            color: #0c0c0c; }
+          #main-area #app .container .left #postcode .input-label ::-ms-input-placeholder {
+            /* Microsoft Edge */
+            color: #0c0c0c; }
+        #main-area #app .container .left #postcode .button-label button {
           margin-right: 10px;
           background-color: #73020C;
           padding: 20px 40px;
           vertical-align: middle;
           cursor: pointer; }
-          #main-area #app .container .left #postcode button:focus {
+          #main-area #app .container .left #postcode .button-label button:focus {
             outline: none; }
-          #main-area #app .container .left #postcode button i {
+          #main-area #app .container .left #postcode .button-label button i {
             color: #fff;
             font-size: 20px; }
     #main-area #app .container .right h3 {
