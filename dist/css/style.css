@@ -481,3 +481,36 @@ img {
             text-transform: uppercase;
             border: 1px solid #fff;
             margin-top: 30px; }
+
+#main-area #sign-up {
+  padding: 0 70px;
+  background-color: #0c0c0c; }
+  #main-area #sign-up .container {
+    background-color: #0c0c0c;
+    padding: 0 0 70px; }
+    #main-area #sign-up .container .sign-up-content h1 {
+      padding-top: 50px;
+      text-transform: uppercase;
+      font-size: 37px;
+      letter-spacing: 1.4px; }
+    #main-area #sign-up .container .sign-up-content #sign-up-form {
+      display: grid;
+      grid-template-areas: "first last sign"  "email post ."  " phone number . " "check . ."; }
+      #main-area #sign-up .container .sign-up-content #sign-up-form input, #main-area #sign-up .container .sign-up-content #sign-up-form button {
+        width: 100%; }
+      #main-area #sign-up .container .sign-up-content #sign-up-form .first {
+        grid-area: first; }
+      #main-area #sign-up .container .sign-up-content #sign-up-form .last {
+        grid-area: last; }
+      #main-area #sign-up .container .sign-up-content #sign-up-form .email {
+        grid-area: email; }
+      #main-area #sign-up .container .sign-up-content #sign-up-form .post {
+        grid-area: post; }
+      #main-area #sign-up .container .sign-up-content #sign-up-form .phone {
+        grid-area: phone; }
+      #main-area #sign-up .container .sign-up-content #sign-up-form .number {
+        grid-area: number; }
+      #main-area #sign-up .container .sign-up-content #sign-up-form .check {
+        grid-area: check; }
+      #main-area #sign-up .container .sign-up-content #sign-up-form .sign {
+        grid-area: sign; }
