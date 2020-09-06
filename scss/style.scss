@@ -14,7 +14,7 @@ $grey-five: #383838;
 $white: #fff;
 $yellow: #FCC000;
 $ivory: #FCFCF3;
-$trial: #73020C;
+$tomato: #73020C;
 $facebook: #3C5997;
 $snapchat: #FFFC00;
 $pinterest: #E60023;
@@ -25,7 +25,6 @@ $instagram: radial-gradient(circle at 30% 100%,
     #d92e7f 60%,
     #9b36b7 84%,
     #515ecf);
-// $trial: #FCC000;
 
 
 
@@ -142,7 +141,7 @@ img {
                     &::after {
                         content: '';
                         position: absolute;
-                        background: $trial;
+                        background: $tomato;
                         height: 1px;
                         width: 0%;
                         transform: translateX(-50%);
@@ -249,12 +248,12 @@ img {
                     color: $white;
 
                     .menu {
-                        color: $trial;
+                        color: $tomato;
                     }
                 }
 
                 a {
-                    background: $trial;
+                    background: $tomato;
                     // background: $white;
                     // background: $light-dark;
                     padding: 10px 50px;
@@ -282,7 +281,7 @@ img {
                     color: $white;
 
                     .break {
-                        color: $trial;
+                        color: $tomato;
                     }
                 }
 
@@ -292,7 +291,7 @@ img {
 
                 a {
                     display: block;
-                    background: $trial;
+                    background: $tomato;
                     padding: 10px 50px;
                     font-size: 35px;
                     font-weight: 800;
@@ -322,7 +321,7 @@ img {
 
 
                 .safe {
-                    color: $trial;
+                    color: $tomato;
                 }
 
                 h3 {
@@ -350,7 +349,7 @@ img {
 
                         i {
                             color: $white;
-                            background: $trial;
+                            background: $tomato;
                             // padding: 20px;
                             border-radius: 50%;
                             width: 130px;
@@ -399,7 +398,7 @@ img {
 
                 &:hover {
                     background-color: $white;
-                    color: $trial;
+                    color: $tomato;
                 }
             }
 
@@ -496,7 +495,7 @@ img {
                         color: $white;
                         font-size: 22px;
                         font-weight: 800;
-                        background: $trial;
+                        background: $tomato;
                         padding: 10px 0;
                         border-radius: 3px;
                         width: 150px;
@@ -504,7 +503,7 @@ img {
                         transition: 0.35s ease-out;
 
                         &:hover {
-                            background-color: $trial;
+                            background-color: $tomato;
                             opacity: 0.8;
                         }
                     }
@@ -596,7 +595,7 @@ img {
                 #postcode {
                     width: 100%;
                     background-color: $ivory;
-                    border: 5px solid $trial;
+                    border: 5px solid $tomato;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
@@ -644,7 +643,7 @@ img {
                     .button-label {
                         button {
                             margin-right: 10px;
-                            background-color: $trial;
+                            background-color: $tomato;
                             padding: 20px 40px;
                             vertical-align: middle;
                             cursor: pointer;
@@ -686,7 +685,7 @@ img {
 
                 a {
                     display: inline-block;
-                    background: $trial;
+                    background: $tomato;
                     padding: 12px 40px;
                     text-align: center;
                     font-size: 17px;
@@ -898,7 +897,7 @@ img {
                         font-size: 17px;
                         font-weight: 800;
                         font-family: 'Oswald', sans-serif;
-                        border: 2px solid $trial;
+                        border: 2px solid $tomato;
                         color: $dark;
 
                         &:focus {
@@ -984,7 +983,7 @@ img {
                         }
 
                         &:hover {
-                            background-color: $trial;
+                            background-color: $tomato;
                             // opacity: 0.4;
                         }
                     }
@@ -1000,7 +999,7 @@ img {
     #footer {
         background-color: $white;
         color: $dark;
-        padding: 30px 70px 0;
+        padding: 40px 70px 70px;
 
         a {
             color: $dark;
@@ -1009,10 +1008,11 @@ img {
         .container {
 
             // padding: 0 0 70px;
+            // TOP AREA
             .top {
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr 1fr;
-                margin-bottom: 30px;
+                margin-bottom: 40px;
 
                 .column {
                     ul {
@@ -1021,7 +1021,7 @@ img {
 
                             a {
                                 &:hover {
-                                    color: $trial;
+                                    color: $tomato;
                                 }
                             }
                         }
@@ -1042,6 +1042,8 @@ img {
                         align-items: center;
 
                         li {
+                            margin: 0 4px;
+
                             a {
                                 .fab {
                                     border: 1px solid $dark;
@@ -1054,7 +1056,7 @@ img {
                                 }
 
                                 &:hover {
-                                   
+
                                     .insta {
                                         color: $white;
                                         background: $instagram;
@@ -1090,6 +1092,58 @@ img {
                     }
                 }
             }
+
+            // BOTTOM AREA
+            .bottom {
+                margin-top: 40px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+
+           
+                .bottom-logo {
+                    margin-top: -7px;
+
+                    a {
+                        .logo {
+                            font-family: 'Carter One', cursive;
+                            text-transform: uppercase;
+                        }
+                    }
+
+                    .store {
+                        display: flex;
+                        margin-top: 40px;
+                        li{
+                            margin: 0 10px;
+                            &:first-child{
+                                margin: 0 10px 0 0;
+                            }
+                            img{
+                                width: 120px;
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+
+
+                .rights {
+                    display: flex;
+                    justify-self: end;
+                    // vertical-align: middle;
+
+                    li {
+                        margin: 0 20px;
+
+                        a {
+                            &:hover {
+                                color: $tomato;
+                            }
+                        }
+                    }
+                }
+            }
+
         }
     }
 

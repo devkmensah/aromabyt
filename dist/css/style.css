@@ -571,13 +571,13 @@ img {
 #main-area #footer {
   background-color: #fff;
   color: #0c0c0c;
-  padding: 30px 70px 0; }
+  padding: 40px 70px 70px; }
   #main-area #footer a {
     color: #0c0c0c; }
   #main-area #footer .container .top {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin-bottom: 30px; }
+    margin-bottom: 40px; }
     #main-area #footer .container .top .column ul li {
       font-size: 18px; }
       #main-area #footer .container .top .column ul li a:hover {
@@ -591,31 +591,59 @@ img {
         display: flex;
         justify-content: space-evenly;
         align-items: center; }
-        #main-area #footer .container .top .column.four .social li a .fab {
-          border: 1px solid #0c0c0c;
-          border-radius: 50%;
-          height: 45px;
-          width: 45px;
-          font-size: 25px;
-          line-height: 1.75;
-          transition: .3s ease-out; }
-        #main-area #footer .container .top .column.four .social li a:hover .insta {
-          color: #fff;
-          background: radial-gradient(circle at 30% 100%, #fed373 4%, #f15245 35%, #d92e7f 60%, #9b36b7 84%, #515ecf);
-          border: 1px solid transparent; }
-        #main-area #footer .container .top .column.four .social li a:hover .face {
-          background: #3C5997;
-          color: #fff;
-          border: 1px solid transparent; }
-        #main-area #footer .container .top .column.four .social li a:hover .snap {
-          background: #FFFC00;
-          color: #0c0c0c;
-          border: 1px solid transparent; }
-        #main-area #footer .container .top .column.four .social li a:hover .pin {
-          background: #E60023;
-          color: #fff;
-          border: 1px solid transparent; }
-        #main-area #footer .container .top .column.four .social li a:hover .twit {
-          background: #1DA1F2;
-          color: #fff;
-          border: 1px solid transparent; }
+        #main-area #footer .container .top .column.four .social li {
+          margin: 0 4px; }
+          #main-area #footer .container .top .column.four .social li a .fab {
+            border: 1px solid #0c0c0c;
+            border-radius: 50%;
+            height: 45px;
+            width: 45px;
+            font-size: 25px;
+            line-height: 1.75;
+            transition: .3s ease-out; }
+          #main-area #footer .container .top .column.four .social li a:hover .insta {
+            color: #fff;
+            background: radial-gradient(circle at 30% 100%, #fed373 4%, #f15245 35%, #d92e7f 60%, #9b36b7 84%, #515ecf);
+            border: 1px solid transparent; }
+          #main-area #footer .container .top .column.four .social li a:hover .face {
+            background: #3C5997;
+            color: #fff;
+            border: 1px solid transparent; }
+          #main-area #footer .container .top .column.four .social li a:hover .snap {
+            background: #FFFC00;
+            color: #0c0c0c;
+            border: 1px solid transparent; }
+          #main-area #footer .container .top .column.four .social li a:hover .pin {
+            background: #E60023;
+            color: #fff;
+            border: 1px solid transparent; }
+          #main-area #footer .container .top .column.four .social li a:hover .twit {
+            background: #1DA1F2;
+            color: #fff;
+            border: 1px solid transparent; }
+  #main-area #footer .container .bottom {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    #main-area #footer .container .bottom .bottom-logo {
+      margin-top: -7px; }
+      #main-area #footer .container .bottom .bottom-logo a .logo {
+        font-family: 'Carter One', cursive;
+        text-transform: uppercase; }
+      #main-area #footer .container .bottom .bottom-logo .store {
+        display: flex;
+        margin-top: 40px; }
+        #main-area #footer .container .bottom .bottom-logo .store li {
+          margin: 0 10px; }
+          #main-area #footer .container .bottom .bottom-logo .store li:first-child {
+            margin: 0 10px 0 0; }
+          #main-area #footer .container .bottom .bottom-logo .store li img {
+            width: 120px;
+            height: 100%; }
+    #main-area #footer .container .bottom .rights {
+      display: flex;
+      justify-self: end; }
+      #main-area #footer .container .bottom .rights li {
+        margin: 0 20px; }
+        #main-area #footer .container .bottom .rights li a:hover {
+          color: #73020C; }
