@@ -14,7 +14,8 @@ body {
 a {
   text-decoration: none;
   cursor: pointer;
-  color: #fff; }
+  color: #fff;
+  font-family: 'Oswald', sans-serif; }
 
 ul {
   list-style: none; }
@@ -490,6 +491,76 @@ img {
     padding: 0 0 70px; }
     #main-area #sign-up .container .sign-up-content h1 {
       padding-top: 50px;
+      margin-bottom: 15px;
       text-transform: uppercase;
       font-size: 37px;
       letter-spacing: 1.4px; }
+    #main-area #sign-up .container .sign-up-content #sign-up-form {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 10px; }
+      #main-area #sign-up .container .sign-up-content #sign-up-form input, #main-area #sign-up .container .sign-up-content #sign-up-form label, #main-area #sign-up .container .sign-up-content #sign-up-form button, #main-area #sign-up .container .sign-up-content #sign-up-form p {
+        max-width: 100%; }
+      #main-area #sign-up .container .sign-up-content #sign-up-form input {
+        padding: 22px 15px;
+        text-transform: uppercase;
+        vertical-align: middle;
+        font-size: 17px;
+        font-weight: 800;
+        font-family: 'Oswald', sans-serif;
+        border: 2px solid #73020C;
+        color: #0c0c0c; }
+        #main-area #sign-up .container .sign-up-content #sign-up-form input:focus {
+          outline: none;
+          border: 1px dashed #FCC000; }
+      #main-area #sign-up .container .sign-up-content #sign-up-form ::placeholder {
+        color: #0c0c0c;
+        opacity: 1;
+        /* Firefox */ }
+      #main-area #sign-up .container .sign-up-content #sign-up-form :-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: #0c0c0c; }
+      #main-area #sign-up .container .sign-up-content #sign-up-form ::-ms-input-placeholder {
+        /* Microsoft Edge */
+        color: #0c0c0c; }
+      #main-area #sign-up .container .sign-up-content #sign-up-form .first {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2; }
+      #main-area #sign-up .container .sign-up-content #sign-up-form .last {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2; }
+      #main-area #sign-up .container .sign-up-content #sign-up-form .email {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3; }
+      #main-area #sign-up .container .sign-up-content #sign-up-form .post {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3; }
+      #main-area #sign-up .container .sign-up-content #sign-up-form .terms {
+        grid-column: 3 / 4;
+        grid-row: 2 / 3; }
+        #main-area #sign-up .container .sign-up-content #sign-up-form .terms .policy {
+          text-decoration: underline; }
+      #main-area #sign-up .container .sign-up-content #sign-up-form .phone {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4; }
+      #main-area #sign-up .container .sign-up-content #sign-up-form .number {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4; }
+      #main-area #sign-up .container .sign-up-content #sign-up-form .button {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+        font-size: 25px;
+        text-transform: uppercase;
+        font-weight: 800;
+        color: #0c0c0c;
+        cursor: pointer;
+        height: 100%;
+        font-family: 'Oswald', sans-serif;
+        color: #fff;
+        background-color: #0c0c0c;
+        border: 2px solid #fff;
+        transition: .3s ease-in-out; }
+        #main-area #sign-up .container .sign-up-content #sign-up-form .button:focus {
+          outline: none; }
+        #main-area #sign-up .container .sign-up-content #sign-up-form .button:hover {
+          background-color: #73020C; }

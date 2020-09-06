@@ -56,6 +56,8 @@ a {
     text-decoration: none;
     cursor: pointer;
     color: $white;
+    font-family: 'Oswald', sans-serif;
+   
 }
 
 ul {
@@ -812,67 +814,167 @@ img {
             .sign-up-content {
                 h1 {
                     padding-top: 50px;
+                    margin-bottom: 15px;
                     text-transform: uppercase;
                     font-size: 37px;
                     letter-spacing: 1.4px;
                 }
 
+                // #sign-up-form {
+                //     display: grid;
+                //     grid-template-areas: 
+                //     'first last button'
+                //     'email post terms'
+                //     'phone number .'
+                //     'check . .'
+                //     ;
+                //     grid-gap: 10px;
+
+
+                //     input, label, button, p{
+                //         max-width: 100%;
+                //     }
+
+                //     .first{
+                //         grid-area: first;
+                //         // width: 100%;
+                //     }
+                //     .last{
+                //         grid-area: last;
+                //     }
+
+                //     .button{
+                //         grid-area: button;
+
+                //     }
+                //     .email{
+                //         grid-area: email;
+                //     }
+                //     .post{
+                //         grid-area: post;
+                //     }
+                //     .terms{
+                //         grid-area: terms;
+                //     }
+                //     .phone{
+                //         grid-area: phone;
+                //     }
+                //     .number{
+                //         grid-area: number;
+                //     }
+                //     .check{
+                //         grid-area: check;
+                //     }
+
+                // }
+
                 #sign-up-form {
-                   
-                    input, button {
-                        //   padding: 20px 10px;
-                        // width: 100%;
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-gap: 10px;
 
-                        // border: 1px dotted green;
-                        // text-transform: uppercase;
-                        // font-size: 20px;
-                        // font-weight: 800;
-                        // color: $dark;
-                        // background-color: $ivory;
-                        // font-family: 'Oswald', sans-serif;
 
-                        // &:focus {
-                        //     outline: none;
-                        //     border: 1px solid transparent;
-                        // }
+                    input, label, button, p{
+                        max-width: 100%;
                     }
+                    input{
+                        padding: 22px 15px;
+                        text-transform: uppercase;
+                        vertical-align: middle;
+                        font-size: 17px;
+                        font-weight: 800;
+                        font-family: 'Oswald', sans-serif;
+                        border: 2px solid $trial;
+                        color: $dark;
 
-                    // display: grid;
-                    // grid-template-areas: 
-                    // "first last sign" 
-                    // "email post terms" 
-                    // " phone number . "
-                    // "check . .";
+                        &:focus {
+                            outline: none;
+                            border: 1px dashed $yellow;
+                        }
+                    }
                   
 
-                    // .first{
-                    //     grid-area: first;
-                    // }
-                    // .last{
-                    //     grid-area: last;
-                    // }
-                    // .email{
-                    //     grid-area: email;
-                    // }
-                    // .post{
-                    //     grid-area: post;
-                    // }
-                    // .phone{
-                    //     grid-area: phone;
-                    // }
-                    // .number{
-                    //     grid-area: number;
-                    // }
-                    // .check{
-                    //     grid-area: check;
-                    // }
-                    // .terms{
-                    //     grid-area: terms;
-                    // }
-                    // .sign{
-                    //     grid-area: sign;
-                    // }
-                   
+                    ::placeholder {
+                        color: $dark;
+                        opacity: 1;
+                        /* Firefox */
+                        // font-size: 20px;
+                    }
+
+                    :-ms-input-placeholder {
+                        /* Internet Explorer 10-11 */
+                        color: $dark;
+                    }
+
+                    ::-ms-input-placeholder {
+                        /* Microsoft Edge */
+                        color: $dark;
+                    }
+
+                    .first {
+                    grid-column: 1 / 2;
+                    grid-row: 1 / 2;
+                    }
+
+                    .last {
+                        grid-column: 2 / 3;
+                        grid-row: 1 / 2;
+                    }
+
+                    .email {
+                        grid-column: 1 / 2;
+                        grid-row: 2 / 3;
+                    }
+
+                    .post {
+                        grid-column: 2 / 3;
+                        grid-row: 2 / 3;
+                    }
+
+                    .terms {
+                        grid-column: 3 / 4;
+                        grid-row: 2 / 3;
+
+                       .policy{
+                        text-decoration:  underline;
+                       }
+                    }
+
+                    .phone {
+                        grid-column: 1 / 2;
+                        grid-row: 3 / 4;
+                    }
+
+                    .number {
+                        grid-column: 2 / 3;
+                        grid-row: 3 / 4;
+                    }
+
+                    .button {
+                        grid-column: 3 / 4;
+                        grid-row: 1 / 2;
+                        font-size: 25px;
+                        text-transform: uppercase;
+                        font-weight: 800;
+                        color: $dark;
+                        cursor: pointer;
+                        height: 100%;
+                        font-family: 'Oswald', sans-serif;
+                        color: $white;
+                        background-color: $dark;
+                        border: 2px solid $white;
+                        transition: .3s ease-in-out;
+                      
+                        &:focus{
+                            outline: none;
+                        }
+
+                        &:hover{
+                            background-color: $trial;
+                            // opacity: 0.4;
+                        }
+                    }
+
                 }
             }
         }
