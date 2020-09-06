@@ -493,24 +493,3 @@ img {
       text-transform: uppercase;
       font-size: 37px;
       letter-spacing: 1.4px; }
-    #main-area #sign-up .container .sign-up-content #sign-up-form {
-      display: grid;
-      grid-template-areas: "first last sign"  "email post ."  " phone number . " "check . ."; }
-      #main-area #sign-up .container .sign-up-content #sign-up-form input, #main-area #sign-up .container .sign-up-content #sign-up-form button {
-        width: 100%; }
-      #main-area #sign-up .container .sign-up-content #sign-up-form .first {
-        grid-area: first; }
-      #main-area #sign-up .container .sign-up-content #sign-up-form .last {
-        grid-area: last; }
-      #main-area #sign-up .container .sign-up-content #sign-up-form .email {
-        grid-area: email; }
-      #main-area #sign-up .container .sign-up-content #sign-up-form .post {
-        grid-area: post; }
-      #main-area #sign-up .container .sign-up-content #sign-up-form .phone {
-        grid-area: phone; }
-      #main-area #sign-up .container .sign-up-content #sign-up-form .number {
-        grid-area: number; }
-      #main-area #sign-up .container .sign-up-content #sign-up-form .check {
-        grid-area: check; }
-      #main-area #sign-up .container .sign-up-content #sign-up-form .sign {
-        grid-area: sign; }
