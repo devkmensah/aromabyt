@@ -1,5 +1,75 @@
 @import url("https://fonts.googleapis.com/css2?family=Carter+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+#sign-up-offers {
+  padding: 120px 70px 0;
+  background-color: #FCFCF3;
+  color: #0c0c0c; }
+  #sign-up-offers .container {
+    padding: 0 0 70px; }
+    #sign-up-offers .container .sign-up-content h1 {
+      padding-top: 50px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      font-size: 37px;
+      letter-spacing: 1.4px;
+      color: #0c0c0c;
+      text-align: center; }
+    #sign-up-offers .container .sign-up-content #sign-up-form {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px;
+      color: #0c0c0c;
+      justify-content: center;
+      align-items: center; }
+      #sign-up-offers .container .sign-up-content #sign-up-form input,
+      #sign-up-offers .container .sign-up-content #sign-up-form label,
+      #sign-up-offers .container .sign-up-content #sign-up-form button,
+      #sign-up-offers .container .sign-up-content #sign-up-form p {
+        max-width: 100%; }
+      #sign-up-offers .container .sign-up-content #sign-up-form input {
+        padding: 22px 15px;
+        text-transform: uppercase;
+        vertical-align: middle;
+        font-size: 17px;
+        font-weight: 800;
+        font-family: 'Oswald', sans-serif;
+        border: 2px solid #73020C;
+        color: #0c0c0c; }
+        #sign-up-offers .container .sign-up-content #sign-up-form input:focus {
+          outline: none;
+          border: 1px dashed #FCC000; }
+      #sign-up-offers .container .sign-up-content #sign-up-form ::placeholder {
+        color: #0c0c0c;
+        opacity: 1;
+        /* Firefox */ }
+      #sign-up-offers .container .sign-up-content #sign-up-form :-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: #0c0c0c; }
+      #sign-up-offers .container .sign-up-content #sign-up-form ::-ms-input-placeholder {
+        /* Microsoft Edge */
+        color: #0c0c0c; }
+      #sign-up-offers .container .sign-up-content #sign-up-form .terms .policy {
+        text-decoration: underline;
+        color: #0c0c0c; }
+      #sign-up-offers .container .sign-up-content #sign-up-form .button {
+        display: block;
+        padding: 15px 15px;
+        font-size: 25px;
+        text-transform: uppercase;
+        font-weight: 800;
+        cursor: pointer;
+        height: 100%;
+        font-family: 'Oswald', sans-serif;
+        color: #0c0c0c;
+        background-color: #FCFCF3;
+        border: 2px solid #73020C;
+        transition: .3s ease-in-out; }
+        #sign-up-offers .container .sign-up-content #sign-up-form .button:focus {
+          outline: none; }
+        #sign-up-offers .container .sign-up-content #sign-up-form .button:hover {
+          background-color: #73020C;
+          color: #fff; }
+
 * {
   box-sizing: border-box;
   margin: 0;

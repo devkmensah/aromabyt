@@ -1,0 +1,144 @@
+  // SIGN UP FOR WEEKLY OFFERS BEFINS
+  #sign-up-offers {
+    padding: 120px 70px 0;
+    background-color: $ivory;
+    color: $dark;
+
+    .container {
+        // background-color: $dark;
+        padding: 0 0 70px;
+
+        .sign-up-content {
+            h1 {
+                padding-top: 50px;
+                margin-bottom: 20px;
+                text-transform: uppercase;
+                font-size: 37px;
+                letter-spacing: 1.4px;
+                color: $dark;
+                text-align: center;
+            }
+
+           
+
+            #sign-up-form {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 10px;
+                color: $dark;
+                justify-content: center;
+                align-items: center;
+
+
+                input,
+                label,
+                button,
+                p {
+                    max-width: 100%;
+                }
+
+                input {
+                    padding: 22px 15px;
+                    text-transform: uppercase;
+                    vertical-align: middle;
+                    font-size: 17px;
+                    font-weight: 800;
+                    font-family: 'Oswald', sans-serif;
+                    border: 2px solid $tomato;
+                    color: $dark;
+
+                    &:focus {
+                        outline: none;
+                        border: 1px dashed $yellow;
+                    }
+                }
+
+
+                ::placeholder {
+                    color: $dark;
+                    opacity: 1;
+                    /* Firefox */
+                    // font-size: 20px;
+                }
+
+                :-ms-input-placeholder {
+                    /* Internet Explorer 10-11 */
+                    color: $dark;
+                }
+
+                ::-ms-input-placeholder {
+                    /* Microsoft Edge */
+                    color: $dark;
+                }
+
+                .first {
+                    // grid-column: 1 / 2;
+                    // grid-row: 1 / 2;
+                }
+
+                .last {
+                    // grid-column: 2 / 3;
+                    // grid-row: 1 / 2;
+                }
+
+                .email {
+                    // grid-column: 1 / 2;
+                    // grid-row: 2 / 3;
+                }
+
+                .post {
+                    // grid-column: 2 / 3;
+                    // grid-row: 2 / 3;
+                }
+
+                .terms {
+                    // grid-column: 1 / 2;
+                    // grid-row: 5 / 6;
+
+                    .policy {
+                        text-decoration: underline;
+                        color: $dark;
+                    }
+                }
+
+                .phone {
+                    // grid-column: 1 / 2;
+                    // grid-row: 3 / 4;
+                }
+
+                .number {
+                    // grid-column: 1 / 2;
+                    // grid-row: 4 / 5;
+                }
+
+                .button {
+                    // grid-column: 2 / 3;
+                    // grid-row: 1 / 2;
+                    display: block;
+                    padding: 15px 15px;
+                    font-size: 25px;
+                    text-transform: uppercase;
+                    font-weight: 800;
+                    cursor: pointer;
+                    height: 100%;
+                    font-family: 'Oswald', sans-serif;
+                    color: $dark;
+                    background-color: $ivory;
+                    border: 2px solid $tomato;
+                    transition: .3s ease-in-out;
+
+                    &:focus {
+                        outline: none;
+                    }
+
+                    &:hover {
+                        background-color: $tomato;
+                        color: $white;
+                        // opacity: 0.4;
+                    }
+                }
+
+            }
+        }
+    }
+}
