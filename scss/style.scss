@@ -15,6 +15,16 @@ $white: #fff;
 $yellow: #FCC000;
 $ivory: #FCFCF3;
 $trial: #73020C;
+$facebook: #3C5997;
+$snapchat: #FFFC00;
+$pinterest: #E60023;
+$twitter: #1DA1F2;
+$instagram: radial-gradient(circle at 30% 100%,
+    #fed373 4%,
+    #f15245 35%,
+    #d92e7f 60%,
+    #9b36b7 84%,
+    #515ecf);
 // $trial: #FCC000;
 
 
@@ -57,7 +67,7 @@ a {
     cursor: pointer;
     color: $white;
     font-family: 'Oswald', sans-serif;
-   
+
 }
 
 ul {
@@ -874,10 +884,14 @@ img {
                     grid-gap: 10px;
 
 
-                    input, label, button, p{
+                    input,
+                    label,
+                    button,
+                    p {
                         max-width: 100%;
                     }
-                    input{
+
+                    input {
                         padding: 22px 15px;
                         text-transform: uppercase;
                         vertical-align: middle;
@@ -892,7 +906,7 @@ img {
                             border: 1px dashed $yellow;
                         }
                     }
-                  
+
 
                     ::placeholder {
                         color: $dark;
@@ -912,8 +926,8 @@ img {
                     }
 
                     .first {
-                    grid-column: 1 / 2;
-                    grid-row: 1 / 2;
+                        grid-column: 1 / 2;
+                        grid-row: 1 / 2;
                     }
 
                     .last {
@@ -935,9 +949,9 @@ img {
                         grid-column: 3 / 4;
                         grid-row: 2 / 3;
 
-                       .policy{
-                        text-decoration:  underline;
-                       }
+                        .policy {
+                            text-decoration: underline;
+                        }
                     }
 
                     .phone {
@@ -964,12 +978,12 @@ img {
                         background-color: $dark;
                         border: 2px solid $white;
                         transition: .3s ease-in-out;
-                      
-                        &:focus{
+
+                        &:focus {
                             outline: none;
                         }
 
-                        &:hover{
+                        &:hover {
                             background-color: $trial;
                             // opacity: 0.4;
                         }
@@ -981,6 +995,105 @@ img {
     }
 
     // SIGN UP FOR WEEKLY OFFERS END
+
+    // FOOTER SECTION BEGINS
+    #footer {
+        background-color: $white;
+        color: $dark;
+        padding: 30px 70px 0;
+
+        a {
+            color: $dark;
+        }
+
+        .container {
+
+            // padding: 0 0 70px;
+            .top {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                margin-bottom: 30px;
+
+                .column {
+                    ul {
+                        li {
+                            font-size: 18px;
+
+                            a {
+                                &:hover {
+                                    color: $trial;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .column.four {
+                    text-align: center;
+
+                    h3 {
+                        margin-bottom: 10px;
+                        text-transform: uppercase;
+                    }
+
+                    .social {
+                        display: flex;
+                        justify-content: space-evenly;
+                        align-items: center;
+
+                        li {
+                            a {
+                                .fab {
+                                    border: 1px solid $dark;
+                                    border-radius: 50%;
+                                    height: 45px;
+                                    width: 45px;
+                                    font-size: 25px;
+                                    line-height: 1.75;
+                                    transition: .3s ease-out;
+                                }
+
+                                &:hover {
+                                   
+                                    .insta {
+                                        color: $white;
+                                        background: $instagram;
+                                        border: 1px solid transparent;
+                                    }
+
+                                    .face {
+                                        background: $facebook;
+                                        color: $white;
+                                        border: 1px solid transparent;
+                                    }
+
+                                    .snap {
+                                        background: $snapchat;
+                                        color: $dark;
+                                        border: 1px solid transparent;
+                                    }
+
+                                    .pin {
+                                        background: $pinterest;
+                                        color: $white;
+                                        border: 1px solid transparent;
+                                    }
+
+                                    .twit {
+                                        background: $twitter;
+                                        color: $white;
+                                        border: 1px solid transparent;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // FOOTER SECTION ENDS
 }
 
 // MAIN ARE ENDS
