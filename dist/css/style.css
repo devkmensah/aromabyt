@@ -6,69 +6,121 @@
   color: #0c0c0c; }
   #sign-up-offers .container {
     padding: 0 0 70px; }
-    #sign-up-offers .container .sign-up-content h1 {
-      padding-top: 50px;
-      margin-bottom: 20px;
+    #sign-up-offers .container .sign-up-content {
+      padding: 85px 0 40px; }
+      #sign-up-offers .container .sign-up-content h1 {
+        margin-bottom: 35px;
+        text-transform: uppercase;
+        font-size: 37px;
+        letter-spacing: 1.4px;
+        color: #0c0c0c;
+        text-align: center; }
+      #sign-up-offers .container .sign-up-content #sign-up-form {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        color: #0c0c0c;
+        justify-content: center;
+        align-items: center; }
+        #sign-up-offers .container .sign-up-content #sign-up-form input,
+        #sign-up-offers .container .sign-up-content #sign-up-form label,
+        #sign-up-offers .container .sign-up-content #sign-up-form button,
+        #sign-up-offers .container .sign-up-content #sign-up-form p {
+          max-width: 100%; }
+        #sign-up-offers .container .sign-up-content #sign-up-form input {
+          padding: 22px 15px;
+          text-transform: uppercase;
+          vertical-align: middle;
+          font-size: 17px;
+          font-weight: 800;
+          font-family: 'Oswald', sans-serif;
+          border: 2px solid #73020C;
+          color: #0c0c0c; }
+          #sign-up-offers .container .sign-up-content #sign-up-form input:focus {
+            outline: none;
+            border: 1px dashed #FCC000; }
+        #sign-up-offers .container .sign-up-content #sign-up-form ::placeholder {
+          color: #0c0c0c;
+          opacity: 1;
+          /* Firefox */ }
+        #sign-up-offers .container .sign-up-content #sign-up-form :-ms-input-placeholder {
+          /* Internet Explorer 10-11 */
+          color: #0c0c0c; }
+        #sign-up-offers .container .sign-up-content #sign-up-form ::-ms-input-placeholder {
+          /* Microsoft Edge */
+          color: #0c0c0c; }
+        #sign-up-offers .container .sign-up-content #sign-up-form .terms .policy {
+          text-decoration: underline;
+          color: #0c0c0c; }
+        #sign-up-offers .container .sign-up-content #sign-up-form .button {
+          display: block;
+          padding: 15px 15px;
+          font-size: 25px;
+          text-transform: uppercase;
+          font-weight: 800;
+          cursor: pointer;
+          height: 100%;
+          font-family: 'Oswald', sans-serif;
+          color: #0c0c0c;
+          background-color: #FCFCF3;
+          border: 2px solid #73020C;
+          transition: .3s ease-in-out; }
+          #sign-up-offers .container .sign-up-content #sign-up-form .button:focus {
+            outline: none; }
+          #sign-up-offers .container .sign-up-content #sign-up-form .button:hover {
+            background-color: #73020C;
+            color: #fff; }
+
+#steps {
+  padding: 70px 70px 100px;
+  color: #fff;
+  background: #0c0c0c; }
+  #steps .container .steps-content h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px; }
+  #steps .container .steps-content .arrow-down {
+    text-align: center;
+    margin-bottom: 70px; }
+  #steps .container .steps-content .steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px; }
+    #steps .container .steps-content .steps .step {
+      padding: 35px 7px 0;
+      width: 100%;
+      background: #fff;
+      color: #0c0c0c;
+      transition: .3s ease-in-out; }
+      #steps .container .steps-content .steps .step:hover {
+        transform: scale(1.02); }
+      #steps .container .steps-content .steps .step .step-content {
+        padding: 0 25px 60px; }
+        #steps .container .steps-content .steps .step .step-content h2 {
+          text-transform: uppercase;
+          font-size: 30px;
+          margin-bottom: 7px; }
+        #steps .container .steps-content .steps .step .step-content p {
+          font-size: 18px;
+          font-family: 'Open Sans', sans-serif; }
+  #steps .container .steps-content .steps-button {
+    display: block;
+    text-align: center;
+    margin-top: 40px; }
+    #steps .container .steps-content .steps-button a {
+      display: inline-block;
+      padding: 10px 60px;
+      font-size: 25px;
       text-transform: uppercase;
-      font-size: 37px;
-      letter-spacing: 1.4px;
-      color: #0c0c0c;
-      text-align: center; }
-    #sign-up-offers .container .sign-up-content #sign-up-form {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 10px;
-      color: #0c0c0c;
-      justify-content: center;
-      align-items: center; }
-      #sign-up-offers .container .sign-up-content #sign-up-form input,
-      #sign-up-offers .container .sign-up-content #sign-up-form label,
-      #sign-up-offers .container .sign-up-content #sign-up-form button,
-      #sign-up-offers .container .sign-up-content #sign-up-form p {
-        max-width: 100%; }
-      #sign-up-offers .container .sign-up-content #sign-up-form input {
-        padding: 22px 15px;
-        text-transform: uppercase;
-        vertical-align: middle;
-        font-size: 17px;
-        font-weight: 800;
-        font-family: 'Oswald', sans-serif;
-        border: 2px solid #73020C;
-        color: #0c0c0c; }
-        #sign-up-offers .container .sign-up-content #sign-up-form input:focus {
-          outline: none;
-          border: 1px dashed #FCC000; }
-      #sign-up-offers .container .sign-up-content #sign-up-form ::placeholder {
-        color: #0c0c0c;
-        opacity: 1;
-        /* Firefox */ }
-      #sign-up-offers .container .sign-up-content #sign-up-form :-ms-input-placeholder {
-        /* Internet Explorer 10-11 */
-        color: #0c0c0c; }
-      #sign-up-offers .container .sign-up-content #sign-up-form ::-ms-input-placeholder {
-        /* Microsoft Edge */
-        color: #0c0c0c; }
-      #sign-up-offers .container .sign-up-content #sign-up-form .terms .policy {
-        text-decoration: underline;
-        color: #0c0c0c; }
-      #sign-up-offers .container .sign-up-content #sign-up-form .button {
-        display: block;
-        padding: 15px 15px;
-        font-size: 25px;
-        text-transform: uppercase;
-        font-weight: 800;
-        cursor: pointer;
-        height: 100%;
-        font-family: 'Oswald', sans-serif;
-        color: #0c0c0c;
-        background-color: #FCFCF3;
-        border: 2px solid #73020C;
-        transition: .3s ease-in-out; }
-        #sign-up-offers .container .sign-up-content #sign-up-form .button:focus {
-          outline: none; }
-        #sign-up-offers .container .sign-up-content #sign-up-form .button:hover {
-          background-color: #73020C;
-          color: #fff; }
+      border: 1px solid #73020C;
+      margin-top: 60px;
+      color: #fff;
+      text-align: center;
+      font-weight: 800;
+      transition: .3s ease-in-out; }
+      #steps .container .steps-content .steps-button a:hover {
+        color: #fff;
+        background: #73020C; }
 
 * {
   box-sizing: border-box;

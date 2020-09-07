@@ -1,144 +1,242 @@
-  // SIGN UP FOR WEEKLY OFFERS BEFINS
+  // SIGN UP FOR WEEKLY OFFERS BEGINS
   #sign-up-offers {
-    padding: 120px 70px 0;
-    background-color: $ivory;
-    color: $dark;
+      padding: 120px 70px 0;
+      background-color: $ivory;
+      color: $dark;
 
-    .container {
-        // background-color: $dark;
-        padding: 0 0 70px;
+      .container {
+          // background-color: $dark;
+          padding: 0 0 70px;
 
-        .sign-up-content {
-            h1 {
-                padding-top: 50px;
-                margin-bottom: 20px;
-                text-transform: uppercase;
-                font-size: 37px;
-                letter-spacing: 1.4px;
-                color: $dark;
-                text-align: center;
-            }
-
-           
-
-            #sign-up-form {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                grid-gap: 10px;
-                color: $dark;
-                justify-content: center;
-                align-items: center;
+          .sign-up-content {
+              padding: 85px 0 40px;
+              h1 {
+                //   padding-top: 50px;
+                  margin-bottom: 35px;
+                  text-transform: uppercase;
+                  font-size: 37px;
+                  letter-spacing: 1.4px;
+                  color: $dark;
+                  text-align: center;
+              }
 
 
-                input,
-                label,
-                button,
-                p {
-                    max-width: 100%;
-                }
 
-                input {
-                    padding: 22px 15px;
-                    text-transform: uppercase;
-                    vertical-align: middle;
-                    font-size: 17px;
-                    font-weight: 800;
-                    font-family: 'Oswald', sans-serif;
-                    border: 2px solid $tomato;
-                    color: $dark;
-
-                    &:focus {
-                        outline: none;
-                        border: 1px dashed $yellow;
-                    }
-                }
+              #sign-up-form {
+                  display: grid;
+                  grid-template-columns: repeat(2, 1fr);
+                  grid-gap: 10px;
+                  color: $dark;
+                  justify-content: center;
+                  align-items: center;
 
 
-                ::placeholder {
-                    color: $dark;
-                    opacity: 1;
-                    /* Firefox */
-                    // font-size: 20px;
-                }
+                  input,
+                  label,
+                  button,
+                  p {
+                      max-width: 100%;
+                  }
 
-                :-ms-input-placeholder {
-                    /* Internet Explorer 10-11 */
-                    color: $dark;
-                }
+                  input {
+                      padding: 22px 15px;
+                      text-transform: uppercase;
+                      vertical-align: middle;
+                      font-size: 17px;
+                      font-weight: 800;
+                      font-family: 'Oswald', sans-serif;
+                      border: 2px solid $tomato;
+                      color: $dark;
 
-                ::-ms-input-placeholder {
-                    /* Microsoft Edge */
-                    color: $dark;
-                }
+                      &:focus {
+                          outline: none;
+                          border: 1px dashed $yellow;
+                      }
+                  }
 
-                .first {
-                    // grid-column: 1 / 2;
-                    // grid-row: 1 / 2;
-                }
 
-                .last {
-                    // grid-column: 2 / 3;
-                    // grid-row: 1 / 2;
-                }
+                  ::placeholder {
+                      color: $dark;
+                      opacity: 1;
+                      /* Firefox */
+                      // font-size: 20px;
+                  }
 
-                .email {
-                    // grid-column: 1 / 2;
-                    // grid-row: 2 / 3;
-                }
+                  :-ms-input-placeholder {
+                      /* Internet Explorer 10-11 */
+                      color: $dark;
+                  }
 
-                .post {
-                    // grid-column: 2 / 3;
-                    // grid-row: 2 / 3;
-                }
+                  ::-ms-input-placeholder {
+                      /* Microsoft Edge */
+                      color: $dark;
+                  }
 
-                .terms {
-                    // grid-column: 1 / 2;
-                    // grid-row: 5 / 6;
+                  .first {
+                      // grid-column: 1 / 2;
+                      // grid-row: 1 / 2;
+                  }
 
-                    .policy {
-                        text-decoration: underline;
-                        color: $dark;
-                    }
-                }
+                  .last {
+                      // grid-column: 2 / 3;
+                      // grid-row: 1 / 2;
+                  }
 
-                .phone {
-                    // grid-column: 1 / 2;
-                    // grid-row: 3 / 4;
-                }
+                  .email {
+                      // grid-column: 1 / 2;
+                      // grid-row: 2 / 3;
+                  }
 
-                .number {
-                    // grid-column: 1 / 2;
-                    // grid-row: 4 / 5;
-                }
+                  .post {
+                      // grid-column: 2 / 3;
+                      // grid-row: 2 / 3;
+                  }
 
-                .button {
-                    // grid-column: 2 / 3;
-                    // grid-row: 1 / 2;
-                    display: block;
-                    padding: 15px 15px;
-                    font-size: 25px;
-                    text-transform: uppercase;
-                    font-weight: 800;
-                    cursor: pointer;
-                    height: 100%;
-                    font-family: 'Oswald', sans-serif;
-                    color: $dark;
-                    background-color: $ivory;
-                    border: 2px solid $tomato;
-                    transition: .3s ease-in-out;
+                  .terms {
+                      // grid-column: 1 / 2;
+                      // grid-row: 5 / 6;
 
-                    &:focus {
-                        outline: none;
-                    }
+                      .policy {
+                          text-decoration: underline;
+                          color: $dark;
+                      }
+                  }
 
-                    &:hover {
-                        background-color: $tomato;
-                        color: $white;
-                        // opacity: 0.4;
-                    }
-                }
+                  .phone {
+                      // grid-column: 1 / 2;
+                      // grid-row: 3 / 4;
+                  }
 
-            }
-        }
-    }
-}
+                  .number {
+                      // grid-column: 1 / 2;
+                      // grid-row: 4 / 5;
+                  }
+
+                  .button {
+                      // grid-column: 2 / 3;
+                      // grid-row: 1 / 2;
+                      display: block;
+                      padding: 15px 15px;
+                      font-size: 25px;
+                      text-transform: uppercase;
+                      font-weight: 800;
+                      cursor: pointer;
+                      height: 100%;
+                      font-family: 'Oswald', sans-serif;
+                      color: $dark;
+                      background-color: $ivory;
+                      border: 2px solid $tomato;
+                      transition: .3s ease-in-out;
+
+                      &:focus {
+                          outline: none;
+                      }
+
+                      &:hover {
+                          background-color: $tomato;
+                          color: $white;
+                          // opacity: 0.4;
+                      }
+                  }
+
+              }
+          }
+      }
+  }
+
+  // SIGN UP FOR WEEKLY OFFERS BEGINS
+
+  #steps {
+      padding: 70px 70px 100px;
+      color: $white;
+      background: $dark;
+
+      .container {
+          //   padding: 0 0 160px;
+
+          .steps-content {
+              h3 {
+                  text-align: center;
+                  text-transform: uppercase;
+                  font-size: 30px;
+                //   margin-bottom: 35px;
+              }
+              .arrow-down{
+               text-align: center;
+               margin-bottom: 70px;
+              }
+
+              .steps {
+                  display: grid;
+                  grid-template-columns: repeat(3, 1fr);
+                  grid-gap: 25px;
+
+                  .step {
+                    //   .hand{
+                    //       text-align: center;
+                    //   }
+                      //   -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.45);
+                      //   -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.45);
+                      //   box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.45);
+
+                      //                     -webkit-box-shadow: 0px 0px 2px 0px rgba(255,255,255,1);
+                      // -moz-box-shadow: 0px 0px 2px 0px rgba(255,255,255,1);
+                      // box-shadow: 0px 0px 2px 0px rgba(255,255,255,1);
+                      padding: 35px 7px 0;
+                      //   border-radius: 4px;
+                      width: 100%;
+                      background: $white;
+                      color: $dark;
+                      transition: .3s ease-in-out;
+
+                      &:hover {
+                          transform: scale(1.02);
+                      }
+
+                      .step-content {
+                          padding: 0 25px 60px;
+
+                          h2 {
+                              text-transform: uppercase;
+                              font-size: 30px;
+                              margin-bottom: 7px;
+                          }
+
+                          p {
+                              font-size: 18px;
+                              font-family: 'Open Sans', sans-serif;
+                          }
+                      }
+
+                      .step-image {
+                          // padding: 60px 7px 0;
+                      }
+                  }
+              }
+
+              .steps-button {
+                  display: block;
+                  text-align: center;
+                  margin-top: 40px;
+
+                  a {
+                      display: inline-block;
+                      padding: 10px 60px;
+                      font-size: 25px;
+                      text-transform: uppercase;
+                      border: 1px solid $tomato;
+                      margin-top: 60px;
+                      color: $white;
+                      text-align: center;
+                      font-weight: 800;
+                      transition: .3s ease-in-out;
+
+                      &:hover {
+                          color: $white;
+                          background: $tomato;
+                      }
+                  }
+              }
+          }
+      }
+  }
