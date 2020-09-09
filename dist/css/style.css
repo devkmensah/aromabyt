@@ -123,6 +123,11 @@
         background: #73020C;
         border: 1px solid transparent; }
 
+#delivery {
+  padding: 120px 70px 0;
+  background-color: #FCFCF3;
+  color: #0c0c0c; }
+
 #order-header .order-top {
   background-color: #0c0c0c;
   display: block;
