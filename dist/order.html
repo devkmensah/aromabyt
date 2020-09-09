@@ -56,27 +56,6 @@
         <section id="delivery">
             <div class="container">
                 <div class="delivery-content">
-                    <!-- APPLY POINTS START -->
-                    <div class="apply">
-                        <h3 class="redeem-points">
-                            <span class="redeem">Redeem</span>
-                            <br>
-                            <span class="points">Offers</span>
-                        </h3>
-                        <!-- <hr> -->
-                        <h3 class="member">Do you have points?</h3>
-                        <p>Enter your phone number to redeem your points.</p>
-
-                        <div class="redeem-input">
-                            <input type="nuber" placeholder="Enter Phone#">
-                            <a href="#">redeem</a>
-                        </div>
-
-                        <p>Not a memeber yet</p>
-                        <a href="#">Click here to sign up</a>
-                    </div>
-                    <!-- APPLY POINTS END -->
-
                     <!-- DELIVERY FORM CONTENT STARTS -->
                     <div class="delivery-form-content">
                         <h2>Enter Your delivery address.</h2>
@@ -90,9 +69,9 @@
                                 <button class="cancel">Cancel</button>
                             </div>
 
-                            <input type="text" placeholder="Gate Code, Apt#, etc">
+                            <input type="text" placeholder="Gate Code, Apt #, etc">
 
-                            <input type="number" name="phone" id="phone" placeholder="Phone# Required">
+                            <input type="tel" name="phone" id="phone" placeholder="Phone # Required">
 
                             <input type="submit" value="Use This Address">
                         </form>
@@ -107,6 +86,26 @@
                         </p>
                     </div>
                      <!-- DELIVERY FORM CONTENT ENDS -->
+
+                      <!-- APPLY POINTS START -->
+                    <div class="apply">
+                        <h3 class="redeem-points">
+                            <span class="redeem">Redeem</span>
+                            <br>
+                            <span class="points">Offers</span>
+                        </h3>
+                        <h3 class="member">Do you have points?</h3>
+                        <p>Enter your phone number to redeem your points.</p>
+
+                        <div class="redeem-input">
+                            <input required type="tel" placeholder="Phone #">
+                            <a href="#">redeem</a>
+                        </div>
+
+                        <p class="yet">Not a member yet?  <a href="#">Click here to sign up</a></p>
+                       
+                    </div>
+                    <!-- APPLY POINTS END -->
                 </div>
             </div>
         </section>

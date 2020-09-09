@@ -52,8 +52,11 @@
                 text-transform: uppercase;
                 text-align: center;
                 font-weight: 500;
-                .delivery, .collect{
+
+                .delivery,
+                .collect {
                     margin: 45px 25px 0;
+
                     a {
                         position: relative;
                         overflow: hidden;
@@ -71,7 +74,7 @@
                             border: none;
                             transition: .55s ease-in-out;
                         }
-    
+
                         &:hover:after {
                             width: 100%;
                         }
@@ -79,7 +82,7 @@
                 }
             }
 
-            .log-in{
+            .log-in {
                 a {
                     position: relative;
                     overflow: hidden;
@@ -106,3 +109,112 @@
         }
     }
 }
+
+// DELIVERY SECTION BEGINS
+#delivery {
+    padding: 120px 70px 0;
+    background-color: $ivory;
+    color: $dark;
+
+    a {
+        color: $dark;
+    }
+
+    .container {
+        .delivery-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-column-gap: 20px;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 0;
+
+            .apply {
+                margin-top: -25px;
+
+                .redeem-points {
+                    text-transform: uppercase;
+                    line-height: 1.1;
+                    font-weight: 800;
+                    font-size: 25px;
+                    border-bottom: 1px solid $tomato;
+                    padding-bottom: 14px;
+                }
+
+                .member {
+                    padding-top: 10px;
+                    text-transform: uppercase;
+                }
+
+                p {}
+
+                .redeem-input {
+                    margin: 20px 0;
+                    width: 100%;
+                    display: block;
+                    // display: flex;
+
+                    input {
+                        padding: 18px 0 18px 10px;
+                        width: 70%;
+                        vertical-align: middle;
+                        display: inline-block;
+                        font-family: 'Oswald', sans-serif;
+                      border: 1px solid $tomato;
+                      color: $dark;
+                      font-size: 20px;
+
+                      &:focus {
+                          outline: none;
+                          border: 1px dashed $yellow;
+                      }
+
+                        &::placeholder {
+                            font-size: 16px;
+                            color: $dark;
+                        }
+                    }
+
+                    a {
+                        vertical-align: middle;
+                        display: inline-block;
+                        border: 2px solid $tomato;
+                        width: 100px;
+                        height: 67.5px;
+                        // padding: 14.7px 18px;
+                        // height: 100%;
+                        text-align: center;
+                        line-height: 4.0;
+                        text-transform: uppercase;
+                        transition: .3s ease-in-out;
+                        max-width: 28%;
+                        overflow: hidden;
+
+                        &:hover {
+                            color: $white;
+                            background-color: $tomato;
+                            border: 2px solid transparent;
+                        }
+                    }
+                }
+
+                .yet{
+                    a{
+                        color: $tomato;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+
+            #delivery-form-content {
+                // text-align: center;
+                // max-width: 900px;
+                // margin: 0 auto;
+            }
+        }
+    }
+}
+
+// DELIVERY SECTION ENDS
