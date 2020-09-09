@@ -212,64 +212,117 @@
   color: #0c0c0c; }
   #delivery a {
     color: #0c0c0c; }
-  #delivery .container .delivery-content {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-column-gap: 20px;
-    justify-content: center;
-    align-items: center;
-    padding: 50px 0; }
-    #delivery .container .delivery-content .apply {
-      margin-top: -25px; }
-      #delivery .container .delivery-content .apply .redeem-points {
-        text-transform: uppercase;
-        line-height: 1.1;
-        font-weight: 800;
-        font-size: 25px;
-        border-bottom: 1px solid #73020C;
-        padding-bottom: 14px; }
-      #delivery .container .delivery-content .apply .member {
-        padding-top: 10px;
-        text-transform: uppercase; }
-      #delivery .container .delivery-content .apply .redeem-input {
-        margin: 20px 0;
-        width: 100%;
-        display: block; }
-        #delivery .container .delivery-content .apply .redeem-input input {
-          padding: 18px 0 18px 10px;
-          width: 70%;
-          vertical-align: middle;
-          display: inline-block;
-          font-family: 'Oswald', sans-serif;
-          border: 1px solid #73020C;
-          color: #0c0c0c;
-          font-size: 20px; }
-          #delivery .container .delivery-content .apply .redeem-input input:focus {
-            outline: none;
-            border: 1px dashed #FCC000; }
-          #delivery .container .delivery-content .apply .redeem-input input::placeholder {
-            font-size: 16px;
-            color: #0c0c0c; }
-        #delivery .container .delivery-content .apply .redeem-input a {
-          vertical-align: middle;
-          display: inline-block;
-          border: 2px solid #73020C;
-          width: 100px;
-          height: 67.5px;
-          text-align: center;
-          line-height: 4.0;
+  #delivery .container {
+    max-width: 1200px;
+    margin: 0 auto; }
+    #delivery .container .delivery-content {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-column-gap: 20px;
+      padding: 50px 0; }
+      #delivery .container .delivery-content .delivery-form-content {
+        padding: 0 25px;
+        text-align: center; }
+        #delivery .container .delivery-content .delivery-form-content .form-heading {
           text-transform: uppercase;
-          transition: .3s ease-in-out;
-          max-width: 28%;
-          overflow: hidden; }
-          #delivery .container .delivery-content .apply .redeem-input a:hover {
+          padding-bottom: 25px; }
+        #delivery .container .delivery-content .delivery-form-content #delivery-form {
+          width: 100%; }
+          #delivery .container .delivery-content .delivery-form-content #delivery-form input {
+            width: 100%;
+            padding: 16px 0 16px 10px;
+            font-family: 'Oswald', sans-serif;
+            border: 1px solid #73020C;
+            color: #0c0c0c;
+            font-size: 20px; }
+            #delivery .container .delivery-content .delivery-form-content #delivery-form input:focus {
+              outline: none;
+              border: 1px dashed #FCC000; }
+            #delivery .container .delivery-content .delivery-form-content #delivery-form input::placeholder {
+              font-size: 16px;
+              color: #0c0c0c; }
+            #delivery .container .delivery-content .delivery-form-content #delivery-form input:first-child {
+              margin-bottom: 8px;
+              font-weight: 100; }
+          #delivery .container .delivery-content .delivery-form-content #delivery-form .limited {
+            text-transform: uppercase; }
+          #delivery .container .delivery-content .delivery-form-content #delivery-form .look-up {
+            margin: 20px 0;
+            text-align: left; }
+            #delivery .container .delivery-content .delivery-form-content #delivery-form .look-up .delivery-button, #delivery .container .delivery-content .delivery-form-content #delivery-form .look-up .cancel {
+              padding: 10px 12px;
+              text-transform: uppercase;
+              background: #73020C;
+              color: #fff;
+              cursor: pointer; }
+              #delivery .container .delivery-content .delivery-form-content #delivery-form .look-up .delivery-button:focus, #delivery .container .delivery-content .delivery-form-content #delivery-form .look-up .cancel:focus {
+                outline: none; }
+            #delivery .container .delivery-content .delivery-form-content #delivery-form .look-up .cancel {
+              background: #0c0c0c;
+              margin: 20px 3px; }
+          #delivery .container .delivery-content .delivery-form-content #delivery-form .phone {
+            margin: 20px 0; }
+          #delivery .container .delivery-content .delivery-form-content #delivery-form .use {
             color: #fff;
-            background-color: #73020C;
-            border: 2px solid transparent; }
-      #delivery .container .delivery-content .apply .yet a {
-        color: #73020C; }
-        #delivery .container .delivery-content .apply .yet a:hover {
-          text-decoration: underline; }
+            background: #73020C;
+            cursor: pointer;
+            margin-bottom: 30px; }
+        #delivery .container .delivery-content .delivery-form-content .create a {
+          text-transform: uppercase;
+          color: #73020C;
+          font-size: 20px;
+          font-weight: 600; }
+      #delivery .container .delivery-content .apply {
+        max-width: 365px; }
+        #delivery .container .delivery-content .apply .redeem-points {
+          text-transform: uppercase;
+          line-height: 1.1;
+          font-weight: 800;
+          font-size: 25px;
+          border-bottom: 1px solid #73020C;
+          padding-bottom: 14px; }
+        #delivery .container .delivery-content .apply .member {
+          padding-top: 10px;
+          text-transform: uppercase; }
+        #delivery .container .delivery-content .apply .redeem-input {
+          margin: 20px 0;
+          width: 100%;
+          display: block; }
+          #delivery .container .delivery-content .apply .redeem-input input {
+            padding: 16px 0 16px 10px;
+            width: 70%;
+            vertical-align: middle;
+            display: inline-block;
+            font-family: 'Oswald', sans-serif;
+            border: 1px solid #73020C;
+            color: #0c0c0c;
+            font-size: 20px; }
+            #delivery .container .delivery-content .apply .redeem-input input:focus {
+              outline: none;
+              border: 1px dashed #FCC000; }
+            #delivery .container .delivery-content .apply .redeem-input input::placeholder {
+              font-size: 16px;
+              color: #0c0c0c; }
+          #delivery .container .delivery-content .apply .redeem-input a {
+            vertical-align: middle;
+            display: inline-block;
+            border: 2px solid #73020C;
+            width: 130px;
+            height: 64px;
+            text-align: center;
+            line-height: 3.9;
+            text-transform: uppercase;
+            transition: .3s ease-in-out;
+            max-width: 28%;
+            overflow: hidden; }
+            #delivery .container .delivery-content .apply .redeem-input a:hover {
+              color: #fff;
+              background-color: #73020C;
+              border: 2px solid transparent; }
+        #delivery .container .delivery-content .apply .yet a {
+          color: #73020C; }
+          #delivery .container .delivery-content .apply .yet a:hover {
+            text-decoration: underline; }
 
 * {
   box-sizing: border-box;

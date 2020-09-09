@@ -121,16 +121,117 @@
     }
 
     .container {
+       max-width: 1200px;
+       margin: 0 auto;
         .delivery-content {
             display: grid;
             grid-template-columns: 2fr 1fr;
+            // grid-template-columns: 700px 365px;
+            // grid-template-columns: 60% 40%;
             grid-column-gap: 20px;
-            justify-content: center;
-            align-items: center;
+            // justify-content: end;
+            // align-items: center;
             padding: 50px 0;
 
+            .delivery-form-content {
+                padding: 0 25px;
+                // padding-left: 200px;
+                // width: 75%;
+                // margin-left: 250px;
+                //   border: 1px solid $dark;
+                text-align: center;
+                // padding-left: 300px;
+                // text-align: center;
+                // max-width: 750px;
+                // margin: 0 auto;
+
+                .form-heading{
+                    text-transform: uppercase;
+                    padding-bottom: 25px;
+                }
+
+                #delivery-form{
+                    width: 100%;
+                    input{
+                        width: 100%;
+                        padding: 16px 0 16px 10px;
+                        font-family: 'Oswald', sans-serif;
+                      border: 1px solid $tomato;
+                      color: $dark;
+                      font-size: 20px;
+
+                      &:focus {
+                          outline: none;
+                          border: 1px dashed $yellow;
+                      }
+
+                        &::placeholder {
+                            font-size: 16px;
+                            color: $dark;
+                        }
+                        &:first-child{
+                            margin-bottom: 8px;
+                            font-weight: 100;
+                        }
+                    }
+
+                    .limited{
+                        text-transform: uppercase;
+                    }
+
+                    .look-up{
+                        margin: 20px 0;
+                        text-align: left;
+                       .delivery-button, .cancel{
+                        padding: 10px 12px;
+                        text-transform: uppercase;
+                        background: $tomato;
+                        color: $white;
+                        cursor: pointer;
+                        // border: 1px solid transparent;
+
+                        &:focus {
+                            outline: none;
+                        }
+                       }
+                       .cancel{
+                           background: $dark;
+                           margin: 20px 3px;
+                       }
+                    }
+
+                    .access{
+                        // margin
+                    }
+
+                    .phone{
+                        margin: 20px 0;
+                    }
+
+                    .use{
+                      color: $white;
+                      background: $tomato;
+                      cursor: pointer;
+                      margin-bottom: 30px;
+                    }
+                }
+
+                .create{
+                    a{
+                        text-transform: uppercase;
+                    color: $tomato;
+                    font-size: 20px;
+                    font-weight: 600;
+                    }
+                }
+            }
+
             .apply {
-                margin-top: -25px;
+                // border: 1px solid $dark;
+                // width: 25%;
+                // margin-top: -500px;
+                // border: 1px solid $dark;
+                max-width: 365px;
 
                 .redeem-points {
                     text-transform: uppercase;
@@ -138,6 +239,7 @@
                     font-weight: 800;
                     font-size: 25px;
                     border-bottom: 1px solid $tomato;
+                    // width: 89%;
                     padding-bottom: 14px;
                 }
 
@@ -155,7 +257,7 @@
                     // display: flex;
 
                     input {
-                        padding: 18px 0 18px 10px;
+                        padding: 16px 0 16px 10px;
                         width: 70%;
                         vertical-align: middle;
                         display: inline-block;
@@ -179,12 +281,10 @@
                         vertical-align: middle;
                         display: inline-block;
                         border: 2px solid $tomato;
-                        width: 100px;
-                        height: 67.5px;
-                        // padding: 14.7px 18px;
-                        // height: 100%;
+                        width: 130px;
+                        height: 64px;
                         text-align: center;
-                        line-height: 4.0;
+                        line-height: 3.9;
                         text-transform: uppercase;
                         transition: .3s ease-in-out;
                         max-width: 28%;
@@ -206,12 +306,6 @@
                         }
                     }
                 }
-            }
-
-            #delivery-form-content {
-                // text-align: center;
-                // max-width: 900px;
-                // margin: 0 auto;
             }
         }
     }
