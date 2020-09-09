@@ -1,0 +1,108 @@
+// HEADER STYLING BEGINS
+#order-header {
+    .order-top {
+        background-color: $dark;
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: 120px;
+        width: 100%;
+        z-index: 2;
+        overflow: hidden;
+
+        .order-content {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 25px;
+            padding: 25px 0;
+
+            .order-logo {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                vertical-align: middle;
+
+                .order-chef {
+                    width: 50px;
+                    display: inline-block;
+                }
+
+                h1 {
+                    display: flex;
+                    flex-direction: column;
+                    font-family: 'Carter One', cursive;
+
+                    span {
+                        margin-top: -12px;
+                        font-size: 9px;
+                        letter-spacing: 2px;
+                        font-family: 'Oswald', sans-serif;
+                    }
+                }
+            }
+
+            .order-options {
+                display: flex;
+                text-transform: uppercase;
+                text-align: center;
+                font-weight: 500;
+                .delivery, .pickup{
+                    margin: 45px 25px 0;
+                    a {
+                        position: relative;
+                        overflow: hidden;
+                        border: none;
+
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            background: $tomato;
+                            height: 1px;
+                            width: 0%;
+                            transform: translateX(-50%);
+                            left: 50%;
+                            bottom: -5px;
+                            border: none;
+                            transition: .55s ease-in-out;
+                        }
+    
+                        &:hover:after {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+            .log-in{
+                a {
+                    position: relative;
+                    overflow: hidden;
+                    border: none;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        background: $tomato;
+                        height: 1px;
+                        width: 0%;
+                        transform: translateX(-50%);
+                        left: 50%;
+                        bottom: -5px;
+                        border: none;
+                        transition: .55s ease-in-out;
+                    }
+
+                    &:hover:after {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
