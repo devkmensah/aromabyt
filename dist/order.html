@@ -35,7 +35,7 @@
 
                 <ul class="order-options">
                     <li class="delivery"><a href="#">Delivery</a></li>
-                    <li class="pickup"><a href="#">Pickup</a></li>
+                    <li class="collect"><a href="#">I'll Collect</a></li>
                 </ul>
 
                 <h2 class="log-in">
@@ -56,7 +56,23 @@
         <section id="delivery">
             <div class="container">
                 <div class="delivery-content">
-                    <h2></h2>
+                    <h2>Enter Your delivery address.</h2>
+
+                    <form action="#" id="delivery-form">
+                        <input type="text" class="delivery-postcode" placeholder="Enter Post Code (Required)">
+                        <label for="text">Delivery is limited to London</label>
+
+                        <div class="look-up">
+                            <button class="delivery-button">Search For Address</button>
+                            <button class="cancel">Cancel</button>
+                        </div>
+
+                        <input type="text" placeholder="Gate Code, Apt#, etc">
+
+                        <input type="phone" name="phone" id="phone" placeholder="Required">
+
+                        <input type="submit" value="Use This Address">
+                    </form>
                 </div>
             </div>
         </section>

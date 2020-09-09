@@ -165,13 +165,13 @@
       text-transform: uppercase;
       text-align: center;
       font-weight: 500; }
-      #order-header .order-top .order-content .order-options .delivery, #order-header .order-top .order-content .order-options .pickup {
+      #order-header .order-top .order-content .order-options .delivery, #order-header .order-top .order-content .order-options .collect {
         margin: 45px 25px 0; }
-        #order-header .order-top .order-content .order-options .delivery a, #order-header .order-top .order-content .order-options .pickup a {
+        #order-header .order-top .order-content .order-options .delivery a, #order-header .order-top .order-content .order-options .collect a {
           position: relative;
           overflow: hidden;
           border: none; }
-          #order-header .order-top .order-content .order-options .delivery a::after, #order-header .order-top .order-content .order-options .pickup a::after {
+          #order-header .order-top .order-content .order-options .delivery a::after, #order-header .order-top .order-content .order-options .collect a::after {
             content: '';
             position: absolute;
             background: #73020C;
@@ -182,7 +182,7 @@
             bottom: -5px;
             border: none;
             transition: .55s ease-in-out; }
-          #order-header .order-top .order-content .order-options .delivery a:hover:after, #order-header .order-top .order-content .order-options .pickup a:hover:after {
+          #order-header .order-top .order-content .order-options .delivery a:hover:after, #order-header .order-top .order-content .order-options .collect a:hover:after {
             width: 100%; }
     #order-header .order-top .order-content .log-in a {
       position: relative;
