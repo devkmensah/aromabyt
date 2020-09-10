@@ -34,8 +34,8 @@
                 </a>
 
                 <ul class="order-options">
-                    <li class="delivery"><a href="#">Delivery</a></li>
-                    <li class="collect"><a href="#">I'll Collect</a></li>
+                    <li class="delivery"><a href="#delivery">Delivery</a></li>
+                    <li class="collect"><a href="#collect">I'll Collect</a></li>
                 </ul>
 
                 <h2 class="log-in">
@@ -83,37 +83,95 @@
                         <br>
                         <p>Get offers, earn points, faster food delivery to your doostep and much more
                             by creating account with us.</p>
-                            <br>
-                        
-                            <div class="create">
-                                <a href="#">Create Account Now</a>
-                            </div>
-                    </div>
-                     <!-- DELIVERY FORM CONTENT ENDS -->
+                        <br>
 
-                      <!-- APPLY POINTS START -->
+                        <div class="create">
+                            <a href="#">Create Account Now</a>
+                        </div>
+                    </div>
+                    <!-- DELIVERY FORM CONTENT ENDS -->
+
+                    <!-- APPLY POINTS START -->
                     <div class="apply">
                         <h3 class="redeem-points">
                             <span class="redeem">Redeem</span>
                             <br>
-                            <span class="points">Offers</span>
+                            <span class="points">Points</span>
                         </h3>
                         <h3 class="member">Do you have points?</h3>
                         <p>Enter your phone number to redeem your points.</p>
 
                         <div class="redeem-input">
-                            <input required type="tel" placeholder="Phone #">
+                            <input required type="tel" placeholder="Phone Number">
                             <a href="#">redeem</a>
                         </div>
 
-                        <p class="yet">Not a member yet?  <a href="#">Click here to sign up</a></p>
-                       
+                        <p class="yet">Not a member yet? <a href="#">Click here to sign up</a></p>
+
                     </div>
                     <!-- APPLY POINTS END -->
                 </div>
             </div>
         </section>
         <!-- DELIVERY SECTION STARTS -->
+
+        <!-- COLLECT SECTION BEGINS -->
+        <section id="collect">
+            <div class="container">
+                <div class="collect-content">
+                    <!--  COLLECT STARTS -->
+                    <div class="start-content">
+                        <h2>Want to collect your order!</h2>
+                        <p class="start">Start by choosing when you want to collect, and your meal will be ready for
+                            you.</p>
+                        <form class="collect-form">
+                            <div class="time-input">
+                                <div class="time">
+                                    <label for="time" >Time</label>
+                                    <input type="time" value="12:30" name="date-time" id="date-time">
+                                </div>
+
+                                <div class="date">
+                                    <label for="date" >Date</label>
+                                    <input type="date" value="2020-09-10" name="date" id="date">
+                                </div>
+                            </div>
+
+                            <div class="specify">
+                                <input type="checkbox" name="checkbox">
+                                <label for="checkbox">Tick here to continue</label>
+                            </div>
+                            
+
+                            <button class="collect-button">continue</button>
+                        </form>
+                    </div>
+                    <!-- COLLECT ENDS -->
+
+
+                    <!-- APPLY POINTS START -->
+                    <div class="apply">
+                        <h3 class="redeem-points">
+                            <span class="redeem">Redeem</span>
+                            <br>
+                            <span class="points">Points</span>
+                        </h3>
+                        <h3 class="member">Do you have points?</h3>
+                        <p>Enter your phone number to redeem your points.</p>
+
+                        <div class="redeem-input">
+                            <input required type="tel" placeholder="Phone Number">
+                            <a href="#">redeem</a>
+                        </div>
+
+                        <p class="yet">Not a member yet? <a href="#">Click here to sign up</a></p>
+
+                    </div>
+                    <!-- APPLY POINTS END -->
+                </div>
+            </div>
+        </section>
+        <!-- COLLECT SECTION ENDS -->
 
 
         <!-- FOOTER SECTION STARTS -->
