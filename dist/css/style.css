@@ -447,6 +447,14 @@
         #collect .container .collect-content .apply .yet a:hover {
           text-decoration: underline; }
 
+#menu {
+  padding-top: 120px; }
+  #menu a {
+    color: #0c0c0c; }
+  #menu .menu-list {
+    background-color: #FCFCF3;
+    color: #0c0c0c; }
+
 * {
   box-sizing: border-box;
   margin: 0;
