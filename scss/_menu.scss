@@ -1,10 +1,75 @@
-#menu{
+#menu {
     padding-top: 120px;
-    a{
-        color: $dark;
+
+    a {
+        color: $white;
     }
-    .menu-list{
-        background-color: $ivory;
-        color: $dark;
+
+    // MENU LIST BEGINS
+    .menu-list {
+        // background-color: $tomato;
+        background-color: $tomato;
+        color: $white;
+        padding: 20px 65px 30px;
+
+        .list-items {
+            max-width: 905px;
+            margin: 0 auto;
+
+            .allergen {
+                text-align: left;
+                margin-bottom: 8px;
+
+                a {
+                    text-decoration: underline;
+                }
+            }
+
+            .items {
+                display: flex;
+                text-transform: uppercase;
+                // align-items: center;
+                justify-content: center;
+                font-size: 18px;
+
+                .item {
+                    margin-right: 50px;
+
+                    a{
+                        position: relative;
+                        overflow: hidden;
+                        border: none;
+    
+    
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            background: $white;
+                            height: 1px;
+                            width: 0%;
+                            transform: translateX(-50%);
+                            left: 50%;
+                            bottom: -5px;
+                            border: none;
+                            transition: .55s ease-in-out;
+                        }
+    
+                        &:hover:after {
+                            width: 100%;
+                        }
+                    }
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+
+                    span {
+                        margin-left: 45px;
+                    }
+                }
+            }
+        }
     }
+
+    // MENU LIST ENDS
 }
