@@ -91,15 +91,18 @@
             grid-gap: 3px;
 
             .box {
+                // width: 100%;
+                // height: 350px;
                 .content {
                     overflow: hidden;
                     width: 100%;
-                    height: 350px;
+                    // height: 350px;
+                    height: 100%;
                     position: relative;
 
 
                     h3 {
-                        text-align: center;
+                        // text-align: center;
                         position: absolute;
                         left: 30px;
                         bottom: 20px;
@@ -147,4 +150,79 @@
     }
 
     // LUNCH, DINNER, THE NOT STEAKS MENU ENDS
+
+    // WINES AREA BEGINS
+    #wines, #other {
+        color: $white;
+        background-color: $dark;
+
+        // padding: 0 70px;
+        .wines-header, .other-header{
+            padding: 32px 70px;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 22px;
+        }
+
+        .wine-boxes, .other-boxes {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-gap: 3px;
+
+            .box {
+                // width: 100%;
+                // height: 300px;
+                .content {
+                    overflow: hidden;
+                    width: 100%;
+                    height: 100%;
+                    // height: 350px;
+                    position: relative;
+
+
+                    h3 {
+                        // text-align: center;
+                        position: absolute;
+                        left: 15px;
+                        bottom: 12px;
+                        z-index: 1;
+                        font-size: 18px;
+                    }
+
+                    .image-contain {
+                        transition: .3s ease-in-out;
+
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            display: block;
+                            background-color: rgba(0, 0, 0, 0.2);
+                            cursor: pointer;
+                        }
+
+                        &:hover{
+                            transform: scale(1.06);
+                        }
+
+                        a {
+                            img {
+                                // transition: .3s ease-in-out;
+                                display: block;
+
+                                // &:hover{
+                                //     transform: scale(1.06);
+                                // }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // WINES AREA ENDS
 }
