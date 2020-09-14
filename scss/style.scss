@@ -193,6 +193,17 @@ img {
 
 
         .sliders-holder {
+
+            .slider.current .translate {
+                transform: translateX(0px);
+                transition: all 0.7s ease-in-out 0.3s;
+            }
+
+            .slider.current .transform{
+                transform: translateX(-400px);
+                transition: all 0.5s ease-in-out 0.3s;
+            }
+
             .slider {
                 position: absolute;
                 top: 0;
@@ -202,8 +213,15 @@ img {
                 opacity: 0;
                 width: 100%;
                 height: 100%;
-                // background-color: #FCFCF3;
-                // background-color: $light-dark;
+
+                .translate{
+                    // left: -550px;
+                }
+                .transform{
+                    //  bottom: -500px;
+                     right: -400px;
+                }
+                
 
                 .content {
                     position: absolute;
@@ -227,11 +245,9 @@ img {
                 .content.delicious {
                     text-transform: uppercase;
 
-                    // align-items: flex-end;
                     h3 {
                         font-size: 65px;
                         line-height: 1.2;
-                        // color: $light-grey;
                         color: $white;
 
                         .menu {
@@ -267,7 +283,7 @@ img {
                         // color: $light-grey;
                         color: $white;
 
-                        .break {
+                        .take {
                             color: $tomato;
                         }
                     }
@@ -291,8 +307,8 @@ img {
                 .content.corona {
                     background-color: $ivory;
                     width: 100%;
+                    height: 100%;
                     color: $dark;
-                    margin-top: -35px;
                     position: relative;
 
                     &::after {
@@ -314,6 +330,7 @@ img {
                     h3 {
                         font-size: 70px;
                         text-transform: uppercase;
+                        margin-top: -35px;
                     }
 
                     p {
@@ -375,18 +392,22 @@ img {
             // top: 50%;
             // left: 17px;
             button {
-                padding: 14px 16px;
-                border-radius: 50%;
+                padding: 16px 16px 14px;
+                border-radius: 31%;
                 border: 1.5px solid $white;
                 background-color: transparent;
                 color: $white;
                 outline: none;
                 cursor: pointer;
+                
                 z-index: 2;
 
                 &:hover {
                     background-color: $white;
                     color: $tomato;
+                }
+                i{
+                    text-align: center;
                 }
             }
 
@@ -446,6 +467,11 @@ img {
             * {
                 z-index: 2;
             }
+        }
+
+        .slider:last-child{
+        background-color: $ivory;
+        padding-bottom: 0;
         }
     }
 

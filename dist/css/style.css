@@ -740,6 +740,12 @@ img {
   height: 530px;
   width: 100vw;
   z-index: 1; }
+  #main-area #carousel .sliders-holder .slider.current .translate {
+    transform: translateX(0px);
+    transition: all 0.7s ease-in-out 0.3s; }
+  #main-area #carousel .sliders-holder .slider.current .transform {
+    transform: translateX(-400px);
+    transition: all 0.5s ease-in-out 0.3s; }
   #main-area #carousel .sliders-holder .slider {
     position: absolute;
     top: 0;
@@ -749,6 +755,8 @@ img {
     opacity: 0;
     width: 100%;
     height: 100%; }
+    #main-area #carousel .sliders-holder .slider .transform {
+      right: -400px; }
     #main-area #carousel .sliders-holder .slider .content {
       position: absolute;
       width: 50%;
@@ -785,7 +793,7 @@ img {
         font-size: 65px;
         line-height: 1.1;
         color: #fff; }
-        #main-area #carousel .sliders-holder .slider .content.break h3 .break {
+        #main-area #carousel .sliders-holder .slider .content.break h3 .take {
           color: #73020C; }
       #main-area #carousel .sliders-holder .slider .content.break p {
         margin: 10px 0 -6px; }
@@ -801,8 +809,8 @@ img {
     #main-area #carousel .sliders-holder .slider .content.corona {
       background-color: #FCFCF3;
       width: 100%;
+      height: 100%;
       color: #0c0c0c;
-      margin-top: -35px;
       position: relative; }
       #main-area #carousel .sliders-holder .slider .content.corona::after {
         content: '';
@@ -816,7 +824,8 @@ img {
         color: #73020C; }
       #main-area #carousel .sliders-holder .slider .content.corona h3 {
         font-size: 70px;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        margin-top: -35px; }
       #main-area #carousel .sliders-holder .slider .content.corona p {
         padding: 0 80px;
         font-size: 27px; }
@@ -852,8 +861,8 @@ img {
     #main-area #carousel .sliders-holder .slider.current .content {
       opacity: 3; }
   #main-area #carousel .buttons button {
-    padding: 14px 16px;
-    border-radius: 50%;
+    padding: 16px 16px 14px;
+    border-radius: 31%;
     border: 1.5px solid #fff;
     background-color: transparent;
     color: #fff;
@@ -863,6 +872,8 @@ img {
     #main-area #carousel .buttons button:hover {
       background-color: #fff;
       color: #73020C; }
+    #main-area #carousel .buttons button i {
+      text-align: center; }
   #main-area #carousel .buttons .previous {
     position: absolute;
     top: 45%;
@@ -899,6 +910,9 @@ img {
       left: 0; }
     #main-area #carousel .slider:nth-child(2) * {
       z-index: 2; }
+  #main-area #carousel .slider:last-child {
+    background-color: #FCFCF3;
+    padding-bottom: 0; }
 
 #main-area #start-section {
   margin-top: 180px;
