@@ -740,7 +740,7 @@ img {
   height: 530px;
   width: 100vw;
   z-index: 1; }
-  #main-area #carousel .slider {
+  #main-area #carousel .sliders-holder .slider {
     position: absolute;
     top: 0;
     left: 0;
@@ -749,7 +749,7 @@ img {
     opacity: 0;
     width: 100%;
     height: 100%; }
-    #main-area #carousel .slider .content {
+    #main-area #carousel .sliders-holder .slider .content {
       position: absolute;
       width: 50%;
       height: 100%;
@@ -760,18 +760,18 @@ img {
       align-items: center;
       justify-content: center;
       text-align: center; }
-      #main-area #carousel .slider .content a {
+      #main-area #carousel .sliders-holder .slider .content a {
         color: #0c0c0c;
         display: block; }
-    #main-area #carousel .slider .content.delicious {
+    #main-area #carousel .sliders-holder .slider .content.delicious {
       text-transform: uppercase; }
-      #main-area #carousel .slider .content.delicious h3 {
+      #main-area #carousel .sliders-holder .slider .content.delicious h3 {
         font-size: 65px;
         line-height: 1.2;
         color: #fff; }
-        #main-area #carousel .slider .content.delicious h3 .menu {
+        #main-area #carousel .sliders-holder .slider .content.delicious h3 .menu {
           color: #73020C; }
-      #main-area #carousel .slider .content.delicious a {
+      #main-area #carousel .sliders-holder .slider .content.delicious a {
         background: #73020C;
         padding: 10px 50px;
         font-size: 35px;
@@ -779,17 +779,17 @@ img {
         border-radius: 3px;
         color: #fff;
         margin: 20px 0 20px; }
-    #main-area #carousel .slider .content.break {
+    #main-area #carousel .sliders-holder .slider .content.break {
       text-transform: uppercase; }
-      #main-area #carousel .slider .content.break h3 {
+      #main-area #carousel .sliders-holder .slider .content.break h3 {
         font-size: 65px;
         line-height: 1.1;
         color: #fff; }
-        #main-area #carousel .slider .content.break h3 .break {
+        #main-area #carousel .sliders-holder .slider .content.break h3 .break {
           color: #73020C; }
-      #main-area #carousel .slider .content.break p {
+      #main-area #carousel .sliders-holder .slider .content.break p {
         margin: 10px 0 -6px; }
-      #main-area #carousel .slider .content.break a {
+      #main-area #carousel .sliders-holder .slider .content.break a {
         display: block;
         background: #73020C;
         padding: 10px 50px;
@@ -798,13 +798,13 @@ img {
         border-radius: 3px;
         color: #fff;
         margin: 20px 0 20px; }
-    #main-area #carousel .slider .content.corona {
+    #main-area #carousel .sliders-holder .slider .content.corona {
       background-color: #FCFCF3;
       width: 100%;
       color: #0c0c0c;
       margin-top: -35px;
       position: relative; }
-      #main-area #carousel .slider .content.corona::after {
+      #main-area #carousel .sliders-holder .slider .content.corona::after {
         content: '';
         position: absolute;
         top: 0;
@@ -812,18 +812,18 @@ img {
         bottom: 0;
         right: 0;
         background-color: rgba(0, 0, 0, 0.2); }
-      #main-area #carousel .slider .content.corona .safe {
+      #main-area #carousel .sliders-holder .slider .content.corona .safe {
         color: #73020C; }
-      #main-area #carousel .slider .content.corona h3 {
+      #main-area #carousel .sliders-holder .slider .content.corona h3 {
         font-size: 70px;
         text-transform: uppercase; }
-      #main-area #carousel .slider .content.corona p {
+      #main-area #carousel .sliders-holder .slider .content.corona p {
         padding: 0 80px;
         font-size: 27px; }
-      #main-area #carousel .slider .content.corona .measures {
+      #main-area #carousel .sliders-holder .slider .content.corona .measures {
         display: flex;
         margin: 20px 0 0; }
-        #main-area #carousel .slider .content.corona .measures .measure {
+        #main-area #carousel .sliders-holder .slider .content.corona .measures .measure {
           display: flex;
           flex-direction: column;
           flex-wrap: nowrap;
@@ -831,7 +831,7 @@ img {
           text-align: center;
           justify-content: center;
           margin: 0 20px; }
-          #main-area #carousel .slider .content.corona .measures .measure i {
+          #main-area #carousel .sliders-holder .slider .content.corona .measures .measure i {
             color: #fff;
             background: #73020C;
             border-radius: 50%;
@@ -841,15 +841,15 @@ img {
             font-size: 50px;
             line-height: 130px;
             margin-bottom: 10px; }
-          #main-area #carousel .slider .content.corona .measures .measure .guidelines {
+          #main-area #carousel .sliders-holder .slider .content.corona .measures .measure .guidelines {
             font-size: 20px;
             text-align: center;
             line-height: 1.2;
             text-transform: uppercase;
             font-weight: 450; }
-  #main-area #carousel .slider.current {
+  #main-area #carousel .sliders-holder .slider.current {
     opacity: 1; }
-    #main-area #carousel .slider.current .content {
+    #main-area #carousel .sliders-holder .slider.current .content {
       opacity: 3; }
   #main-area #carousel .buttons button {
     padding: 14px 16px;
