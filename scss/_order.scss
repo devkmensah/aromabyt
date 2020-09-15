@@ -539,7 +539,7 @@
     width: 100%;
     z-index: 3;
     margin: 0 auto;
-    // display: none;
+    display: none;
 
     a {
         color: $dark;
@@ -615,10 +615,6 @@
                                 &:focus {
                                     outline: none;
                                     border: 1px dashed $yellow;
-                                }
-
-                                &::placeholder{
-                                    // color: $dark;
                                 }
 
                                 &:last-child{
