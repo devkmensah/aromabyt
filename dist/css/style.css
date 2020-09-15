@@ -500,7 +500,7 @@
           display: flex;
           flex-direction: column; }
           #register .container .popup-wrapper .popup .popup-content #form-register .left-input input {
-            padding: 20px 10px;
+            padding: 18px 10px;
             margin-bottom: 30px;
             width: 100%;
             border: 1px solid rgba(0, 0, 0, 0.1);
@@ -514,7 +514,7 @@
               margin-bottom: 0; }
         #register .container .popup-wrapper .popup .popup-content #form-register .right-input input[type="text"] {
           width: 100%;
-          padding: 20px 10px;
+          padding: 18px 10px;
           border: 1px solid rgba(0, 0, 0, 0.1);
           font-size: 16px;
           color: #0c0c0c;
@@ -554,8 +554,128 @@
           text-transform: uppercase;
           cursor: pointer;
           font-weight: 800;
-          display: block; }
+          display: block;
+          font-family: 'Oswald', sans-serif; }
+          #register .container .popup-wrapper .popup .popup-content #form-register .right-input .btn-register:focus {
+            outline: none; }
           #register .container .popup-wrapper .popup .popup-content #form-register .right-input .btn-register:hover {
+            text-decoration: underline; }
+
+#login-register {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 3;
+  margin: 0 auto;
+  font-family: 'Oswald', sans-serif; }
+  #login-register a {
+    color: #0c0c0c;
+    font-family: 'Oswald', sans-serif; }
+  #login-register .container .login-register-wrapper .login-register-content {
+    border-radius: 3px;
+    background-color: #FCFCF3;
+    color: #0c0c0c;
+    max-width: 725px;
+    margin: 60px auto 0;
+    width: 100%; }
+    #login-register .container .login-register-wrapper .login-register-content .login-register-header {
+      display: flex;
+      background-color: #73020C;
+      align-items: center;
+      justify-content: space-between;
+      vertical-align: middle;
+      color: #fff;
+      text-transform: uppercase;
+      padding: 8px 20px 10px;
+      font-size: 15px; }
+      #login-register .container .login-register-wrapper .login-register-content .login-register-header .close {
+        cursor: pointer;
+        font-size: 21px; }
+    #login-register .container .login-register-wrapper .login-register-content .login-register-box {
+      display: grid;
+      grid-template-columns: 48% 2% 48%;
+      padding: 20px 30px;
+      grid-gap: 20px;
+      justify-content: center; }
+      #login-register .container .login-register-wrapper .login-register-content .login-register-box #login-form {
+        padding-right: 10px; }
+        #login-register .container .login-register-wrapper .login-register-content .login-register-box #login-form .login {
+          color: #73020C;
+          text-transform: uppercase;
+          font-size: 20px;
+          margin-bottom: 10px; }
+        #login-register .container .login-register-wrapper .login-register-content .login-register-box #login-form input[type="email"],
+        #login-register .container .login-register-wrapper .login-register-content .login-register-box #login-form input[type="text"] {
+          width: 100%;
+          padding: 18px 10px;
+          margin: 15px 0;
+          border: 1px solid rgba(0, 0, 0, 0.1);
+          font-size: 16px;
+          color: #0c0c0c;
+          font-family: 'Oswald', sans-serif; }
+          #login-register .container .login-register-wrapper .login-register-content .login-register-box #login-form input[type="email"]:focus,
+          #login-register .container .login-register-wrapper .login-register-content .login-register-box #login-form input[type="text"]:focus {
+            outline: none;
+            border: 1px dashed #FCC000; }
+        #login-register .container .login-register-wrapper .login-register-content .login-register-box #login-form .remember {
+          margin: 10px 0 0;
+          font-family: 'Oswald', sans-serif;
+          vertical-align: middle; }
+          #login-register .container .login-register-wrapper .login-register-content .login-register-box #login-form .remember input[type="checkbox"] {
+            vertical-align: -11%;
+            margin: 7px 5px 0 0;
+            cursor: pointer;
+            zoom: 1.3; }
+        #login-register .container .login-register-wrapper .login-register-content .login-register-box #login-form .login-btn {
+          width: 100%;
+          margin: 30px 0;
+          padding: 18px 35px;
+          background-color: #73020C;
+          border: 1px solid transparent;
+          color: #fff;
+          text-transform: uppercase;
+          cursor: pointer;
+          font-weight: 800;
+          display: block;
+          font-family: 'Oswald', sans-serif; }
+          #login-register .container .login-register-wrapper .login-register-content .login-register-box #login-form .login-btn:focus {
+            outline: none; }
+          #login-register .container .login-register-wrapper .login-register-content .login-register-box #login-form .login-btn:hover {
+            text-decoration: underline; }
+        #login-register .container .login-register-wrapper .login-register-content .login-register-box #login-form .forgot {
+          color: #73020C;
+          font-weight: 100; }
+          #login-register .container .login-register-wrapper .login-register-content .login-register-box #login-form .forgot:hover {
+            text-decoration: underline; }
+      #login-register .container .login-register-wrapper .login-register-content .login-register-box .vertical-line {
+        width: 1px;
+        height: 100%;
+        background-color: #0c0c0c; }
+      #login-register .container .login-register-wrapper .login-register-content .login-register-box .create-alternative {
+        padding-right: 10px; }
+        #login-register .container .login-register-wrapper .login-register-content .login-register-box .create-alternative .create-header {
+          color: #73020C;
+          text-transform: uppercase;
+          font-size: 20px;
+          margin-bottom: 16px; }
+        #login-register .container .login-register-wrapper .login-register-content .login-register-box .create-alternative button {
+          margin: 30px 0;
+          padding: 18px 50px;
+          background-color: #73020C;
+          border: 1px solid transparent;
+          color: #fff;
+          text-transform: uppercase;
+          cursor: pointer;
+          font-weight: 800;
+          display: block;
+          font-family: 'Oswald', sans-serif; }
+          #login-register .container .login-register-wrapper .login-register-content .login-register-box .create-alternative button:focus {
+            outline: none; }
+          #login-register .container .login-register-wrapper .login-register-content .login-register-box .create-alternative button:hover {
             text-decoration: underline; }
 
 #menu-header .top {
