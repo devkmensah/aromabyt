@@ -241,7 +241,7 @@
                 // margin-top: -500px;
                 // border: 1px solid $dark;
                 max-width: 365px;
-                
+
 
                 .redeem-points {
                     text-transform: uppercase;
@@ -253,7 +253,7 @@
                     padding-bottom: 14px;
                     vertical-align: middle;
                     display: inline-block;
-                   
+
                 }
 
                 .member {
@@ -396,8 +396,8 @@
                                     outline: none;
                                     border: 1px dashed $yellow;
                                 }
-                               
-                                
+
+
                             }
                         }
 
@@ -525,3 +525,110 @@
 }
 
 // COLLECT SECTION ENDS
+
+
+// REGISTER, LOG IN BEGINS
+// REGISTER SECTION BEGINS
+#register {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 3;
+    margin: 0 auto;
+    // display: none;
+
+    a {
+        color: $dark;
+    }
+
+    .container {
+        .popup-wrapper {
+
+            .popup {
+                // border: 1px solid $dark;
+                border-radius: 3px;
+                background-color: $ivory;
+                color: $dark;
+                max-width: 850px;
+                margin: 50px auto 0;
+                width: 100%;
+
+                .popup-header {
+                    display: flex;
+                    background-color: $tomato;
+                    align-items: center;
+                    justify-content: space-between;
+                    vertical-align: middle;
+                    color: $white;
+                    text-transform: uppercase;
+                    padding: 8px 20px 10px;
+                    font-size: 18px;
+
+                    .close {
+                        cursor: pointer;
+                        font-size: 21px;
+                    }
+                }
+
+                .popup-content {
+                    padding: 10px 30px;
+
+                    .easy {
+                        text-transform: uppercase;
+                        font-size: 20px;
+                        border-bottom: 1px solid $tomato;
+                        padding: 12px 0 22px;
+                    }
+
+                    .now {
+                        text-transform: uppercase;
+                        font-size: 25px;
+                        padding: 20px 0;
+                    }
+
+                    #form-register {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        grid-gap: 80px;
+                        justify-content: center;
+                        // align-items: center;
+                        .left-input{
+                            display: flex;
+                            flex-direction: column;
+                            input{
+                                padding: 20px 10px;
+                                margin-bottom: 30px;
+
+                                width: 100%;
+                                border: 1px solid rgba(0, 0, 0, 0.1);
+                                // border: 1px solid transparent;
+                                font-size: 16px;
+                                // font-weight: 800;
+                                color: $dark;
+                                // background-color: $white;
+                                font-family: 'Oswald', sans-serif;
+    
+                                &:focus {
+                                    outline: none;
+                                    border: 1px dashed $yellow;
+                                }
+
+                                &::placeholder{
+                                    // color: $dark;
+                                }
+                            }
+                        }
+                      }
+                   
+                }
+            }
+        }
+    }
+}
+
+// REGISTER SECTION ENDS
+// REGISTER, LOG IN ENDS

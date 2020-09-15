@@ -447,6 +447,69 @@
         #collect .container .collect-content .apply .yet a:hover {
           text-decoration: underline; }
 
+#register {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 3;
+  margin: 0 auto; }
+  #register a {
+    color: #0c0c0c; }
+  #register .container .popup-wrapper .popup {
+    border-radius: 3px;
+    background-color: #FCFCF3;
+    color: #0c0c0c;
+    max-width: 850px;
+    margin: 50px auto 0;
+    width: 100%; }
+    #register .container .popup-wrapper .popup .popup-header {
+      display: flex;
+      background-color: #73020C;
+      align-items: center;
+      justify-content: space-between;
+      vertical-align: middle;
+      color: #fff;
+      text-transform: uppercase;
+      padding: 8px 20px 10px;
+      font-size: 18px; }
+      #register .container .popup-wrapper .popup .popup-header .close {
+        cursor: pointer;
+        font-size: 21px; }
+    #register .container .popup-wrapper .popup .popup-content {
+      padding: 10px 30px; }
+      #register .container .popup-wrapper .popup .popup-content .easy {
+        text-transform: uppercase;
+        font-size: 20px;
+        border-bottom: 1px solid #73020C;
+        padding: 12px 0 22px; }
+      #register .container .popup-wrapper .popup .popup-content .now {
+        text-transform: uppercase;
+        font-size: 25px;
+        padding: 20px 0; }
+      #register .container .popup-wrapper .popup .popup-content #form-register {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 80px;
+        justify-content: center; }
+        #register .container .popup-wrapper .popup .popup-content #form-register .left-input {
+          display: flex;
+          flex-direction: column; }
+          #register .container .popup-wrapper .popup .popup-content #form-register .left-input input {
+            padding: 20px 10px;
+            margin-bottom: 30px;
+            width: 100%;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            font-size: 16px;
+            color: #0c0c0c;
+            font-family: 'Oswald', sans-serif; }
+            #register .container .popup-wrapper .popup .popup-content #form-register .left-input input:focus {
+              outline: none;
+              border: 1px dashed #FCC000; }
+
 #menu-header .top {
   background-color: #0c0c0c;
   display: block;
@@ -1219,26 +1282,6 @@ img {
           #main-area #sign-up .container .sign-up-content #sign-up-form .button:hover {
             background-color: #73020C;
             border: 2px solid transparent; }
-  #main-area #register a {
-    color: #0c0c0c; }
-  #main-area #register .container .popup-wrapper .popup {
-    background-color: #FCFCF3;
-    color: #0c0c0c;
-    max-width: 850px;
-    margin: 0 auto;
-    width: 100%; }
-    #main-area #register .container .popup-wrapper .popup .popup-header {
-      display: flex;
-      background-color: #73020C;
-      align-items: center;
-      justify-content: space-between;
-      vertical-align: middle;
-      color: #fff;
-      text-transform: uppercase;
-      padding: 8px 20px 10px; }
-      #main-area #register .container .popup-wrapper .popup .popup-header .close {
-        cursor: pointer;
-        font-size: 25px; }
   #main-area #footer {
     background-color: #fff;
     color: #0c0c0c;
