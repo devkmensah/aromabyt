@@ -188,23 +188,30 @@
           #order-header .order-top .order-content .order-options .delivery a:hover:after,
           #order-header .order-top .order-content .order-options .collect a:hover:after {
             width: 100%; }
-    #order-header .order-top .order-content .log-in a {
-      position: relative;
-      overflow: hidden;
-      border: none; }
-      #order-header .order-top .order-content .log-in a::after {
-        content: '';
-        position: absolute;
-        background: #73020C;
-        height: 5px;
-        width: 0%;
-        transform: translateX(-50%);
-        left: 50%;
-        bottom: -5px;
+    #order-header .order-top .order-content .access-links {
+      display: flex;
+      vertical-align: middle; }
+      #order-header .order-top .order-content .access-links li:first-child {
+        margin-right: 25px; }
+      #order-header .order-top .order-content .access-links a {
+        position: relative;
+        overflow: hidden;
         border: none;
-        transition: .55s ease-in-out; }
-      #order-header .order-top .order-content .log-in a:hover:after {
-        width: 100%; }
+        font-size: 32px;
+        font-family: 'Carter One', cursive; }
+        #order-header .order-top .order-content .access-links a::after {
+          content: '';
+          position: absolute;
+          background: #73020C;
+          height: 5px;
+          width: 0%;
+          transform: translateX(-50%);
+          left: 50%;
+          bottom: -1px;
+          border: none;
+          transition: .55s ease-in-out; }
+        #order-header .order-top .order-content .access-links a:hover:after {
+          width: 100%; }
 
 #delivery {
   padding: 120px 70px 0;
@@ -255,7 +262,8 @@
               text-transform: uppercase;
               background: #73020C;
               color: #fff;
-              cursor: pointer; }
+              cursor: pointer;
+              border: 1px solid transparent; }
               #delivery .container .delivery-content .delivery-form-content #delivery-form .look-up .delivery-button:focus,
               #delivery .container .delivery-content .delivery-form-content #delivery-form .look-up .cancel:focus {
                 outline: none; }

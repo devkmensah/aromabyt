@@ -82,11 +82,19 @@
                 }
             }
 
-            .log-in {
+            .access-links {
+                display: flex;
+                vertical-align: middle;
+                li:first-child{
+                    margin-right: 25px;
+                }
                 a {
                     position: relative;
                     overflow: hidden;
                     border: none;
+                    font-size: 32px;
+                    font-family: 'Carter One', cursive;
+                   
 
                     &::after {
                         content: '';
@@ -96,7 +104,7 @@
                         width: 0%;
                         transform: translateX(-50%);
                         left: 50%;
-                        bottom: -5px;
+                        bottom: -1px;
                         border: none;
                         transition: .55s ease-in-out;
                     }
@@ -188,6 +196,7 @@
                     .look-up {
                         margin: 16px 0 30px;
                         text-align: left;
+                       
 
                         .delivery-button,
                         .cancel {
@@ -196,7 +205,7 @@
                             background: $tomato;
                             color: $white;
                             cursor: pointer;
-                            // border: 1px solid transparent;
+                            border: 1px solid transparent;
 
                             &:focus {
                                 outline: none;
