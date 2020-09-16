@@ -218,9 +218,7 @@
                         }
                     }
 
-                    .access {
-                        // margin
-                    }
+                    
 
                     .phone {
                         margin: 20px 0;
@@ -469,7 +467,7 @@
                     text-transform: uppercase;
                 }
 
-                p {}
+               
 
                 .redeem-input {
                     margin: 20px 0;
@@ -730,8 +728,8 @@
 #login-register {
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
-    left: 0;
-    right: 0;
+    // left: 0;
+    // right: 0;
     top: 0;
     bottom: 0;
     width: 100%;
@@ -745,8 +743,8 @@
         font-family: 'Oswald', sans-serif;
     }
 
-    .container {
-        .login-register-wrapper {
+    // .container {
+        // .login-register-wrapper {
 
             .login-register-content {
                 border-radius: 3px;
@@ -779,6 +777,7 @@
                     padding: 20px 30px;
                     grid-gap: 20px;
                     justify-content: center;
+                //    align-items: center;
 
                     #login-form {
                         padding-right: 10px;
@@ -863,9 +862,7 @@
                             font-size: 20px;
                             margin-bottom: 16px;
                         }
-                        .info{
-                            // font-family: 'Oswald', sans-serif;
-                        }
+                       
 
                         button{
                             margin: 30px 0;
@@ -892,8 +889,8 @@
                 }
 
             }
-        }
-    }
+        // }
+    // }
 }
 
 // LOGIN SECTION ENDS
