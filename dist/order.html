@@ -182,102 +182,94 @@
 
         <!-- REGISTER, LOG IN STARTS -->
         <!-- LOG IN SECTION STARTS -->
-        <section id="login-register" class="login-bg">
-            <!-- <div class="container"> -->
-                <!-- <div class="login-register-wrapper"> -->
-                    <div class="login-register-content">
+        <section id="login-register">
+            <div class="login-register-content">
 
-                        <div class="login-register-header">
-                            <h2>Log in / Register an Account</h2>
-                            <span class="close"><i class="fas fa-times"></i></span>
+                <div class="login-register-header">
+                    <h2>Log in / Register an Account</h2>
+                    <span class="close"><i class="fas fa-times"></i></span>
+                </div>
+
+                <div class="login-register-box">
+                    <form action="#" id="login-form">
+
+                        <h4 class="login">log in</h4>
+
+                        <input type="email" name="email" id="email" placeholder="Email Address (Required)">
+                        <input type="text" name="text" id="text" placeholder="Password (Required)">
+
+                        <div class="remember">
+                            <input type="checkbox" name="checkbox" id="checkbox">
+                            <label for="checkbox">Remember this email</label>
                         </div>
 
-                        <div class="login-register-box">
-                            <form action="#" id="login-form">
+                        <button type="submit" class="login-btn">Login</button>
+                        <a href="#" class="forgot">Forgot Password?</a>
+                    </form>
 
-                                <h4 class="login">log in</h4>
+                    <div class="vertical-line"> </div>
 
-                                <input type="email" name="email" id="email" placeholder="Email Address (Required)">
-                                <input type="text" name="text" id="text" placeholder="Password (Required)">
+                    <div class="create-alternative">
+                        <h4 class="create-header">Create Your Account</h4>
+                        <p class="info">Simply register for an account to have faster and easy access on your
+                            next visit.</p>
+                        <button type="submit" class="register-link-other">Register</button>
+                    </div>
 
-                                <div class="remember">
-                                    <input type="checkbox" name="checkbox" id="checkbox">
-                                    <label for="checkbox">Remember this email</label>
-                                </div>
-
-                                <button type="submit" class="login-btn">Login</button>
-                                <a href="#" class="forgot">Forgot Password?</a>
-                            </form>
-
-                            <div class="vertical-line"> </div>
-
-                            <div class="create-alternative">
-                                <h4 class="create-header">Create Your Account</h4>
-                                <p class="info">Simply register for an account to have faster and easy access on your
-                                    next visit.</p>
-                                <button type="submit">Register</button>
-                            </div>
-
-                        </div>
-                    <!-- </div> -->
-                <!-- </div> -->
+                </div>
             </div>
         </section>
         <!-- LOG IN SECTION ENDS -->
 
         <!-- REGISTER SECTION STARTS-->
         <section id="register">
-            <div class="container">
-                <div class="popup-wrapper">
-                    <div class="popup">
-                        <div class="popup-header">
-                            <h2>Create Your Account</h2>
-                            <span class="close"><i class="fas fa-times"></i></span>
+            <div class="popup">
+                <div class="popup-header">
+                    <h2>Create Your Account</h2>
+                    <span class="close-register"><i class="fas fa-times"></i></span>
+                </div>
+                <div class="popup-content">
+                    <h4 class="easy">Create an account for easy access</h4>
+                    <h4 class="now">Register Now</h4>
+
+                    <!-- FORM INPUT STARTS-->
+                    <form action="#" id="form-register">
+                        <!-- left input -->
+                        <div class="left-input">
+                            <input type="text" name="f-name" id="f-name" placeholder="First Name (Required)">
+                            <input type="text" name="l-name" id="l-name" placeholder="Last Name (Required)">
+                            <input type="email" name="email" id="email" placeholder="Email Address (Required)">
+                            <input type="tel" name="tel" id="tel" placeholder="Phone Number">
                         </div>
-                        <div class="popup-content">
-                            <h4 class="easy">Create an account for easy access</h4>
-                            <h4 class="now">Register Now</h4>
+                        <!-- right input -->
+                        <div class="right-input">
+                            <input type="text" name="text" id="text" placeholder="Password (Required)">
+                            <label class="text-label" for="password">Password must be between 8 and 20
+                                characters containing
+                                numbers,
+                                letters of uppercase & lowercase.</label>
 
-                            <!-- FORM INPUT STARTS-->
-                            <form action="#" id="form-register">
-                                <!-- left input -->
-                                <div class="left-input">
-                                    <input type="text" name="f-name" id="f-name" placeholder="First Name (Required)">
-                                    <input type="text" name="l-name" id="l-name" placeholder="Last Name (Required)">
-                                    <input type="email" name="email" id="email" placeholder="Email Address (Required)">
-                                    <input type="tel" name="tel" id="tel" placeholder="Phone Number">
-                                </div>
-                                <!-- right input -->
-                                <div class="right-input">
-                                    <input type="text" name="text" id="text" placeholder="Password (Required)">
-                                    <label class="text-label" for="password">Password must be between 8 and 20
-                                        characters containing
-                                        numbers,
-                                        letters of uppercase & lowercase.</label>
+                            <input type="text" name="text" id="text2" placeholder="Confirm Password (Required)">
 
-                                    <input type="text" name="text" id="text2" placeholder="Confirm Password (Required)">
+                            <div class="receive">
+                                <input type="checkbox" name="checkbox" id="checkbox">
+                                <label for="checkbox">I acknowlodge that I am 18 years of age or older, and
+                                    want
+                                    to
+                                    receive email offers from El_Aroma.</label>
+                            </div>
 
-                                    <div class="receive">
-                                        <input type="checkbox" name="checkbox" id="checkbox">
-                                        <label for="checkbox">I acknowlodge that I am 18 years of age or older, and
-                                            want
-                                            to
-                                            receive email offers from El_Aroma.</label>
-                                    </div>
-
-                                    <div class="creating">
-                                        <input type="checkbox" name="checkbox" id="checkbox">
-                                        <label for="checkbox">I have read the <a href="#">Terms
-                                                and Conditions</a> and want to create this account.</label>
-                                    </div>
-                                    <!-- <div class="btn-access"> -->
-                                    <button type="submit" class="btn-register">Register</button>
-                                    <!-- </div> -->
-                                </div>
-                            </form>
-                            <!-- FORM INPUT ENDS-->
+                            <div class="creating">
+                                <input type="checkbox" name="checkbox" id="checkbox">
+                                <label for="checkbox">I have read the <a href="#">Terms
+                                        and Conditions</a> and want to create this account.</label>
+                            </div>
+                            <!-- <div class="btn-access"> -->
+                            <button type="submit" class="btn-register">Register</button>
+                            <!-- </div> -->
                         </div>
-                    </div>
+                    </form>
+                    <!-- FORM INPUT ENDS-->
                 </div>
             </div>
         </section>
