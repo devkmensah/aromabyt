@@ -292,11 +292,6 @@
             background: #73020C;
             cursor: pointer;
             margin-bottom: 30px; }
-        #delivery .container .delivery-content .delivery-form-content .create a {
-          text-transform: uppercase;
-          color: #73020C;
-          font-size: 18px;
-          font-weight: 600; }
       #delivery .container .delivery-content .apply {
         max-width: 365px; }
         #delivery .container .delivery-content .apply .redeem-points {

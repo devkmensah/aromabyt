@@ -68,3 +68,12 @@ prevBtn.addEventListener('click', e => {
 });
 
 
+
+// COLLECT PAGE
+// const pickUpLink = document.querySelector('.pickup');
+// const collect = document.querySelector('#collect');
+
+// pickUpLink.addEventListener('click', () => {
+//          collect.style.display = 'block';
+
+// })

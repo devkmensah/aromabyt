@@ -27,7 +27,8 @@ const register = document.querySelector('#register');
 const registerLink = document.querySelector('.register-link');
 const closeRegister = document.querySelector('.close-register');
 const registerLinkOther = document.querySelector('.register-link-other');
-const createAccount = document.querySelector('.create');
+// const createAccount = document.querySelector('.create');
+const yetLink = document.querySelector('.yet-link');
 console.log(registerLink)
 
 // Show register page when register link is clicked
@@ -36,11 +37,14 @@ registerLink.addEventListener('click', () => {
 });
 
 // Show register page when create class is clicked
-createAccount.addEventListener('click', () => {
+// createAccount.addEventListener('click', () => {
+//     register.style.display = 'block';
+// });
+
+// Show register page when yet link is clicked
+yetLink.addEventListener('click', () => {
     register.style.display = 'block';
 });
-
-
 
 // Show register page when register link is clicked on the login page
 registerLinkOther.addEventListener('click', () => {
