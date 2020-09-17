@@ -53,8 +53,8 @@
                 text-align: center;
                 font-weight: 500;
 
-                .delivery,
-                .collect {
+                .delivery-nav,
+                .collect-nav {
                     margin: 45px 25px 0;
 
                     a {
@@ -230,19 +230,14 @@
                     a {
                         text-transform: uppercase;
                         color: $tomato;
-                        font-size: 20px;
+                        font-size: 18px;
                         font-weight: 600;
                     }
                 }
             }
 
             .apply {
-                // border: 1px solid $dark;
-                // width: 25%;
-                // margin-top: -500px;
-                // border: 1px solid $dark;
                 max-width: 365px;
-
 
                 .redeem-points {
                     text-transform: uppercase;
@@ -250,7 +245,6 @@
                     font-weight: 800;
                     font-size: 25px;
                     border-bottom: 1px solid $tomato;
-                    // width: 89%;
                     padding-bottom: 14px;
                     vertical-align: middle;
                     display: inline-block;
@@ -331,6 +325,7 @@
     padding: 120px 70px 0;
     background-color: $ivory;
     color: $dark;
+    // display: none;
 
     a {
         color: $dark;

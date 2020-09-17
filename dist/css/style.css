@@ -180,16 +180,16 @@
       text-transform: uppercase;
       text-align: center;
       font-weight: 500; }
-      #order-header .order-top .order-content .order-options .delivery,
-      #order-header .order-top .order-content .order-options .collect {
+      #order-header .order-top .order-content .order-options .delivery-nav,
+      #order-header .order-top .order-content .order-options .collect-nav {
         margin: 45px 25px 0; }
-        #order-header .order-top .order-content .order-options .delivery a,
-        #order-header .order-top .order-content .order-options .collect a {
+        #order-header .order-top .order-content .order-options .delivery-nav a,
+        #order-header .order-top .order-content .order-options .collect-nav a {
           position: relative;
           overflow: hidden;
           border: none; }
-          #order-header .order-top .order-content .order-options .delivery a::after,
-          #order-header .order-top .order-content .order-options .collect a::after {
+          #order-header .order-top .order-content .order-options .delivery-nav a::after,
+          #order-header .order-top .order-content .order-options .collect-nav a::after {
             content: '';
             position: absolute;
             background: #73020C;
@@ -200,8 +200,8 @@
             bottom: -5px;
             border: none;
             transition: .55s ease-in-out; }
-          #order-header .order-top .order-content .order-options .delivery a:hover:after,
-          #order-header .order-top .order-content .order-options .collect a:hover:after {
+          #order-header .order-top .order-content .order-options .delivery-nav a:hover:after,
+          #order-header .order-top .order-content .order-options .collect-nav a:hover:after {
             width: 100%; }
     #order-header .order-top .order-content .access-links {
       display: flex;
@@ -295,7 +295,7 @@
         #delivery .container .delivery-content .delivery-form-content .create a {
           text-transform: uppercase;
           color: #73020C;
-          font-size: 20px;
+          font-size: 18px;
           font-weight: 600; }
       #delivery .container .delivery-content .apply {
         max-width: 365px; }
