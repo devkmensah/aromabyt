@@ -27,11 +27,20 @@ const register = document.querySelector('#register');
 const registerLink = document.querySelector('.register-link');
 const closeRegister = document.querySelector('.close-register');
 const registerLinkOther = document.querySelector('.register-link-other');
+const createAccount = document.querySelector('.create');
+console.log(registerLink)
 
 // Show register page when register link is clicked
 registerLink.addEventListener('click', () => {
     register.style.display = 'block';
 });
+
+// Show register page when create class is clicked
+createAccount.addEventListener('click', () => {
+    register.style.display = 'block';
+});
+
+
 
 // Show register page when register link is clicked on the login page
 registerLinkOther.addEventListener('click', () => {
@@ -51,3 +60,30 @@ register.addEventListener('click', (e) => {
 })
 
 
+// DELIVERY PAGE
+const deliveryNav = document.querySelector('.delivery-nav');
+const collectNav = document.querySelector('.collect-nav');
+const delivery = document.querySelector('#delivery');
+const collect = document.querySelector('#collect');
+
+console.log(delivery, collect, deliveryNav, collectNav);
+
+deliveryNav.addEventListener('click', (e) => {
+    if(e.target.className = 'delivery-nav'){
+        delivery.style.display = 'block';
+    }
+    if(e.target.className = 'collect-nav'){
+        collect.style.display = 'none';
+    }
+})
+
+
+// COLLECT PAGE
+collectNav.addEventListener('click', (e) => {
+    if(e.target.className = 'collect-nav'){
+        collect.style.display = 'block';
+    }
+    if(e.target.className = 'delivery-nav'){
+        delivery.style.display = 'none';
+    }
+})

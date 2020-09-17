@@ -354,7 +354,8 @@
 #collect {
   padding: 120px 70px 0;
   background-color: #FCFCF3;
-  color: #0c0c0c; }
+  color: #0c0c0c;
+  display: none; }
   #collect a {
     color: #0c0c0c; }
   #collect .container .collect-content {
