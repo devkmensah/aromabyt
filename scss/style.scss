@@ -76,6 +76,7 @@ img {
 
 // HEADER STYLING BEGINS
 #header {
+
     .top {
         background-color: $dark;
         display: block;
@@ -115,11 +116,15 @@ img {
             font-size: 25px;
             padding: 25px 0;
 
+            .active>a{
+                border-bottom: 5px solid $tomato;
+            }
+
             li {
                 border: none;
                 padding: 1px 15px;
 
-                a {
+                a{
                     position: relative;
                     overflow: hidden;
                     border: none;
@@ -141,8 +146,6 @@ img {
                     &:hover:after {
                         width: 100%;
                     }
-
-
                 }
             }
 
@@ -180,11 +183,10 @@ img {
 // MAIN AREA BEGINS
 #main-area {
     position: relative;
-    
+
     #carousel {
         position: relative;
         top: 120px;
-        // background-color: $light-dark;
         overflow: hidden;
         height: 530px;
         width: 100vw;

@@ -38,6 +38,10 @@
             font-size: 25px;
             padding: 25px 0;
 
+            .active>a{
+                border-bottom: 5px solid $tomato;
+            }
+
             li {
                 border: none;
                 padding: 1px 15px;
@@ -104,22 +108,15 @@
 // MENU SECTION BEGINS
 #menu {
    position: relative;
-  
 
     a {
         color: $white;
     }
 
     // MENU LIST BEGINS
-    #menu-list {
-        // REMEMBER TO MAKE THE MENU LIST FIXED WHEN IT REACHES THE TOP BY USING JAVASCRIPT
-        // position: fixed;
-        // display: block;
-        // right: 0;
-        // left: 0;
-        // width: 100%;
-        // overflow: hidden;
+   
 
+    #menu-list {
         z-index: 2;
         background-color: $tomato;
         color: $white;

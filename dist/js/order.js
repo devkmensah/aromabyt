@@ -79,6 +79,9 @@ deliveryNav.addEventListener('click', (e) => {
     if(e.target.className = 'collect-nav'){
         collect.style.display = 'none';
     }
+    // if(e.target.className = 'delivery-nav'){
+    //     deliveryNav.style.color = '#73020C';
+    // }
 })
 
 
