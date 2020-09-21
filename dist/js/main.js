@@ -1,4 +1,5 @@
 
+// SLIDER
 const sliders = document.querySelectorAll('.slider');
 const nextBtn = document.querySelector('.next');
 const prevBtn = document.querySelector('.previous');
@@ -69,11 +70,16 @@ prevBtn.addEventListener('click', e => {
 
 
 
-// COLLECT PAGE
-// const pickUpLink = document.querySelector('.pickup');
-// const collect = document.querySelector('#collect');
+// HAMBURGER MENU
+const openHamburger = document.querySelector('.hamburger');
+const navBtnClose = document.querySelector('.navclose');
+const hiddenNav = document.querySelector('#navigation');
+console.log(openHamburger, hiddenNav, navBtnClose);
 
-// pickUpLink.addEventListener('click', () => {
-//          collect.style.display = 'block';
+openHamburger.addEventListener('click', () => {
+    hiddenNav.style.width = "100%";
+})
 
-// })
+navBtnClose.addEventListener('click', () => {
+    hiddenNav.style.width = "0%";
+})
