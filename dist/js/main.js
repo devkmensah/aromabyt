@@ -71,9 +71,9 @@ prevBtn.addEventListener('click', e => {
 
 
 // HAMBURGER MENU
-// const openHamburger = document.querySelector('.hamburger');
-// const navBtnClose = document.querySelector('.navclose');
-// const hiddenNav = document.querySelector('#navigation');
+// const openHamburger = document.querySelector('#hamburger-toggler');
+// const navBtnClose = document.querySelector('.sidenav-close');
+// const hiddenNav = document.querySelector('.sidenav');
 // console.log(openHamburger, hiddenNav, navBtnClose);
 
 // openHamburger.addEventListener('click', () => {
@@ -83,3 +83,21 @@ prevBtn.addEventListener('click', e => {
 // navBtnClose.addEventListener('click', () => {
 //     hiddenNav.style.width = "0%";
 // })
+
+
+const openHamburger = document.querySelector('#hamburger-toggler');
+const mobileNav = document.querySelector('.sidenav');
+
+
+
+function openMenu(e){
+    this.querySelector('.burger-icon').classList.toggle('fa-bars');
+    this.querySelector('.burger-icon').classList.toggle('fa-times');
+    mobileNav.classList.toggle('show');
+}
+
+openHamburger.addEventListener('click', openMenu);
+
+
+
+console.log(openHamburger, mobileNav)

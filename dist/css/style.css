@@ -997,6 +997,83 @@ ul {
 img {
   width: 100%; }
 
+#header .top {
+  height: 120px;
+  background-color: #0c0c0c;
+  position: fixed;
+  z-index: 2;
+  overflow: hidden;
+  width: 100%; }
+  #header .top .container {
+    background-color: #0c0c0c;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    font-size: 25px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    font-weight: 500; }
+    #header .top .container .logo-holder {
+      text-align: center; }
+      #header .top .container .logo-holder a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        vertical-align: middle; }
+        #header .top .container .logo-holder a .chef {
+          width: 50px;
+          display: inline-block; }
+        #header .top .container .logo-holder a .logo {
+          display: flex;
+          flex-direction: column;
+          font-family: 'Carter One', cursive; }
+          #header .top .container .logo-holder a .logo span {
+            margin-top: -12px;
+            font-size: 9px;
+            letter-spacing: 2px;
+            font-family: 'Oswald', sans-serif; }
+    #header .top .container #hamburger-toggler {
+      position: relative;
+      all: unset;
+      display: none;
+      box-sizing: border-box;
+      border: 1px solid #fff;
+      padding: 0 10px;
+      align-items: center;
+      cursor: pointer;
+      vertical-align: middle; }
+      #header .top .container #hamburger-toggler span {
+        letter-spacing: 1.6px;
+        margin-left: 5px; }
+      @media screen and (max-width: 760px) {
+        #header .top .container #hamburger-toggler {
+          display: flex; } }
+    #header .top .container .sidenav {
+      display: flex;
+      justify-content: space-evenly; }
+      #header .top .container .sidenav li {
+        border: none;
+        padding: 0px 25px; }
+        #header .top .container .sidenav li a {
+          position: relative;
+          overflow: hidden;
+          border: none; }
+          #header .top .container .sidenav li a::after {
+            content: '';
+            position: absolute;
+            background: #73020C;
+            height: 5px;
+            width: 0%;
+            transform: translateX(-50%);
+            left: 50%;
+            bottom: -5px;
+            border: none;
+            transition: .55s ease-in-out; }
+          #header .top .container .sidenav li a:hover:after {
+            width: 100%; }
+
 #main-area {
   position: relative; }
   #main-area #carousel {
@@ -1565,30 +1642,29 @@ img {
           #main-area #footer .container .bottom .rights li a:hover {
             color: #73020C; }
 
-@media (min-width: 760px) {
+@media (max-width: 760px) {
   #header .top {
-    background-color: #0c0c0c;
-    position: fixed;
-    height: 120px;
-    width: 100%;
-    z-index: 2;
     overflow: hidden; }
-    #header .top #navigation {
-      position: relative;
-      text-align: right;
-      right: 0;
-      top: 0;
-      width: 100%;
-      height: 120px;
-      background-color: #0c0c0c;
-      text-transform: uppercase;
-      font-weight: 500;
-      font-size: 20px;
-      transition: none;
-      border-bottom: none; }
-      #header .top #navigation a {
-        color: #fff; }
-      #header .top #navigation li a {
-        color: #fff; }
-    #header .top .hamburger {
-      visibility: hidden; } }
+    #header .top .container {
+      padding-right: 20px;
+      overflow: hidden; }
+      #header .top .container .sidenav {
+        position: fixed;
+        z-index: 999;
+        width: 310px;
+        height: 100%;
+        background-color: #FCFCF3;
+        top: 120px;
+        left: -310px;
+        padding-top: 20px;
+        overflow: hidden;
+        transition: left .4s ease-in-out;
+        display: block;
+        text-align: left; }
+        #header .top .container .sidenav li {
+          padding: 10px 25px;
+          width: 100%; }
+        #header .top .container .sidenav.show {
+          left: 0; }
+        #header .top .container .sidenav a {
+          color: #0c0c0c; } }

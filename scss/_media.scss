@@ -1,78 +1,41 @@
 // HOME PAGE
-@media (min-width: 760px)  {
+@media (max-width: 760px)  {
     #header{
         .top{
-            background-color: $dark;
-            position: fixed;
-            height: 120px;
-            width: 100%;
-            z-index: 2;
             overflow: hidden;
+            .container{
+                // padding: 0 25px 0 5px;
+                padding-right: 20px;
+                overflow: hidden;
+                .sidenav{
+                    position: fixed;
+                    z-index: 999;
+                    width: 310px;
+                    height: 100%;
+                    background-color: $ivory;
+                    top: 120px;
+                    left: -310px;
+                    padding-top: 20px;
+                    overflow: hidden;
+                    transition: left .4s ease-in-out;
+                    display: block;
+                    text-align: left;
 
-            #navigation {
-                position: relative;
-                text-align: right; 
-                right: 0;
-                top: 0;
-                width: 100%;
-                // display: block;
-                height: 120px;
-                background-color: $dark;
-            //     overflow: hidden;
-                text-transform: uppercase;
-                font-weight: 500;
-                font-size: 20px;
-                transition: none;
-               border-bottom: none;
-    
-                a {
-                    color: $white;
-                }
-    
-                li {
-                    // padding: 3px 0;
-                    //  padding: 7px 0 0 23px;
-                    // border: none;
-    
-                    a {
-                    //     position: relative;
-                    //     overflow: hidden;
-                    //     border: none;
-                    color: $white;
-    
-                    //     &::after {
-                    //         content: '';
-                    //         position: absolute;
-                    //         background: $tomato;
-                    //         height: 5px;
-                    //         width: 0%;
-                    //         transform: translateX(-50%);
-                    //         left: 50%;
-                    //         bottom: -5px;
-                    //         border: none;
-                    //         transition: .55s ease-in-out;
-                    //     }
-    
-                    //     &:hover:after {
-                    //         width: 100%;
-                    //     }
+                   li{
+                    padding: 10px 25px;
+                    width: 100%;
+                   }
+
+                    &.show{
+                        left: 0;
                     }
-    
-                    // &:first-child {
-                    //     font-weight: 100;
-                    //     i {
-                    //         cursor: pointer;
-                    //         color: $tomato;
-                    //     }
-                    // }
-                }
-            }
+                   
+                    a{
+                        color: $dark;
+                    }
 
-            .hamburger{
-                // display: none;
-                visibility: hidden;
+                }
             }
         }
-        
     }
 }
