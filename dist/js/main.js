@@ -71,15 +71,15 @@ prevBtn.addEventListener('click', e => {
 
 
 // HAMBURGER MENU
-const openHamburger = document.querySelector('.hamburger');
-const navBtnClose = document.querySelector('.navclose');
-const hiddenNav = document.querySelector('#navigation');
-console.log(openHamburger, hiddenNav, navBtnClose);
+// const openHamburger = document.querySelector('.hamburger');
+// const navBtnClose = document.querySelector('.navclose');
+// const hiddenNav = document.querySelector('#navigation');
+// console.log(openHamburger, hiddenNav, navBtnClose);
 
-openHamburger.addEventListener('click', () => {
-    hiddenNav.style.width = "100%";
-})
+// openHamburger.addEventListener('click', () => {
+//     hiddenNav.style.width = "100%";
+// })
 
-navBtnClose.addEventListener('click', () => {
-    hiddenNav.style.width = "0%";
-})
+// navBtnClose.addEventListener('click', () => {
+//     hiddenNav.style.width = "0%";
+// })
