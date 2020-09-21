@@ -1650,7 +1650,6 @@ img {
       overflow: hidden; }
       #header .top .container .sidenav {
         position: fixed;
-        z-index: 999;
         width: 310px;
         height: 100%;
         background-color: #FCFCF3;

@@ -21,32 +21,40 @@
 <body>
 
     <header id="header">
-        <!-- NAVIGATION STARTS -->
-        <nav class="top">
-            <ul class="navigation">
-                <!-- LOGO AREA -->
-                <li class="logo-holder">
-                    <a href="index.html">
-                        <img src="images/chef.png" alt="" class="chef">
-                        <h1 class="logo">
-                            El_Aroma
-                            <span>Steakhouse</span>
-                        </h1>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="menu.html">Menu</a>
-                </li>
-                <li>
-                    <a href="order.html" target="blank">Order Now</a>
-                </li>
-                <li>
-                    <a href="offers.html">Offers</a>
-                </li>
-            </ul>
-        </nav>
-        <!-- NAVIGATION ENDS -->
+         <!-- NAVIGATION STARTS -->
+    <nav class="top">
+        <div class="container">
+          <div class="logo-holder">
+            <a href="index.html">
+              <img src="images/chef.png" alt="" class="chef">
+              <h1 class="logo">
+                El_Aroma
+                <span>Steakhouse</span>
+              </h1>
+            </a>
+          </div>
+  
+          <button id="hamburger-toggler" type="button">
+            <i class="fas fa-bars burger-icon"></i>
+            <span>Menu</span>
+          </button>
+  
+          <ul class="sidenav">
+            <!-- <li class="sidenav-close"> <span>&times;</span> </li> -->
+            <li class="show">
+              <a href="menu.html">Menu</a>
+            </li>
+            <li >
+              <a href="order.html" target="blank">Order Now</a>
+            </li>
+            <li >
+              <a href="offers.html">Offers</a>
+            </li>
+          </ul>
+  
+        </div>
+      </nav>
+      <!-- NAVIGATION ENDS -->
     </header>
 
 
@@ -231,6 +239,8 @@
         <!-- FOOTER SECTION ENDS -->
     </main>
     <!-- MAIN AREA ENDS -->
+
+    <script src="js/offers.js"></script>
 </body>
 
 </html>
