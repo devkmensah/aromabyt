@@ -1047,7 +1047,7 @@ img {
       #header .top .container #hamburger-toggler span {
         letter-spacing: 1.6px;
         margin-left: 5px; }
-      @media screen and (max-width: 760px) {
+      @media screen and (max-width: 769px) {
         #header .top .container #hamburger-toggler {
           display: flex; } }
     #header .top .container .sidenav {
@@ -1642,7 +1642,7 @@ img {
           #main-area #footer .container .bottom .rights li a:hover {
             color: #73020C; }
 
-@media (max-width: 760px) {
+@media (max-width: 769px) {
   #header .top {
     overflow: hidden; }
     #header .top .container {
@@ -1667,3 +1667,16 @@ img {
           left: 0; }
         #header .top .container .sidenav a {
           color: #0c0c0c; } }
+
+@media screen and (max-width: 900px) {
+  #order-header .order-top .order-content {
+    font-size: 15px;
+    padding: 1px 0; }
+    #order-header .order-top .order-content .order-logo h1 span {
+      margin-top: -5px;
+      font-size: 7px; }
+    #order-header .order-top .order-content .order-options .delivery-nav,
+    #order-header .order-top .order-content .order-options .collect-nav {
+      margin: 80px 10px 0; }
+    #order-header .order-top .order-content .access-links a {
+      font-size: 22px; } }

@@ -1,5 +1,5 @@
 // HOME PAGE
-@media (max-width: 760px)  {
+@media (max-width: 769px)  {
     #header{
         .top{
             overflow: hidden;
@@ -33,6 +33,40 @@
                         color: $dark;
                     }
 
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px){
+    // ORDER HEADER
+    #order-header {
+        .order-top {
+            .order-content {
+                font-size: 15px;
+                padding: 1px 0;
+    
+                .order-logo {
+                    h1 {
+                        span {
+                            margin-top: -5px;
+                            font-size: 7px;
+                        }
+                    }
+                }
+    
+                .order-options {
+                    .delivery-nav,
+                    .collect-nav {
+                        margin: 80px 10px 0;
+                    }
+                }
+    
+                .access-links {
+                    a {
+                        font-size: 22px;
+                    }
                 }
             }
         }
