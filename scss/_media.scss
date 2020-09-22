@@ -1,3 +1,38 @@
+@media screen and (max-width: 900px){
+    // ORDER HEADER
+    #order-header {
+        .order-nav {
+            .order-top {
+                font-size: 16px;
+                padding: 12px 0;
+    
+                .order-logo {
+                    h1 {
+                        span {
+                            margin-top: -5px;
+                            font-size: 7px;
+                        }
+                    }
+                }
+    
+                .access-links {
+                    a {
+                        font-size: 22px;
+                    }
+                }
+            }
+
+            .order-options {
+                .delivery-nav,
+                .collect-nav {
+                    // margin: 80px 10px 0;
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}
+
 // HOME PAGE
 @media (max-width: 769px)  {
     #header{
@@ -37,75 +72,62 @@
             }
         }
     }
-
-    // MENU HEADER
-    #menu-header{
-        .top{
-            overflow: hidden;
-            .container{
-                // padding: 0 25px 0 5px;
-                padding-right: 20px;
-                overflow: hidden;
-                .sidenav{
-                    z-index: 3;
-                    position: fixed;
-                    width: 310px;
-                    height: 100%;
-                    background-color: $ivory;
-                    top: 120px;
-                    left: -310px;
-                    padding-top: 20px;
-                    overflow: hidden;
-                    transition: left .4s ease-in-out;
-                    display: block;
-                    text-align: left;
-
-                   li{
-                    padding: 10px 25px;
-                    width: 100%;
-                   }
-
-                    &.show{
-                        left: 0;
-                    }
-                   
-                    a{
-                        color: $dark;
-                    }
-
-                }
-            }
-        }
-    }
 }
 
-@media screen and (max-width: 900px){
-    // ORDER HEADER
-    #order-header {
-        .order-top {
-            .order-content {
-                font-size: 15px;
-                padding: 1px 0;
-    
-                .order-logo {
-                    h1 {
-                        span {
-                            margin-top: -5px;
-                            font-size: 7px;
+
+
+@media screen and (max-width: 700px){
+    // MENU
+    #menu-header {
+        .top {
+            .navigation {
+                font-size: 16px;
+                .logo-holder {
+                    a {
+                        .logo {
+                            span {
+                                margin-top: -7px;
+                                font-size: 7px;
+                            }
                         }
                     }
                 }
+            }
+        }
     
-                .order-options {
-                    .delivery-nav,
-                    .collect-nav {
-                        margin: 80px 10px 0;
+        #menu-list {
+    
+            .list-items {
+                .items {
+                    flex-wrap: wrap;
+                }
+            }
+        }
+        // MENU LIST ENDS
+    }
+}
+
+@media screen and (max-width: 530px){
+    // MENU
+    #menu-header {
+        .top {
+            .navigation {
+                padding-right: 30px;
+                font-size: 10px;
+                .logo-holder {
+                    a {
+                        .logo {
+                            span {
+                                margin-top: -6px;
+                                font-size: 7px;
+                            }
+                        }
                     }
                 }
-    
-                .access-links {
-                    a {
-                        font-size: 22px;
+
+                li{
+                    &:nth-child(2), &:nth-child(3){
+                        display: none;
                     }
                 }
             }

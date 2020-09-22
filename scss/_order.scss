@@ -1,6 +1,6 @@
 //ORDER HEADER STYLING BEGINS
 #order-header {
-    .order-top {
+    .order-nav {
         background-color: $dark;
         display: block;
         position: fixed;
@@ -12,7 +12,7 @@
         z-index: 2;
         overflow: hidden;
 
-        .order-content {
+        .order-top {
             display: flex;
             justify-content: space-around;
             align-items: center;
@@ -20,7 +20,7 @@
             text-transform: uppercase;
             font-weight: 500;
             font-size: 25px;
-            padding: 25px 0;
+            padding: 6px 0 0;
 
             .order-logo {
                 display: flex;
@@ -47,47 +47,14 @@
                 }
             }
 
-            .order-options {
-                display: flex;
-                text-transform: uppercase;
-                text-align: center;
-                font-weight: 500;
-
-                .delivery-nav,
-                .collect-nav {
-                    margin: 45px 25px 0;
-
-                    a {
-                        position: relative;
-                        overflow: hidden;
-                        border: none;
-
-                        &::after {
-                            content: '';
-                            position: absolute;
-                            background: $tomato;
-                            height: 5px;
-                            width: 0%;
-                            transform: translateX(-50%);
-                            left: 50%;
-                            bottom: -5px;
-                            border: none;
-                            transition: .55s ease-in-out;
-                        }
-
-                        &:hover:after {
-                            width: 100%;
-                        }
-                    }
-                }
-            }
+           
 
             .access-links {
                 display: flex;
                 vertical-align: middle;
 
                 li:first-child {
-                    margin-right: 25px;
+                    margin-right: 40px;
                 }
 
                 a {
@@ -107,6 +74,44 @@
                         transform: translateX(-50%);
                         left: 50%;
                         bottom: -1px;
+                        border: none;
+                        transition: .55s ease-in-out;
+                    }
+
+                    &:hover:after {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .order-options {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: 500;
+
+            .delivery-nav,
+            .collect-nav {
+                margin: 0 20px;
+                font-size: 25px;
+
+                a {
+                    position: relative;
+                    overflow: hidden;
+                    border: none;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        background: $tomato;
+                        height: 5px;
+                        width: 0%;
+                        transform: translateX(-50%);
+                        left: 50%;
+                        bottom: -5px;
                         border: none;
                         transition: .55s ease-in-out;
                     }
