@@ -1,4 +1,5 @@
 @media screen and (max-width: 1125px) {
+
     // OFFERS STEPS
     #steps {
         .container {
@@ -13,6 +14,7 @@
 }
 
 @media screen and (max-width: 900px) {
+
     // ORDER HEADER
     #order-header {
         .order-nav {
@@ -48,6 +50,7 @@
     }
 
     #main-area {
+
         // FOOTER
         #footer {
             .container {
@@ -132,9 +135,10 @@
         }
     }
 
-     // OFFERS STEPS
-     #steps {
+    // OFFERS STEPS
+    #steps {
         padding: 70px 120px 100px;
+
         .container {
             .steps-content {
                 .steps {
@@ -197,9 +201,10 @@
     }
 }
 
-@media screen and (max-width: 605px){
-     // OFFERS STEPS
-     #steps {
+@media screen and (max-width: 605px) {
+
+    // OFFERS STEPS
+    #steps {
         padding: 70px 50px 100px;
     }
 }
@@ -281,6 +286,7 @@
 
 
 @media screen and (max-width: 530px) {
+
     // MENU
     #menu-header {
         .top {
@@ -335,15 +341,77 @@
         }
     }
 
-     // OFFERS STEPS
-     #steps {
+    // OFFERS STEPS
+    #steps {
         padding: 70px 20px 100px;
-        .container{
-            .steps-content{
-                .steps-button{
-                    a{
+
+        .container {
+            .steps-content {
+                .steps-button {
+                    a {
                         font-size: 20px;
                     }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #header {
+        .top {
+            overflow: hidden;
+
+            .container {
+                // padding: 0 25px 0 5px;
+                padding-right: 20px;
+                overflow: hidden;
+                font-size: 14px;
+
+                .logo-holder{
+                    padding-left: 5px;
+                    a{
+                        .chef{
+                            width: 40px;
+                        }
+
+                        .logo{
+                            span{
+                                margin-top: -7px;
+                                font-size: 6px;
+                            }
+                        }
+                    }
+                }
+
+               
+
+                .sidenav {
+                    position: fixed;
+                    width: 310px;
+                    height: 100%;
+                    background-color: $ivory;
+                    top: 120px;
+                    left: -310px;
+                    padding-top: 20px;
+                    overflow: hidden;
+                    transition: left .4s ease-in-out;
+                    display: block;
+                    text-align: left;
+
+                    li {
+                        padding: 10px 25px;
+                        width: 100%;
+                    }
+
+                    &.show {
+                        left: 0;
+                    }
+
+                    a {
+                        color: $dark;
+                    }
+
                 }
             }
         }
