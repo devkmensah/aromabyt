@@ -1,232 +1,230 @@
+// SIGN UP FOR WEEKLY OFFERS BEGINS
+#sign-up-offers {
+    padding: 120px 70px 0;
+    background: $ivory url('../images/offers/offer7.png') no-repeat center center / cover;
+    position: relative;
 
-  
-  // SIGN UP FOR WEEKLY OFFERS BEGINS
-  #sign-up-offers {
-      padding: 120px 70px 0;
-      background: $ivory url('../images/offers/offer7.png') no-repeat center center / cover;
-      position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.4);
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+    }
 
-      &::after {
-          content: "";
-          position: absolute;
-          background-color: rgba(0, 0, 0, 0.4);
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          width: 100%;
-      }
+    * {
+        z-index: 1;
+    }
 
-      * {
-          z-index: 1;
-      }
+    .container {
+        padding: 0 0 70px;
 
-      .container {
-          padding: 0 0 70px;
+        .sign-up-content {
+            padding: 85px 0 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
 
-          .sign-up-content {
-              padding: 85px 0 40px;
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              justify-content: center;
-
-              h1 {
-                  margin-bottom: 35px;
-                  text-transform: uppercase;
-                  font-size: 37px;
-                  letter-spacing: 1.4px;
-                  color: $white;
-                  text-align: center;
-              }
+            h1 {
+                margin-bottom: 35px;
+                text-transform: uppercase;
+                font-size: 37px;
+                letter-spacing: 1.4px;
+                color: $white;
+                text-align: center;
+            }
 
 
 
-              #sign-up-form {
-                  display: grid;
-                  grid-template-columns: repeat(2, 1fr);
-                  grid-gap: 10px;
-                  justify-content: center;
-                  align-items: center;
+            #sign-up-form {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 10px;
+                justify-content: center;
+                align-items: center;
 
 
-                  input,
-                  label,
-                  button,
-                  p {
-                      max-width: 100%;
-                  }
+                input,
+                label,
+                button,
+                p {
+                    max-width: 100%;
+                }
 
-                  input {
-                      padding: 22px 15px;
-                      text-transform: uppercase;
-                      vertical-align: middle;
-                      font-size: 17px;
-                      font-weight: 800;
-                      font-family: 'Oswald', sans-serif;
-                      border: 2px solid $tomato;
-                      color: $dark;
+                input {
+                    padding: 22px 15px;
+                    text-transform: uppercase;
+                    vertical-align: middle;
+                    font-size: 17px;
+                    font-weight: 800;
+                    font-family: 'Oswald', sans-serif;
+                    border: 2px solid $tomato;
+                    color: $dark;
 
-                      &:focus {
-                          outline: none;
-                          border: 1px dashed $yellow;
-                      }
-                  }
+                    &:focus {
+                        outline: none;
+                        border: 1px dashed $yellow;
+                    }
+                }
 
 
-                  ::placeholder {
-                      color: $dark;
-                      opacity: 1;
-                      /* Firefox */
-                  }
+                ::placeholder {
+                    color: $dark;
+                    opacity: 1;
+                    /* Firefox */
+                }
 
-                  :-ms-input-placeholder {
-                      /* Internet Explorer 10-11 */
-                      color: $dark;
-                  }
+                :-ms-input-placeholder {
+                    /* Internet Explorer 10-11 */
+                    color: $dark;
+                }
 
-                  ::-ms-input-placeholder {
-                      /* Microsoft Edge */
-                      color: $dark;
-                  }
+                ::-ms-input-placeholder {
+                    /* Microsoft Edge */
+                    color: $dark;
+                }
 
-                  .terms {
-                      .policy {
-                          text-decoration: underline;
-                          color: $white;
-                      }
-                  }
+                .terms {
+                    .policy {
+                        text-decoration: underline;
+                        color: $white;
+                    }
+                }
 
-                  .button {
-                      display: block;
-                      padding: 15px 15px;
-                      font-size: 25px;
-                      text-transform: uppercase;
-                      font-weight: 800;
-                      cursor: pointer;
-                      height: 100%;
-                      font-family: 'Oswald', sans-serif;
-                      color: $white;
-                      background-color: transparent;
-                      border: 2px solid $white;
-                      transition: .3s ease-in-out;
+                .button {
+                    display: block;
+                    padding: 15px 15px;
+                    font-size: 25px;
+                    text-transform: uppercase;
+                    font-weight: 800;
+                    cursor: pointer;
+                    height: 100%;
+                    font-family: 'Oswald', sans-serif;
+                    color: $white;
+                    background-color: transparent;
+                    border: 2px solid $white;
+                    transition: .3s ease-in-out;
 
-                      &:focus {
-                          outline: none;
-                      }
+                    &:focus {
+                        outline: none;
+                    }
 
-                      &:hover {
-                          background-color: $tomato;
-                          color: $white;
-                          border: 2px solid transparent;
-                      }
-                  }
+                    &:hover {
+                        background-color: $tomato;
+                        color: $white;
+                        border: 2px solid transparent;
+                    }
+                }
 
-              }
-          }
-      }
-  }
+            }
+        }
+    }
+}
 
-  // SIGN UP FOR WEEKLY OFFERS BEGINS
+// SIGN UP FOR WEEKLY OFFERS BEGINS
 
-  #steps {
-      padding: 70px 70px 100px;
-      color: $white;
-      background: $dark;
+#steps {
+    padding: 70px 70px 100px;
+    color: $white;
+    background: $dark;
 
-      .container {
-          //   padding: 0 0 160px;
+    .container {
+        //   padding: 0 0 160px;
 
-          .steps-content {
-              h3 {
-                  text-align: center;
-                  text-transform: uppercase;
-                  font-size: 30px;
-                  //   margin-bottom: 35px;
-              }
+        .steps-content {
+            h3 {
+                text-align: center;
+                text-transform: uppercase;
+                font-size: 30px;
+                //   margin-bottom: 35px;
+            }
 
-              .arrow-down {
-                  text-align: center;
-                  margin-bottom: 70px;
-              }
+            .arrow-down {
+                text-align: center;
+                margin-bottom: 70px;
+            }
 
-              .steps {
-                  display: grid;
-                  grid-template-columns: repeat(3, 1fr);
-                  grid-gap: 25px;
+            .steps {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 25px;
 
-                  .step {
-                      //   .hand{
-                      //       text-align: center;
-                      //   }
-                      //   -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.45);
-                      //   -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.45);
-                      //   box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.45);
+                .step {
+                    //   .hand{
+                    //       text-align: center;
+                    //   }
+                    //   -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.45);
+                    //   -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.45);
+                    //   box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.45);
 
-                      //                     -webkit-box-shadow: 0px 0px 2px 0px rgba(255,255,255,1);
-                      // -moz-box-shadow: 0px 0px 2px 0px rgba(255,255,255,1);
-                      // box-shadow: 0px 0px 2px 0px rgba(255,255,255,1);
-                      padding: 35px 7px 0;
-                      //   border-radius: 4px;
-                      width: 100%;
-                      background: $white;
-                      color: $dark;
-                      transition: .3s ease-in-out;
+                    //                     -webkit-box-shadow: 0px 0px 2px 0px rgba(255,255,255,1);
+                    // -moz-box-shadow: 0px 0px 2px 0px rgba(255,255,255,1);
+                    // box-shadow: 0px 0px 2px 0px rgba(255,255,255,1);
+                    padding: 35px 7px 0;
+                    //   border-radius: 4px;
+                    width: 100%;
+                    background: $white;
+                    color: $dark;
+                    transition: .3s ease-in-out;
 
-                      &:hover {
-                          transform: scale(1.02);
-                      }
+                    &:hover {
+                        transform: scale(1.02);
+                    }
 
-                      .step-content {
-                          padding: 0 25px 60px;
+                    .step-content {
+                        padding: 0 25px 60px;
 
-                          h2 {
-                              text-transform: uppercase;
-                              font-size: 30px;
-                              margin-bottom: 7px;
-                          }
+                        h2 {
+                            text-transform: uppercase;
+                            font-size: 30px;
+                            margin-bottom: 7px;
+                        }
 
-                          p {
-                              font-size: 18px;
-                              font-family: 'Open Sans', sans-serif;
+                        p {
+                            font-size: 18px;
+                            font-family: 'Open Sans', sans-serif;
 
-                          }
-                      }
+                        }
+                    }
 
-                      .step-image {
-                          //   padding-bottom: 0;
-                      }
+                    .step-image {
+                        //   padding-bottom: 0;
+                    }
 
-                      .redeem {
-                          // margin-top: 29px;
-                      }
-                  }
-              }
+                    .redeem {
+                        // margin-top: 29px;
+                    }
+                }
+            }
 
-              .steps-button {
-                  display: block;
-                  text-align: center;
-                  margin-top: 40px;
+            .steps-button {
+                display: block;
+                text-align: center;
+                margin-top: 40px;
 
-                  a {
-                      display: inline-block;
-                      padding: 10px 60px;
-                      font-size: 25px;
-                      text-transform: uppercase;
-                      border: 1px solid $white;
-                      margin-top: 60px;
-                      color: $white;
-                      text-align: center;
-                      font-weight: 800;
-                      transition: .3s ease-in-out;
+                a {
+                    display: inline-block;
+                    padding: 10px 60px;
+                    font-size: 25px;
+                    text-transform: uppercase;
+                    border: 1px solid $white;
+                    margin-top: 60px;
+                    color: $white;
+                    text-align: center;
+                    font-weight: 800;
+                    transition: .3s ease-in-out;
 
-                      &:hover {
-                          color: $white;
-                          background: $tomato;
-                          border: 1px solid transparent;
-                      }
-                  }
-              }
-          }
-      }
-  }
+                    &:hover {
+                        color: $white;
+                        background: $tomato;
+                        border: 1px solid transparent;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1645,6 +1645,11 @@ img {
           #main-area #footer .container .bottom .rights li a:hover {
             color: #73020C; }
 
+@media screen and (max-width: 1125px) {
+  #steps .container .steps-content .steps {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); } }
+
 @media screen and (max-width: 900px) {
   #order-header .order-nav .order-top {
     font-size: 16px;
@@ -1701,7 +1706,12 @@ img {
         #header .top .container .sidenav.show {
           left: 0; }
         #header .top .container .sidenav a {
-          color: #0c0c0c; } }
+          color: #0c0c0c; }
+  #steps {
+    padding: 70px 120px 100px; }
+    #steps .container .steps-content .steps {
+      display: grid;
+      grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 700px) {
   #menu-header .top .navigation {
@@ -1710,7 +1720,16 @@ img {
       margin-top: -7px;
       font-size: 7px; }
   #menu-header #menu-list .list-items .items {
-    flex-wrap: wrap; } }
+    flex-wrap: wrap; }
+  #sign-up-offers .container .sign-up-content h1 {
+    font-size: 30px; }
+  #sign-up-offers .container .sign-up-content #sign-up-form {
+    grid-template-columns: 1fr;
+    width: 100%; } }
+
+@media screen and (max-width: 605px) {
+  #steps {
+    padding: 70px 50px 100px; } }
 
 @media screen and (max-width: 550px) {
   #main-area #footer {
@@ -1754,4 +1773,17 @@ img {
       margin-top: -6px;
       font-size: 7px; }
     #menu-header .top .navigation li:nth-child(2), #menu-header .top .navigation li:nth-child(3) {
-      display: none; } }
+      display: none; }
+  #sign-up-offers {
+    padding: 120px 20px 0; }
+    #sign-up-offers .container .sign-up-content h1 {
+      font-size: 25px; }
+    #sign-up-offers .container .sign-up-content #sign-up-form input {
+      padding: 22px 15px;
+      font-size: 15px; }
+    #sign-up-offers .container .sign-up-content #sign-up-form .button {
+      font-size: 18px; }
+  #steps {
+    padding: 70px 20px 100px; }
+    #steps .container .steps-content .steps-button a {
+      font-size: 20px; } }
