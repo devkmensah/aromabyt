@@ -474,7 +474,7 @@
   top: 0;
   bottom: 0;
   width: 100%;
-  z-index: 3;
+  z-index: 6;
   margin: 0 auto;
   display: none; }
   #register a {
@@ -586,7 +586,7 @@
   top: 0;
   bottom: 0;
   width: 100%;
-  z-index: 3;
+  z-index: 6;
   margin: 0 auto;
   font-family: 'Oswald', sans-serif;
   display: none; }
@@ -697,54 +697,80 @@
             text-decoration: underline; }
 
 #menu-header .top {
+  height: 120px;
   background-color: #0c0c0c;
+  z-index: 2;
+  overflow: hidden;
   width: 100%; }
-  #menu-header .top .navigation {
+  #menu-header .top .container {
+    background-color: #0c0c0c;
+    width: 100%;
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 500;
+    justify-content: space-between;
+    height: 100%;
     font-size: 25px;
-    padding: 25px 0; }
-    #menu-header .top .navigation li {
-      border: none;
-      padding: 1px 15px; }
-      #menu-header .top .navigation li a {
-        position: relative;
-        overflow: hidden;
-        border: none; }
-        #menu-header .top .navigation li a::after {
-          content: '';
-          position: absolute;
-          background: #73020C;
-          height: 5px;
-          width: 0%;
-          transform: translateX(-50%);
-          left: 50%;
-          bottom: -5px;
-          border: none;
-          transition: .55s ease-in-out; }
-        #menu-header .top .navigation li a:hover:after {
-          width: 100%; }
-    #menu-header .top .navigation .logo-holder a {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      vertical-align: middle; }
-      #menu-header .top .navigation .logo-holder a .chef {
-        width: 50px;
-        display: inline-block; }
-      #menu-header .top .navigation .logo-holder a .logo {
+    vertical-align: middle;
+    text-transform: uppercase;
+    font-weight: 500; }
+    #menu-header .top .container .logo-holder {
+      text-align: center; }
+      #menu-header .top .container .logo-holder a {
         display: flex;
-        flex-direction: column;
-        font-family: 'Carter One', cursive; }
-        #menu-header .top .navigation .logo-holder a .logo span {
-          margin-top: -12px;
-          font-size: 9px;
-          letter-spacing: 2px;
-          font-family: 'Oswald', sans-serif; }
+        align-items: center;
+        justify-content: center;
+        vertical-align: middle; }
+        #menu-header .top .container .logo-holder a .chef {
+          width: 50px;
+          display: inline-block; }
+        #menu-header .top .container .logo-holder a .logo {
+          display: flex;
+          flex-direction: column;
+          font-family: 'Carter One', cursive; }
+          #menu-header .top .container .logo-holder a .logo span {
+            margin-top: -12px;
+            font-size: 9px;
+            letter-spacing: 2px;
+            font-family: 'Oswald', sans-serif; }
+    #menu-header .top .container #hamburger-toggler {
+      position: relative;
+      all: unset;
+      display: none;
+      box-sizing: border-box;
+      border: 1px solid #fff;
+      padding: 0 10px;
+      align-items: center;
+      cursor: pointer;
+      vertical-align: middle; }
+      #menu-header .top .container #hamburger-toggler span {
+        letter-spacing: 1.6px;
+        margin-left: 5px; }
+      @media screen and (max-width: 769px) {
+        #menu-header .top .container #hamburger-toggler {
+          display: flex; } }
+    #menu-header .top .container .sidenav {
+      display: flex;
+      justify-content: space-evenly; }
+      #menu-header .top .container .sidenav li {
+        border: none;
+        padding: 0px 25px; }
+        #menu-header .top .container .sidenav li a {
+          position: relative;
+          overflow: hidden;
+          border: none; }
+          #menu-header .top .container .sidenav li a::after {
+            content: '';
+            position: absolute;
+            background: #73020C;
+            height: 5px;
+            width: 0%;
+            transform: translateX(-50%);
+            left: 50%;
+            bottom: -5px;
+            border: none;
+            transition: .55s ease-in-out; }
+          #menu-header .top .container .sidenav li a:hover:after {
+            width: 100%; }
 
 #menu-header .sticky {
   position: fixed;
@@ -1666,6 +1692,31 @@ img {
         #header .top .container .sidenav.show {
           left: 0; }
         #header .top .container .sidenav a {
+          color: #0c0c0c; }
+  #menu-header .top {
+    overflow: hidden; }
+    #menu-header .top .container {
+      padding-right: 20px;
+      overflow: hidden; }
+      #menu-header .top .container .sidenav {
+        z-index: 3;
+        position: fixed;
+        width: 310px;
+        height: 100%;
+        background-color: #FCFCF3;
+        top: 120px;
+        left: -310px;
+        padding-top: 20px;
+        overflow: hidden;
+        transition: left .4s ease-in-out;
+        display: block;
+        text-align: left; }
+        #menu-header .top .container .sidenav li {
+          padding: 10px 25px;
+          width: 100%; }
+        #menu-header .top .container .sidenav.show {
+          left: 0; }
+        #menu-header .top .container .sidenav a {
           color: #0c0c0c; } }
 
 @media screen and (max-width: 900px) {

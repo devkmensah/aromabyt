@@ -2,56 +2,30 @@
 // HEADER STYLING BEGINS
 #menu-header {
 
-    // display: none;
     .top {
+        height: 120px;
         background-color: $dark;
-        // height: 120px;
+        z-index: 2;
+        overflow: hidden;
         width: 100%;
 
-        .navigation {
+        .container {
+            // padding: 0 25px 0 5px;
+            background-color: $dark;
+            width: 100%;
             display: flex;
-            justify-content: space-evenly;
             align-items: center;
-            text-align: center;
+            justify-content: space-between;
+            height: 100%;
+            font-size: 25px;
+            vertical-align: middle;
             text-transform: uppercase;
             font-weight: 500;
-            font-size: 25px;
-            padding: 25px 0;
-
-           
-
-            li {
-                border: none;
-                padding: 1px 15px;
-
-                a {
-                    position: relative;
-                    overflow: hidden;
-                    border: none;
-
-
-                    &::after {
-                        content: '';
-                        position: absolute;
-                        background: $tomato;
-                        height: 5px;
-                        width: 0%;
-                        transform: translateX(-50%);
-                        left: 50%;
-                        bottom: -5px;
-                        border: none;
-                        transition: .55s ease-in-out;
-                    }
-
-                    &:hover:after {
-                        width: 100%;
-                    }
-
-
-                }
-            }
 
             .logo-holder {
+                // margin-left: 5px;
+                text-align: center;
+
                 a {
                     display: flex;
                     align-items: center;
@@ -67,6 +41,7 @@
                         display: flex;
                         flex-direction: column;
                         font-family: 'Carter One', cursive;
+                        // letter-spacing: 1.6px;
 
                         span {
                             margin-top: -12px;
@@ -77,9 +52,143 @@
                     }
                 }
             }
-        }
 
+            #hamburger-toggler {
+                position: relative;
+                // margin-right: 100px;
+                all: unset;
+                display: none;
+                box-sizing: border-box;
+                border: 1px solid $white;
+                padding: 0 10px;
+                // height: 40px;
+                align-items: center;
+                cursor: pointer;
+                vertical-align: middle;
+
+                span {
+                    letter-spacing: 1.6px;
+                    margin-left: 5px;
+                }
+
+                @media screen and (max-width: 769px) {
+                    display: flex;
+                }
+            }
+
+            .sidenav {
+                display: flex;
+                justify-content: space-evenly;
+                li {
+                    border: none;
+                    padding: 0px 25px;
+
+                    a {
+                        position: relative;
+                        overflow: hidden;
+                        border: none;
+
+
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            background: $tomato;
+                            height: 5px;
+                            width: 0%;
+                            transform: translateX(-50%);
+                            left: 50%;
+                            bottom: -5px;
+                            border: none;
+                            transition: .55s ease-in-out;
+                        }
+
+                        &:hover:after {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
     }
+
+
+    // COPIED
+    // .top {
+    //     background-color: $dark;
+    //     width: 100%;
+
+    //     .navigation {
+    //         display: flex;
+    //         justify-content: space-evenly;
+    //         align-items: center;
+    //         text-align: center;
+    //         text-transform: uppercase;
+    //         font-weight: 500;
+    //         font-size: 25px;
+    //         padding: 25px 0;
+
+           
+
+    //         li {
+    //             border: none;
+    //             padding: 1px 15px;
+
+    //             a {
+    //                 position: relative;
+    //                 overflow: hidden;
+    //                 border: none;
+
+
+    //                 &::after {
+    //                     content: '';
+    //                     position: absolute;
+    //                     background: $tomato;
+    //                     height: 5px;
+    //                     width: 0%;
+    //                     transform: translateX(-50%);
+    //                     left: 50%;
+    //                     bottom: -5px;
+    //                     border: none;
+    //                     transition: .55s ease-in-out;
+    //                 }
+
+    //                 &:hover:after {
+    //                     width: 100%;
+    //                 }
+
+
+    //             }
+    //         }
+
+    //         .logo-holder {
+    //             a {
+    //                 display: flex;
+    //                 align-items: center;
+    //                 justify-content: center;
+    //                 vertical-align: middle;
+
+    //                 .chef {
+    //                     width: 50px;
+    //                     display: inline-block;
+    //                 }
+
+    //                 .logo {
+    //                     display: flex;
+    //                     flex-direction: column;
+    //                     font-family: 'Carter One', cursive;
+
+    //                     span {
+    //                         margin-top: -12px;
+    //                         font-size: 9px;
+    //                         letter-spacing: 2px;
+    //                         font-family: 'Oswald', sans-serif;
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //     }
+
+    // }
 
     // MENU LIST BEGINS
     .sticky {

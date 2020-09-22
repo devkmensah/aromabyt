@@ -37,6 +37,46 @@
             }
         }
     }
+
+    // MENU HEADER
+    #menu-header{
+        .top{
+            overflow: hidden;
+            .container{
+                // padding: 0 25px 0 5px;
+                padding-right: 20px;
+                overflow: hidden;
+                .sidenav{
+                    z-index: 3;
+                    position: fixed;
+                    width: 310px;
+                    height: 100%;
+                    background-color: $ivory;
+                    top: 120px;
+                    left: -310px;
+                    padding-top: 20px;
+                    overflow: hidden;
+                    transition: left .4s ease-in-out;
+                    display: block;
+                    text-align: left;
+
+                   li{
+                    padding: 10px 25px;
+                    width: 100%;
+                   }
+
+                    &.show{
+                        left: 0;
+                    }
+                   
+                    a{
+                        color: $dark;
+                    }
+
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 900px){

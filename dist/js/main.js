@@ -85,6 +85,7 @@ prevBtn.addEventListener('click', e => {
 // })
 
 
+// HAMBURGER MENU
 const openHamburger = document.querySelector('#hamburger-toggler');
 const mobileNav = document.querySelector('.sidenav');
 
