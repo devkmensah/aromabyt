@@ -107,6 +107,7 @@
       background: #fff;
       color: #0c0c0c;
       transition: .3s ease-in-out;
+      border-radius: 2px;
       display: flex;
       flex-direction: column;
       justify-content: space-between; }

@@ -159,6 +159,7 @@
                     background: $white;
                     color: $dark;
                     transition: .3s ease-in-out;
+                    border-radius: 2px;
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
@@ -184,6 +185,8 @@
 
                         }
                     }
+
+                   
                 }
             }
 
