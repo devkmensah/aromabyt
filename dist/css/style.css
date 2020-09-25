@@ -237,7 +237,7 @@
 
 #delivery {
   padding: 120px 70px 0;
-  background-color: #FCFCF3;
+  background: #FCFCF3 url("../images/menu/t17.png") no-repeat center center/cover;
   color: #0c0c0c; }
   #delivery a {
     color: #0c0c0c; }
@@ -259,20 +259,19 @@
           width: 100%; }
           #delivery .container .delivery-content .delivery-form-content #delivery-form input {
             width: 100%;
-            padding: 16px 0 16px 10px;
+            padding: 13px 10px;
             font-family: 'Oswald', sans-serif;
             border: 1px solid #73020C;
             color: #0c0c0c;
-            font-size: 20px; }
+            font-size: 16px;
+            font-weight: 100; }
             #delivery .container .delivery-content .delivery-form-content #delivery-form input:focus {
               outline: none;
               border: 1px dashed #FCC000; }
             #delivery .container .delivery-content .delivery-form-content #delivery-form input::placeholder {
-              font-size: 16px;
               color: #0c0c0c; }
             #delivery .container .delivery-content .delivery-form-content #delivery-form input:first-child {
-              margin-bottom: 8px;
-              font-weight: 100; }
+              margin-bottom: 8px; }
           #delivery .container .delivery-content .delivery-form-content #delivery-form .limited {
             text-transform: uppercase; }
           #delivery .container .delivery-content .delivery-form-content #delivery-form .look-up {
@@ -282,6 +281,8 @@
             #delivery .container .delivery-content .delivery-form-content #delivery-form .look-up .cancel {
               padding: 10px 12px;
               text-transform: uppercase;
+              font-size: 12px;
+              font-weight: 800;
               background: #73020C;
               color: #fff;
               cursor: pointer;
@@ -294,13 +295,16 @@
               margin: 0 3px; }
           #delivery .container .delivery-content .delivery-form-content #delivery-form .phone {
             margin: 20px 0; }
-          #delivery .container .delivery-content .delivery-form-content #delivery-form .use {
+          #delivery .container .delivery-content .delivery-form-content #delivery-form input.use {
             color: #fff;
             background: #73020C;
             cursor: pointer;
-            margin-bottom: 30px; }
+            margin-bottom: 20px;
+            text-transform: uppercase; }
       #delivery .container .delivery-content .apply {
         max-width: 365px; }
+        #delivery .container .delivery-content .apply hr {
+          display: none; }
         #delivery .container .delivery-content .apply .redeem-points {
           text-transform: uppercase;
           line-height: 1.1;
@@ -318,28 +322,28 @@
           width: 100%;
           display: block; }
           #delivery .container .delivery-content .apply .redeem-input input {
-            padding: 16px 0 16px 10px;
+            padding: 13px 10px;
             width: 70%;
             vertical-align: middle;
             display: inline-block;
             font-family: 'Oswald', sans-serif;
             border: 1px solid #73020C;
             color: #0c0c0c;
-            font-size: 20px; }
+            font-size: 16px;
+            font-weight: 100; }
             #delivery .container .delivery-content .apply .redeem-input input:focus {
               outline: none;
               border: 1px dashed #FCC000; }
             #delivery .container .delivery-content .apply .redeem-input input::placeholder {
-              font-size: 16px;
               color: #0c0c0c; }
           #delivery .container .delivery-content .apply .redeem-input a {
             vertical-align: middle;
             display: inline-block;
             border: 2px solid #73020C;
             width: 130px;
-            height: 64px;
+            height: 51.5px;
             text-align: center;
-            line-height: 3.9;
+            line-height: 3.0;
             text-transform: uppercase;
             transition: .3s ease-in-out;
             max-width: 28%;
@@ -349,7 +353,8 @@
               background-color: #73020C;
               border: 2px solid transparent; }
         #delivery .container .delivery-content .apply .yet a {
-          color: #73020C; }
+          color: #73020C;
+          font-weight: 100; }
           #delivery .container .delivery-content .apply .yet a:hover {
             text-decoration: underline; }
 
@@ -379,11 +384,11 @@
           display: flex;
           flex-direction: column; }
           #collect .container .collect-content .start-content .collect-form .time-input .time input[type="time"] {
-            padding: 27px 10px;
+            padding: 25px 10px;
             width: 220px;
             height: 45px;
             border: 1px solid #73020C;
-            font-size: 18px; }
+            font-size: 16px; }
             #collect .container .collect-content .start-content .collect-form .time-input .time input[type="time"]:focus {
               outline: none;
               border: 1px dashed #FCC000; }
@@ -392,11 +397,11 @@
           flex-direction: column;
           margin: 0 0 0 10px; }
           #collect .container .collect-content .start-content .collect-form .time-input .date input[type="date"] {
-            padding: 27px 10px;
+            padding: 25px 10px;
             width: 220px;
             height: 45px;
             border: 1px solid #73020C;
-            font-size: 18px; }
+            font-size: 16px; }
             #collect .container .collect-content .start-content .collect-form .time-input .date input[type="date"]:focus {
               outline: none;
               border: 1px dashed #FCC000; }
@@ -404,12 +409,12 @@
         display: block;
         width: 100%;
         text-transform: capitalize;
-        font-size: 18px;
+        font-size: 16px;
         margin-bottom: 20px; }
         #collect .container .collect-content .start-content .collect-form .specify input[type="checkbox"] {
-          width: 20px;
-          height: 20px;
-          vertical-align: -20%;
+          width: 18px;
+          height: 18px;
+          vertical-align: -23%;
           margin-right: 10px;
           cursor: pointer; }
       #collect .container .collect-content .start-content .collect-form .collect-button {
@@ -438,28 +443,28 @@
         width: 100%;
         display: block; }
         #collect .container .collect-content .apply .redeem-input input {
-          padding: 16px 0 16px 10px;
+          padding: 13px 10px;
           width: 70%;
           vertical-align: middle;
           display: inline-block;
           font-family: 'Oswald', sans-serif;
           border: 1px solid #73020C;
           color: #0c0c0c;
-          font-size: 20px; }
+          font-size: 16px;
+          font-weight: 100; }
           #collect .container .collect-content .apply .redeem-input input:focus {
             outline: none;
             border: 1px dashed #FCC000; }
           #collect .container .collect-content .apply .redeem-input input::placeholder {
-            font-size: 16px;
             color: #0c0c0c; }
         #collect .container .collect-content .apply .redeem-input a {
           vertical-align: middle;
           display: inline-block;
           border: 2px solid #73020C;
           width: 130px;
-          height: 64px;
+          height: 51.5px;
           text-align: center;
-          line-height: 3.9;
+          line-height: 3.0;
           text-transform: uppercase;
           transition: .3s ease-in-out;
           max-width: 28%;
@@ -469,7 +474,8 @@
             background-color: #73020C;
             border: 2px solid transparent; }
       #collect .container .collect-content .apply .yet a {
-        color: #73020C; }
+        color: #73020C;
+        font-weight: 100; }
         #collect .container .collect-content .apply .yet a:hover {
           text-decoration: underline; }
 
@@ -1715,7 +1721,137 @@ img {
     padding: 70px 120px 100px; }
     #steps .container .steps-content .steps {
       display: grid;
-      grid-template-columns: 1fr; } }
+      grid-template-columns: 1fr; }
+  #delivery {
+    padding: 120px 5px 0;
+    background-color: #FCFCF3;
+    color: #0c0c0c; }
+    #delivery a {
+      color: #0c0c0c; }
+    #delivery .container {
+      max-width: 1200px;
+      margin: 0 auto; }
+      #delivery .container .delivery-content {
+        display: block;
+        grid-column-gap: 20px;
+        padding: 50px 0; }
+        #delivery .container .delivery-content .delivery-form-content {
+          padding: 0 25px;
+          text-align: center; }
+          #delivery .container .delivery-content .delivery-form-content .form-heading {
+            text-transform: uppercase;
+            padding-bottom: 25px; }
+          #delivery .container .delivery-content .delivery-form-content #delivery-form {
+            width: 100%; }
+            #delivery .container .delivery-content .delivery-form-content #delivery-form input {
+              width: 100%;
+              padding: 13px 10px;
+              font-family: 'Oswald', sans-serif;
+              border: 1px solid #73020C;
+              color: #0c0c0c;
+              font-size: 16px;
+              font-weight: 100; }
+              #delivery .container .delivery-content .delivery-form-content #delivery-form input:focus {
+                outline: none;
+                border: 1px dashed #FCC000; }
+              #delivery .container .delivery-content .delivery-form-content #delivery-form input::placeholder {
+                color: #0c0c0c; }
+              #delivery .container .delivery-content .delivery-form-content #delivery-form input:first-child {
+                margin-bottom: 8px; }
+            #delivery .container .delivery-content .delivery-form-content #delivery-form .limited {
+              text-transform: uppercase; }
+            #delivery .container .delivery-content .delivery-form-content #delivery-form .look-up {
+              margin: 16px 0 30px;
+              text-align: left; }
+              #delivery .container .delivery-content .delivery-form-content #delivery-form .look-up .delivery-button,
+              #delivery .container .delivery-content .delivery-form-content #delivery-form .look-up .cancel {
+                padding: 10px 12px;
+                text-transform: uppercase;
+                font-size: 12px;
+                font-weight: 800;
+                background: #73020C;
+                color: #fff;
+                cursor: pointer;
+                border: 1px solid transparent; }
+                #delivery .container .delivery-content .delivery-form-content #delivery-form .look-up .delivery-button:focus,
+                #delivery .container .delivery-content .delivery-form-content #delivery-form .look-up .cancel:focus {
+                  outline: none; }
+              #delivery .container .delivery-content .delivery-form-content #delivery-form .look-up .cancel {
+                background: #0c0c0c;
+                margin: 0 3px; }
+            #delivery .container .delivery-content .delivery-form-content #delivery-form .phone {
+              margin: 20px 0; }
+            #delivery .container .delivery-content .delivery-form-content #delivery-form input.use {
+              color: #fff;
+              background: #73020C;
+              cursor: pointer;
+              margin-bottom: 20px;
+              text-transform: uppercase; }
+        #delivery .container .delivery-content .apply {
+          max-width: 100%;
+          padding: 0 25px;
+          display: flex;
+          flex-direction: column;
+          align-items: center; }
+          #delivery .container .delivery-content .apply hr {
+            width: 100%;
+            display: block;
+            height: 1px;
+            background-color: #73020C;
+            border: none;
+            margin: 15px 0 35px; }
+          #delivery .container .delivery-content .apply .redeem-points {
+            text-transform: uppercase;
+            line-height: 1.1;
+            font-weight: 800;
+            font-size: 25px;
+            border-bottom: 1px solid #73020C;
+            padding-bottom: 14px;
+            vertical-align: middle;
+            display: inline-block; }
+          #delivery .container .delivery-content .apply .member {
+            padding-top: 10px;
+            text-transform: uppercase; }
+          #delivery .container .delivery-content .apply .redeem-input {
+            margin: 20px 0;
+            width: 100%;
+            display: block; }
+            #delivery .container .delivery-content .apply .redeem-input input {
+              padding: 13px 10px;
+              width: 100%;
+              vertical-align: middle;
+              display: inline-block;
+              font-family: 'Oswald', sans-serif;
+              border: 1px solid #73020C;
+              color: #0c0c0c;
+              font-size: 16px;
+              font-weight: 100; }
+              #delivery .container .delivery-content .apply .redeem-input input:focus {
+                outline: none;
+                border: 1px dashed #FCC000; }
+              #delivery .container .delivery-content .apply .redeem-input input::placeholder {
+                color: #0c0c0c; }
+            #delivery .container .delivery-content .apply .redeem-input a {
+              margin-top: 15px;
+              display: block;
+              border: 2px solid #73020C;
+              min-width: 100%;
+              height: 51.5px;
+              text-align: center;
+              line-height: 3.0;
+              text-transform: uppercase;
+              transition: .3s ease-in-out;
+              overflow: auto; }
+              #delivery .container .delivery-content .apply .redeem-input a:hover {
+                color: #fff;
+                background-color: #73020C;
+                border: 2px solid transparent; }
+          #delivery .container .delivery-content .apply p {
+            text-align: center; }
+          #delivery .container .delivery-content .apply .yet a {
+            color: #73020C; }
+            #delivery .container .delivery-content .apply .yet a:hover {
+              text-decoration: underline; } }
 
 @media screen and (max-width: 700px) {
   #menu-header .top .navigation {
@@ -1824,4 +1960,139 @@ img {
         #header .top .container .sidenav.show {
           left: 0; }
         #header .top .container .sidenav a {
-          color: #0c0c0c; } }
+          color: #0c0c0c; }
+  #delivery {
+    padding: 120px 2px 0;
+    background-color: #FCFCF3;
+    color: #0c0c0c; }
+    #delivery a {
+      color: #0c0c0c; }
+    #delivery .container {
+      max-width: 1200px;
+      margin: 0 auto; }
+      #delivery .container .delivery-content {
+        display: block;
+        grid-column-gap: 20px;
+        padding: 50px 0; }
+        #delivery .container .delivery-content .delivery-form-content {
+          padding: 0 12px;
+          text-align: center; }
+          #delivery .container .delivery-content .delivery-form-content .form-heading {
+            text-transform: uppercase;
+            padding-bottom: 25px;
+            font-size: 20px; }
+          #delivery .container .delivery-content .delivery-form-content #delivery-form {
+            width: 100%; }
+            #delivery .container .delivery-content .delivery-form-content #delivery-form input {
+              width: 100%;
+              padding: 13px 10px;
+              font-family: 'Oswald', sans-serif;
+              border: 1px solid #73020C;
+              color: #0c0c0c;
+              font-size: 14px;
+              font-weight: 100; }
+              #delivery .container .delivery-content .delivery-form-content #delivery-form input:focus {
+                outline: none;
+                border: 1px dashed #FCC000; }
+              #delivery .container .delivery-content .delivery-form-content #delivery-form input::placeholder {
+                color: #0c0c0c; }
+              #delivery .container .delivery-content .delivery-form-content #delivery-form input:first-child {
+                margin-bottom: 1px; }
+            #delivery .container .delivery-content .delivery-form-content #delivery-form .limited {
+              text-transform: uppercase;
+              font-size: 10px; }
+            #delivery .container .delivery-content .delivery-form-content #delivery-form .look-up {
+              margin: 16px 0 30px;
+              text-align: left; }
+              #delivery .container .delivery-content .delivery-form-content #delivery-form .look-up .delivery-button,
+              #delivery .container .delivery-content .delivery-form-content #delivery-form .look-up .cancel {
+                padding: 10px 12px;
+                text-transform: uppercase;
+                font-size: 9px;
+                font-weight: 800;
+                background: #73020C;
+                color: #fff;
+                cursor: pointer;
+                border: 1px solid transparent; }
+                #delivery .container .delivery-content .delivery-form-content #delivery-form .look-up .delivery-button:focus,
+                #delivery .container .delivery-content .delivery-form-content #delivery-form .look-up .cancel:focus {
+                  outline: none; }
+              #delivery .container .delivery-content .delivery-form-content #delivery-form .look-up .cancel {
+                background: #0c0c0c;
+                margin: 0 3px; }
+            #delivery .container .delivery-content .delivery-form-content #delivery-form .phone {
+              margin: 20px 0; }
+            #delivery .container .delivery-content .delivery-form-content #delivery-form input.use {
+              color: #fff;
+              background: #73020C;
+              cursor: pointer;
+              margin-bottom: 20px;
+              text-transform: uppercase; }
+          #delivery .container .delivery-content .delivery-form-content p {
+            font-size: 12px; }
+        #delivery .container .delivery-content .apply {
+          max-width: 100%;
+          padding: 0 12px;
+          display: flex;
+          flex-direction: column;
+          align-items: center; }
+          #delivery .container .delivery-content .apply hr {
+            width: 100%;
+            display: block;
+            height: 1px;
+            background-color: #73020C;
+            border: none;
+            margin: 15px 0 35px; }
+          #delivery .container .delivery-content .apply .redeem-points {
+            text-transform: uppercase;
+            line-height: 1.1;
+            font-weight: 800;
+            font-size: 20px;
+            border-bottom: 1px solid #73020C;
+            padding-bottom: 14px;
+            vertical-align: middle;
+            display: inline-block; }
+          #delivery .container .delivery-content .apply .member {
+            padding-top: 10px;
+            text-transform: uppercase; }
+          #delivery .container .delivery-content .apply .redeem-input {
+            margin: 20px 0;
+            width: 100%;
+            display: block; }
+            #delivery .container .delivery-content .apply .redeem-input input {
+              padding: 13px 10px;
+              width: 100%;
+              vertical-align: middle;
+              display: inline-block;
+              font-family: 'Oswald', sans-serif;
+              border: 1px solid #73020C;
+              color: #0c0c0c;
+              font-size: 14px;
+              font-weight: 100; }
+              #delivery .container .delivery-content .apply .redeem-input input:focus {
+                outline: none;
+                border: 1px dashed #FCC000; }
+              #delivery .container .delivery-content .apply .redeem-input input::placeholder {
+                color: #0c0c0c; }
+            #delivery .container .delivery-content .apply .redeem-input a {
+              margin-top: 15px;
+              display: block;
+              border: 2px solid #73020C;
+              min-width: 100%;
+              height: 51.5px;
+              text-align: center;
+              line-height: 3.0;
+              text-transform: uppercase;
+              transition: .3s ease-in-out;
+              overflow: auto; }
+              #delivery .container .delivery-content .apply .redeem-input a:hover {
+                color: #fff;
+                background-color: #73020C;
+                border: 2px solid transparent; }
+          #delivery .container .delivery-content .apply p {
+            text-align: center;
+            font-size: 12px; }
+          #delivery .container .delivery-content .apply .yet a {
+            color: #73020C; }
+            #delivery .container .delivery-content .apply .yet a:hover {
+              text-decoration: underline; } }

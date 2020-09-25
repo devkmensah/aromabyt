@@ -47,7 +47,7 @@
                 }
             }
 
-           
+
 
             .access-links {
                 display: flex;
@@ -124,14 +124,14 @@
         }
     }
 }
+
 //ORDER HEADER STYLING ENDS
 
 // DELIVERY SECTION BEGINS
 #delivery {
     padding: 120px 70px 0;
-    background-color: $ivory;
+    background: $ivory url('../images/menu/t17.png') no-repeat center center / cover;
     color: $dark;
-    // display: none;
 
     a {
         color: $dark;
@@ -165,11 +165,12 @@
 
                     input {
                         width: 100%;
-                        padding: 16px 0 16px 10px;
+                        padding: 13px 10px;
                         font-family: 'Oswald', sans-serif;
                         border: 1px solid $tomato;
                         color: $dark;
-                        font-size: 20px;
+                        font-size: 16px;
+                        font-weight: 100;
 
                         &:focus {
                             outline: none;
@@ -177,13 +178,12 @@
                         }
 
                         &::placeholder {
-                            font-size: 16px;
                             color: $dark;
+
                         }
 
                         &:first-child {
                             margin-bottom: 8px;
-                            font-weight: 100;
                         }
                     }
 
@@ -200,6 +200,8 @@
                         .cancel {
                             padding: 10px 12px;
                             text-transform: uppercase;
+                            font-size: 12px;
+                            font-weight: 800;
                             background: $tomato;
                             color: $white;
                             cursor: pointer;
@@ -222,25 +224,22 @@
                         margin: 20px 0;
                     }
 
-                    .use {
+                    input.use {
                         color: $white;
                         background: $tomato;
                         cursor: pointer;
-                        margin-bottom: 30px;
+                        margin-bottom: 20px;
+                        text-transform: uppercase;
+                        // font-weight: 800;
                     }
                 }
-
-                // .create {
-                //     a {
-                //         text-transform: uppercase;
-                //         color: $tomato;
-                //         font-size: 18px;
-                //         font-weight: 600;
-                //     }
-                // }
             }
 
             .apply {
+                hr {
+                    display: none;
+                }
+
                 max-width: 365px;
 
                 .redeem-points {
@@ -267,14 +266,15 @@
                     // display: flex;
 
                     input {
-                        padding: 16px 0 16px 10px;
+                        padding: 13px 10px;
                         width: 70%;
                         vertical-align: middle;
                         display: inline-block;
                         font-family: 'Oswald', sans-serif;
                         border: 1px solid $tomato;
                         color: $dark;
-                        font-size: 20px;
+                        font-size: 16px;
+                        font-weight: 100;
 
                         &:focus {
                             outline: none;
@@ -282,7 +282,6 @@
                         }
 
                         &::placeholder {
-                            font-size: 16px;
                             color: $dark;
                         }
                     }
@@ -292,9 +291,9 @@
                         display: inline-block;
                         border: 2px solid $tomato;
                         width: 130px;
-                        height: 64px;
+                        height: 51.5px;
                         text-align: center;
-                        line-height: 3.9;
+                        line-height: 3.0;
                         text-transform: uppercase;
                         transition: .3s ease-in-out;
                         max-width: 28%;
@@ -311,6 +310,7 @@
                 .yet {
                     a {
                         color: $tomato;
+                        font-weight: 100;
 
                         &:hover {
                             text-decoration: underline;
@@ -367,11 +367,11 @@
                             flex-direction: column;
 
                             input[type="time"] {
-                                padding: 27px 10px;
+                                padding: 25px 10px;
                                 width: 220px;
                                 height: 45px;
                                 border: 1px solid $tomato;
-                                font-size: 18px;
+                                font-size: 16px;
 
                                 &:focus {
                                     outline: none;
@@ -386,18 +386,16 @@
                             margin: 0 0 0 10px;
 
                             input[type="date"] {
-                                padding: 27px 10px;
+                                padding: 25px 10px;
                                 width: 220px;
                                 height: 45px;
                                 border: 1px solid $tomato;
-                                font-size: 18px;
+                                font-size: 16px;
 
                                 &:focus {
                                     outline: none;
                                     border: 1px dashed $yellow;
                                 }
-
-
                             }
                         }
 
@@ -407,14 +405,14 @@
                         display: block;
                         width: 100%;
                         text-transform: capitalize;
-                        font-size: 18px;
+                        font-size: 16px;
                         margin-bottom: 20px;
 
 
                         input[type="checkbox"] {
-                            width: 20px;
-                            height: 20px;
-                            vertical-align: -20%;
+                            width: 18px;
+                            height: 18px;
+                            vertical-align: -23%;
                             margin-right: 10px;
                             cursor: pointer;
                         }
@@ -432,17 +430,12 @@
 
                         &:focus {
                             outline: none;
-
                         }
                     }
                 }
             }
 
             .apply {
-                // border: 1px solid $dark;
-                // width: 25%;
-                // margin-top: -500px;
-                // border: 1px solid $dark;
                 max-width: 365px;
 
                 .redeem-points {
@@ -466,17 +459,17 @@
                     margin: 20px 0;
                     width: 100%;
                     display: block;
-                    // display: flex;
 
                     input {
-                        padding: 16px 0 16px 10px;
+                        padding: 13px 10px;
                         width: 70%;
                         vertical-align: middle;
                         display: inline-block;
                         font-family: 'Oswald', sans-serif;
                         border: 1px solid $tomato;
                         color: $dark;
-                        font-size: 20px;
+                        font-size: 16px;
+                        font-weight: 100;
 
                         &:focus {
                             outline: none;
@@ -484,7 +477,6 @@
                         }
 
                         &::placeholder {
-                            font-size: 16px;
                             color: $dark;
                         }
                     }
@@ -494,9 +486,9 @@
                         display: inline-block;
                         border: 2px solid $tomato;
                         width: 130px;
-                        height: 64px;
+                        height: 51.5px;
                         text-align: center;
-                        line-height: 3.9;
+                        line-height: 3.0;
                         text-transform: uppercase;
                         transition: .3s ease-in-out;
                         max-width: 28%;
@@ -513,6 +505,7 @@
                 .yet {
                     a {
                         color: $tomato;
+                        font-weight: 100;
 
                         &:hover {
                             text-decoration: underline;
@@ -710,6 +703,7 @@
         }
     }
 }
+
 // REGISTER SECTION ENDS
 
 // LOGIN SECTION BEGINS
