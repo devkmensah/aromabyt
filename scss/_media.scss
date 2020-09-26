@@ -11,6 +11,31 @@
             }
         }
     }
+
+      // ORDER HEADER
+      #order-header {
+        .order-nav {
+            .order-top {
+                padding: 12px 25px 0;
+
+                .order-logo {
+                    padding-top: 0;
+                    h1 {
+                        font-size: 32px;
+                    }
+                }
+            }
+
+            .order-options {
+
+                .delivery-nav,
+                .collect-nav {
+                    // margin: 80px 10px 0;
+                    font-size: 22px;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -19,13 +44,17 @@
     #order-header {
         .order-nav {
             .order-top {
-                font-size: 16px;
-                padding: 12px 0;
 
                 .order-logo {
+                    padding-top: 0;
+
+                    .order-chef{
+                        width: 45px;
+                    }
                     h1 {
+                        font-size: 22px;
                         span {
-                            margin-top: -5px;
+                            margin-top: -7px;
                             font-size: 7px;
                         }
                     }
@@ -42,7 +71,6 @@
 
                 .delivery-nav,
                 .collect-nav {
-                    // margin: 80px 10px 0;
                     font-size: 22px;
                 }
             }
@@ -366,7 +394,53 @@
     #steps {
         padding: 70px 50px 100px;
     }
+
+    // ORDER HEADER
+    #order-header {
+        .order-nav {
+            .order-top {
+                padding-bottom: 12px;
+                .order-logo {
+                    padding-top: 0;
+
+                    .order-chef {
+                        width: 40px;
+                    }
+
+                    h1 {
+                        font-size: 20px;
+
+                        span {
+                            margin-top: -7px;
+                            font-size: 6px;
+                        }
+                    }
+                }
+
+                .access-links {
+                    li:first-child {
+                        margin-right: 20px;
+                    }
+
+                    a {
+                        font-size: 20px;
+                    }
+                }
+            }
+
+            .order-options {
+
+                .delivery-nav,
+                .collect-nav {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
 }
+
+
 
 @media screen and (max-width: 550px) {
     #main-area {
@@ -567,7 +641,7 @@
                 }
 
                 .apply {
-                    p{
+                    p {
                         font-size: 12px;
                     }
 
@@ -582,6 +656,8 @@
 }
 
 @media screen and (max-width: 450px) {
+
+    // MAIN HEADER
     #header {
         .top {
             overflow: hidden;
@@ -636,6 +712,52 @@
                     a {
                         color: $dark;
                     }
+
+                }
+            }
+        }
+    }
+
+    // ORDER HEADER
+    #order-header {
+        .order-nav {
+            .order-top {
+                font-size: 14px;
+                padding: 16px 0;
+
+                .order-logo {
+                    padding-top: 7px;
+
+                    .order-chef {
+                        width: 35px;
+                    }
+
+                    h1 {
+                        font-size: 14px;
+
+                        span {
+                            margin-top: -5px;
+                            font-size: 5px;
+                        }
+                    }
+                }
+
+                .access-links {
+                    li:first-child {
+                        margin-right: 10px;
+                    }
+
+                    a {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .order-options {
+
+                .delivery-nav,
+                .collect-nav {
+                    font-size: 14px;
 
                 }
             }

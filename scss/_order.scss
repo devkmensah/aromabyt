@@ -15,19 +15,20 @@
 
         .order-top {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: center;
             text-align: center;
             text-transform: uppercase;
             font-weight: 500;
-            font-size: 25px;
-            padding: 6px 0 0;
+            // font-size: 25px;
+            padding: 6px 100px 0;
 
             .order-logo {
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 vertical-align: middle;
+                // padding-top: 5px;
 
                 .order-chef {
                     width: 50px;
@@ -35,6 +36,7 @@
                 }
 
                 h1 {
+                    font-size: 32px;
                     display: flex;
                     flex-direction: column;
                     font-family: 'Carter One', cursive;
@@ -53,6 +55,7 @@
             .access-links {
                 display: flex;
                 vertical-align: middle;
+                padding-right: 15px;
 
                 li:first-child {
                     margin-right: 40px;
