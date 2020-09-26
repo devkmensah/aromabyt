@@ -322,9 +322,7 @@
           font-weight: 800;
           font-size: 25px;
           border-bottom: 1px solid #73020C;
-          padding-bottom: 14px;
-          vertical-align: middle;
-          display: inline-block; }
+          padding-bottom: 14px; }
         #delivery .container .delivery-content .apply .member {
           padding-top: 10px;
           text-transform: uppercase; }
@@ -362,17 +360,29 @@
             #delivery .container .delivery-content .apply .redeem-input a:hover {
               color: #fff;
               background-color: #73020C;
-              border: 2px solid transparent; }
+              border: 1px solid transparent; }
         #delivery .container .delivery-content .apply .yet a {
-          color: #73020C; }
+          color: #73020C;
+          text-transform: capitalize; }
           #delivery .container .delivery-content .apply .yet a:hover {
             text-decoration: underline; }
 
 #collect {
   padding: 120px 70px 0;
   background: #FCFCF3 url("../images/menu/t11.png") no-repeat center center/cover;
-  color: #0c0c0c;
-  display: none; }
+  color: #fff;
+  display: none;
+  position: relative; }
+  #collect:after {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0; }
+  #collect * {
+    z-index: 2; }
   #collect a {
     color: #0c0c0c; }
   #collect .container .collect-content {
@@ -438,6 +448,8 @@
           outline: none; }
     #collect .container .collect-content .apply {
       max-width: 365px; }
+      #collect .container .collect-content .apply hr {
+        display: none; }
       #collect .container .collect-content .apply .redeem-points {
         text-transform: uppercase;
         line-height: 1.1;
@@ -461,7 +473,7 @@
           border: 1px solid #73020C;
           color: #0c0c0c;
           font-size: 16px;
-          font-weight: 100; }
+          font-weight: 400; }
           #collect .container .collect-content .apply .redeem-input input:focus {
             outline: none;
             border: 1px dashed #FCC000; }
@@ -470,7 +482,7 @@
         #collect .container .collect-content .apply .redeem-input a {
           vertical-align: middle;
           display: inline-block;
-          border: 2px solid #73020C;
+          border: 1px solid #73020C;
           width: 130px;
           height: 51.5px;
           text-align: center;
@@ -482,10 +494,10 @@
           #collect .container .collect-content .apply .redeem-input a:hover {
             color: #fff;
             background-color: #73020C;
-            border: 2px solid transparent; }
+            border: 1px solid transparent; }
       #collect .container .collect-content .apply .yet a {
         color: #73020C;
-        font-weight: 100; }
+        text-transform: capitalize; }
         #collect .container .collect-content .apply .yet a:hover {
           text-decoration: underline; }
 
@@ -1701,6 +1713,117 @@ img {
     #main-area #footer .container .bottom .rights {
       display: flex;
       justify-self: center; } }
+
+@media screen and (max-width: 800px) {
+  #collect {
+    padding: 120px 70px 0;
+    background: #FCFCF3;
+    color: #0c0c0c;
+    display: none; }
+    #collect:after {
+      content: "";
+      display: none; }
+    #collect a {
+      color: #0c0c0c; }
+    #collect .container .collect-content {
+      display: block;
+      padding: 50px 0; }
+      #collect .container .collect-content .start-content h2 {
+        text-transform: uppercase;
+        font-size: 35px;
+        text-align: center; }
+      #collect .container .collect-content .start-content p {
+        text-align: center; }
+      #collect .container .collect-content .start-content .collect-form {
+        width: 100%; }
+        #collect .container .collect-content .start-content .collect-form .time-input {
+          display: block;
+          width: 100%;
+          margin: 50px 0;
+          background: rgba(0, 0, 0, 0.1);
+          padding: 20px 15px 28px; }
+          #collect .container .collect-content .start-content .collect-form .time-input .time {
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            margin-bottom: 20px; }
+            #collect .container .collect-content .start-content .collect-form .time-input .time input[type="time"] {
+              padding: 25px 10px;
+              width: 100%;
+              height: 45px;
+              border: 1px solid transparent;
+              font-size: 16px; }
+              #collect .container .collect-content .start-content .collect-form .time-input .time input[type="time"]:focus {
+                outline: none;
+                border: 1px dashed #FCC000; }
+          #collect .container .collect-content .start-content .collect-form .time-input .date {
+            display: flex;
+            flex-direction: column;
+            margin: 0; }
+            #collect .container .collect-content .start-content .collect-form .time-input .date input[type="date"] {
+              padding: 25px 10px;
+              width: 100%;
+              height: 45px;
+              border: 1px solid transparent;
+              font-size: 16px; }
+              #collect .container .collect-content .start-content .collect-form .time-input .date input[type="date"]:focus {
+                outline: none;
+                border: 1px dashed #FCC000; }
+        #collect .container .collect-content .start-content .collect-form .specify {
+          display: block;
+          width: 100%;
+          text-transform: capitalize;
+          font-size: 16px;
+          margin-bottom: 20px; }
+          #collect .container .collect-content .start-content .collect-form .specify input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            vertical-align: -23%;
+            margin-right: 10px;
+            cursor: pointer; }
+        #collect .container .collect-content .start-content .collect-form button.collect-button {
+          color: #fff;
+          background: #73020C;
+          padding: 15px 50px;
+          display: block;
+          width: 100%;
+          text-transform: uppercase;
+          cursor: pointer;
+          border: 1px solid transparent; }
+          #collect .container .collect-content .start-content .collect-form button.collect-button:focus {
+            outline: none; }
+      #collect .container .collect-content .apply {
+        max-width: 100%;
+        margin-top: 62px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        #collect .container .collect-content .apply hr {
+          width: 100%;
+          display: block;
+          height: 1px;
+          background-color: #73020C;
+          border: none; }
+        #collect .container .collect-content .apply .redeem-points {
+          text-transform: uppercase;
+          line-height: 1.1;
+          font-weight: 800;
+          font-size: 25px;
+          border-bottom: 1px solid #73020C;
+          padding: 35px 0 15px; }
+        #collect .container .collect-content .apply .member {
+          padding-top: 10px;
+          text-transform: uppercase; }
+        #collect .container .collect-content .apply .redeem-input input {
+          width: 100%;
+          font-weight: 100; }
+        #collect .container .collect-content .apply .redeem-input a {
+          margin-top: 15px;
+          display: block;
+          min-width: 100%;
+          overflow: auto; }
+        #collect .container .collect-content .apply p {
+          text-align: center; } }
 
 @media (max-width: 769px) {
   #header .top {

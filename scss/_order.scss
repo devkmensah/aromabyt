@@ -249,11 +249,10 @@
             }
 
             .apply {
+                max-width: 365px;
                 hr {
                     display: none;
                 }
-
-                max-width: 365px;
 
                 .redeem-points {
                     text-transform: uppercase;
@@ -262,8 +261,8 @@
                     font-size: 25px;
                     border-bottom: 1px solid $tomato;
                     padding-bottom: 14px;
-                    vertical-align: middle;
-                    display: inline-block;
+                    // vertical-align: middle;
+                    // display: inline-block;
 
                 }
 
@@ -310,12 +309,11 @@
                         transition: .3s ease-in-out;
                         max-width: 28%;
                         overflow: hidden;
-                        // color: $white;
 
                         &:hover {
                             color: $white;
                             background-color: $tomato;
-                            border: 2px solid transparent;
+                            border: 1px solid transparent;
                         }
                     }
                 }
@@ -323,7 +321,7 @@
                 .yet {
                     a {
                         color: $tomato;
-                        // font-weight: 100;
+                        text-transform: capitalize;
 
                         &:hover {
                             text-decoration: underline;
@@ -341,23 +339,34 @@
 #collect {
     padding: 120px 70px 0;
     background: $ivory url('../images/menu/t11.png') no-repeat center center / cover;
-    color: $dark;
+    color: $white;
     display: none;
+    position: relative;
+
+    &:after{
+        content: "";
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.3);
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+    }
+
+    *{
+        z-index: 2;
+    }
 
     a {
         color: $dark;
     }
 
     .container {
-
-        //    max-width: 1200px;
-        //    margin: 0 auto;
         .collect-content {
             display: grid;
             grid-template-columns: 2fr 1fr;
             grid-column-gap: 20px;
             justify-content: space-between;
-            // align-items: center;
             padding: 50px 0;
 
             .start-content {
@@ -374,7 +383,6 @@
                         align-items: center;
                         margin: 50px 0;
 
-                        // justify-content: center;
                         .time {
                             display: flex;
                             flex-direction: column;
@@ -450,6 +458,9 @@
 
             .apply {
                 max-width: 365px;
+                hr {
+                    display: none;
+                }
 
                 .redeem-points {
                     text-transform: uppercase;
@@ -457,7 +468,6 @@
                     font-weight: 800;
                     font-size: 25px;
                     border-bottom: 1px solid $tomato;
-                    // width: 89%;
                     padding-bottom: 14px;
                 }
 
@@ -482,7 +492,7 @@
                         border: 1px solid $tomato;
                         color: $dark;
                         font-size: 16px;
-                        font-weight: 100;
+                        font-weight: 400;
 
                         &:focus {
                             outline: none;
@@ -497,7 +507,7 @@
                     a {
                         vertical-align: middle;
                         display: inline-block;
-                        border: 2px solid $tomato;
+                        border: 1px solid $tomato;
                         width: 130px;
                         height: 51.5px;
                         text-align: center;
@@ -510,7 +520,7 @@
                         &:hover {
                             color: $white;
                             background-color: $tomato;
-                            border: 2px solid transparent;
+                            border: 1px solid transparent;
                         }
                     }
                 }
@@ -518,7 +528,7 @@
                 .yet {
                     a {
                         color: $tomato;
-                        font-weight: 100;
+                        text-transform: capitalize;
 
                         &:hover {
                             text-decoration: underline;

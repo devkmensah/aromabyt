@@ -93,8 +93,184 @@
     }
 }
 
+@media screen and (max-width: 800px) {
+
+    // ORDER PAGE, COLLECT SECTION
+    #collect {
+        padding: 120px 70px 0;
+        background: $ivory;
+        color: $dark;
+        display: none;
+
+        &:after {
+            content: "";
+            display: none;
+        }
+
+        a {
+            color: $dark;
+        }
+
+        .container {
+            .collect-content {
+                display: block;
+                padding: 50px 0;
+
+                .start-content {
+                    h2 {
+                        text-transform: uppercase;
+                        font-size: 35px;
+                        text-align: center;
+                    }
+
+                    p {
+                        text-align: center;
+                    }
+
+                    .collect-form {
+                        width: 100%;
+
+                        .time-input {
+                            display: block;
+                            width: 100%;
+                            margin: 50px 0;
+                            background: rgba(0, 0, 0, 0.1);
+                            padding: 20px 15px 28px;
+
+                            .time {
+                                display: flex;
+                                width: 100%;
+                                flex-direction: column;
+                                margin-bottom: 20px;
+
+                                input[type="time"] {
+                                    padding: 25px 10px;
+                                    width: 100%;
+                                    height: 45px;
+                                    border: 1px solid transparent;
+                                    font-size: 16px;
+
+                                    &:focus {
+                                        outline: none;
+                                        border: 1px dashed $yellow;
+                                    }
+                                }
+                            }
+
+                            .date {
+                                display: flex;
+                                flex-direction: column;
+                                margin: 0;
+
+                                input[type="date"] {
+                                    padding: 25px 10px;
+                                    width: 100%;
+                                    height: 45px;
+                                    border: 1px solid transparent;
+                                    font-size: 16px;
+
+                                    &:focus {
+                                        outline: none;
+                                        border: 1px dashed $yellow;
+                                    }
+                                }
+                            }
+
+                        }
+
+                        .specify {
+                            display: block;
+                            width: 100%;
+                            text-transform: capitalize;
+                            font-size: 16px;
+                            margin-bottom: 20px;
+
+
+                            input[type="checkbox"] {
+                                width: 18px;
+                                height: 18px;
+                                vertical-align: -23%;
+                                margin-right: 10px;
+                                cursor: pointer;
+                            }
+
+                            // change the background color of checkbox Tick
+                        }
+
+                        button.collect-button {
+                            color: $white;
+                            background: $tomato;
+                            padding: 15px 50px;
+                            display: block;
+                            width: 100%;
+                            text-transform: uppercase;
+                            cursor: pointer;
+                            border: 1px solid transparent;
+
+                            &:focus {
+                                outline: none;
+                            }
+                        }
+                    }
+                }
+
+                .apply {
+                    max-width: 100%;
+                    margin-top: 62px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    hr {
+                        width: 100%;
+                        display: block;
+                        height: 1px;
+                        background-color: $tomato;
+                        border: none;
+                    }
+
+                    .redeem-points {
+                        text-transform: uppercase;
+                        line-height: 1.1;
+                        font-weight: 800;
+                        font-size: 25px;
+                        border-bottom: 1px solid $tomato;
+                        padding: 35px 0 15px;
+                    }
+
+                    .member {
+                        padding-top: 10px;
+                        text-transform: uppercase;
+                    }
+
+
+
+                    .redeem-input {
+                        input {
+                            width: 100%;
+                            font-weight: 100;
+                        }
+
+                        a {
+                            margin-top: 15px;
+                            display: block;
+                            min-width: 100%;
+                            overflow: auto;
+                        }
+                    }
+
+                    p {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
 
 @media (max-width: 769px) {
+
     // HOME PAGE
     #header {
         .top {
@@ -156,16 +332,16 @@
         background: $ivory;
         color: $dark;
 
-        &:after{
+        &:after {
             content: "";
             display: none;
         }
-    
+
         .container {
-    
+
             .delivery-content {
                 display: block;
-    
+
                 .apply {
                     max-width: 100%;
                     padding: 0 25px;
@@ -173,21 +349,21 @@
                     flex-direction: column;
                     align-items: center;
 
-                    hr{
+                    hr {
                         width: 100%;
                         display: block;
-                        height: 1px ;
-                        background-color:  $tomato;
+                        height: 1px;
+                        background-color: $tomato;
                         border: none;
                         margin: 15px 0 35px;
                     }
-    
+
                     .redeem-input {
                         input {
                             width: 100%;
                             font-weight: 100;
                         }
-    
+
                         a {
                             margin-top: 15px;
                             display: block;
@@ -196,13 +372,15 @@
                         }
                     }
 
-                    p{
+                    p {
                         text-align: center;
                     }
                 }
             }
         }
     }
+
+
 }
 
 
@@ -423,15 +601,16 @@
                 overflow: hidden;
                 font-size: 14px;
 
-                .logo-holder{
+                .logo-holder {
                     padding-left: 5px;
-                    a{
-                        .chef{
+
+                    a {
+                        .chef {
                             width: 40px;
                         }
 
-                        .logo{
-                            span{
+                        .logo {
+                            span {
                                 margin-top: -7px;
                                 font-size: 6px;
                             }
@@ -439,7 +618,7 @@
                     }
                 }
 
-               
+
 
                 .sidenav {
                     position: fixed;
@@ -480,6 +659,7 @@
         .container {
             .delivery-content {
                 display: block;
+
                 .delivery-form-content {
                     padding: 0 12px;
 
@@ -491,6 +671,7 @@
                         input {
                             font-size: 14px;
                             font-weight: 100;
+
                             &:first-child {
                                 margin-bottom: 1px;
                             }
@@ -501,6 +682,7 @@
                         }
 
                         .look-up {
+
                             .delivery-button,
                             .cancel {
                                 font-size: 9px;
@@ -508,7 +690,7 @@
                         }
                     }
 
-                    p{
+                    p {
                         font-size: 12px;
                     }
                 }
@@ -532,6 +714,7 @@
                     .redeem-points {
                         font-size: 20px;
                     }
+
                     .redeem-input {
                         input {
                             width: 100%;
