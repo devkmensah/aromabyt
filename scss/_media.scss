@@ -97,29 +97,20 @@
 
     // ORDER PAGE, COLLECT SECTION
     #collect {
-        padding: 120px 70px 0;
         background: $ivory;
         color: $dark;
-        display: none;
 
         &:after {
             content: "";
             display: none;
         }
 
-        a {
-            color: $dark;
-        }
-
         .container {
             .collect-content {
                 display: block;
-                padding: 50px 0;
 
                 .start-content {
                     h2 {
-                        text-transform: uppercase;
-                        font-size: 35px;
                         text-align: center;
                     }
 
@@ -128,8 +119,6 @@
                     }
 
                     .collect-form {
-                        width: 100%;
-
                         .time-input {
                             display: block;
                             width: 100%;
@@ -138,78 +127,27 @@
                             padding: 20px 15px 28px;
 
                             .time {
-                                display: flex;
                                 width: 100%;
-                                flex-direction: column;
                                 margin-bottom: 20px;
 
                                 input[type="time"] {
-                                    padding: 25px 10px;
                                     width: 100%;
-                                    height: 45px;
-                                    border: 1px solid transparent;
-                                    font-size: 16px;
-
-                                    &:focus {
-                                        outline: none;
-                                        border: 1px dashed $yellow;
-                                    }
                                 }
                             }
 
                             .date {
-                                display: flex;
-                                flex-direction: column;
                                 margin: 0;
 
                                 input[type="date"] {
-                                    padding: 25px 10px;
                                     width: 100%;
-                                    height: 45px;
-                                    border: 1px solid transparent;
-                                    font-size: 16px;
-
-                                    &:focus {
-                                        outline: none;
-                                        border: 1px dashed $yellow;
-                                    }
                                 }
                             }
 
                         }
 
-                        .specify {
-                            display: block;
-                            width: 100%;
-                            text-transform: capitalize;
-                            font-size: 16px;
-                            margin-bottom: 20px;
-
-
-                            input[type="checkbox"] {
-                                width: 18px;
-                                height: 18px;
-                                vertical-align: -23%;
-                                margin-right: 10px;
-                                cursor: pointer;
-                            }
-
-                            // change the background color of checkbox Tick
-                        }
-
                         button.collect-button {
-                            color: $white;
-                            background: $tomato;
-                            padding: 15px 50px;
                             display: block;
                             width: 100%;
-                            text-transform: uppercase;
-                            cursor: pointer;
-                            border: 1px solid transparent;
-
-                            &:focus {
-                                outline: none;
-                            }
                         }
                     }
                 }
@@ -230,25 +168,13 @@
                     }
 
                     .redeem-points {
-                        text-transform: uppercase;
-                        line-height: 1.1;
-                        font-weight: 800;
-                        font-size: 25px;
-                        border-bottom: 1px solid $tomato;
                         padding: 35px 0 15px;
                     }
-
-                    .member {
-                        padding-top: 10px;
-                        text-transform: uppercase;
-                    }
-
-
 
                     .redeem-input {
                         input {
                             width: 100%;
-                            font-weight: 100;
+                            font-weight: 400;
                         }
 
                         a {
@@ -361,7 +287,7 @@
                     .redeem-input {
                         input {
                             width: 100%;
-                            font-weight: 100;
+                            font-weight: 400;
                         }
 
                         a {
@@ -588,6 +514,71 @@
             }
         }
     }
+
+    // ORDER PAGE, COLLECT SECTION
+    #collect {
+        padding: 120px 15px 0;
+
+        a {
+            color: $dark;
+        }
+
+        .container {
+            .collect-content {
+                display: block;
+                padding: 50px 0;
+
+                .start-content {
+                    h2 {
+                        text-transform: uppercase;
+                        font-size: 20px;
+                        text-align: center;
+                    }
+
+                    p {
+                        text-align: center;
+                        font-size: 12px;
+                    }
+
+                    .collect-form {
+                        .time-input {
+                            display: block;
+                            width: 100%;
+                            margin: 50px 0;
+                            background: rgba(0, 0, 0, 0.1);
+                            padding: 20px 15px 28px;
+
+                            .time {
+
+                                input[type="time"] {
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+
+                        .specify {
+                            font-size: 12px;
+
+                            input[type="checkbox"] {
+                                vertical-align: -37%;
+                            }
+                        }
+                    }
+                }
+
+                .apply {
+                    p{
+                        font-size: 12px;
+                    }
+
+                    .redeem-points {
+                        font-size: 20px;
+                        padding: 35px 0 15px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -670,7 +661,7 @@
                     #delivery-form {
                         input {
                             font-size: 14px;
-                            font-weight: 100;
+                            font-weight: 400;
 
                             &:first-child {
                                 margin-bottom: 1px;
@@ -719,7 +710,7 @@
                         input {
                             width: 100%;
                             font-size: 14px;
-                            font-weight: 100;
+                            font-weight: 400;
                         }
 
                         a {
