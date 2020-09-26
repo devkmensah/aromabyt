@@ -1,5 +1,6 @@
 //ORDER HEADER STYLING BEGINS
 #order-header {
+   
     .order-nav {
         background-color: $dark;
         display: block;
@@ -9,7 +10,7 @@
         left: 0;
         height: 120px;
         width: 100%;
-        z-index: 2;
+        z-index: 3;
         overflow: hidden;
 
         .order-top {
@@ -130,8 +131,24 @@
 // DELIVERY SECTION BEGINS
 #delivery {
     padding: 120px 70px 0;
-    background: $ivory url('../images/menu/t17.png') no-repeat center center / cover;
-    color: $dark;
+    background: $ivory url('../images/menu/steakmenu.png') no-repeat center center / cover;
+    color: $white;
+    position: relative;
+
+    &:after{
+        content: "";
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.3);
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+    }
+
+    *{
+        z-index: 2;
+    }
+
 
     a {
         color: $dark;
@@ -144,11 +161,7 @@
         .delivery-content {
             display: grid;
             grid-template-columns: 2fr 1fr;
-            // grid-template-columns: 700px 365px;
-            // grid-template-columns: 60% 40%;
             grid-column-gap: 20px;
-            // justify-content: end;
-            // align-items: center;
             padding: 50px 0;
 
             .delivery-form-content {
@@ -170,7 +183,7 @@
                         border: 1px solid $tomato;
                         color: $dark;
                         font-size: 16px;
-                        font-weight: 100;
+                        font-weight: 400;
 
                         &:focus {
                             outline: none;
@@ -274,7 +287,7 @@
                         border: 1px solid $tomato;
                         color: $dark;
                         font-size: 16px;
-                        font-weight: 100;
+                        font-weight: 400;
 
                         &:focus {
                             outline: none;
@@ -298,6 +311,7 @@
                         transition: .3s ease-in-out;
                         max-width: 28%;
                         overflow: hidden;
+                        // color: $white;
 
                         &:hover {
                             color: $white;
@@ -310,7 +324,7 @@
                 .yet {
                     a {
                         color: $tomato;
-                        font-weight: 100;
+                        // font-weight: 100;
 
                         &:hover {
                             text-decoration: underline;
@@ -327,7 +341,7 @@
 // COLLECT SECTION BEGINS
 #collect {
     padding: 120px 70px 0;
-    background-color: $ivory;
+    background: $ivory url('../images/menu/t11.png') no-repeat center center / cover;
     color: $dark;
     display: none;
 

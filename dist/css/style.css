@@ -151,7 +151,7 @@
   left: 0;
   height: 120px;
   width: 100%;
-  z-index: 2;
+  z-index: 3;
   overflow: hidden; }
   #order-header .order-nav .order-top {
     display: flex;
@@ -237,8 +237,19 @@
 
 #delivery {
   padding: 120px 70px 0;
-  background: #FCFCF3 url("../images/menu/t17.png") no-repeat center center/cover;
-  color: #0c0c0c; }
+  background: #FCFCF3 url("../images/menu/steakmenu.png") no-repeat center center/cover;
+  color: #fff;
+  position: relative; }
+  #delivery:after {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0; }
+  #delivery * {
+    z-index: 2; }
   #delivery a {
     color: #0c0c0c; }
   #delivery .container {
@@ -264,7 +275,7 @@
             border: 1px solid #73020C;
             color: #0c0c0c;
             font-size: 16px;
-            font-weight: 100; }
+            font-weight: 400; }
             #delivery .container .delivery-content .delivery-form-content #delivery-form input:focus {
               outline: none;
               border: 1px dashed #FCC000; }
@@ -330,7 +341,7 @@
             border: 1px solid #73020C;
             color: #0c0c0c;
             font-size: 16px;
-            font-weight: 100; }
+            font-weight: 400; }
             #delivery .container .delivery-content .apply .redeem-input input:focus {
               outline: none;
               border: 1px dashed #FCC000; }
@@ -353,14 +364,13 @@
               background-color: #73020C;
               border: 2px solid transparent; }
         #delivery .container .delivery-content .apply .yet a {
-          color: #73020C;
-          font-weight: 100; }
+          color: #73020C; }
           #delivery .container .delivery-content .apply .yet a:hover {
             text-decoration: underline; }
 
 #collect {
   padding: 120px 70px 0;
-  background-color: #FCFCF3;
+  background: #FCFCF3 url("../images/menu/t11.png") no-repeat center center/cover;
   color: #0c0c0c;
   display: none; }
   #collect a {
@@ -1724,8 +1734,11 @@ img {
       grid-template-columns: 1fr; }
   #delivery {
     padding: 120px 5px 0;
-    background-color: #FCFCF3;
+    background: #FCFCF3;
     color: #0c0c0c; }
+    #delivery:after {
+      content: "";
+      display: none; }
     #delivery a {
       color: #0c0c0c; }
     #delivery .container {

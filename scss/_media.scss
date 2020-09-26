@@ -153,8 +153,15 @@
     // ORDER PAGE, DELIVERY SECTION
     #delivery {
         padding: 120px 5px 0;
-        background-color: $ivory;
+        background: $ivory;
         color: $dark;
+
+        &:after{
+            content: "";
+            display: none;
+        }
+    
+        
     
         a {
             color: $dark;
