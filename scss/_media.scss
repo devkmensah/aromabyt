@@ -12,14 +12,15 @@
         }
     }
 
-      // ORDER HEADER
-      #order-header {
+    // ORDER HEADER
+    #order-header {
         .order-nav {
             .order-top {
                 padding: 12px 25px 0;
 
                 .order-logo {
                     padding-top: 0;
+
                     h1 {
                         font-size: 32px;
                     }
@@ -38,7 +39,40 @@
     }
 }
 
+@media screen and (max-width: 950px) {
+
+    // HOME PAGE & MENU SIGN UP FOR WEEKLY OFFERS
+    #main-area {
+        #sign-up {
+            .container {
+                .sign-up-content {
+
+                    #sign-up-form {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+
+                        .terms {
+                            grid-column: 2 / 3;
+                            grid-row: 4 / 5;
+                        }
+
+
+                        .button {
+                            grid-column: 1 / 2;
+                            grid-row: 4 / 5;
+                            padding: 14px 15px;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+
 @media screen and (max-width: 900px) {
+
     // ORDER HEADER
     #order-header {
         .order-nav {
@@ -47,11 +81,13 @@
                 .order-logo {
                     padding-top: 0;
 
-                    .order-chef{
+                    .order-chef {
                         width: 45px;
                     }
+
                     h1 {
                         font-size: 22px;
+
                         span {
                             margin-top: -7px;
                             font-size: 7px;
@@ -385,9 +421,59 @@
             }
         }
     }
+
+
+    // HOME PAGE & MENU SIGN UP FOR WEEKLY OFFERS
+    #main-area {
+        #sign-up {
+            padding: 0 30px;
+
+            .container {
+
+                .sign-up-content {
+                    h1 {
+                        font-size: 27px;
+                    }
+
+                    #sign-up-form {
+                        display: block;
+
+                        input,
+                        label,
+                        button,
+                        p {
+                            margin-bottom: 15px;
+                        }
+
+                        p,
+                        label {
+                            font-size: 12px;
+                        }
+
+                        button.button {
+                            margin-top: 15px;
+                        }
+
+                        input {
+                            width: 100%;
+                            font-size: 14px;
+                        }
+
+                        .button {
+                            width: 100%;
+                            display: block;
+                            font-size: 20px;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 605px) {
+
     // OFFERS STEPS
     #steps {
         padding: 70px 50px 100px;
@@ -398,6 +484,7 @@
         .order-nav {
             .order-top {
                 padding-bottom: 12px;
+
                 .order-logo {
                     padding-top: 0;
 
@@ -844,6 +931,35 @@
                     p {
                         text-align: center;
                         font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 416px){
+      // HOME PAGE & MENU SIGN UP FOR WEEKLY OFFERS
+      #main-area {
+        #sign-up {
+            padding: 0 12px;
+            background-color: $dark;
+
+            .container {
+                .sign-up-content {
+                    h1 {
+                        font-size: 22px;
+                    }
+
+                    #sign-up-form {
+                        p,
+                        label {
+                            font-size: 10px;
+                        }
+
+                        input {
+                            font-size: 13px;
+                        }
                     }
                 }
             }

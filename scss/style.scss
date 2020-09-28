@@ -835,7 +835,7 @@ img {
 
     // LUNCH-DINNER SECTION ENDS
 
-    // SIGN UP FOR WEEKLY OFFERS BEFINS
+    // SIGN UP FOR WEEKLY OFFERS BEGIN
     #sign-up {
         padding: 0 70px;
         background-color: $dark;
@@ -853,59 +853,10 @@ img {
                     letter-spacing: 1.4px;
                 }
 
-                // #sign-up-form {
-                //     display: grid;
-                //     grid-template-areas: 
-                //     'first last button'
-                //     'email post terms'
-                //     'phone number .'
-                //     'check . .'
-                //     ;
-                //     grid-gap: 10px;
-
-
-                //     input, label, button, p{
-                //         max-width: 100%;
-                //     }
-
-                //     .first{
-                //         grid-area: first;
-                //         // width: 100%;
-                //     }
-                //     .last{
-                //         grid-area: last;
-                //     }
-
-                //     .button{
-                //         grid-area: button;
-
-                //     }
-                //     .email{
-                //         grid-area: email;
-                //     }
-                //     .post{
-                //         grid-area: post;
-                //     }
-                //     .terms{
-                //         grid-area: terms;
-                //     }
-                //     .phone{
-                //         grid-area: phone;
-                //     }
-                //     .number{
-                //         grid-area: number;
-                //     }
-                //     .check{
-                //         grid-area: check;
-                //     }
-
-                // }
-
                 #sign-up-form {
                     display: grid;
                     grid-template-columns: repeat(3, 1fr);
                     grid-gap: 10px;
-
 
                     input,
                     label,
@@ -1016,7 +967,6 @@ img {
             }
         }
     }
-
     // SIGN UP FOR WEEKLY OFFERS END
 
 

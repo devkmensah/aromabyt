@@ -1692,6 +1692,18 @@ img {
   #order-header .order-nav .order-options .collect-nav {
     font-size: 22px; } }
 
+@media screen and (max-width: 950px) {
+  #main-area #sign-up .container .sign-up-content #sign-up-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+    #main-area #sign-up .container .sign-up-content #sign-up-form .terms {
+      grid-column: 2 / 3;
+      grid-row: 4 / 5; }
+    #main-area #sign-up .container .sign-up-content #sign-up-form .button {
+      grid-column: 1 / 2;
+      grid-row: 4 / 5;
+      padding: 14px 15px; } }
+
 @media screen and (max-width: 900px) {
   #order-header .order-nav .order-top .order-logo {
     padding-top: 0; }
@@ -1858,7 +1870,30 @@ img {
     font-size: 30px; }
   #sign-up-offers .container .sign-up-content #sign-up-form {
     grid-template-columns: 1fr;
-    width: 100%; } }
+    width: 100%; }
+  #main-area #sign-up {
+    padding: 0 30px; }
+    #main-area #sign-up .container .sign-up-content h1 {
+      font-size: 27px; }
+    #main-area #sign-up .container .sign-up-content #sign-up-form {
+      display: block; }
+      #main-area #sign-up .container .sign-up-content #sign-up-form input,
+      #main-area #sign-up .container .sign-up-content #sign-up-form label,
+      #main-area #sign-up .container .sign-up-content #sign-up-form button,
+      #main-area #sign-up .container .sign-up-content #sign-up-form p {
+        margin-bottom: 15px; }
+      #main-area #sign-up .container .sign-up-content #sign-up-form p,
+      #main-area #sign-up .container .sign-up-content #sign-up-form label {
+        font-size: 12px; }
+      #main-area #sign-up .container .sign-up-content #sign-up-form button.button {
+        margin-top: 15px; }
+      #main-area #sign-up .container .sign-up-content #sign-up-form input {
+        width: 100%;
+        font-size: 14px; }
+      #main-area #sign-up .container .sign-up-content #sign-up-form .button {
+        width: 100%;
+        display: block;
+        font-size: 20px; } }
 
 @media screen and (max-width: 605px) {
   #steps {
@@ -2070,3 +2105,15 @@ img {
         #delivery .container .delivery-content .apply p {
           text-align: center;
           font-size: 12px; } }
+
+@media screen and (max-width: 416px) {
+  #main-area #sign-up {
+    padding: 0 12px;
+    background-color: #0c0c0c; }
+    #main-area #sign-up .container .sign-up-content h1 {
+      font-size: 22px; }
+    #main-area #sign-up .container .sign-up-content #sign-up-form p,
+    #main-area #sign-up .container .sign-up-content #sign-up-form label {
+      font-size: 10px; }
+    #main-area #sign-up .container .sign-up-content #sign-up-form input {
+      font-size: 13px; } }
