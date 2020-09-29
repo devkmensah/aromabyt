@@ -163,8 +163,8 @@
 }
 
 #menu {
-    // margin-top: 98px;
     position: relative;
+    background-color: $dark;
 
     a {
         color: $white;
@@ -177,7 +177,6 @@
         color: $white;
         background-color: $dark;
 
-        // padding: 0 70px;
         .lunch-header,
         .dinner-header,
         .not-steaks-header {
@@ -195,22 +194,17 @@
             grid-gap: 3px;
 
             .box {
-
-                // width: 100%;
-                // height: 350px;
                 .content {
                     overflow: hidden;
                     width: 100%;
-                    // height: 350px;
                     height: 100%;
                     position: relative;
 
 
                     h3 {
-                        // text-align: center;
                         position: absolute;
-                        left: 30px;
-                        bottom: 20px;
+                        left: 10px;
+                        bottom: 1px;
                         z-index: 1;
                         font-size: 23px;
                     }
@@ -253,16 +247,14 @@
             }
         }
     }
+    // LUNCH, DINNER, THE NOT STEAK MENU ENDS
 
-    // LUNCH, DINNER, THE NOT STEAKS MENU ENDS
-
-    // WINES AREA BEGINS
+    // WINE AREA BEGINS
     #wines,
     #other {
         color: $white;
         background-color: $dark;
 
-        // padding: 0 70px;
         .wines-header,
         .other-header {
             padding: 32px 70px;
@@ -278,24 +270,21 @@
             grid-gap: 3px;
 
             .box {
-
-                // width: 100%;
-                // height: 300px;
                 .content {
                     overflow: hidden;
                     width: 100%;
                     height: 100%;
-                    // height: 350px;
                     position: relative;
 
 
                     h3 {
-                        // text-align: center;
                         position: absolute;
-                        left: 15px;
-                        bottom: 12px;
+                        left: 10px;
+                        bottom: 1px;
                         z-index: 1;
                         font-size: 18px;
+                        line-height: 1.3;
+                        color: $white;
                     }
 
                     .image-contain {
@@ -319,12 +308,7 @@
 
                         a {
                             img {
-                                // transition: .3s ease-in-out;
                                 display: block;
-
-                                // &:hover{
-                                //     transform: scale(1.06);
-                                // }
                             }
                         }
                     }
@@ -332,6 +316,5 @@
             }
         }
     }
-
-    // WINES AREA ENDS
+    // WINE AREA ENDS
 }

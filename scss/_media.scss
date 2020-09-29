@@ -154,6 +154,34 @@
             }
         }
     }
+
+    // MENU PAGE
+    #menu {
+
+        #lunch-menu,
+        #dinner-menu,
+        #not-steaks-menu {
+
+            .lunch-boxes,
+            .dinner-boxes,
+            .not-steaks-boxes {
+                display: block;
+
+                .box {
+                    margin: 3px;
+                }
+            }
+        }
+
+        #wines,
+        #other {
+
+            .wine-boxes,
+            .other-boxes {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -519,6 +547,41 @@
                 .collect-nav {
                     font-size: 20px;
                 }
+            }
+        }
+    }
+
+    // MENU PAGE
+    #menu {
+
+        // LUNCH, DINNER, THE NOT STEAKS MENU STARTS
+        #lunch-menu,
+        #dinner-menu,
+        #not-steaks-menu {
+
+            .lunch-boxes,
+            .dinner-boxes,
+            .not-steaks-boxes {
+                .box {
+                    .content {
+
+                        h3 {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+
+        // LUNCH, DINNER, THE NOT STEAK MENU ENDS
+
+        // WINE AREA BEGINS
+        #wines,
+        #other {
+
+            .wine-boxes,
+            .other-boxes {
+                grid-template-columns: repeat(2, 1fr);
             }
         }
     }
@@ -938,9 +1001,10 @@
     }
 }
 
-@media screen and (max-width: 416px){
-      // HOME PAGE & MENU SIGN UP FOR WEEKLY OFFERS
-      #main-area {
+@media screen and (max-width: 416px) {
+
+    // HOME PAGE & MENU SIGN UP FOR WEEKLY OFFERS
+    #main-area {
         #sign-up {
             padding: 0 12px;
             background-color: $dark;
@@ -952,6 +1016,7 @@
                     }
 
                     #sign-up-form {
+
                         p,
                         label {
                             font-size: 10px;
@@ -960,6 +1025,44 @@
                         input {
                             font-size: 13px;
                         }
+                    }
+                }
+            }
+        }
+    }
+
+     // MENU PAGE
+     #menu {
+        // LUNCH, DINNER, THE NOT STEAKS MENU STARTS
+        #lunch-menu,
+        #dinner-menu,
+        #not-steaks-menu {
+            .lunch-boxes,
+            .dinner-boxes,
+            .not-steaks-boxes {
+                .box {
+                    .content {
+    
+                        h3 {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    
+    
+        #wines,
+        #other {
+            .wine-boxes,
+            .other-boxes {
+                display: block;
+
+                .box{
+                    margin: 3px;
+                    
+                    &:last-child{
+                        margin-bottom: 0;
                     }
                 }
             }

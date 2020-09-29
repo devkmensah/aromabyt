@@ -833,7 +833,8 @@
   margin-top: 97px; }
 
 #menu {
-  position: relative; }
+  position: relative;
+  background-color: #0c0c0c; }
   #menu a {
     color: #fff; }
   #menu #lunch-menu,
@@ -889,8 +890,8 @@
         #menu #not-steaks-menu .dinner-boxes .box .content h3,
         #menu #not-steaks-menu .not-steaks-boxes .box .content h3 {
           position: absolute;
-          left: 30px;
-          bottom: 20px;
+          left: 10px;
+          bottom: 1px;
           z-index: 1;
           font-size: 23px; }
         #menu #lunch-menu .lunch-boxes .box .content .image-contain,
@@ -973,10 +974,12 @@
         #menu #other .wine-boxes .box .content h3,
         #menu #other .other-boxes .box .content h3 {
           position: absolute;
-          left: 15px;
-          bottom: 12px;
+          left: 10px;
+          bottom: 1px;
           z-index: 1;
-          font-size: 18px; }
+          font-size: 18px;
+          line-height: 1.3;
+          color: #fff; }
         #menu #wines .wine-boxes .box .content .image-contain,
         #menu #wines .other-boxes .box .content .image-contain,
         #menu #other .wine-boxes .box .content .image-contain,
@@ -1737,7 +1740,32 @@ img {
       justify-content: center; }
     #main-area #footer .container .bottom .rights {
       display: flex;
-      justify-self: center; } }
+      justify-self: center; }
+  #menu #lunch-menu .lunch-boxes,
+  #menu #lunch-menu .dinner-boxes,
+  #menu #lunch-menu .not-steaks-boxes,
+  #menu #dinner-menu .lunch-boxes,
+  #menu #dinner-menu .dinner-boxes,
+  #menu #dinner-menu .not-steaks-boxes,
+  #menu #not-steaks-menu .lunch-boxes,
+  #menu #not-steaks-menu .dinner-boxes,
+  #menu #not-steaks-menu .not-steaks-boxes {
+    display: block; }
+    #menu #lunch-menu .lunch-boxes .box,
+    #menu #lunch-menu .dinner-boxes .box,
+    #menu #lunch-menu .not-steaks-boxes .box,
+    #menu #dinner-menu .lunch-boxes .box,
+    #menu #dinner-menu .dinner-boxes .box,
+    #menu #dinner-menu .not-steaks-boxes .box,
+    #menu #not-steaks-menu .lunch-boxes .box,
+    #menu #not-steaks-menu .dinner-boxes .box,
+    #menu #not-steaks-menu .not-steaks-boxes .box {
+      margin: 3px; }
+  #menu #wines .wine-boxes,
+  #menu #wines .other-boxes,
+  #menu #other .wine-boxes,
+  #menu #other .other-boxes {
+    grid-template-columns: repeat(4, 1fr); } }
 
 @media screen and (max-width: 800px) {
   #collect {
@@ -1915,7 +1943,22 @@ img {
       font-size: 20px; }
   #order-header .order-nav .order-options .delivery-nav,
   #order-header .order-nav .order-options .collect-nav {
-    font-size: 20px; } }
+    font-size: 20px; }
+  #menu #lunch-menu .lunch-boxes .box .content h3,
+  #menu #lunch-menu .dinner-boxes .box .content h3,
+  #menu #lunch-menu .not-steaks-boxes .box .content h3,
+  #menu #dinner-menu .lunch-boxes .box .content h3,
+  #menu #dinner-menu .dinner-boxes .box .content h3,
+  #menu #dinner-menu .not-steaks-boxes .box .content h3,
+  #menu #not-steaks-menu .lunch-boxes .box .content h3,
+  #menu #not-steaks-menu .dinner-boxes .box .content h3,
+  #menu #not-steaks-menu .not-steaks-boxes .box .content h3 {
+    font-size: 20px; }
+  #menu #wines .wine-boxes,
+  #menu #wines .other-boxes,
+  #menu #other .wine-boxes,
+  #menu #other .other-boxes {
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 550px) {
   #main-area #footer {
@@ -2116,4 +2159,29 @@ img {
     #main-area #sign-up .container .sign-up-content #sign-up-form label {
       font-size: 10px; }
     #main-area #sign-up .container .sign-up-content #sign-up-form input {
-      font-size: 13px; } }
+      font-size: 13px; }
+  #menu #lunch-menu .lunch-boxes .box .content h3,
+  #menu #lunch-menu .dinner-boxes .box .content h3,
+  #menu #lunch-menu .not-steaks-boxes .box .content h3,
+  #menu #dinner-menu .lunch-boxes .box .content h3,
+  #menu #dinner-menu .dinner-boxes .box .content h3,
+  #menu #dinner-menu .not-steaks-boxes .box .content h3,
+  #menu #not-steaks-menu .lunch-boxes .box .content h3,
+  #menu #not-steaks-menu .dinner-boxes .box .content h3,
+  #menu #not-steaks-menu .not-steaks-boxes .box .content h3 {
+    font-size: 18px; }
+  #menu #wines .wine-boxes,
+  #menu #wines .other-boxes,
+  #menu #other .wine-boxes,
+  #menu #other .other-boxes {
+    display: block; }
+    #menu #wines .wine-boxes .box,
+    #menu #wines .other-boxes .box,
+    #menu #other .wine-boxes .box,
+    #menu #other .other-boxes .box {
+      margin: 3px; }
+      #menu #wines .wine-boxes .box:last-child,
+      #menu #wines .other-boxes .box:last-child,
+      #menu #other .wine-boxes .box:last-child,
+      #menu #other .other-boxes .box:last-child {
+        margin-bottom: 0; } }
