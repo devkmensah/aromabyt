@@ -39,6 +39,21 @@
     }
 }
 
+@media screen and (max-width: 960px) {
+
+    // MENU LIST
+    #menu-header {
+        #menu-list {
+            .list-items {
+                .items {
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 950px) {
 
     // HOME PAGE & MENU SIGN UP FOR WEEKLY OFFERS
@@ -181,6 +196,54 @@
                 grid-template-columns: repeat(4, 1fr);
             }
         }
+    }
+}
+
+@media screen and (max-width: 867px) {
+
+    // MENU
+    #menu-header {
+        .top {
+            .navigation {
+                font-size: 16px;
+
+                .logo-holder {
+                    a {
+                        .logo {
+                            span {
+                                margin-top: -7px;
+                                font-size: 7px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        // MENU LIST
+        #menu-list {
+            padding: 10px 70px 10px;
+
+            .list-items {
+                .allergen {
+                    margin: 10px 0 8px;
+                }
+
+                .items {
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    font-size: 15px;
+
+                    .item {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .smooth-position {
+        margin-top: 109px;
     }
 }
 
@@ -419,15 +482,6 @@
                             }
                         }
                     }
-                }
-            }
-        }
-
-        #menu-list {
-
-            .list-items {
-                .items {
-                    flex-wrap: wrap;
                 }
             }
         }
@@ -672,7 +726,7 @@
     #menu-header {
         .top {
             .navigation {
-                padding-right: 30px;
+                // padding-right: 43px;
                 font-size: 10px;
 
                 .logo-holder {
@@ -1031,18 +1085,20 @@
         }
     }
 
-     // MENU PAGE
-     #menu {
+    // MENU PAGE
+    #menu {
+
         // LUNCH, DINNER, THE NOT STEAKS MENU STARTS
         #lunch-menu,
         #dinner-menu,
         #not-steaks-menu {
+
             .lunch-boxes,
             .dinner-boxes,
             .not-steaks-boxes {
                 .box {
                     .content {
-    
+
                         h3 {
                             font-size: 18px;
                         }
@@ -1050,22 +1106,41 @@
                 }
             }
         }
-    
-    
+
+
         #wines,
         #other {
+
             .wine-boxes,
             .other-boxes {
                 display: block;
 
-                .box{
+                .box {
                     margin: 3px;
-                    
-                    &:last-child{
+
+                    &:last-child {
                         margin-bottom: 0;
                     }
                 }
             }
         }
     }
+
+    // MENU AREA
+    #menu-header {
+
+        // MENU LIST
+        #menu-list {
+            .list-items {
+                .items {
+                    .item {
+                        span {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 }

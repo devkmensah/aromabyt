@@ -743,7 +743,7 @@
     text-transform: uppercase;
     font-weight: 500;
     font-size: 25px;
-    padding: 25px 30px 25px 0; }
+    padding: 25px 31px 25px 0; }
     #menu-header .top .navigation li {
       border: none;
       padding: 1px 15px; }
@@ -806,7 +806,13 @@
       justify-content: center;
       font-size: 18px; }
       #menu-header #menu-list .list-items .items .item {
-        margin-right: 50px; }
+        margin-right: 32px; }
+        #menu-header #menu-list .list-items .items .item:last-child {
+          margin-right: 0; }
+        #menu-header #menu-list .list-items .items .item span {
+          margin-left: 30px;
+          font-weight: 100;
+          color: #8a8383; }
         #menu-header #menu-list .list-items .items .item a {
           position: relative;
           overflow: hidden;
@@ -824,10 +830,6 @@
             transition: .55s ease-in-out; }
           #menu-header #menu-list .list-items .items .item a:hover:after {
             width: 100%; }
-        #menu-header #menu-list .list-items .items .item:last-child {
-          margin-right: 0; }
-        #menu-header #menu-list .list-items .items .item span {
-          margin-left: 45px; }
 
 .smooth-position {
   margin-top: 97px; }
@@ -1695,6 +1697,11 @@ img {
   #order-header .order-nav .order-options .collect-nav {
     font-size: 22px; } }
 
+@media screen and (max-width: 960px) {
+  #menu-header #menu-list .list-items .items {
+    flex-wrap: wrap;
+    justify-content: flex-start; } }
+
 @media screen and (max-width: 950px) {
   #main-area #sign-up .container .sign-up-content #sign-up-form {
     display: grid;
@@ -1766,6 +1773,25 @@ img {
   #menu #other .wine-boxes,
   #menu #other .other-boxes {
     grid-template-columns: repeat(4, 1fr); } }
+
+@media screen and (max-width: 867px) {
+  #menu-header .top .navigation {
+    font-size: 16px; }
+    #menu-header .top .navigation .logo-holder a .logo span {
+      margin-top: -7px;
+      font-size: 7px; }
+  #menu-header #menu-list {
+    padding: 10px 70px 10px; }
+    #menu-header #menu-list .list-items .allergen {
+      margin: 10px 0 8px; }
+    #menu-header #menu-list .list-items .items {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      font-size: 15px; }
+      #menu-header #menu-list .list-items .items .item {
+        margin-bottom: 10px; }
+  .smooth-position {
+    margin-top: 109px; } }
 
 @media screen and (max-width: 800px) {
   #collect {
@@ -1892,8 +1918,6 @@ img {
     #menu-header .top .navigation .logo-holder a .logo span {
       margin-top: -7px;
       font-size: 7px; }
-  #menu-header #menu-list .list-items .items {
-    flex-wrap: wrap; }
   #sign-up-offers .container .sign-up-content h1 {
     font-size: 30px; }
   #sign-up-offers .container .sign-up-content #sign-up-form {
@@ -1996,7 +2020,6 @@ img {
 
 @media screen and (max-width: 530px) {
   #menu-header .top .navigation {
-    padding-right: 30px;
     font-size: 10px; }
     #menu-header .top .navigation .logo-holder a .logo span {
       margin-top: -6px;
@@ -2184,4 +2207,6 @@ img {
       #menu #wines .other-boxes .box:last-child,
       #menu #other .wine-boxes .box:last-child,
       #menu #other .other-boxes .box:last-child {
-        margin-bottom: 0; } }
+        margin-bottom: 0; }
+  #menu-header #menu-list .list-items .items .item span {
+    display: none; } }
