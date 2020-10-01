@@ -548,11 +548,11 @@ img {
         margin-top: 40px;
         padding: 0 70px;
         color: $dark;
-        // background-color: $ivory;
+        background: $ivory;
 
 
         .container {
-            background-color: $ivory;
+            // background-color: $ivory;
             padding: 40px 0 60px;
 
             a {
@@ -626,10 +626,10 @@ img {
                     align-items: center;
 
 
-                    .input-label {
+                    label.input-label {
                         width: 100%;
 
-                        input {
+                        input[type="text"] {
                             width: 100%;
                             padding: 20px 10px;
                             border: 1px solid transparent;
@@ -665,7 +665,7 @@ img {
                         }
                     }
 
-                    .button-label {
+                    label.button-label {
                         button {
                             margin-right: 10px;
                             background-color: $tomato;
@@ -728,14 +728,15 @@ img {
     #lunch-dinner {
         margin-top: 0;
         padding: 0 70px;
+        background: $ivory;
 
         // background-color: $ivory;
         .container {
             padding: 0 0 70px;
-            background-color: $ivory;
+            // background-color: $ivory;
 
             .lunch-dinner {
-                background-color: $ivory;
+                // background-color: $ivory;
                 // color: $dark;
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
