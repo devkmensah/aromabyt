@@ -171,6 +171,85 @@
 
     #main-area {
 
+        // CAROUSEL
+        #carousel {
+            .sliders-holder {
+                .slider {
+                    .content.delicious {
+                        h3 {
+                            font-size: 55px;
+                            line-height: 1.4;
+                        }
+
+                        a {
+                            font-size: 30px;
+                        }
+                    }
+
+
+
+                    .content.break {
+                        h3 {
+                            font-size: 55px;
+                            line-height: 1.1;
+                        }
+
+                        a {
+                            font-size: 30px;
+                            margin: 20px 0 20px;
+                        }
+                    }
+
+                    .content.corona {
+                        h3 {
+                            padding: 10px 5px 0;
+                            font-size: 60px;
+                            line-height: 1.2;
+                        }
+
+                        p {
+                            margin: 30px 0 15px;
+                            padding: 0 80px;
+                            font-size: 20px;
+                        }
+
+                        .measures {
+                            margin: 30px 0 0;
+
+                            .measure {
+                                i {
+                                    width: 125px;
+                                    height: 125px;
+                                    font-size: 45px;
+                                    line-height: 125px;
+                                }
+
+                                .guidelines {
+                                    font-size: 15px;
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+
+            .buttons {
+                button {
+                    padding: 12px 12px 10px;
+                }
+
+                .previous {
+                    left: 7px;
+                }
+
+                .next {
+                    right: 7px;
+                }
+
+            }
+        }
+
         // FOOTER
         #footer {
             .container {
@@ -551,6 +630,105 @@
 
     // HOME PAGE & MENU SIGN UP FOR WEEKLY OFFERS
     #main-area {
+
+        // CAROUSEL
+        #carousel {
+            .sliders-holder {
+
+                .slider {
+                    max-height: 400px;
+                    width: 100%;
+
+                    .content.delicious {
+                        h3 {
+                            font-size: 40px;
+                            line-height: 1.4;
+                        }
+
+                        a {
+                            padding: 8px 35px;
+                            font-size: 22px;
+                        }
+                    }
+
+
+
+                    .content.break {
+                        h3 {
+                            font-size: 40px;
+                            line-height: 1.2;
+                        }
+
+                        p {
+                            font-size: 14px;
+                        }
+
+                        a {
+                            padding: 8px 35px;
+                            font-size: 22px;
+                            margin: 20px 0 20px;
+                        }
+                    }
+
+                    .content.corona {
+                        h3 {
+                            padding: 10px 4px 0;
+                            font-size: 40px;
+                            line-height: 1.2;
+                        }
+
+                        p {
+                            margin: 35px 0 10px;
+                            padding: 0 35px;
+                            font-size: 16px;
+                        }
+
+                        .measures {
+                            margin: 30px 0 0;
+
+                            .measure {
+
+                                i {
+                                    width: 95px;
+                                    height: 95px;
+                                    font-size: 40px;
+                                    line-height: 95px;
+                                }
+
+                                .guidelines {
+                                    font-size: 10px;
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+
+            .buttons {
+                button {
+                    padding: 4px 4px 2px;
+                }
+
+                .previous {
+                    top: 33%;
+                    left: 7px;
+                }
+
+                .next {
+                    top: 33%;
+                    right: 7px;
+                }
+
+            }
+        }
+
+        #start-section {
+            margin-top: 45px;
+        }
+
+
+
         #sign-up {
             padding: 0 30px;
 
@@ -768,6 +946,8 @@
 
     // HOME PAGE & MENU SIGN UP FOR WEEKLY OFFERS
     #main-area {
+        
+
         // APP SECTION STARTS
         #app {
             .container {
@@ -1175,6 +1355,7 @@
 
     // HOME PAGE & MENU SIGN UP FOR WEEKLY OFFERS
     #main-area {
+
         // APP SECTION STARTS
         #app {
             padding: 0 15px;
@@ -1203,7 +1384,7 @@
 
                     #postcode {
                         border: 4px solid $tomato;
-                        
+
                         label.input-label {
 
                             input[type="text"] {

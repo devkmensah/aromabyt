@@ -289,7 +289,7 @@ img {
 
                     h3 {
                         font-size: 65px;
-                        line-height: 1.1;
+                        line-height: 1;
                         // color: $light-grey;
                         color: $white;
 
@@ -310,7 +310,7 @@ img {
                         font-weight: 800;
                         border-radius: 3px;
                         color: $white;
-                        margin: 20px 0 20px;
+                        margin: 15px 0 20px;
                     }
                 }
 
@@ -637,6 +637,7 @@ img {
                             font-size: 20px;
                             font-weight: 800;
                             color: $dark;
+                            // background-color: $white;
                             background-color: $ivory;
                             font-family: 'Oswald', sans-serif;
 
