@@ -946,7 +946,104 @@
 
     // HOME PAGE & MENU SIGN UP FOR WEEKLY OFFERS
     #main-area {
-        
+
+        // CAROUSEL
+        #carousel {
+            .sliders-holder {
+                .slider {
+                    max-height: 300px;
+                    width: 100%;
+
+                    .content.delicious {
+                        h3 {
+                            margin: 10px 0 0;
+                            font-size: 32px;
+                            line-height: 1.4;
+                        }
+
+                        a {
+                            padding: 8px 35px;
+                            font-size: 18px;
+                            margin: 15px 0 20px;
+                        }
+                    }
+
+
+
+                    .content.break {
+                        h3 {
+                            font-size: 32px;
+                            line-height: 1.1;
+                           margin-top: 13px;
+                        }
+
+                        p {
+                            margin: 8px 0 -10px;
+                            font-size: 10px;
+                        }
+
+                        a {
+                            padding: 8px 35px;
+                            font-size: 18px;
+                            margin: 20px 0 20px;
+                        }
+                    }
+
+                    .content.corona {
+                        h3 {
+                            padding: 25px 4px 0;
+                            font-size: 30px;
+                            line-height: 1.2;
+                        }
+
+                        p {
+                            margin: 21px 0 0px;
+                            padding: 0 27px;
+                            font-size: 12px;
+                        }
+
+                        .measures {
+                            margin: 30px 0 0;
+
+                            .measure {
+                                i {
+                                    width: 70px;
+                                    height: 70px;
+                                    font-size: 30px;
+                                    line-height: 73px;
+                                }
+
+                                .guidelines {
+                                    font-size: 10px;
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+
+            .buttons {
+                button {
+                    padding: 3px 3px 1px;
+                }
+
+                .previous {
+                    top: 24.5%;
+                    left: 5px;
+                }
+
+                .next {
+                    top: 24.5%;
+                    right: 5px;
+                }
+
+            }
+        }
+
+        #start-section {
+            margin-top: -51px;
+        }
 
         // APP SECTION STARTS
         #app {
@@ -1355,6 +1452,107 @@
 
     // HOME PAGE & MENU SIGN UP FOR WEEKLY OFFERS
     #main-area {
+        // CAROUSEL
+        #carousel {
+            .sliders-holder {
+                .slider {
+                    max-height: 250px;
+                    width: 100%;
+
+                    .content.delicious {
+                        h3 {
+                            margin: 10px 0 0;
+                            font-size: 22px;
+                            line-height: 1.4;
+                        }
+
+                        a {
+                            padding: 8px 25px;
+                            font-size: 14px;
+                            margin: 15px 0 20px;
+                        }
+                    }
+
+
+
+                    .content.break {
+                        margin-left: 5px;
+
+                        h3 {
+                            font-size: 22px;
+                            line-height: 1.1;
+                           margin-top: 13px;
+                        }
+
+                        p {
+                            margin: 8px 0 -10px;
+                            font-size: 9px;
+                        }
+
+                        a {
+                            padding: 8px 25px;
+                            font-size: 14px;
+                            margin: 20px 0 20px;
+                        }
+                    }
+
+                    .content.corona {
+                        h3 {
+                            padding: 27px 4px 0;
+                            font-size: 22px;
+                            line-height: 1.2;
+                        }
+
+                        p {
+                            margin: 25px 0 0px;
+                            padding: 0 27px;
+                            font-size: 10px;
+                        }
+
+                        .measures {
+                            margin: 30px 0 0;
+
+                            .measure {
+                                margin: 0 10px;
+
+                                i {
+                                    width: 50px;
+                                    height: 50px;
+                                    font-size: 22px;
+                                    line-height: 55px;
+                                }
+
+                                .guidelines {
+                                    font-size: 8px;
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+
+            .buttons {
+                button {
+                    padding: 3px 3px 1px;
+                }
+
+                .previous {
+                    top: 20.5%;
+                    left: 5px;
+                }
+
+                .next {
+                    top: 20.5%;
+                    right: 5px;
+                }
+
+            }
+        }
+
+        #start-section {
+            margin-top: -107px;
+        }
 
         // APP SECTION STARTS
         #app {

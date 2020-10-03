@@ -2115,6 +2115,55 @@ img {
           font-size: 14px; } }
 
 @media screen and (max-width: 530px) {
+  #main-area #carousel .sliders-holder .slider {
+    max-height: 300px;
+    width: 100%; }
+    #main-area #carousel .sliders-holder .slider .content.delicious h3 {
+      margin: 10px 0 0;
+      font-size: 32px;
+      line-height: 1.4; }
+    #main-area #carousel .sliders-holder .slider .content.delicious a {
+      padding: 8px 35px;
+      font-size: 18px;
+      margin: 15px 0 20px; }
+    #main-area #carousel .sliders-holder .slider .content.break h3 {
+      font-size: 32px;
+      line-height: 1.1;
+      margin-top: 13px; }
+    #main-area #carousel .sliders-holder .slider .content.break p {
+      margin: 8px 0 -10px;
+      font-size: 10px; }
+    #main-area #carousel .sliders-holder .slider .content.break a {
+      padding: 8px 35px;
+      font-size: 18px;
+      margin: 20px 0 20px; }
+    #main-area #carousel .sliders-holder .slider .content.corona h3 {
+      padding: 25px 4px 0;
+      font-size: 30px;
+      line-height: 1.2; }
+    #main-area #carousel .sliders-holder .slider .content.corona p {
+      margin: 21px 0 0px;
+      padding: 0 27px;
+      font-size: 12px; }
+    #main-area #carousel .sliders-holder .slider .content.corona .measures {
+      margin: 30px 0 0; }
+      #main-area #carousel .sliders-holder .slider .content.corona .measures .measure i {
+        width: 70px;
+        height: 70px;
+        font-size: 30px;
+        line-height: 73px; }
+      #main-area #carousel .sliders-holder .slider .content.corona .measures .measure .guidelines {
+        font-size: 10px; }
+  #main-area #carousel .buttons button {
+    padding: 3px 3px 1px; }
+  #main-area #carousel .buttons .previous {
+    top: 24.5%;
+    left: 5px; }
+  #main-area #carousel .buttons .next {
+    top: 24.5%;
+    right: 5px; }
+  #main-area #start-section {
+    margin-top: -51px; }
   #main-area #app .container {
     display: block; }
     #main-area #app .container .left {
@@ -2299,6 +2348,59 @@ img {
           font-size: 12px; } }
 
 @media screen and (max-width: 416px) {
+  #main-area #carousel .sliders-holder .slider {
+    max-height: 250px;
+    width: 100%; }
+    #main-area #carousel .sliders-holder .slider .content.delicious h3 {
+      margin: 10px 0 0;
+      font-size: 22px;
+      line-height: 1.4; }
+    #main-area #carousel .sliders-holder .slider .content.delicious a {
+      padding: 8px 25px;
+      font-size: 14px;
+      margin: 15px 0 20px; }
+    #main-area #carousel .sliders-holder .slider .content.break {
+      margin-left: 5px; }
+      #main-area #carousel .sliders-holder .slider .content.break h3 {
+        font-size: 22px;
+        line-height: 1.1;
+        margin-top: 13px; }
+      #main-area #carousel .sliders-holder .slider .content.break p {
+        margin: 8px 0 -10px;
+        font-size: 9px; }
+      #main-area #carousel .sliders-holder .slider .content.break a {
+        padding: 8px 25px;
+        font-size: 14px;
+        margin: 20px 0 20px; }
+    #main-area #carousel .sliders-holder .slider .content.corona h3 {
+      padding: 27px 4px 0;
+      font-size: 22px;
+      line-height: 1.2; }
+    #main-area #carousel .sliders-holder .slider .content.corona p {
+      margin: 25px 0 0px;
+      padding: 0 27px;
+      font-size: 10px; }
+    #main-area #carousel .sliders-holder .slider .content.corona .measures {
+      margin: 30px 0 0; }
+      #main-area #carousel .sliders-holder .slider .content.corona .measures .measure {
+        margin: 0 10px; }
+        #main-area #carousel .sliders-holder .slider .content.corona .measures .measure i {
+          width: 50px;
+          height: 50px;
+          font-size: 22px;
+          line-height: 55px; }
+        #main-area #carousel .sliders-holder .slider .content.corona .measures .measure .guidelines {
+          font-size: 8px; }
+  #main-area #carousel .buttons button {
+    padding: 3px 3px 1px; }
+  #main-area #carousel .buttons .previous {
+    top: 20.5%;
+    left: 5px; }
+  #main-area #carousel .buttons .next {
+    top: 20.5%;
+    right: 5px; }
+  #main-area #start-section {
+    margin-top: -107px; }
   #main-area #app {
     padding: 0 15px; }
     #main-area #app .container {
