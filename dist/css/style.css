@@ -1301,39 +1301,52 @@ img {
     margin-top: 180px;
     padding: 0 70px; }
     #main-area #start-section .container .start {
-      background: #fff url("../images/steaks/steaky25.jpg") no-repeat center center/cover;
       height: 300px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-transform: uppercase; }
-      #main-area #start-section .container .start h3 {
-        font-size: 35px;
-        letter-spacing: 3px; }
-      #main-area #start-section .container .start .options {
-        margin-top: 40px;
-        display: flex;
-        justify-content: center;
-        align-items: center; }
-        #main-area #start-section .container .start .options .delivery,
-        #main-area #start-section .container .start .options .pickup {
-          display: inline-block;
-          color: #fff;
-          font-size: 22px;
-          font-weight: 800;
-          background: #73020C;
-          padding: 10px 0;
-          border-radius: 3px;
-          width: 150px;
-          text-align: center;
-          transition: 0.35s ease-out; }
-          #main-area #start-section .container .start .options .delivery:hover,
-          #main-area #start-section .container .start .options .pickup:hover {
-            background-color: #73020C;
-            opacity: 0.8; }
-        #main-area #start-section .container .start .options span {
-          margin: 0 10px; }
+      width: 100%;
+      background: #fff;
+      color: #fff; }
+      #main-area #start-section .container .start .start-content {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: inherit;
+        right: 0;
+        text-align: center;
+        z-index: 1;
+        color: #fff;
+        text-transform: uppercase;
+        margin-top: 67px; }
+        #main-area #start-section .container .start .start-content h3 {
+          font-size: 35px;
+          letter-spacing: 3px; }
+        #main-area #start-section .container .start .start-content .options {
+          margin-top: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          #main-area #start-section .container .start .start-content .options .delivery,
+          #main-area #start-section .container .start .start-content .options .pickup {
+            display: inline-block;
+            color: #fff;
+            font-size: 22px;
+            font-weight: 800;
+            background: #73020C;
+            padding: 10px 0;
+            border-radius: 3px;
+            width: 150px;
+            text-align: center;
+            transition: 0.35s ease-out; }
+            #main-area #start-section .container .start .start-content .options .delivery:hover,
+            #main-area #start-section .container .start .start-content .options .pickup:hover {
+              background-color: #73020C;
+              opacity: 0.8; }
+          #main-area #start-section .container .start .start-content .options span {
+            margin: 0 10px; }
+      #main-area #start-section .container .start .start-image {
+        background: #fff url("../images/steaks/steaky25.jpg") no-repeat center center/cover;
+        height: 300px;
+        width: 100%;
+        position: relative; }
   #main-area #app {
     margin-top: 40px;
     padding: 0 70px;
