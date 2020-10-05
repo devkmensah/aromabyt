@@ -2031,7 +2031,12 @@ img {
     top: 33%;
     right: 7px; }
   #main-area #start-section {
-    margin-top: 45px; }
+    margin-top: 45px;
+    padding: 0 30px; }
+  #main-area #app {
+    padding: 0 30px; }
+  #main-area #lunch-dinner {
+    padding: 0 30px; }
   #main-area #sign-up {
     padding: 0 30px; }
     #main-area #sign-up .container .sign-up-content h1 {
@@ -2057,6 +2062,38 @@ img {
         font-size: 20px; } }
 
 @media screen and (max-width: 605px) {
+  #main-area #start-section .container .start {
+    height: 450px; }
+    #main-area #start-section .container .start .start-content {
+      position: static !important;
+      height: 200px;
+      margin-top: 0px;
+      background: #fff;
+      -webkit-box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.14);
+      -moz-box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.14);
+      box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.14);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      #main-area #start-section .container .start .start-content h3 {
+        font-size: 28px;
+        color: #0c0c0c;
+        margin-bottom: 12px;
+        line-height: 1.1; }
+      #main-area #start-section .container .start .start-content .options {
+        margin-top: 12px;
+        color: #0c0c0c; }
+        #main-area #start-section .container .start .start-content .options .delivery,
+        #main-area #start-section .container .start .start-content .options .pickup {
+          font-size: 18px;
+          width: 130px; }
+        #main-area #start-section .container .start .start-content .options span {
+          font-weight: 100; }
+    #main-area #start-section .container .start .start-image {
+      background: #fff url("../images/start/start5.jpg") no-repeat center center/cover;
+      height: 250px;
+      position: static !important; }
   #steps {
     padding: 70px 50px 100px; }
   #order-header .order-nav .order-top {
@@ -2292,6 +2329,21 @@ img {
           left: 0; }
         #header .top .container .sidenav a {
           color: #0c0c0c; }
+  #main-area #start-section .container .start {
+    height: 450px; }
+    #main-area #start-section .container .start .start-content h3 {
+      font-size: 20px; }
+    #main-area #start-section .container .start .start-content .options .delivery,
+    #main-area #start-section .container .start .start-content .options .pickup {
+      font-size: 13px;
+      width: 80px;
+      padding: 8px 0; }
+    #main-area #start-section .container .start .start-content .options span {
+      font-size: 11px; }
+    #main-area #start-section .container .start .start-image {
+      background: #fff url("../images/start/start5.jpg") no-repeat center center/cover;
+      height: 250px;
+      position: static !important; }
   #order-header .order-nav .order-top {
     font-size: 14px;
     padding: 16px 0; }
