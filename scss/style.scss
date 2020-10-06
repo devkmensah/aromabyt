@@ -734,7 +734,9 @@ img {
             // background-color: $ivory;
 
             .lunch-dinner {
-               
+               br{
+                   display: none;
+               }
                 // display: grid;
                 // grid-template-columns: repeat(2, 1fr);
                 // justify-content: center;
@@ -742,7 +744,37 @@ img {
                 // grid-gap: 20px;
 
                 .lunch {
-                  
+                    color: $dark;
+                    height: 425px;
+                    a{
+                        color: $dark;
+                    }
+                    .lunch-content{
+                        background: $white;
+                        height: 135px;
+                        padding: 15px 0 0 25px;
+                        h2 {
+                                    // line-height: 1.2;
+                                    font-size: 30px;
+                                    text-transform: uppercase;
+        
+                                }
+        
+                                a {
+                                    display: inline-block;
+                                    padding: 5px 12px;
+                                    font-size: 20px;
+                                    text-transform: uppercase;
+                                    border: 1px solid $dark;
+                                    font-weight: 500;
+                                    margin-top: 5px;
+                                    border-radius: 3px;
+                                }
+                    }
+                    .lunch-image{
+                          background: url('../images/steaks/steak55.jpg') no-repeat center center / cover;
+                          height: 290px;
+                    }
                     // images that could be used here, 55, 49, 48, 20, 19, 31, 34, steaky13
                     // background: url('../images/steaks/steak55.jpg') no-repeat center center / cover;
                     // padding: 20px;
