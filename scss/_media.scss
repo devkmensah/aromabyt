@@ -122,13 +122,16 @@
 }
 
 @media screen and (min-width: 605px) and (max-width: 769px) {
-    #main-area{
+    #main-area {
         #lunch-dinner {
             .container {
                 .lunch-dinner {
 
-                    .lunch, .dinner {
-                        .lunch-content, .dinner-content {
+                    .lunch,
+                    .dinner {
+
+                        .lunch-content,
+                        .dinner-content {
                             padding: 0 0 0 10px;
 
                             h2 {
@@ -623,6 +626,7 @@
 
 
 @media (max-width: 769px) {
+
     // HOME PAGE
     #header {
         .top {
@@ -1072,7 +1076,7 @@
 
             .wine-boxes,
             .other-boxes {
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: repeat(3, 1fr);
             }
         }
     }
@@ -1332,20 +1336,39 @@
         #lunch-dinner {
             .container {
                 .lunch-dinner {
-                    .lunch, .dinner {
-                        .lunch-content, .dinner-content {
+
+                    .lunch,
+                    .dinner {
+
+                        .lunch-content,
+                        .dinner-content {
                             padding-top: 18px;
+
                             h2 {
                                 font-size: 25px;
                                 padding-bottom: 8px;
                             }
-    
+
                             a {
                                 font-size: 18px;
                             }
                         }
                     }
-                }   
+                }
+            }
+        }
+
+        // MENU PAGE
+        #menu {
+
+            #wines,
+            #other {
+
+                .wine-boxes,
+                .other-boxes {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                }
             }
         }
     }
@@ -1557,6 +1580,7 @@
 
                     .start-content {
                         height: 150px;
+
                         h3 {
                             font-size: 20px;
                         }
@@ -1583,25 +1607,29 @@
         }
 
         #lunch-dinner {
-    
+
             .container {
-    
+
                 .lunch-dinner {
-                    .lunch, .dinner {
-                        .lunch-content, .dinner-content {
+
+                    .lunch,
+                    .dinner {
+
+                        .lunch-content,
+                        .dinner-content {
                             padding: 18px 15px 0;
-    
+
                             h2 {
                                 font-size: 24px;
                                 padding-bottom: 8px;
                             }
-    
+
                             a {
                                 padding: 5px 12px;
                             }
                         }
                     }
-                }   
+                }
             }
         }
     }
@@ -1854,6 +1882,7 @@
 
                     .start-content {
                         height: 120px;
+
                         h3 {
                             font-size: 18px;
                             padding-left: 2px;
@@ -1861,6 +1890,7 @@
 
                         .options {
                             margin-top: 5px;
+
                             .delivery,
                             .pickup {
                                 font-size: 12px;
@@ -1964,30 +1994,35 @@
         // LUNCH & DINNER
         #lunch-dinner {
             padding: 0 15px;
+
             .container {
                 .lunch-dinner {
-                    .lunch, .dinner {
+
+                    .lunch,
+                    .dinner {
                         height: 298px;
-    
-                        .lunch-content, .dinner-content {
+
+                        .lunch-content,
+                        .dinner-content {
                             height: 108px;
                             padding: 18px 15px 0;
-    
+
                             h2 {
                                 font-size: 18px;
                                 padding-bottom: 8px;
                             }
-    
+
                             a {
                                 font-size: 12px;
                             }
                         }
-    
-                        .lunch-image, .dinner-image {
+
+                        .lunch-image,
+                        .dinner-image {
                             height: 190px;
                         }
                     }
-                }   
+                }
             }
         }
 
@@ -2038,24 +2073,6 @@
                 }
             }
         }
-
-
-        #wines,
-        #other {
-
-            .wine-boxes,
-            .other-boxes {
-                display: block;
-
-                .box {
-                    margin: 3px;
-
-                    &:last-child {
-                        margin-bottom: 0;
-                    }
-                }
-            }
-        }
     }
 
     // MENU AREA
@@ -2077,21 +2094,21 @@
 
 }
 
-@media screen and (max-width: 333px){
-    #main-area{
+@media screen and (max-width: 333px) {
+    #main-area {
         #lunch-dinner {
             .container {
                 .lunch-dinner {
                     .dinner {
                         .dinner-content {
                             padding: 10px 15px 0;
-    
+
                             h2 {
                                 line-height: 1.3;
                             }
                         }
                     }
-                }   
+                }
             }
         }
     }

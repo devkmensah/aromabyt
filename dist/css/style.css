@@ -1769,13 +1769,22 @@ img {
           background-color: rgba(0, 0, 0, 0.1); } }
 
 @media screen and (min-width: 605px) and (max-width: 769px) {
-  #main-area #lunch-dinner .container .lunch-dinner .lunch .lunch-content, #main-area #lunch-dinner .container .lunch-dinner .lunch .dinner-content, #main-area #lunch-dinner .container .lunch-dinner .dinner .lunch-content, #main-area #lunch-dinner .container .lunch-dinner .dinner .dinner-content {
+  #main-area #lunch-dinner .container .lunch-dinner .lunch .lunch-content,
+  #main-area #lunch-dinner .container .lunch-dinner .lunch .dinner-content,
+  #main-area #lunch-dinner .container .lunch-dinner .dinner .lunch-content,
+  #main-area #lunch-dinner .container .lunch-dinner .dinner .dinner-content {
     padding: 0 0 0 10px; }
-    #main-area #lunch-dinner .container .lunch-dinner .lunch .lunch-content h2, #main-area #lunch-dinner .container .lunch-dinner .lunch .dinner-content h2, #main-area #lunch-dinner .container .lunch-dinner .dinner .lunch-content h2, #main-area #lunch-dinner .container .lunch-dinner .dinner .dinner-content h2 {
+    #main-area #lunch-dinner .container .lunch-dinner .lunch .lunch-content h2,
+    #main-area #lunch-dinner .container .lunch-dinner .lunch .dinner-content h2,
+    #main-area #lunch-dinner .container .lunch-dinner .dinner .lunch-content h2,
+    #main-area #lunch-dinner .container .lunch-dinner .dinner .dinner-content h2 {
       line-height: 1.5;
       font-size: 30px;
       padding: 25px 0; }
-    #main-area #lunch-dinner .container .lunch-dinner .lunch .lunch-content a, #main-area #lunch-dinner .container .lunch-dinner .lunch .dinner-content a, #main-area #lunch-dinner .container .lunch-dinner .dinner .lunch-content a, #main-area #lunch-dinner .container .lunch-dinner .dinner .dinner-content a {
+    #main-area #lunch-dinner .container .lunch-dinner .lunch .lunch-content a,
+    #main-area #lunch-dinner .container .lunch-dinner .lunch .dinner-content a,
+    #main-area #lunch-dinner .container .lunch-dinner .dinner .lunch-content a,
+    #main-area #lunch-dinner .container .lunch-dinner .dinner .dinner-content a {
       font-size: 20px; } }
 
 @media screen and (max-width: 1125px) {
@@ -2212,7 +2221,7 @@ img {
   #menu #wines .other-boxes,
   #menu #other .wine-boxes,
   #menu #other .other-boxes {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); } }
 
 @media screen and (max-width: 550px) {
   #main-area #footer {
@@ -2327,13 +2336,28 @@ img {
         display: block;
         width: 100%;
         font-size: 15px; }
-  #main-area #lunch-dinner .container .lunch-dinner .lunch .lunch-content, #main-area #lunch-dinner .container .lunch-dinner .lunch .dinner-content, #main-area #lunch-dinner .container .lunch-dinner .dinner .lunch-content, #main-area #lunch-dinner .container .lunch-dinner .dinner .dinner-content {
+  #main-area #lunch-dinner .container .lunch-dinner .lunch .lunch-content,
+  #main-area #lunch-dinner .container .lunch-dinner .lunch .dinner-content,
+  #main-area #lunch-dinner .container .lunch-dinner .dinner .lunch-content,
+  #main-area #lunch-dinner .container .lunch-dinner .dinner .dinner-content {
     padding-top: 18px; }
-    #main-area #lunch-dinner .container .lunch-dinner .lunch .lunch-content h2, #main-area #lunch-dinner .container .lunch-dinner .lunch .dinner-content h2, #main-area #lunch-dinner .container .lunch-dinner .dinner .lunch-content h2, #main-area #lunch-dinner .container .lunch-dinner .dinner .dinner-content h2 {
+    #main-area #lunch-dinner .container .lunch-dinner .lunch .lunch-content h2,
+    #main-area #lunch-dinner .container .lunch-dinner .lunch .dinner-content h2,
+    #main-area #lunch-dinner .container .lunch-dinner .dinner .lunch-content h2,
+    #main-area #lunch-dinner .container .lunch-dinner .dinner .dinner-content h2 {
       font-size: 25px;
       padding-bottom: 8px; }
-    #main-area #lunch-dinner .container .lunch-dinner .lunch .lunch-content a, #main-area #lunch-dinner .container .lunch-dinner .lunch .dinner-content a, #main-area #lunch-dinner .container .lunch-dinner .dinner .lunch-content a, #main-area #lunch-dinner .container .lunch-dinner .dinner .dinner-content a {
+    #main-area #lunch-dinner .container .lunch-dinner .lunch .lunch-content a,
+    #main-area #lunch-dinner .container .lunch-dinner .lunch .dinner-content a,
+    #main-area #lunch-dinner .container .lunch-dinner .dinner .lunch-content a,
+    #main-area #lunch-dinner .container .lunch-dinner .dinner .dinner-content a {
       font-size: 18px; }
+  #main-area #menu #wines .wine-boxes,
+  #main-area #menu #wines .other-boxes,
+  #main-area #menu #other .wine-boxes,
+  #main-area #menu #other .other-boxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
   #menu-header .top .navigation {
     font-size: 10px; }
     #menu-header .top .navigation .logo-holder a .logo span {
@@ -2434,12 +2458,21 @@ img {
       background: #fff url("../images/start/start5.jpg") no-repeat center center/cover;
       height: 250px;
       position: static !important; }
-  #main-area #lunch-dinner .container .lunch-dinner .lunch .lunch-content, #main-area #lunch-dinner .container .lunch-dinner .lunch .dinner-content, #main-area #lunch-dinner .container .lunch-dinner .dinner .lunch-content, #main-area #lunch-dinner .container .lunch-dinner .dinner .dinner-content {
+  #main-area #lunch-dinner .container .lunch-dinner .lunch .lunch-content,
+  #main-area #lunch-dinner .container .lunch-dinner .lunch .dinner-content,
+  #main-area #lunch-dinner .container .lunch-dinner .dinner .lunch-content,
+  #main-area #lunch-dinner .container .lunch-dinner .dinner .dinner-content {
     padding: 18px 15px 0; }
-    #main-area #lunch-dinner .container .lunch-dinner .lunch .lunch-content h2, #main-area #lunch-dinner .container .lunch-dinner .lunch .dinner-content h2, #main-area #lunch-dinner .container .lunch-dinner .dinner .lunch-content h2, #main-area #lunch-dinner .container .lunch-dinner .dinner .dinner-content h2 {
+    #main-area #lunch-dinner .container .lunch-dinner .lunch .lunch-content h2,
+    #main-area #lunch-dinner .container .lunch-dinner .lunch .dinner-content h2,
+    #main-area #lunch-dinner .container .lunch-dinner .dinner .lunch-content h2,
+    #main-area #lunch-dinner .container .lunch-dinner .dinner .dinner-content h2 {
       font-size: 24px;
       padding-bottom: 8px; }
-    #main-area #lunch-dinner .container .lunch-dinner .lunch .lunch-content a, #main-area #lunch-dinner .container .lunch-dinner .lunch .dinner-content a, #main-area #lunch-dinner .container .lunch-dinner .dinner .lunch-content a, #main-area #lunch-dinner .container .lunch-dinner .dinner .dinner-content a {
+    #main-area #lunch-dinner .container .lunch-dinner .lunch .lunch-content a,
+    #main-area #lunch-dinner .container .lunch-dinner .lunch .dinner-content a,
+    #main-area #lunch-dinner .container .lunch-dinner .dinner .lunch-content a,
+    #main-area #lunch-dinner .container .lunch-dinner .dinner .dinner-content a {
       padding: 5px 12px; }
   #order-header .order-nav .order-top {
     font-size: 14px;
@@ -2618,17 +2651,30 @@ img {
         font-size: 15px; }
   #main-area #lunch-dinner {
     padding: 0 15px; }
-    #main-area #lunch-dinner .container .lunch-dinner .lunch, #main-area #lunch-dinner .container .lunch-dinner .dinner {
+    #main-area #lunch-dinner .container .lunch-dinner .lunch,
+    #main-area #lunch-dinner .container .lunch-dinner .dinner {
       height: 298px; }
-      #main-area #lunch-dinner .container .lunch-dinner .lunch .lunch-content, #main-area #lunch-dinner .container .lunch-dinner .lunch .dinner-content, #main-area #lunch-dinner .container .lunch-dinner .dinner .lunch-content, #main-area #lunch-dinner .container .lunch-dinner .dinner .dinner-content {
+      #main-area #lunch-dinner .container .lunch-dinner .lunch .lunch-content,
+      #main-area #lunch-dinner .container .lunch-dinner .lunch .dinner-content,
+      #main-area #lunch-dinner .container .lunch-dinner .dinner .lunch-content,
+      #main-area #lunch-dinner .container .lunch-dinner .dinner .dinner-content {
         height: 108px;
         padding: 18px 15px 0; }
-        #main-area #lunch-dinner .container .lunch-dinner .lunch .lunch-content h2, #main-area #lunch-dinner .container .lunch-dinner .lunch .dinner-content h2, #main-area #lunch-dinner .container .lunch-dinner .dinner .lunch-content h2, #main-area #lunch-dinner .container .lunch-dinner .dinner .dinner-content h2 {
+        #main-area #lunch-dinner .container .lunch-dinner .lunch .lunch-content h2,
+        #main-area #lunch-dinner .container .lunch-dinner .lunch .dinner-content h2,
+        #main-area #lunch-dinner .container .lunch-dinner .dinner .lunch-content h2,
+        #main-area #lunch-dinner .container .lunch-dinner .dinner .dinner-content h2 {
           font-size: 18px;
           padding-bottom: 8px; }
-        #main-area #lunch-dinner .container .lunch-dinner .lunch .lunch-content a, #main-area #lunch-dinner .container .lunch-dinner .lunch .dinner-content a, #main-area #lunch-dinner .container .lunch-dinner .dinner .lunch-content a, #main-area #lunch-dinner .container .lunch-dinner .dinner .dinner-content a {
+        #main-area #lunch-dinner .container .lunch-dinner .lunch .lunch-content a,
+        #main-area #lunch-dinner .container .lunch-dinner .lunch .dinner-content a,
+        #main-area #lunch-dinner .container .lunch-dinner .dinner .lunch-content a,
+        #main-area #lunch-dinner .container .lunch-dinner .dinner .dinner-content a {
           font-size: 12px; }
-      #main-area #lunch-dinner .container .lunch-dinner .lunch .lunch-image, #main-area #lunch-dinner .container .lunch-dinner .lunch .dinner-image, #main-area #lunch-dinner .container .lunch-dinner .dinner .lunch-image, #main-area #lunch-dinner .container .lunch-dinner .dinner .dinner-image {
+      #main-area #lunch-dinner .container .lunch-dinner .lunch .lunch-image,
+      #main-area #lunch-dinner .container .lunch-dinner .lunch .dinner-image,
+      #main-area #lunch-dinner .container .lunch-dinner .dinner .lunch-image,
+      #main-area #lunch-dinner .container .lunch-dinner .dinner .dinner-image {
         height: 190px; }
   #main-area #sign-up {
     padding: 0 12px;
@@ -2650,21 +2696,6 @@ img {
   #menu #not-steaks-menu .dinner-boxes .box .content h3,
   #menu #not-steaks-menu .not-steaks-boxes .box .content h3 {
     font-size: 18px; }
-  #menu #wines .wine-boxes,
-  #menu #wines .other-boxes,
-  #menu #other .wine-boxes,
-  #menu #other .other-boxes {
-    display: block; }
-    #menu #wines .wine-boxes .box,
-    #menu #wines .other-boxes .box,
-    #menu #other .wine-boxes .box,
-    #menu #other .other-boxes .box {
-      margin: 3px; }
-      #menu #wines .wine-boxes .box:last-child,
-      #menu #wines .other-boxes .box:last-child,
-      #menu #other .wine-boxes .box:last-child,
-      #menu #other .other-boxes .box:last-child {
-        margin-bottom: 0; }
   #menu-header #menu-list .list-items .items .item span {
     display: none; } }
 
