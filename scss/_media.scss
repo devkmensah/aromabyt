@@ -1270,11 +1270,11 @@
 
                     h3 {
                         font-size: 20px;
+                        text-align: left;
                     }
 
                     .partners {
-                        // NB: MARGIN SHOULD ONLY BE FOR LARGER SCREENS
-                        grid-template-columns: repeat(2, 1fr);
+                        // grid-template-columns: repeat(4, 1fr);
                     }
 
                     #postcode {
@@ -1845,8 +1845,9 @@
         }
 
         #start-section {
+            padding: 0 15px;
             margin-top: -107px;
-            
+
             .container {
                 .start {
                     height: 310px;
@@ -1855,6 +1856,7 @@
                         height: 120px;
                         h3 {
                             font-size: 18px;
+                            padding-left: 2px;
                         }
 
                         .options {
@@ -1886,21 +1888,22 @@
                 display: block;
 
                 .left {
-                    padding: 0;
+                    padding: 15px 0 0;
 
                     h3 {
                         line-height: 1.3;
-                        font-size: 20px;
+                        font-size: 18px;
+                        text-align: left;
                     }
 
                     .partners {
                         // NB: MARGIN SHOULD ONLY BE FOR LARGER SCREENS
                         margin: 0;
-                        display: block;
-                        padding: 0 70px;
+                        // display: block;
+                        // padding: 0 70px;
 
                         .partner {
-                            margin: 10px 0;
+                            margin: 10px 0 12px;
                         }
                     }
 
@@ -1910,20 +1913,20 @@
                         label.input-label {
 
                             input[type="text"] {
-                                font-size: 16px;
+                                font-size: 15px;
                             }
                         }
 
                         label.button-label {
                             button {
-                                padding: 15px 35px;
+                                padding: 15px 30px;
                             }
                         }
                     }
                 }
 
                 .right {
-                    padding-top: 40px 0 0;
+                    // padding: 40px 0 0;
 
                     h3 {
                         font-size: 25px;
@@ -1936,7 +1939,7 @@
 
 
                     p.convenience {
-                        font-size: 16px;
+                        font-size: 15px;
 
                         br {
                             display: none;
@@ -1944,7 +1947,7 @@
                     }
 
                     p.cost {
-                        margin: 0px 0 30px;
+                        margin: 0px 0 18px;
                         font-size: 16px;
                     }
 
@@ -1960,6 +1963,7 @@
 
         // LUNCH & DINNER
         #lunch-dinner {
+            padding: 0 15px;
             .container {
                 .lunch-dinner {
                     .lunch, .dinner {
