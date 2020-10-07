@@ -1,3 +1,153 @@
+@media screen and (min-width: 605px) {
+    #main-area {
+        #lunch-dinner {
+            .container {
+                .lunch-dinner {
+                    br {
+                        display: block;
+                    }
+
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    justify-content: center;
+                    align-items: center;
+                    grid-gap: 20px;
+
+                    .lunch {
+                        height: 290px;
+                        color: $white;
+                        position: relative;
+
+                        .lunch-content {
+                            height: 0;
+                            color: $white;
+                            background: transparent;
+                            padding: 0 0 0 20px;
+                            width: 100%;
+                            position: absolute;
+                            z-index: 1;
+
+                            h2 {
+                                line-height: 1.2;
+                                font-size: 36px;
+                                text-transform: uppercase;
+                                padding: 25px 0 20px;
+                            }
+
+                            a {
+                                display: inline-block;
+                                padding: 2px 10px;
+                                font-size: 25px;
+                                text-transform: uppercase;
+                                border: 1px solid $white;
+                                font-weight: 400;
+                                color: $white;
+                                border-radius: 0;
+                                margin-top: 0;
+                            }
+                        }
+
+                        .lunch-image {
+                            height: 100%;
+
+                            &::before {
+                                content: "";
+                                top: 0;
+                                bottom: 0;
+                                left: 0;
+                                right: 0;
+                                width: 100%;
+                                position: absolute;
+                                background-color: rgba(0, 0, 0, 0.1);
+                            }
+                        }
+
+                    }
+
+                    .dinner {
+                        margin-top: 0;
+                        height: 290px;
+                        color: $white;
+                        position: relative;
+
+                        .dinner-content {
+                            height: 0;
+                            color: $white;
+                            background: transparent;
+                            padding: 0 0 0 20px;
+                            width: 100%;
+                            position: absolute;
+                            z-index: 1;
+
+                            h2 {
+                                line-height: 1.2;
+                                font-size: 36px;
+                                text-transform: uppercase;
+                                padding: 25px 0 20px;
+                            }
+
+                            a {
+                                display: inline-block;
+                                padding: 2px 10px;
+                                font-size: 25px;
+                                text-transform: uppercase;
+                                border: 1px solid $white;
+                                font-weight: 400;
+                                color: $white;
+                                border-radius: 0;
+                                margin-top: 0;
+                            }
+                        }
+
+                        .dinner-image {
+                            height: 100%;
+
+                            &::before {
+                                content: "";
+                                top: 0;
+                                bottom: 0;
+                                left: 0;
+                                right: 0;
+                                width: 100%;
+                                position: absolute;
+                                background-color: rgba(0, 0, 0, 0.1);
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 605px) and (max-width: 769px) {
+    #main-area{
+        #lunch-dinner {
+            .container {
+                .lunch-dinner {
+
+                    .lunch, .dinner {
+                        .lunch-content, .dinner-content {
+                            padding: 0 0 0 10px;
+
+                            h2 {
+                                line-height: 1.5;
+                                font-size: 30px;
+                                padding: 25px 0;
+                            }
+
+                            a {
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 1125px) {
 
     // OFFERS STEPS
@@ -473,7 +623,6 @@
 
 
 @media (max-width: 769px) {
-
     // HOME PAGE
     #header {
         .top {
@@ -835,7 +984,7 @@
 
                     .start-image {
                         // 4, 5, 
-                          background: $white url('../images/start/start5.jpg') no-repeat center center / cover;
+                        background: $white url('../images/start/start5.jpg') no-repeat center center / cover;
                         //   background: $white url('../images/start/start4.jpg') no-repeat center center / cover;
                         // background: $white url('../images/steaks/steaky25.jpg') no-repeat center center / cover;
                         height: 250px;
@@ -1181,6 +1330,26 @@
                 }
             }
         }
+
+        #lunch-dinner {
+            .container {
+                .lunch-dinner {
+                    .lunch, .dinner {
+                        .lunch-content, .dinner-content {
+                            padding-top: 18px;
+                            h2 {
+                                font-size: 25px;
+                                padding-bottom: 8px;
+                            }
+    
+                            a {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }   
+            }
+        }
     }
 
     // MENU
@@ -1381,7 +1550,7 @@
         }
     }
 
-    #main-area{
+    #main-area {
         #start-section {
 
             .container {
@@ -1394,6 +1563,7 @@
                         }
 
                         .options {
+
                             .delivery,
                             .pickup {
                                 font-size: 13px;
@@ -1409,13 +1579,36 @@
 
                     .start-image {
                         // 4, 5, 
-                          background: $white url('../images/start/start5.jpg') no-repeat center center / cover;
+                        background: $white url('../images/start/start5.jpg') no-repeat center center / cover;
                         //   background: $white url('../images/start/start4.jpg') no-repeat center center / cover;
                         // background: $white url('../images/steaks/steaky25.jpg') no-repeat center center / cover;
                         height: 250px;
                         position: static !important;
                     }
                 }
+            }
+        }
+
+        #lunch-dinner {
+    
+            .container {
+    
+                .lunch-dinner {
+                    .lunch, .dinner {
+                        .lunch-content, .dinner-content {
+                            padding: 18px 15px 0;
+    
+                            h2 {
+                                font-size: 24px;
+                                padding-bottom: 8px;
+                            }
+    
+                            a {
+                                padding: 5px 12px;
+                            }
+                        }
+                    }
+                }   
             }
         }
     }
@@ -1742,6 +1935,35 @@
             }
         }
 
+        // LUNCH & DINNER
+        #lunch-dinner {
+            .container {
+                .lunch-dinner {
+                    .lunch, .dinner {
+                        height: 298px;
+    
+                        .lunch-content, .dinner-content {
+                            height: 108px;
+                            padding: 18px 15px 0;
+    
+                            h2 {
+                                font-size: 18px;
+                                padding-bottom: 8px;
+                            }
+    
+                            a {
+                                font-size: 12px;
+                            }
+                        }
+    
+                        .lunch-image, .dinner-image {
+                            height: 190px;
+                        }
+                    }
+                }   
+            }
+        }
+
         #sign-up {
             padding: 0 12px;
             background-color: $dark;
@@ -1826,4 +2048,24 @@
         }
     }
 
+}
+
+@media screen and (max-width: 333px){
+    #main-area{
+        #lunch-dinner {
+            .container {
+                .lunch-dinner {
+                    .dinner {
+                        .dinner-content {
+                            padding: 10px 15px 0;
+    
+                            h2 {
+                                line-height: 1.3;
+                            }
+                        }
+                    }
+                }   
+            }
+        }
+    }
 }
