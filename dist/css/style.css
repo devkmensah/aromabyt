@@ -2421,14 +2421,16 @@ img {
         #header .top .container .sidenav a {
           color: #0c0c0c; }
   #main-area #start-section .container .start {
-    height: 450px; }
-    #main-area #start-section .container .start .start-content h3 {
-      font-size: 20px; }
-    #main-area #start-section .container .start .start-content .options .delivery,
-    #main-area #start-section .container .start .start-content .options .pickup {
-      font-size: 13px;
-      width: 80px;
-      padding: 8px 0; }
+    height: 400px; }
+    #main-area #start-section .container .start .start-content {
+      height: 150px; }
+      #main-area #start-section .container .start .start-content h3 {
+        font-size: 20px; }
+      #main-area #start-section .container .start .start-content .options .delivery,
+      #main-area #start-section .container .start .start-content .options .pickup {
+        font-size: 13px;
+        width: 80px;
+        padding: 8px 0; }
     #main-area #start-section .container .start .start-image {
       background: #fff url("../images/start/start5.jpg") no-repeat center center/cover;
       height: 250px;
@@ -2562,6 +2564,22 @@ img {
     right: 5px; }
   #main-area #start-section {
     margin-top: -107px; }
+    #main-area #start-section .container .start {
+      height: 310px; }
+      #main-area #start-section .container .start .start-content {
+        height: 120px; }
+        #main-area #start-section .container .start .start-content h3 {
+          font-size: 18px; }
+        #main-area #start-section .container .start .start-content .options {
+          margin-top: 5px; }
+          #main-area #start-section .container .start .start-content .options .delivery,
+          #main-area #start-section .container .start .start-content .options .pickup {
+            font-size: 12px;
+            padding: 7px 0; }
+          #main-area #start-section .container .start .start-content .options span {
+            font-size: 10px; }
+      #main-area #start-section .container .start .start-image {
+        height: 190px; }
   #main-area #app {
     padding: 0 15px; }
     #main-area #app .container {
