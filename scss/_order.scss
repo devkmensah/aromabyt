@@ -613,8 +613,7 @@
                 grid-template-columns: repeat(2, 1fr);
                 grid-gap: 80px;
                 justify-content: center;
-
-                // align-items: center;
+                
                 .left-input {
                     display: flex;
                     flex-direction: column;
@@ -622,14 +621,10 @@
                     input {
                         padding: 18px 10px;
                         margin-bottom: 30px;
-
                         width: 100%;
                         border: 1px solid rgba(0, 0, 0, 0.1);
-                        // border: 1px solid transparent;
                         font-size: 16px;
-                        // font-weight: 800;
                         color: $dark;
-                        // background-color: $white;
                         font-family: 'Oswald', sans-serif;
 
                         &:focus {
@@ -647,14 +642,9 @@
                     input[type="text"] {
                         width: 100%;
                         padding: 18px 10px;
-                        // margin-bottom: 30px;
-
                         border: 1px solid rgba(0, 0, 0, 0.1);
-                        // border: 1px solid transparent;
                         font-size: 16px;
-                        // font-weight: 800;
                         color: $dark;
-                        // background-color: $white;
                         font-family: 'Oswald', sans-serif;
 
                         &:focus {
