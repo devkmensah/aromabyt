@@ -322,6 +322,85 @@
         }
     }
 
+    // REGISTER PAGE
+    #register {
+        .popup {
+            max-width: 670px;
+
+            .popup-header {
+                font-size: 16px;
+
+                .close-register {
+                    font-size: 18px;
+                }
+            }
+
+            .popup-content {
+                padding: 10px 10px;
+
+                .easy {
+                    font-size: 18px;
+                }
+
+                .now {
+                    font-size: 23px;
+                    padding: 20px 0;
+                }
+
+                #form-register {
+                    grid-gap: 20px;
+
+                    .left-input {
+                        input {
+                            padding: 18px 8px;
+                            font-size: 14px;
+                        }
+                    }
+
+                    .right-input {
+                        input[type="text"] {
+                            padding: 18px 8px;
+                            font-size: 14px;
+                        }
+
+                        .text-label {
+                            font-size: 14px;
+                        }
+
+                        .receive {
+                            margin: 18px 0 33px;
+
+                            input[type="checkbox"] {
+                                zoom: 1.1;
+                            }
+
+                            label.of-age {
+                                font-size: 14px;
+                            }
+                        }
+
+                        .creating {
+                            input[type="checkbox"] {
+                                zoom: 1.1;
+                            }
+
+                            label.read {
+                                font-size: 14px;
+                            }
+                        }
+
+
+                        button.btn-register {
+                            font-size: 13px;
+                            letter-spacing: 0.9px;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
     #main-area {
 
         // CAROUSEL
@@ -936,6 +1015,8 @@
             }
         }
     }
+
+    
 }
 
 @media screen and (max-width: 605px) {

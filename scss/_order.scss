@@ -1,6 +1,6 @@
 //ORDER HEADER STYLING BEGINS
 #order-header {
-   
+
     .order-nav {
         background-color: $dark;
         display: block;
@@ -138,7 +138,7 @@
     color: $white;
     position: relative;
 
-    &:after{
+    &:after {
         content: "";
         position: absolute;
         background-color: rgba(0, 0, 0, 0.3);
@@ -148,7 +148,7 @@
         left: 0;
     }
 
-    *{
+    * {
         z-index: 2;
     }
 
@@ -253,6 +253,7 @@
 
             .apply {
                 max-width: 365px;
+
                 hr {
                     display: none;
                 }
@@ -346,7 +347,7 @@
     display: none;
     position: relative;
 
-    &:after{
+    &:after {
         content: "";
         position: absolute;
         background-color: rgba(0, 0, 0, 0.3);
@@ -356,7 +357,7 @@
         left: 0;
     }
 
-    *{
+    * {
         z-index: 2;
     }
 
@@ -461,6 +462,7 @@
 
             .apply {
                 max-width: 365px;
+
                 hr {
                     display: none;
                 }
@@ -558,7 +560,7 @@
     width: 100%;
     z-index: 6;
     margin: 0 auto;
-    display: none;
+    display: block;
 
     a {
         color: $dark;
@@ -705,13 +707,14 @@
 
                     .btn-register {
                         margin: 30px 0;
-                        padding: 18px 35px;
+                        padding: 16px 55px;
                         background-color: $tomato;
                         border: 1px solid transparent;
                         color: $white;
                         text-transform: uppercase;
                         cursor: pointer;
                         font-weight: 800;
+                        letter-spacing: 0.9px;
                         display: block;
                         font-family: 'Oswald', sans-serif;
 
