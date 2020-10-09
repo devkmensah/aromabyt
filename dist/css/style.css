@@ -600,7 +600,7 @@
           #register .popup .popup-content #form-register .right-input .creating label a {
             color: #73020C;
             text-decoration: underline; }
-        #register .popup .popup-content #form-register .right-input .btn-register {
+        #register .popup .popup-content #form-register .right-input button.btn-register {
           margin: 30px 0;
           padding: 16px 55px;
           background-color: #73020C;
@@ -612,9 +612,9 @@
           letter-spacing: 0.9px;
           display: block;
           font-family: 'Oswald', sans-serif; }
-          #register .popup .popup-content #form-register .right-input .btn-register:focus {
+          #register .popup .popup-content #form-register .right-input button.btn-register:focus {
             outline: none; }
-          #register .popup .popup-content #form-register .right-input .btn-register:hover {
+          #register .popup .popup-content #form-register .right-input button.btn-register:hover {
             text-decoration: underline; }
 
 #login-register {
@@ -1853,13 +1853,13 @@ img {
   #order-header .order-nav .order-options .collect-nav {
     font-size: 22px; }
   #register .popup {
-    max-width: 670px; }
+    max-width: 90%; }
     #register .popup .popup-header {
-      font-size: 16px; }
+      padding: 8px 7px 10px; }
       #register .popup .popup-header .close-register {
         font-size: 18px; }
     #register .popup .popup-content {
-      padding: 10px 10px; }
+      padding: 10px 14px; }
       #register .popup .popup-content .easy {
         font-size: 18px; }
       #register .popup .popup-content .now {
@@ -2188,7 +2188,41 @@ img {
       #main-area #sign-up .container .sign-up-content #sign-up-form .button {
         width: 100%;
         display: block;
-        font-size: 20px; } }
+        font-size: 20px; }
+  #register .popup .popup-header .close-register {
+    font-size: 18px; }
+  #register .popup .popup-content {
+    padding: 10px 14px; }
+    #register .popup .popup-content .easy {
+      font-size: 18px; }
+    #register .popup .popup-content .now {
+      font-size: 23px; }
+    #register .popup .popup-content #form-register {
+      display: block; }
+      #register .popup .popup-content #form-register .left-input input {
+        padding: 18px 8px;
+        font-size: 14px; }
+        #register .popup .popup-content #form-register .left-input input:last-child {
+          margin-bottom: 30px; }
+      #register .popup .popup-content #form-register .right-input input[type="text"] {
+        padding: 18px 8px;
+        font-size: 14px; }
+        #register .popup .popup-content #form-register .right-input input[type="text"]:first-child {
+          margin-bottom: 10px; }
+      #register .popup .popup-content #form-register .right-input .text-label {
+        font-size: 14px; }
+      #register .popup .popup-content #form-register .right-input .receive {
+        margin: 18px 0 33px; }
+        #register .popup .popup-content #form-register .right-input .receive input[type="checkbox"] {
+          zoom: 1.1; }
+        #register .popup .popup-content #form-register .right-input .receive label.of-age {
+          font-size: 14px; }
+      #register .popup .popup-content #form-register .right-input .creating input[type="checkbox"] {
+        zoom: 1.1; }
+      #register .popup .popup-content #form-register .right-input .creating label.read {
+        font-size: 14px; }
+      #register .popup .popup-content #form-register .right-input button.btn-register {
+        font-size: 13px; } }
 
 @media screen and (max-width: 605px) {
   #main-area #start-section .container .start {
@@ -2577,7 +2611,43 @@ img {
           overflow: auto; }
         #delivery .container .delivery-content .apply p {
           text-align: center;
-          font-size: 12px; } }
+          font-size: 12px; }
+  #register .popup .popup-header {
+    font-size: 14px; }
+    #register .popup .popup-header .close-register {
+      font-size: 12px; }
+  #register .popup .popup-content .easy {
+    font-size: 16px;
+    padding: 10px 0 20px; }
+  #register .popup .popup-content .now {
+    font-size: 21px;
+    padding: 18px 0; }
+  #register .popup .popup-content #form-register .left-input input {
+    padding: 16px 6px;
+    font-size: 12px; }
+  #register .popup .popup-content #form-register .right-input input[type="text"] {
+    padding: 16px 6px;
+    font-size: 12px; }
+    #register .popup .popup-content #form-register .right-input input[type="text"]:first-child {
+      margin-bottom: 4px; }
+  #register .popup .popup-content #form-register .right-input .text-label {
+    font-size: 12px; }
+  #register .popup .popup-content #form-register .right-input input#text2 {
+    margin: 22px 0 22px; }
+  #register .popup .popup-content #form-register .right-input .receive {
+    margin: 18px 0 23px; }
+    #register .popup .popup-content #form-register .right-input .receive input[type="checkbox"] {
+      vertical-align: -5%;
+      zoom: 0.9; }
+    #register .popup .popup-content #form-register .right-input .receive label.of-age {
+      font-size: 12px; }
+  #register .popup .popup-content #form-register .right-input .creating input[type="checkbox"] {
+    vertical-align: -5%;
+    zoom: 0.9; }
+  #register .popup .popup-content #form-register .right-input .creating label.read {
+    font-size: 12px; }
+  #register .popup .popup-content #form-register .right-input button.btn-register {
+    font-size: 11px; } }
 
 @media screen and (max-width: 416px) {
   #main-area #carousel .sliders-holder .slider {
@@ -2741,3 +2811,42 @@ img {
     padding: 10px 15px 0; }
     #main-area #lunch-dinner .container .lunch-dinner .dinner .dinner-content h2 {
       line-height: 1.3; } }
+
+@media screen and (max-width: 319px) {
+  #register .popup .popup-header {
+    font-size: 10px; }
+    #register .popup .popup-header .close-register {
+      cursor: pointer;
+      font-size: 9px; }
+  #register .popup .popup-content .easy {
+    font-size: 12px;
+    padding: 6px 0 16px; }
+  #register .popup .popup-content .now {
+    font-size: 17px;
+    padding: 14px 0; }
+  #register .popup .popup-content #form-register .left-input input {
+    padding: 16px 6px;
+    font-size: 12px; }
+  #register .popup .popup-content #form-register .right-input input[type="text"] {
+    padding: 16px 6px;
+    font-size: 12px; }
+    #register .popup .popup-content #form-register .right-input input[type="text"]:first-child {
+      margin-bottom: 4px; }
+  #register .popup .popup-content #form-register .right-input .text-label {
+    font-size: 12px; }
+  #register .popup .popup-content #form-register .right-input input#text2 {
+    margin: 22px 0 22px; }
+  #register .popup .popup-content #form-register .right-input .receive {
+    margin: 18px 0 23px; }
+    #register .popup .popup-content #form-register .right-input .receive input[type="checkbox"] {
+      vertical-align: -5%;
+      zoom: 0.9; }
+    #register .popup .popup-content #form-register .right-input .receive label.of-age {
+      font-size: 12px; }
+  #register .popup .popup-content #form-register .right-input .creating input[type="checkbox"] {
+    vertical-align: -5%;
+    zoom: 0.9; }
+  #register .popup .popup-content #form-register .right-input .creating label.read {
+    font-size: 12px; }
+  #register .popup .popup-content #form-register .right-input button.btn-register {
+    font-size: 10px; } }

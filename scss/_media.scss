@@ -325,18 +325,18 @@
     // REGISTER PAGE
     #register {
         .popup {
-            max-width: 670px;
+            // max-width: 670px;
+            max-width: 90%;
 
             .popup-header {
-                font-size: 16px;
-
+                padding: 8px 7px 10px;
                 .close-register {
                     font-size: 18px;
                 }
             }
 
             .popup-content {
-                padding: 10px 10px;
+                padding: 10px 14px;
 
                 .easy {
                     font-size: 18px;
@@ -1016,7 +1016,86 @@
         }
     }
 
-    
+    // REGISTER PAGE
+    #register {
+        .popup {
+            .popup-header {
+                .close-register {
+                    font-size: 18px;
+                }
+            }
+
+            .popup-content {
+                padding: 10px 14px;
+
+                .easy {
+                    font-size: 18px;
+                }
+
+                .now {
+                    font-size: 23px;
+                }
+
+                #form-register {
+                    display: block;
+
+                    .left-input {
+                        input {
+                            padding: 18px 8px;
+                            font-size: 14px;
+
+                            &:last-child {
+                                margin-bottom: 30px;
+                            }
+                        }
+                    }
+
+                    .right-input {
+                        input[type="text"] {
+                            padding: 18px 8px;
+                            font-size: 14px;
+
+                            &:first-child {
+                                margin-bottom: 10px;
+                            }
+                        }
+
+                        .text-label {
+                            font-size: 14px;
+                        }
+
+                        .receive {
+                            margin: 18px 0 33px;
+
+                            input[type="checkbox"] {
+                                zoom: 1.1;
+                            }
+
+                            label.of-age {
+                                font-size: 14px;
+                            }
+                        }
+
+                        .creating {
+                            input[type="checkbox"] {
+                                zoom: 1.1;
+                            }
+
+                            label.read {
+                                font-size: 14px;
+                            }
+                        }
+
+
+                        button.btn-register {
+                            font-size: 13px;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 605px) {
@@ -1848,6 +1927,89 @@
             }
         }
     }
+
+     // REGISTER PAGE
+     #register {
+        .popup {
+            .popup-header {
+                font-size: 14px;
+
+                .close-register {
+                    font-size: 12px;
+                }
+            }
+
+            .popup-content {
+                .easy {
+                    font-size: 16px;
+                    padding: 10px 0 20px;
+                }
+
+                .now {
+                    font-size: 21px;
+                    padding: 18px 0;
+                }
+
+                #form-register {
+                    .left-input {
+                        input {
+                            padding: 16px 6px;
+                            font-size: 12px;
+                        }
+                    }
+
+                    .right-input {
+                        input[type="text"] {
+                            padding: 16px 6px;
+                            font-size: 12px;
+
+                            &:first-child {
+                                margin-bottom: 4px;
+                            }
+                        }
+
+                        .text-label {
+                            font-size: 12px;
+                        }
+
+                        input#text2 {
+                            margin: 22px 0 22px;
+                        }
+
+                        .receive {
+                            margin: 18px 0 23px;
+
+                            input[type="checkbox"] {
+                                vertical-align: -5%;
+                                zoom: 0.9;
+                            }
+
+                            label.of-age {
+                                font-size: 12px;
+                            }
+                        }
+
+                        .creating {
+                            input[type="checkbox"] {
+                                vertical-align: -5%;
+                                zoom: 0.9;
+                            }
+
+                            label.read {
+                                font-size: 12px;
+                            }
+                        }
+
+
+                        button.btn-register {
+                            font-size: 11px;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 416px) {
@@ -2172,7 +2334,6 @@
             }
         }
     }
-
 }
 
 @media screen and (max-width: 333px) {
@@ -2190,6 +2351,92 @@
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 319px) {
+     // REGISTER PAGE
+     #register {
+        .popup {
+            .popup-header {
+                font-size: 10px;
+
+                .close-register {
+                    cursor: pointer;
+                    font-size: 9px;
+                }
+            }
+
+            .popup-content {
+                .easy {
+                    font-size: 12px;
+                    padding: 6px 0 16px;
+                }
+
+                .now {
+                    font-size: 17px;
+                    padding: 14px 0;
+                }
+
+                #form-register {
+                    .left-input {
+                        input {
+                            padding: 16px 6px;
+                            font-size: 12px;
+                        }
+                    }
+
+                    .right-input {
+                        input[type="text"] {
+                            padding: 16px 6px;
+                            font-size: 12px;
+
+                            &:first-child {
+                                margin-bottom: 4px;
+                            }
+                        }
+
+                        .text-label {
+                            font-size: 12px;
+                        }
+
+                        input#text2 {
+                            margin: 22px 0 22px;
+                        }
+
+                        .receive {
+                            margin: 18px 0 23px;
+
+                            input[type="checkbox"] {
+                                vertical-align: -5%;
+                                zoom: 0.9;
+                            }
+
+                            label.of-age {
+                                font-size: 12px;
+                            }
+                        }
+
+                        .creating {
+                            input[type="checkbox"] {
+                                vertical-align: -5%;
+                                zoom: 0.9;
+                            }
+
+                            label.read {
+                                font-size: 12px;
+                            }
+                        }
+
+
+                        button.btn-register {
+                            font-size: 10px;
+                        }
+                    }
+                }
+
             }
         }
     }
