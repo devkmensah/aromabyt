@@ -20,20 +20,19 @@
             text-align: center;
             text-transform: uppercase;
             font-weight: 500;
-            // font-size: 25px;
             padding: 6px 100px 0;
 
             .order-logo {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                vertical-align: middle;
+                // display: flex;
+                // align-items: center;
+                // justify-content: center;
+                // vertical-align: middle;
                 // padding-top: 5px;
 
-                .order-chef {
-                    width: 50px;
-                    display: inline-block;
-                }
+                // .order-chef {
+                //     width: 50px;
+                //     display: inline-block;
+                // }
 
                 h1 {
                     font-size: 32px;
@@ -52,14 +51,14 @@
 
 
 
-            .access-links {
-                display: flex;
-                vertical-align: middle;
-                padding-right: 15px;
+            .login-link {
+                // display: flex;
+                // vertical-align: middle;
+                // padding-right: 15px;
 
-                li:first-child {
-                    margin-right: 40px;
-                }
+                // li:first-child {
+                //     margin-right: 40px;
+                // }
 
                 a {
                     position: relative;
@@ -174,6 +173,7 @@
                 .form-heading {
                     text-transform: uppercase;
                     padding-bottom: 25px;
+                    text-align: left;
                 }
 
                 #delivery-form {

@@ -161,49 +161,35 @@
     text-transform: uppercase;
     font-weight: 500;
     padding: 6px 100px 0; }
-    #order-header .order-nav .order-top .order-logo {
+    #order-header .order-nav .order-top .order-logo h1 {
+      font-size: 32px;
       display: flex;
-      align-items: center;
-      justify-content: center;
-      vertical-align: middle; }
-      #order-header .order-nav .order-top .order-logo .order-chef {
-        width: 50px;
-        display: inline-block; }
-      #order-header .order-nav .order-top .order-logo h1 {
-        font-size: 32px;
-        display: flex;
-        flex-direction: column;
-        font-family: 'Carter One', cursive; }
-        #order-header .order-nav .order-top .order-logo h1 span {
-          margin-top: -12px;
-          font-size: 9px;
-          letter-spacing: 2px;
-          font-family: 'Oswald', sans-serif; }
-    #order-header .order-nav .order-top .access-links {
-      display: flex;
-      vertical-align: middle;
-      padding-right: 15px; }
-      #order-header .order-nav .order-top .access-links li:first-child {
-        margin-right: 40px; }
-      #order-header .order-nav .order-top .access-links a {
-        position: relative;
-        overflow: hidden;
+      flex-direction: column;
+      font-family: 'Carter One', cursive; }
+      #order-header .order-nav .order-top .order-logo h1 span {
+        margin-top: -12px;
+        font-size: 9px;
+        letter-spacing: 2px;
+        font-family: 'Oswald', sans-serif; }
+    #order-header .order-nav .order-top .login-link a {
+      position: relative;
+      overflow: hidden;
+      border: none;
+      font-size: 32px;
+      font-family: 'Carter One', cursive; }
+      #order-header .order-nav .order-top .login-link a::after {
+        content: '';
+        position: absolute;
+        background: #73020C;
+        height: 5px;
+        width: 0%;
+        transform: translateX(-50%);
+        left: 50%;
+        bottom: -1px;
         border: none;
-        font-size: 32px;
-        font-family: 'Carter One', cursive; }
-        #order-header .order-nav .order-top .access-links a::after {
-          content: '';
-          position: absolute;
-          background: #73020C;
-          height: 5px;
-          width: 0%;
-          transform: translateX(-50%);
-          left: 50%;
-          bottom: -1px;
-          border: none;
-          transition: .55s ease-in-out; }
-        #order-header .order-nav .order-top .access-links a:hover:after {
-          width: 100%; }
+        transition: .55s ease-in-out; }
+      #order-header .order-nav .order-top .login-link a:hover:after {
+        width: 100%; }
   #order-header .order-nav .order-options {
     display: flex;
     align-items: center;
@@ -266,7 +252,8 @@
         text-align: center; }
         #delivery .container .delivery-content .delivery-form-content .form-heading {
           text-transform: uppercase;
-          padding-bottom: 25px; }
+          padding-bottom: 25px;
+          text-align: left; }
         #delivery .container .delivery-content .delivery-form-content #delivery-form {
           width: 100%; }
           #delivery .container .delivery-content .delivery-form-content #delivery-form input {
@@ -1808,8 +1795,8 @@ img {
     padding: 12px 25px 0; }
     #order-header .order-nav .order-top .order-logo {
       padding-top: 0; }
-      #order-header .order-nav .order-top .order-logo h1 {
-        font-size: 32px; }
+      #order-header .order-nav .order-top .order-logo h1 span {
+        font-size: 7px; }
   #order-header .order-nav .order-options .delivery-nav,
   #order-header .order-nav .order-options .collect-nav {
     font-size: 22px; } }
@@ -1856,8 +1843,8 @@ img {
       font-size: 22px; }
       #order-header .order-nav .order-top .order-logo h1 span {
         margin-top: -7px;
-        font-size: 7px; }
-  #order-header .order-nav .order-top .access-links a {
+        font-size: 6px; }
+  #order-header .order-nav .order-top .login-link a {
     font-size: 22px; }
   #order-header .order-nav .order-options .delivery-nav,
   #order-header .order-nav .order-options .collect-nav {
@@ -2007,9 +1994,7 @@ img {
       display: none; }
     #collect .container .collect-content {
       display: block; }
-      #collect .container .collect-content .start-content h2 {
-        text-align: center; }
-      #collect .container .collect-content .start-content p {
+      #collect .container .collect-content .start-content h2, #collect .container .collect-content .start-content p {
         text-align: center; }
       #collect .container .collect-content .start-content .collect-form .time-input {
         display: block;
@@ -2310,16 +2295,9 @@ img {
     padding-bottom: 12px; }
     #order-header .order-nav .order-top .order-logo {
       padding-top: 0; }
-      #order-header .order-nav .order-top .order-logo .order-chef {
-        width: 40px; }
       #order-header .order-nav .order-top .order-logo h1 {
         font-size: 20px; }
-        #order-header .order-nav .order-top .order-logo h1 span {
-          margin-top: -7px;
-          font-size: 6px; }
-    #order-header .order-nav .order-top .access-links li:first-child {
-      margin-right: 20px; }
-    #order-header .order-nav .order-top .access-links a {
+    #order-header .order-nav .order-top .login-link a {
       font-size: 20px; }
   #order-header .order-nav .order-options .delivery-nav,
   #order-header .order-nav .order-options .collect-nav {
@@ -2589,24 +2567,23 @@ img {
     #main-area #lunch-dinner .container .lunch-dinner .dinner .dinner-content a {
       padding: 5px 12px; }
   #order-header .order-nav .order-top {
-    font-size: 14px;
-    padding: 16px 0; }
+    padding: 16px 20px; }
     #order-header .order-nav .order-top .order-logo {
       padding-top: 7px; }
-      #order-header .order-nav .order-top .order-logo .order-chef {
-        width: 35px; }
-      #order-header .order-nav .order-top .order-logo h1 {
-        font-size: 14px; }
-        #order-header .order-nav .order-top .order-logo h1 span {
-          margin-top: -5px;
-          font-size: 5px; }
-    #order-header .order-nav .order-top .access-links li:first-child {
-      margin-right: 10px; }
-    #order-header .order-nav .order-top .access-links a {
-      font-size: 14px; }
+      #order-header .order-nav .order-top .order-logo h1 span {
+        margin-top: -8px;
+        font-size: 5px; }
+    #order-header .order-nav .order-top .login-link a::after {
+      height: 3px;
+      bottom: -3px; }
   #order-header .order-nav .order-options .delivery-nav,
   #order-header .order-nav .order-options .collect-nav {
-    font-size: 14px; }
+    font-size: 14px;
+    margin: 0 8px; }
+    #order-header .order-nav .order-options .delivery-nav a::after,
+    #order-header .order-nav .order-options .collect-nav a::after {
+      height: 3px;
+      bottom: -3px; }
   #delivery {
     padding: 120px 2px 0;
     background: #FCFCF3; }

@@ -175,7 +175,10 @@
                     padding-top: 0;
 
                     h1 {
-                        font-size: 32px;
+                        // font-size: 32px;
+                       span{
+                           font-size: 7px;
+                       } 
                     }
                 }
             }
@@ -300,12 +303,12 @@
 
                         span {
                             margin-top: -7px;
-                            font-size: 7px;
+                            font-size: 6px;
                         }
                     }
                 }
 
-                .access-links {
+                .login-link {
                     a {
                         font-size: 22px;
                     }
@@ -627,11 +630,7 @@
                 display: block;
 
                 .start-content {
-                    h2 {
-                        text-align: center;
-                    }
-
-                    p {
+                    h2, p {
                         text-align: center;
                     }
 
@@ -1259,24 +1258,24 @@
                 .order-logo {
                     padding-top: 0;
 
-                    .order-chef {
-                        width: 40px;
-                    }
+                    // .order-chef {
+                    //     width: 40px;
+                    // }
 
                     h1 {
                         font-size: 20px;
 
-                        span {
-                            margin-top: -7px;
-                            font-size: 6px;
-                        }
+                        // span {
+                        //     margin-top: -7px;
+                        //     font-size: 5px;
+                        // }
                     }
                 }
 
-                .access-links {
-                    li:first-child {
-                        margin-right: 20px;
-                    }
+                .login-link {
+                    // li:first-child {
+                    //     margin-right: 20px;
+                    // }
 
                     a {
                         font-size: 20px;
@@ -1885,33 +1884,36 @@
     #order-header {
         .order-nav {
             .order-top {
-                font-size: 14px;
-                padding: 16px 0;
+                // font-size: 14px;
+                padding: 16px 20px;
 
                 .order-logo {
                     padding-top: 7px;
 
-                    .order-chef {
-                        width: 35px;
-                    }
+                    // .order-chef {
+                    //     width: 35px;
+                    // }
 
                     h1 {
-                        font-size: 14px;
+                        // font-size: 14px;
 
                         span {
-                            margin-top: -5px;
+                            margin-top: -8px;
                             font-size: 5px;
                         }
                     }
                 }
 
-                .access-links {
-                    li:first-child {
-                        margin-right: 10px;
-                    }
+                .login-link {
+                    // li:first-child {
+                    //     margin-right: 10px;
+                    // }
 
                     a {
-                        font-size: 14px;
+                        &::after {
+                            height: 3px;
+                            bottom: -3px;
+                        }
                     }
                 }
             }
@@ -1921,7 +1923,14 @@
                 .delivery-nav,
                 .collect-nav {
                     font-size: 14px;
+                    margin: 0 8px;
 
+                    a {
+                        &::after {
+                            height: 3px;
+                            bottom: -3px;
+                        }
+                    }
                 }
             }
         }
@@ -1941,6 +1950,7 @@
 
                     .form-heading {
                         font-size: 20px;
+                        // text-align: left;
                     }
 
                     #delivery-form {
