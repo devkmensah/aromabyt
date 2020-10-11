@@ -1072,15 +1072,12 @@ img {
     text-transform: uppercase;
     font-weight: 500; }
     #header .top .container .logo-holder {
-      text-align: center; }
+      text-align: center;
+      padding-left: 25px; }
       #header .top .container .logo-holder a {
         display: flex;
         align-items: center;
-        justify-content: center;
-        vertical-align: middle; }
-        #header .top .container .logo-holder a .chef {
-          width: 50px;
-          display: inline-block; }
+        justify-content: center; }
         #header .top .container .logo-holder a .logo {
           display: flex;
           flex-direction: column;
@@ -2062,8 +2059,12 @@ img {
   #header .top {
     overflow: hidden; }
     #header .top .container {
-      padding-right: 20px;
+      padding: 0 20px;
       overflow: hidden; }
+      #header .top .container .logo-holder {
+        padding-left: 0; }
+        #header .top .container .logo-holder a .logo span {
+          font-size: 7px; }
       #header .top .container .sidenav {
         position: fixed;
         width: 310px;
@@ -2533,16 +2534,11 @@ img {
   #header .top {
     overflow: hidden; }
     #header .top .container {
-      padding-right: 20px;
       overflow: hidden;
       font-size: 14px; }
-      #header .top .container .logo-holder {
-        padding-left: 5px; }
-        #header .top .container .logo-holder a .chef {
-          width: 40px; }
-        #header .top .container .logo-holder a .logo span {
-          margin-top: -7px;
-          font-size: 6px; }
+      #header .top .container .logo-holder a .logo span {
+        margin-top: -7px;
+        font-size: 5px; }
       #header .top .container .sidenav {
         position: fixed;
         width: 310px;

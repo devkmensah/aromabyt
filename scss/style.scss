@@ -98,17 +98,18 @@ img {
 
             .logo-holder {
                 text-align: center;
+                padding-left: 25px;
 
                 a {
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    vertical-align: middle;
+                    // vertical-align: middle;
 
-                    .chef {
-                        width: 50px;
-                        display: inline-block;
-                    }
+                    // .chef {
+                    //     width: 50px;
+                    //     display: inline-block;
+                    // }
 
                     .logo {
                         display: flex;
