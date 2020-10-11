@@ -1613,85 +1613,86 @@ img {
           #main-area #sign-up .container .sign-up-content #sign-up-form .button:hover {
             background-color: #73020C;
             border: 2px solid transparent; }
-  #main-area #footer {
-    background-color: #fff;
-    color: #0c0c0c;
-    padding: 40px 70px 70px; }
-    #main-area #footer a {
-      color: #0c0c0c; }
-    #main-area #footer .container .top {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      margin-bottom: 40px; }
-      #main-area #footer .container .top .column ul li {
-        font-size: 18px; }
-        #main-area #footer .container .top .column ul li a:hover {
-          color: #73020C; }
-      #main-area #footer .container .top .column.four {
-        text-align: center; }
-        #main-area #footer .container .top .column.four h3 {
-          margin-bottom: 10px;
-          text-transform: uppercase; }
-        #main-area #footer .container .top .column.four .social {
-          display: flex;
-          justify-content: space-evenly;
-          align-items: center; }
-          #main-area #footer .container .top .column.four .social li {
-            margin: 0 4px; }
-            #main-area #footer .container .top .column.four .social li a .fab {
-              border: 1px solid #0c0c0c;
-              border-radius: 50%;
-              height: 45px;
-              width: 45px;
-              font-size: 25px;
-              line-height: 1.75;
-              transition: .3s ease-out; }
-            #main-area #footer .container .top .column.four .social li a:hover .insta {
-              color: #fff;
-              background: radial-gradient(circle at 30% 100%, #fed373 4%, #f15245 35%, #d92e7f 60%, #9b36b7 84%, #515ecf);
-              border: 1px solid transparent; }
-            #main-area #footer .container .top .column.four .social li a:hover .face {
-              background: #3C5997;
-              color: #fff;
-              border: 1px solid transparent; }
-            #main-area #footer .container .top .column.four .social li a:hover .snap {
-              background: #FFFC00;
-              color: #0c0c0c;
-              border: 1px solid transparent; }
-            #main-area #footer .container .top .column.four .social li a:hover .pin {
-              background: #E60023;
-              color: #fff;
-              border: 1px solid transparent; }
-            #main-area #footer .container .top .column.four .social li a:hover .twit {
-              background: #1DA1F2;
-              color: #fff;
-              border: 1px solid transparent; }
-    #main-area #footer .container .bottom {
-      margin-top: 40px;
-      display: grid;
-      grid-template-columns: 1fr 1fr; }
-      #main-area #footer .container .bottom .bottom-logo {
-        margin-top: -7px; }
-        #main-area #footer .container .bottom .bottom-logo a .logo {
-          font-family: 'Carter One', cursive;
-          text-transform: uppercase; }
-        #main-area #footer .container .bottom .bottom-logo .store {
-          display: flex;
-          margin-top: 40px; }
-          #main-area #footer .container .bottom .bottom-logo .store li {
-            margin: 0 10px; }
-            #main-area #footer .container .bottom .bottom-logo .store li:first-child {
-              margin: 0 10px 0 0; }
-            #main-area #footer .container .bottom .bottom-logo .store li img {
-              width: 120px;
-              height: 100%; }
-      #main-area #footer .container .bottom .rights {
+
+#footer {
+  background-color: #fff;
+  color: #0c0c0c;
+  padding: 40px 70px 70px; }
+  #footer a {
+    color: #0c0c0c; }
+  #footer .container .top {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: 40px; }
+    #footer .container .top .column ul li {
+      font-size: 18px; }
+      #footer .container .top .column ul li a:hover {
+        color: #73020C; }
+    #footer .container .top .column.four {
+      text-align: center; }
+      #footer .container .top .column.four h3 {
+        margin-bottom: 10px;
+        text-transform: uppercase; }
+      #footer .container .top .column.four .social {
         display: flex;
-        justify-self: end; }
-        #main-area #footer .container .bottom .rights li {
-          margin: 0 20px; }
-          #main-area #footer .container .bottom .rights li a:hover {
-            color: #73020C; }
+        justify-content: space-evenly;
+        align-items: center; }
+        #footer .container .top .column.four .social li {
+          margin: 0 4px; }
+          #footer .container .top .column.four .social li a .fab {
+            border: 1px solid #0c0c0c;
+            border-radius: 50%;
+            height: 45px;
+            width: 45px;
+            font-size: 25px;
+            line-height: 1.75;
+            transition: .3s ease-out; }
+          #footer .container .top .column.four .social li a:hover .insta {
+            color: #fff;
+            background: radial-gradient(circle at 30% 100%, #fed373 4%, #f15245 35%, #d92e7f 60%, #9b36b7 84%, #515ecf);
+            border: 1px solid transparent; }
+          #footer .container .top .column.four .social li a:hover .face {
+            background: #3C5997;
+            color: #fff;
+            border: 1px solid transparent; }
+          #footer .container .top .column.four .social li a:hover .snap {
+            background: #FFFC00;
+            color: #0c0c0c;
+            border: 1px solid transparent; }
+          #footer .container .top .column.four .social li a:hover .pin {
+            background: #E60023;
+            color: #fff;
+            border: 1px solid transparent; }
+          #footer .container .top .column.four .social li a:hover .twit {
+            background: #1DA1F2;
+            color: #fff;
+            border: 1px solid transparent; }
+  #footer .container .bottom {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    #footer .container .bottom .bottom-logo {
+      margin-top: -7px; }
+      #footer .container .bottom .bottom-logo a .logo {
+        font-family: 'Carter One', cursive;
+        text-transform: uppercase; }
+      #footer .container .bottom .bottom-logo .store {
+        display: flex;
+        margin-top: 40px; }
+        #footer .container .bottom .bottom-logo .store li {
+          margin: 0 10px; }
+          #footer .container .bottom .bottom-logo .store li:first-child {
+            margin: 0 10px 0 0; }
+          #footer .container .bottom .bottom-logo .store li img {
+            width: 120px;
+            height: 100%; }
+    #footer .container .bottom .rights {
+      display: flex;
+      justify-self: end; }
+      #footer .container .bottom .rights li {
+        margin: 0 20px; }
+        #footer .container .bottom .rights li a:hover {
+          color: #73020C; }
 
 @media screen and (min-width: 605px) {
   #main-area #lunch-dinner .container .lunch-dinner {
@@ -1935,25 +1936,6 @@ img {
     left: 7px; }
   #main-area #carousel .buttons .next {
     right: 7px; }
-  #main-area #footer .container .top {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center; }
-    #main-area #footer .container .top .column {
-      margin: 10px 20px; }
-  #main-area #footer .container .bottom {
-    display: grid;
-    grid-template-columns: 1fr;
-    text-align: center; }
-    #main-area #footer .container .bottom .bottom-logo .store {
-      display: flex;
-      margin: 20px 0 20px;
-      align-items: center;
-      justify-content: center; }
-    #main-area #footer .container .bottom .rights {
-      display: flex;
-      justify-self: center; }
   #menu #lunch-menu .lunch-boxes,
   #menu #lunch-menu .dinner-boxes,
   #menu #lunch-menu .not-steaks-boxes,
@@ -1978,7 +1960,26 @@ img {
   #menu #wines .other-boxes,
   #menu #other .wine-boxes,
   #menu #other .other-boxes {
-    grid-template-columns: repeat(4, 1fr); } }
+    grid-template-columns: repeat(4, 1fr); }
+  #footer .container .top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center; }
+    #footer .container .top .column {
+      margin: 10px 20px; }
+  #footer .container .bottom {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center; }
+    #footer .container .bottom .bottom-logo .store {
+      display: flex;
+      margin: 20px 0 20px;
+      align-items: center;
+      justify-content: center; }
+    #footer .container .bottom .rights {
+      display: flex;
+      justify-self: center; } }
 
 @media screen and (max-width: 867px) {
   #menu-header .top .navigation {
@@ -2342,16 +2343,16 @@ img {
     grid-template-columns: repeat(3, 1fr); } }
 
 @media screen and (max-width: 550px) {
-  #main-area #footer {
+  #footer {
     padding: 40px 4px 70px; }
-    #main-area #footer .container .top {
+    #footer .container .top {
       display: flex;
       justify-content: space-evenly; }
-      #main-area #footer .container .top .column {
+      #footer .container .top .column {
         margin: 10px 5px; }
-        #main-area #footer .container .top .column ul li {
+        #footer .container .top .column ul li {
           font-size: 14px; }
-      #main-area #footer .container .top .column.four .social li a .fab {
+      #footer .container .top .column.four .social li a .fab {
         border: 1px solid #0c0c0c;
         border-radius: 50%;
         height: 35px;
@@ -2359,20 +2360,20 @@ img {
         font-size: 18px;
         line-height: 1.85;
         transition: .3s ease-out; }
-    #main-area #footer .container .bottom {
-      display: grid;
-      grid-template-columns: 1fr;
+    #footer .container .bottom {
+      display: block;
       text-align: center; }
-      #main-area #footer .container .bottom .bottom-logo .store {
+      #footer .container .bottom .bottom-logo .store {
         display: flex;
-        margin: 20px 0 20px;
+        margin: 20px 0 20px 9.98px;
         align-items: center;
-        justify-content: center; }
-      #main-area #footer .container .bottom .rights {
+        justify-content: center;
+        text-align: center; }
+      #footer .container .bottom .rights {
         display: flex;
         justify-content: space-evenly;
         text-align: center; }
-        #main-area #footer .container .bottom .rights li {
+        #footer .container .bottom .rights li {
           font-size: 14px; } }
 
 @media screen and (max-width: 530px) {

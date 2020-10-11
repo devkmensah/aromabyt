@@ -1045,149 +1045,31 @@ img {
     }
 
     // SIGN UP FOR WEEKLY OFFERS END
+}
+// MAIN ARE ENDS
 
+  // FOOTER SECTION BEGINS
+  #footer {
+    background-color: $white;
+    color: $dark;
+    padding: 40px 70px 70px;
 
-    // FOOTER SECTION BEGINS
-    #footer {
-        background-color: $white;
+    a {
         color: $dark;
-        padding: 40px 70px 70px;
+    }
 
-        a {
-            color: $dark;
-        }
+    .container {
 
-        .container {
+        // TOP AREA
+        .top {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            margin-bottom: 40px;
 
-            // TOP AREA
-            .top {
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr 1fr;
-                margin-bottom: 40px;
-
-                .column {
-                    ul {
-                        li {
-                            font-size: 18px;
-
-                            a {
-                                &:hover {
-                                    color: $tomato;
-                                }
-                            }
-                        }
-                    }
-                }
-
-                .column.four {
-                    text-align: center;
-
-                    h3 {
-                        margin-bottom: 10px;
-                        text-transform: uppercase;
-                    }
-
-                    .social {
-                        display: flex;
-                        justify-content: space-evenly;
-                        align-items: center;
-
-                        li {
-                            margin: 0 4px;
-
-                            a {
-                                .fab {
-                                    border: 1px solid $dark;
-                                    border-radius: 50%;
-                                    height: 45px;
-                                    width: 45px;
-                                    font-size: 25px;
-                                    line-height: 1.75;
-                                    transition: .3s ease-out;
-                                }
-
-                                &:hover {
-
-                                    .insta {
-                                        color: $white;
-                                        background: $instagram;
-                                        border: 1px solid transparent;
-                                    }
-
-                                    .face {
-                                        background: $facebook;
-                                        color: $white;
-                                        border: 1px solid transparent;
-                                    }
-
-                                    .snap {
-                                        background: $snapchat;
-                                        color: $dark;
-                                        border: 1px solid transparent;
-                                    }
-
-                                    .pin {
-                                        background: $pinterest;
-                                        color: $white;
-                                        border: 1px solid transparent;
-                                    }
-
-                                    .twit {
-                                        background: $twitter;
-                                        color: $white;
-                                        border: 1px solid transparent;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-
-            // BOTTOM AREA
-            .bottom {
-                margin-top: 40px;
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-
-
-                .bottom-logo {
-                    margin-top: -7px;
-
-                    a {
-                        .logo {
-                            font-family: 'Carter One', cursive;
-                            text-transform: uppercase;
-                        }
-                    }
-
-                    .store {
-                        display: flex;
-                        margin-top: 40px;
-
-                        li {
-                            margin: 0 10px;
-
-                            &:first-child {
-                                margin: 0 10px 0 0;
-                            }
-
-                            img {
-                                width: 120px;
-                                height: 100%;
-                            }
-                        }
-                    }
-                }
-
-
-                .rights {
-                    display: flex;
-                    justify-self: end;
-                    // vertical-align: middle;
-
+            .column {
+                ul {
                     li {
-                        margin: 0 20px;
+                        font-size: 18px;
 
                         a {
                             &:hover {
@@ -1198,13 +1080,129 @@ img {
                 }
             }
 
-        }
-    }
+            .column.four {
+                text-align: center;
 
-    // FOOTER SECTION ENDS
+                h3 {
+                    margin-bottom: 10px;
+                    text-transform: uppercase;
+                }
+
+                .social {
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+
+                    li {
+                        margin: 0 4px;
+
+                        a {
+                            .fab {
+                                border: 1px solid $dark;
+                                border-radius: 50%;
+                                height: 45px;
+                                width: 45px;
+                                font-size: 25px;
+                                line-height: 1.75;
+                                transition: .3s ease-out;
+                            }
+
+                            &:hover {
+
+                                .insta {
+                                    color: $white;
+                                    background: $instagram;
+                                    border: 1px solid transparent;
+                                }
+
+                                .face {
+                                    background: $facebook;
+                                    color: $white;
+                                    border: 1px solid transparent;
+                                }
+
+                                .snap {
+                                    background: $snapchat;
+                                    color: $dark;
+                                    border: 1px solid transparent;
+                                }
+
+                                .pin {
+                                    background: $pinterest;
+                                    color: $white;
+                                    border: 1px solid transparent;
+                                }
+
+                                .twit {
+                                    background: $twitter;
+                                    color: $white;
+                                    border: 1px solid transparent;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        // BOTTOM AREA
+        .bottom {
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+
+            .bottom-logo {
+                margin-top: -7px;
+
+                a {
+                    .logo {
+                        font-family: 'Carter One', cursive;
+                        text-transform: uppercase;
+                    }
+                }
+
+                .store {
+                    display: flex;
+                    margin-top: 40px;
+
+                    li {
+                        margin: 0 10px;
+
+                        &:first-child {
+                            margin: 0 10px 0 0;
+                        }
+
+                        img {
+                            width: 120px;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+
+
+            .rights {
+                display: flex;
+                justify-self: end;
+                // vertical-align: middle;
+
+                li {
+                    margin: 0 20px;
+
+                    a {
+                        &:hover {
+                            color: $tomato;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
 }
 
-// MAIN ARE ENDS
+// FOOTER SECTION ENDS
 
 
 // IMPORT MEDIA QUERIES

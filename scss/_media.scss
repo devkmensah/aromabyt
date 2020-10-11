@@ -489,46 +489,6 @@
 
             }
         }
-
-        // FOOTER
-        #footer {
-            .container {
-                .top {
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: space-evenly;
-                    align-items: center;
-
-                    .column {
-                        margin: 10px 20px;
-                    }
-                }
-
-                // BOTTOM AREA
-                .bottom {
-                    display: grid;
-                    grid-template-columns: 1fr;
-                    text-align: center;
-
-
-
-                    .bottom-logo {
-                        .store {
-                            display: flex;
-                            margin: 20px 0 20px;
-                            align-items: center;
-                            justify-content: center;
-                        }
-                    }
-
-                    .rights {
-                        display: flex;
-                        justify-self: center;
-                    }
-                }
-
-            }
-        }
     }
 
     // MENU PAGE
@@ -556,6 +516,46 @@
             .other-boxes {
                 grid-template-columns: repeat(4, 1fr);
             }
+        }
+    }
+
+    // FOOTER
+    #footer {
+        .container {
+            .top {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                align-items: center;
+
+                .column {
+                    margin: 10px 20px;
+                }
+            }
+
+            // BOTTOM AREA
+            .bottom {
+                display: grid;
+                grid-template-columns: 1fr;
+                text-align: center;
+
+
+
+                .bottom-logo {
+                    .store {
+                        display: flex;
+                        margin: 20px 0 20px;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+
+                .rights {
+                    display: flex;
+                    justify-self: center;
+                }
+            }
+
         }
     }
 }
@@ -1334,8 +1334,6 @@
 
 
 @media screen and (max-width: 550px) {
-    #main-area {
-
         // FOOTER
         #footer {
             padding: 40px 4px 70px;
@@ -1377,8 +1375,9 @@
 
                 // BOTTOM AREA
                 .bottom {
-                    display: grid;
-                    grid-template-columns: 1fr;
+                    // display: grid;
+                    // grid-template-columns: 1fr;
+                    display: block;
                     text-align: center;
 
 
@@ -1386,9 +1385,10 @@
                     .bottom-logo {
                         .store {
                             display: flex;
-                            margin: 20px 0 20px;
+                            margin: 20px 0 20px 9.98px;
                             align-items: center;
                             justify-content: center;
+                            text-align: center;
                         }
                     }
 
@@ -1405,7 +1405,6 @@
 
             }
         }
-    }
 }
 
 
