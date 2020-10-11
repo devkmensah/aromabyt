@@ -512,7 +512,7 @@
   width: 100%;
   z-index: 6;
   margin: 0 auto;
-  display: block; }
+  display: none; }
   #register a {
     color: #0c0c0c; }
   #register .popup {
@@ -626,7 +626,7 @@
   z-index: 6;
   margin: 0 auto;
   font-family: 'Oswald', sans-serif;
-  display: none; }
+  display: block; }
   #login-register a {
     color: #0c0c0c;
     font-family: 'Oswald', sans-serif; }
@@ -647,6 +647,15 @@
       text-transform: uppercase;
       padding: 8px 20px 10px;
       font-size: 15px; }
+      #login-register .login-register-content .login-register-header .log-register {
+        display: flex;
+        align-items: center; }
+        #login-register .login-register-content .login-register-header .log-register .log-register-divider {
+          margin: 0 10px;
+          height: 19px;
+          width: 1px;
+          transform: rotate(20deg);
+          background: #fff; }
       #login-register .login-register-content .login-register-header .close {
         cursor: pointer;
         font-size: 21px; }
@@ -657,12 +666,15 @@
       grid-gap: 20px;
       justify-content: center; }
       #login-register .login-register-content .login-register-box #login-form {
-        padding-right: 10px; }
-        #login-register .login-register-content .login-register-box #login-form .login {
-          color: #73020C;
+        padding: 0 10px; }
+        #login-register .login-register-content .login-register-box #login-form .account-logger {
+          color: #0c0c0c;
           text-transform: uppercase;
           font-size: 20px;
-          margin-bottom: 10px; }
+          margin-bottom: 10px;
+          display: flex; }
+          #login-register .login-register-content .login-register-box #login-form .account-logger .into {
+            display: none; }
         #login-register .login-register-content .login-register-box #login-form input[type="email"],
         #login-register .login-register-content .login-register-box #login-form input[type="text"] {
           width: 100%;
@@ -706,6 +718,8 @@
           font-weight: 100; }
           #login-register .login-register-content .login-register-box #login-form .forgot:hover {
             text-decoration: underline; }
+        #login-register .login-register-content .login-register-box #login-form .divider, #login-register .login-register-content .login-register-box #login-form .mobile-register {
+          display: none; }
       #login-register .login-register-content .login-register-box .vertical-line {
         width: 1px;
         height: 100%;
@@ -719,7 +733,7 @@
           margin-bottom: 16px; }
         #login-register .login-register-content .login-register-box .create-alternative button {
           margin: 30px 0;
-          padding: 18px 50px;
+          padding: 18px 55px;
           background-color: #73020C;
           border: 1px solid transparent;
           color: #fff;
@@ -1852,6 +1866,8 @@ img {
   #order-header .order-nav .order-options .delivery-nav,
   #order-header .order-nav .order-options .collect-nav {
     font-size: 22px; }
+  #login-register .login-register-content {
+    max-width: 90%; }
   #register .popup {
     max-width: 90%; }
     #register .popup .popup-header {
@@ -2189,6 +2205,36 @@ img {
         width: 100%;
         display: block;
         font-size: 20px; }
+  #login-register .login-register-content {
+    max-width: 450px; }
+    #login-register .login-register-content .login-register-header .log-register .log-register-divider {
+      display: none; }
+    #login-register .login-register-content .login-register-header .log-register h2:last-child {
+      display: none; }
+    #login-register .login-register-content .login-register-box {
+      display: block; }
+      #login-register .login-register-content .login-register-box #login-form .account-logger .into {
+        display: block; }
+      #login-register .login-register-content .login-register-box #login-form .account-logger .login {
+        display: none; }
+      #login-register .login-register-content .login-register-box #login-form .remember input[type="checkbox"] {
+        vertical-align: -7%;
+        zoom: 1.0; }
+      #login-register .login-register-content .login-register-box #login-form .remember label {
+        font-size: 14px; }
+      #login-register .login-register-content .login-register-box #login-form .divider {
+        vertical-align: 5%;
+        font-weight: 100;
+        margin: 0 5px;
+        display: inline; }
+      #login-register .login-register-content .login-register-box #login-form .mobile-register {
+        color: #73020C;
+        font-weight: 100;
+        display: inline; }
+      #login-register .login-register-content .login-register-box .vertical-line {
+        display: none; }
+      #login-register .login-register-content .login-register-box .create-alternative {
+        display: none; }
   #register .popup .popup-header .close-register {
     font-size: 18px; }
   #register .popup .popup-content {
@@ -2479,7 +2525,9 @@ img {
         font-size: 12px; }
       #collect .container .collect-content .apply .redeem-points {
         font-size: 20px;
-        padding: 35px 0 15px; } }
+        padding: 35px 0 15px; }
+  #login-register .login-register-content {
+    max-width: 90%; } }
 
 @media screen and (max-width: 450px) {
   #header .top {
@@ -2804,7 +2852,24 @@ img {
   #menu #not-steaks-menu .not-steaks-boxes .box .content h3 {
     font-size: 18px; }
   #menu-header #menu-list .list-items .items .item span {
-    display: none; } }
+    display: none; }
+  #login-register .login-register-content .login-register-header {
+    padding: 8px 10px 10px;
+    font-size: 14px; }
+    #login-register .login-register-content .login-register-header .close {
+      font-size: 18px; }
+  #login-register .login-register-content .login-register-box {
+    padding: 20px 10px; }
+    #login-register .login-register-content .login-register-box #login-form input[type="email"],
+    #login-register .login-register-content .login-register-box #login-form input[type="text"] {
+      padding: 16px 10px;
+      font-size: 14px; }
+    #login-register .login-register-content .login-register-box #login-form .login-btn {
+      padding: 16px 35px; }
+    #login-register .login-register-content .login-register-box .vertical-line {
+      display: none; }
+    #login-register .login-register-content .login-register-box .create-alternative {
+      display: none; } }
 
 @media screen and (max-width: 333px) {
   #main-area #lunch-dinner .container .lunch-dinner .dinner .dinner-content {

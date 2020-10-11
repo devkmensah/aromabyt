@@ -322,6 +322,13 @@
         }
     }
 
+    // LOGIN SECTION
+    #login-register {
+        .login-register-content {
+            max-width: 90%;
+        }
+    }
+
     // REGISTER PAGE
     #register {
         .popup {
@@ -330,6 +337,7 @@
 
             .popup-header {
                 padding: 8px 7px 10px;
+
                 .close-register {
                     font-size: 18px;
                 }
@@ -1016,6 +1024,76 @@
         }
     }
 
+    // LOG IN
+    #login-register {
+        .login-register-content {
+            max-width: 450px;
+
+            .login-register-header {
+                .log-register {
+                    .log-register-divider {
+                        display: none;
+                    }
+
+                    h2:last-child {
+                        display: none;
+                    }
+                }
+            }
+
+            .login-register-box {
+                display: block;
+
+                #login-form {
+                    .account-logger {
+                        .into {
+                            display: block;
+                        }
+
+                        .login {
+                            display: none;
+                        }
+                    }
+
+                    .remember {
+                        input[type="checkbox"] {
+                            vertical-align: -7%;
+                            zoom: 1.0;
+                        }
+
+                        label {
+                            font-size: 14px;
+                        }
+                    }
+
+
+                    .divider {
+                        vertical-align: 5%;
+                        font-weight: 100;
+                        margin: 0 5px;
+                        display: inline;
+                    }
+
+                    .mobile-register {
+                        color: $tomato;
+                        font-weight: 100;
+                        display: inline;
+                    }
+                }
+
+                .vertical-line {
+                    display: none;
+                }
+
+                .create-alternative {
+                    display: none;
+                }
+
+            }
+
+        }
+    }
+
     // REGISTER PAGE
     #register {
         .popup {
@@ -1666,6 +1744,14 @@
             }
         }
     }
+
+
+    // LOG IN
+    #login-register {
+        .login-register-content {
+            max-width: 90%;
+        }
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -1928,8 +2014,8 @@
         }
     }
 
-     // REGISTER PAGE
-     #register {
+    // REGISTER PAGE
+    #register {
         .popup {
             .popup-header {
                 font-size: 14px;
@@ -2334,6 +2420,47 @@
             }
         }
     }
+
+     // LOG IN
+     #login-register {
+        .login-register-content {
+            .login-register-header {
+                padding: 8px 10px 10px;
+                font-size: 14px;
+
+                .close {
+                    font-size: 18px;
+                }
+            }
+
+            .login-register-box {
+                padding: 20px 10px;
+
+                #login-form {
+
+                    input[type="email"],
+                    input[type="text"] {
+                        padding: 16px 10px;
+                        font-size: 14px;
+                    }
+
+                    .login-btn {
+                        padding: 16px 35px;
+                    }
+                }
+
+                .vertical-line {
+                    display: none;
+                }
+
+                .create-alternative {
+                    display: none;
+                }
+
+            }
+
+        }
+    }
 }
 
 @media screen and (max-width: 333px) {
@@ -2357,8 +2484,9 @@
 }
 
 @media screen and (max-width: 319px) {
-     // REGISTER PAGE
-     #register {
+
+    // REGISTER PAGE
+    #register {
         .popup {
             .popup-header {
                 font-size: 10px;
