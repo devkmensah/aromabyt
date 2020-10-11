@@ -752,13 +752,13 @@
   width: 100%; }
   #menu-header .top .navigation {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
     text-transform: uppercase;
     font-weight: 500;
     font-size: 25px;
-    padding: 25px 31px 25px 0; }
+    padding: 25px 0 25px; }
     #menu-header .top .navigation li {
       border: none;
       padding: 1px 15px; }
@@ -1852,8 +1852,6 @@ img {
 @media screen and (max-width: 900px) {
   #order-header .order-nav .order-top .order-logo {
     padding-top: 0; }
-    #order-header .order-nav .order-top .order-logo .order-chef {
-      width: 45px; }
     #order-header .order-nav .order-top .order-logo h1 {
       font-size: 22px; }
       #order-header .order-nav .order-top .order-logo h1 span {
@@ -1986,9 +1984,9 @@ img {
     font-size: 16px; }
     #menu-header .top .navigation .logo-holder a .logo span {
       margin-top: -7px;
-      font-size: 7px; }
+      font-size: 6px; }
   #menu-header #menu-list {
-    padding: 10px 70px 10px; }
+    padding: 10px 70px; }
     #menu-header #menu-list .list-items .allergen {
       margin: 10px 0 8px; }
     #menu-header #menu-list .list-items .items {
@@ -2128,7 +2126,7 @@ img {
     font-size: 16px; }
     #menu-header .top .navigation .logo-holder a .logo span {
       margin-top: -7px;
-      font-size: 7px; }
+      font-size: 5px; }
   #sign-up-offers .container .sign-up-content h1 {
     font-size: 30px; }
   #sign-up-offers .container .sign-up-content #sign-up-form {
@@ -2481,7 +2479,7 @@ img {
     font-size: 10px; }
     #menu-header .top .navigation .logo-holder a .logo span {
       margin-top: -6px;
-      font-size: 7px; }
+      font-size: 4px; }
     #menu-header .top .navigation li:nth-child(2), #menu-header .top .navigation li:nth-child(3) {
       display: none; }
   #sign-up-offers {
