@@ -265,9 +265,6 @@
                     font-size: 25px;
                     border-bottom: 1px solid $tomato;
                     padding-bottom: 14px;
-                    // vertical-align: middle;
-                    // display: inline-block;
-
                 }
 
                 .member {
@@ -567,7 +564,6 @@
     }
 
     .popup {
-        // border: 1px solid $dark;
         border-radius: 3px;
         background-color: $ivory;
         color: $dark;
@@ -729,8 +725,6 @@
 #login-register {
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
-    // left: 0;
-    // right: 0;
     top: 0;
     bottom: 0;
     width: 100%;
@@ -743,9 +737,6 @@
         color: $dark;
         font-family: 'Oswald', sans-serif;
     }
-
-    // .container {
-    // .login-register-wrapper {
 
     .login-register-content {
         border-radius: 3px;
@@ -791,7 +782,6 @@
             padding: 20px 30px;
             grid-gap: 20px;
             justify-content: center;
-            //    align-items: center;
 
             #login-form {
                 padding: 0 10px;
