@@ -834,7 +834,7 @@
             width: 100%; }
 
 .smooth-position {
-  margin-top: 97px; }
+  padding-top: 98px; }
 
 #menu {
   position: relative;
@@ -1093,14 +1093,14 @@ img {
     #header .top .container .sidenav {
       display: flex;
       justify-content: space-evenly; }
-      #header .top .container .sidenav li {
+      #header .top .container .sidenav h3 {
         border: none;
         padding: 0px 25px; }
-        #header .top .container .sidenav li a {
+        #header .top .container .sidenav h3 a {
           position: relative;
           overflow: hidden;
           border: none; }
-          #header .top .container .sidenav li a::after {
+          #header .top .container .sidenav h3 a::after {
             content: '';
             position: absolute;
             background: #73020C;
@@ -1111,8 +1111,10 @@ img {
             bottom: -5px;
             border: none;
             transition: .55s ease-in-out; }
-          #header .top .container .sidenav li a:hover:after {
+          #header .top .container .sidenav h3 a:hover:after {
             width: 100%; }
+      #header .top .container .sidenav .under-info, #header .top .container .sidenav .nav-divider {
+        display: none; }
 
 #main-area {
   position: relative; }
@@ -1983,7 +1985,7 @@ img {
       #menu-header #menu-list .list-items .items .item {
         margin-bottom: 10px; }
   .smooth-position {
-    margin-top: 109px; } }
+    padding-top: 120px; } }
 
 @media screen and (max-width: 800px) {
   #collect {
@@ -1994,7 +1996,8 @@ img {
       display: none; }
     #collect .container .collect-content {
       display: block; }
-      #collect .container .collect-content .start-content h2, #collect .container .collect-content .start-content p {
+      #collect .container .collect-content .start-content h2,
+      #collect .container .collect-content .start-content p {
         text-align: center; }
       #collect .container .collect-content .start-content .collect-form .time-input {
         display: block;
@@ -2061,13 +2064,27 @@ img {
         transition: left .4s ease-in-out;
         display: block;
         text-align: left; }
-        #header .top .container .sidenav li {
+        #header .top .container .sidenav h3 {
           padding: 10px 25px;
           width: 100%; }
         #header .top .container .sidenav.show {
           left: 0; }
         #header .top .container .sidenav a {
           color: #0c0c0c; }
+        #header .top .container .sidenav .nav-divider {
+          display: block;
+          background: rgba(0, 0, 0, 0.1);
+          width: 97%;
+          height: 1px;
+          margin: 19px auto 25px; }
+        #header .top .container .sidenav .under-info {
+          display: block; }
+          #header .top .container .sidenav .under-info h6 {
+            padding: 10px 25px;
+            width: 100%;
+            font-weight: 300;
+            text-transform: uppercase;
+            font-size: 12px; }
   #steps {
     padding: 70px 120px 100px; }
     #steps .container .steps-content .steps {
@@ -2453,13 +2470,11 @@ img {
   #main-area #menu #other .other-boxes {
     display: grid;
     grid-template-columns: repeat(2, 1fr); }
-  #menu-header .top .navigation {
-    font-size: 10px; }
-    #menu-header .top .navigation .logo-holder a .logo span {
-      margin-top: -6px;
-      font-size: 4px; }
-    #menu-header .top .navigation li:nth-child(2), #menu-header .top .navigation li:nth-child(3) {
-      display: none; }
+  #menu-header .top .navigation .logo-holder a .logo span {
+    margin-top: -6px;
+    font-size: 4px; }
+  #menu-header .top .navigation li:nth-child(2), #menu-header .top .navigation li:nth-child(3) {
+    display: none; }
   #sign-up-offers {
     padding: 120px 20px 0; }
     #sign-up-offers .container .sign-up-content h1 {
@@ -2498,7 +2513,9 @@ img {
       #collect .container .collect-content .start-content .collect-form .specify {
         font-size: 12px; }
         #collect .container .collect-content .start-content .collect-form .specify input[type="checkbox"] {
-          vertical-align: -37%; }
+          width: 15px;
+          height: 15px;
+          vertical-align: -17%; }
       #collect .container .collect-content .apply p {
         font-size: 12px; }
       #collect .container .collect-content .apply .redeem-points {
@@ -2528,7 +2545,7 @@ img {
         transition: left .4s ease-in-out;
         display: block;
         text-align: left; }
-        #header .top .container .sidenav li {
+        #header .top .container .sidenav h3 {
           padding: 10px 25px;
           width: 100%; }
         #header .top .container .sidenav.show {
@@ -2847,7 +2864,9 @@ img {
   #main-area #lunch-dinner .container .lunch-dinner .dinner .dinner-content {
     padding: 10px 15px 0; }
     #main-area #lunch-dinner .container .lunch-dinner .dinner .dinner-content h2 {
-      line-height: 1.3; } }
+      line-height: 1.3; }
+  #menu-header .top .navigation {
+    font-size: 10px; } }
 
 @media screen and (max-width: 319px) {
   #register .popup .popup-header {

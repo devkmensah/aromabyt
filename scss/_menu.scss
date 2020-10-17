@@ -161,7 +161,8 @@
 // MENU SECTION BEGINS
 // To prevent sudden quick movement of the menu contents under the menu list since the menu-list gets a new position at the top when a class is added to the menu-list id
 .smooth-position {
-    margin-top: 97px;
+    // margin-top: 97px;
+    padding-top: 98px;
 }
 
 #menu {

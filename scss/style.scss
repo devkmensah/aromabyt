@@ -151,7 +151,7 @@ img {
                 display: flex;
                 justify-content: space-evenly;
 
-                li {
+                h3 {
                     border: none;
                     padding: 0px 25px;
 
@@ -178,6 +178,9 @@ img {
                             width: 100%;
                         }
                     }
+                }
+                .under-info, .nav-divider{
+                    display: none;
                 }
             }
         }

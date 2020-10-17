@@ -175,10 +175,11 @@
                     padding-top: 0;
 
                     h1 {
+
                         // font-size: 32px;
-                       span{
-                           font-size: 7px;
-                       } 
+                        span {
+                            font-size: 7px;
+                        }
                     }
                 }
             }
@@ -607,7 +608,7 @@
     }
 
     .smooth-position {
-        margin-top: 109px;
+        padding-top: 120px;
     }
 }
 
@@ -630,7 +631,9 @@
                 display: block;
 
                 .start-content {
-                    h2, p {
+
+                    h2,
+                    p {
                         text-align: center;
                     }
 
@@ -708,6 +711,10 @@
             }
         }
     }
+
+    .smooth-position {
+        // padding-top: 125px;
+    }
 }
 
 
@@ -722,8 +729,9 @@
                 padding: 0 20px;
                 overflow: hidden;
 
-                .logo-holder{
+                .logo-holder {
                     padding-left: 0;
+
                     a {
                         .logo {
                             span {
@@ -746,7 +754,7 @@
                     display: block;
                     text-align: left;
 
-                    li {
+                    h3 {
                         padding: 10px 25px;
                         width: 100%;
                     }
@@ -757,6 +765,23 @@
 
                     a {
                         color: $dark;
+                    }
+                    .nav-divider{
+                        display: block;
+                        background: rgba(0, 0, 0, 0.1);
+                        width: 97%;
+                        height: 1px;
+                        margin: 19px auto 25px;
+                    }
+                    .under-info{
+                        display: block;
+                        h6 {
+                            padding: 10px 25px;
+                            width: 100%;
+                            font-weight: 300;
+                            text-transform: uppercase;
+                            font-size: 12px;
+                        }
                     }
 
                 }
@@ -1183,6 +1208,8 @@
             }
         }
     }
+
+
 }
 
 @media screen and (max-width: 605px) {
@@ -1333,77 +1360,78 @@
 
 
 @media screen and (max-width: 550px) {
-        // FOOTER
-        #footer {
-            padding: 40px 4px 70px;
 
-            .container {
-                .top {
-                    display: flex;
-                    // flex-wrap: nowrap;
-                    justify-content: space-evenly;
+    // FOOTER
+    #footer {
+        padding: 40px 4px 70px;
 
-                    .column {
-                        margin: 10px 5px;
+        .container {
+            .top {
+                display: flex;
+                // flex-wrap: nowrap;
+                justify-content: space-evenly;
 
-                        ul {
-                            li {
-                                font-size: 14px;
-                            }
-                        }
-                    }
+                .column {
+                    margin: 10px 5px;
 
-                    .column.four {
-                        .social {
-                            li {
-                                a {
-                                    .fab {
-                                        border: 1px solid $dark;
-                                        border-radius: 50%;
-                                        height: 35px;
-                                        width: 35px;
-                                        font-size: 18px;
-                                        line-height: 1.85;
-                                        transition: .3s ease-out;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-
-                // BOTTOM AREA
-                .bottom {
-                    // display: grid;
-                    // grid-template-columns: 1fr;
-                    display: block;
-                    text-align: center;
-
-
-
-                    .bottom-logo {
-                        .store {
-                            display: flex;
-                            margin: 20px 0 20px 9.98px;
-                            align-items: center;
-                            justify-content: center;
-                            text-align: center;
-                        }
-                    }
-
-                    .rights {
-                        display: flex;
-                        justify-content: space-evenly;
-                        text-align: center;
-
+                    ul {
                         li {
                             font-size: 14px;
                         }
                     }
                 }
 
+                .column.four {
+                    .social {
+                        li {
+                            a {
+                                .fab {
+                                    border: 1px solid $dark;
+                                    border-radius: 50%;
+                                    height: 35px;
+                                    width: 35px;
+                                    font-size: 18px;
+                                    line-height: 1.85;
+                                    transition: .3s ease-out;
+                                }
+                            }
+                        }
+                    }
+                }
             }
+
+            // BOTTOM AREA
+            .bottom {
+                // display: grid;
+                // grid-template-columns: 1fr;
+                display: block;
+                text-align: center;
+
+
+
+                .bottom-logo {
+                    .store {
+                        display: flex;
+                        margin: 20px 0 20px 9.98px;
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;
+                    }
+                }
+
+                .rights {
+                    display: flex;
+                    justify-content: space-evenly;
+                    text-align: center;
+
+                    li {
+                        font-size: 14px;
+                    }
+                }
+            }
+
         }
+    }
 }
 
 
@@ -1624,7 +1652,7 @@
         .top {
             .navigation {
                 // padding-right: 43px;
-                font-size: 10px;
+                // font-size: 10px;
 
                 .logo-holder {
                     a {
@@ -1733,7 +1761,9 @@
                             font-size: 12px;
 
                             input[type="checkbox"] {
-                                vertical-align: -37%;
+                                width: 15px;
+                                height: 15px;
+                                vertical-align: -17%;
                             }
                         }
                     }
@@ -1759,6 +1789,10 @@
         .login-register-content {
             max-width: 90%;
         }
+    }
+
+    .smooth-position {
+        // margin-top: 160px;
     }
 }
 
@@ -1799,7 +1833,7 @@
                     display: block;
                     text-align: left;
 
-                    li {
+                    h3 {
                         padding: 10px 25px;
                         width: 100%;
                     }
@@ -2106,6 +2140,10 @@
 
             }
         }
+    }
+
+    .smooth-position {
+        // padding-top: 50px;
     }
 }
 
@@ -2432,8 +2470,8 @@
         }
     }
 
-     // LOG IN
-     #login-register {
+    // LOG IN
+    #login-register {
         .login-register-content {
             .login-register-header {
                 padding: 8px 10px 10px;
@@ -2492,6 +2530,15 @@
             }
         }
     }
+    // MENU
+    #menu-header {
+        .top {
+            .navigation {
+                font-size: 10px;
+            }
+        }
+    }
+    
 }
 
 @media screen and (max-width: 319px) {
