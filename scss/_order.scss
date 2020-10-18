@@ -558,13 +558,22 @@
     z-index: 6;
     margin: 0 auto;
     display: none;
- 
+    animation-name: smooth-open;
+    animation-duration: 1s;
 
+    
+    @keyframes smooth-open{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+    
     a {
         color: $dark;
     }
-
-  
 
     .popup {
         border-radius: 3px;
@@ -735,6 +744,18 @@
     margin: 0 auto;
     font-family: 'Oswald', sans-serif;
     display: none;
+
+    animation-name: smooth-open;
+    animation-duration: 1s;
+
+    @keyframes smooth-open{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
   
 
     a {
