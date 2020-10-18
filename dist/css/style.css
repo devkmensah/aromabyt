@@ -850,7 +850,7 @@
             width: 100%; }
 
 .smooth-position {
-  padding-top: 98px; }
+  padding-top: 85px; }
 
 #menu {
   position: relative;
@@ -1983,7 +1983,9 @@ img {
       justify-content: center; }
     #footer .container .bottom .rights {
       display: flex;
-      justify-self: center; } }
+      justify-self: center; }
+  .smooth-position {
+    padding-top: 95px; } }
 
 @media screen and (max-width: 867px) {
   #menu-header .top .navigation {
@@ -1992,7 +1994,7 @@ img {
       margin-top: -7px;
       font-size: 6px; }
   #menu-header #menu-list {
-    padding: 10px 70px; }
+    padding: 10px 0 10px 50px; }
     #menu-header #menu-list .list-items .allergen {
       margin: 10px 0 8px; }
     #menu-header #menu-list .list-items .items {
@@ -2001,8 +2003,10 @@ img {
       font-size: 15px; }
       #menu-header #menu-list .list-items .items .item {
         margin-bottom: 10px; }
+        #menu-header #menu-list .list-items .items .item span {
+          display: none; }
   .smooth-position {
-    padding-top: 120px; } }
+    padding-top: 95px; } }
 
 @media screen and (max-width: 800px) {
   #collect {
@@ -2147,6 +2151,8 @@ img {
     #menu-header .top .navigation .logo-holder a .logo span {
       margin-top: -7px;
       font-size: 5px; }
+  #menu-header #menu-list {
+    padding: 10px 0 10px 40px; }
   #sign-up-offers .container .sign-up-content h1 {
     font-size: 30px; }
   #sign-up-offers .container .sign-up-content #sign-up-form {
@@ -2280,11 +2286,13 @@ img {
       #register .popup .popup-content #form-register .right-input .receive {
         margin: 18px 0 33px; }
         #register .popup .popup-content #form-register .right-input .receive input[type="checkbox"] {
-          zoom: 1.1; }
+          zoom: 1.1;
+          vertical-align: -9.37%; }
         #register .popup .popup-content #form-register .right-input .receive label.of-age {
           font-size: 14px; }
       #register .popup .popup-content #form-register .right-input .creating input[type="checkbox"] {
-        zoom: 1.1; }
+        zoom: 1.1;
+        vertical-align: -9.37%; }
       #register .popup .popup-content #form-register .right-input .creating label.read {
         font-size: 14px; }
       #register .popup .popup-content #form-register .right-input button.btn-register {
@@ -2354,6 +2362,10 @@ img {
     grid-template-columns: repeat(3, 1fr); } }
 
 @media screen and (max-width: 550px) {
+  .smooth-position {
+    padding-top: 125px; }
+  #menu-header #menu-list {
+    padding: 10px 30px; }
   #footer {
     padding: 40px 4px 70px; }
     #footer .container .top {
@@ -2493,6 +2505,8 @@ img {
     font-size: 4px; }
   #menu-header .top .navigation li:nth-child(2), #menu-header .top .navigation li:nth-child(3) {
     display: none; }
+  #menu-header #menu-list {
+    padding: 10px 55px; }
   #sign-up-offers {
     padding: 120px 20px 0; }
     #sign-up-offers .container .sign-up-content h1 {
@@ -2572,6 +2586,8 @@ img {
           color: #0c0c0c; }
         #header .top .container .sidenav .under-info h6 {
           font-size: 10px; }
+  #menu-header #menu-list {
+    padding: 10px 40px; }
   #main-area #start-section .container .start {
     height: 400px; }
     #main-area #start-section .container .start .start-content {
@@ -2694,12 +2710,12 @@ img {
   #register .popup .popup-content #form-register .right-input .receive {
     margin: 18px 0 23px; }
     #register .popup .popup-content #form-register .right-input .receive input[type="checkbox"] {
-      vertical-align: -5%;
+      vertical-align: 3.69%;
       zoom: 0.9; }
     #register .popup .popup-content #form-register .right-input .receive label.of-age {
       font-size: 12px; }
   #register .popup .popup-content #form-register .right-input .creating input[type="checkbox"] {
-    vertical-align: -5%;
+    vertical-align: 3.69%;
     zoom: 0.9; }
   #register .popup .popup-content #form-register .right-input .creating label.read {
     font-size: 12px; }
@@ -2860,8 +2876,10 @@ img {
   #menu #not-steaks-menu .dinner-boxes .box .content h3,
   #menu #not-steaks-menu .not-steaks-boxes .box .content h3 {
     font-size: 18px; }
-  #menu-header #menu-list .list-items .items .item span {
-    display: none; }
+  #menu-header #menu-list {
+    padding: 10px 35px; }
+    #menu-header #menu-list .list-items .items .item span {
+      display: none; }
   #login-register .login-register-content .login-register-header {
     padding: 8px 10px 10px;
     font-size: 14px; }
@@ -2879,6 +2897,10 @@ img {
       display: none; }
     #login-register .login-register-content .login-register-box .create-alternative {
       display: none; } }
+
+@media screen and (max-width: 338px) {
+  .smooth-position {
+    padding-top: 166px; } }
 
 @media screen and (max-width: 333px) {
   #main-area #lunch-dinner .container .lunch-dinner .dinner .dinner-content {
@@ -2915,14 +2937,16 @@ img {
   #register .popup .popup-content #form-register .right-input .receive {
     margin: 18px 0 23px; }
     #register .popup .popup-content #form-register .right-input .receive input[type="checkbox"] {
-      vertical-align: -5%;
+      vertical-align: 3.69%;
       zoom: 0.9; }
     #register .popup .popup-content #form-register .right-input .receive label.of-age {
       font-size: 12px; }
   #register .popup .popup-content #form-register .right-input .creating input[type="checkbox"] {
-    vertical-align: -5%;
+    vertical-align: 3.69%;
     zoom: 0.9; }
-  #register .popup .popup-content #form-register .right-input .creating label.read {
-    font-size: 12px; }
   #register .popup .popup-content #form-register .right-input button.btn-register {
     font-size: 10px; } }
+
+@media screen and (max-width: 274px) {
+  .smooth-position {
+    padding-top: 206px; } }
