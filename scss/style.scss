@@ -148,40 +148,44 @@ img {
             }
 
             .sidenav {
-                display: flex;
-                justify-content: space-evenly;
+                // .sidenav-container {
+                    display: flex;
+                    justify-content: space-evenly;
 
-                h3 {
-                    border: none;
-                    padding: 0px 25px;
-
-                    a {
-                        position: relative;
-                        overflow: hidden;
+                    h3 {
                         border: none;
+                        padding: 0px 25px;
 
-
-                        &::after {
-                            content: '';
-                            position: absolute;
-                            background: $tomato;
-                            height: 5px;
-                            width: 0%;
-                            transform: translateX(-50%);
-                            left: 50%;
-                            bottom: -5px;
+                        a {
+                            position: relative;
+                            overflow: hidden;
                             border: none;
-                            transition: .55s ease-in-out;
-                        }
 
-                        &:hover:after {
-                            width: 100%;
+
+                            &::after {
+                                content: '';
+                                position: absolute;
+                                background: $tomato;
+                                height: 5px;
+                                width: 0%;
+                                transform: translateX(-50%);
+                                left: 50%;
+                                bottom: -5px;
+                                border: none;
+                                transition: .55s ease-in-out;
+                            }
+
+                            &:hover:after {
+                                width: 100%;
+                            }
                         }
                     }
-                }
-                .under-info, .nav-divider{
-                    display: none;
-                }
+
+                    .under-info,
+                    .nav-divider {
+                        display: none;
+                    }
+                // }
             }
         }
     }
@@ -719,6 +723,7 @@ img {
             }
         }
     }
+
     // APP SECTION ENDS
 
     // LUNCH-DINNER SECTION BEGINS
@@ -1049,10 +1054,11 @@ img {
 
     // SIGN UP FOR WEEKLY OFFERS END
 }
+
 // MAIN ARE ENDS
 
-  // FOOTER SECTION BEGINS
-  #footer {
+// FOOTER SECTION BEGINS
+#footer {
     background-color: $white;
     color: $dark;
     padding: 40px 70px 70px;

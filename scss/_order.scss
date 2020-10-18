@@ -558,10 +558,13 @@
     z-index: 6;
     margin: 0 auto;
     display: none;
+ 
 
     a {
         color: $dark;
     }
+
+  
 
     .popup {
         border-radius: 3px;
@@ -732,6 +735,7 @@
     margin: 0 auto;
     font-family: 'Oswald', sans-serif;
     display: none;
+  
 
     a {
         color: $dark;

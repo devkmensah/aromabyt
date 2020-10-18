@@ -1113,7 +1113,8 @@ img {
             transition: .55s ease-in-out; }
           #header .top .container .sidenav h3 a:hover:after {
             width: 100%; }
-      #header .top .container .sidenav .under-info, #header .top .container .sidenav .nav-divider {
+      #header .top .container .sidenav .under-info,
+      #header .top .container .sidenav .nav-divider {
         display: none; }
 
 #main-area {
@@ -2046,24 +2047,25 @@ img {
   #header .top {
     overflow: hidden; }
     #header .top .container {
-      padding: 0 20px;
-      overflow: hidden; }
+      padding: 0 20px; }
       #header .top .container .logo-holder {
         padding-left: 0; }
         #header .top .container .logo-holder a .logo span {
           font-size: 7px; }
       #header .top .container .sidenav {
         position: fixed;
-        width: 310px;
+        width: 100%;
         height: 100%;
         background-color: #FCFCF3;
         top: 120px;
-        left: -310px;
+        left: -100%;
+        bottom: 0;
         padding-top: 20px;
-        overflow: hidden;
-        transition: left .4s ease-in-out;
+        overflow: scroll;
+        transition: left .8s ease-in-out;
         display: block;
-        text-align: left; }
+        text-align: left;
+        padding-bottom: 700px; }
         #header .top .container .sidenav h3 {
           padding: 10px 25px;
           width: 100%; }
@@ -2076,7 +2078,7 @@ img {
           background: rgba(0, 0, 0, 0.1);
           width: 97%;
           height: 1px;
-          margin: 19px auto 25px; }
+          margin: 23px auto 25px; }
         #header .top .container .sidenav .under-info {
           display: block; }
           #header .top .container .sidenav .under-info h6 {
@@ -2528,23 +2530,23 @@ img {
   #header .top {
     overflow: hidden; }
     #header .top .container {
-      overflow: hidden;
       font-size: 14px; }
       #header .top .container .logo-holder a .logo span {
         margin-top: -7px;
         font-size: 5px; }
       #header .top .container .sidenav {
         position: fixed;
-        width: 310px;
+        width: 100%;
         height: 100%;
         background-color: #FCFCF3;
         top: 120px;
-        left: -310px;
+        left: -100%;
         padding-top: 20px;
-        overflow: hidden;
-        transition: left .4s ease-in-out;
+        overflow: scroll;
+        transition: left .8s ease-in-out;
         display: block;
-        text-align: left; }
+        text-align: left;
+        padding-bottom: 700px; }
         #header .top .container .sidenav h3 {
           padding: 10px 25px;
           width: 100%; }
@@ -2552,6 +2554,8 @@ img {
           left: 0; }
         #header .top .container .sidenav a {
           color: #0c0c0c; }
+        #header .top .container .sidenav .under-info h6 {
+          font-size: 10px; }
   #main-area #start-section .container .start {
     height: 400px; }
     #main-area #start-section .container .start .start-content {
