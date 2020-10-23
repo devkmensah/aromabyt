@@ -1,4 +1,4 @@
-// SIGN UP FOR WEEKLY OFFERS BEGINS
+// Sign Up For Offers Start
 #sign-up-offers {
     padding: 120px 70px 0;
     background: $ivory url('../images/offers/offer7.png') no-repeat center center / cover;
@@ -21,7 +21,7 @@
 
     .container {
         padding: 0 0 70px;
-
+        // Sign Up For Offers Content Starts
         .sign-up-content {
             padding: 85px 0 40px;
             display: flex;
@@ -37,9 +37,7 @@
                 color: $white;
                 text-align: center;
             }
-
-
-
+            // Form Starts
             #sign-up-form {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
@@ -75,16 +73,13 @@
                 ::placeholder {
                     color: $dark;
                     opacity: 1;
-                    /* Firefox */
                 }
 
                 :-ms-input-placeholder {
-                    /* Internet Explorer 10-11 */
                     color: $dark;
                 }
 
                 ::-ms-input-placeholder {
-                    /* Microsoft Edge */
                     color: $dark;
                 }
 
@@ -119,28 +114,27 @@
                         border: 2px solid transparent;
                     }
                 }
-
             }
+             // Form Ends
         }
+        // Sign Up For Offers Content Ends
     }
 }
+// Sign Up For Offers End
 
-// SIGN UP FOR WEEKLY OFFERS BEGINS
-
+// Steps To Earn Offers Start
 #steps {
     padding: 70px 70px 100px;
     color: $white;
     background: $dark;
 
     .container {
-        //   padding: 0 0 160px;
-
+        // Steps Content Starts
         .steps-content {
             h3 {
                 text-align: center;
                 text-transform: uppercase;
                 font-size: 30px;
-                //   margin-bottom: 35px;
             }
 
             .arrow-down {
@@ -148,11 +142,13 @@
                 margin-bottom: 70px;
             }
 
+            // Steps Container Starts
             .steps {
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
                 grid-gap: 30px;
 
+                // Step Starts
                 .step {
                     padding: 35px 7px 0;
                     width: 100%;
@@ -188,8 +184,11 @@
 
                    
                 }
+                 // Step Ends
             }
+            // Steps Container Ends
 
+            // Steps Button Starts
             .steps-button {
                 display: block;
                 text-align: center;
@@ -214,6 +213,9 @@
                     }
                 }
             }
+             // Steps Button Ends
         }
+        // Steps Content Ends
     }
 }
+// Steps To Earn Offers End
