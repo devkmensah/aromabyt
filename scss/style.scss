@@ -74,8 +74,10 @@ img {
 }
 
 
-// HEADER STYLING BEGINS
+// Home Page Header Starts
 #header {
+
+    //  Navigation Starts
     .top {
         height: 120px;
         background-color: $dark;
@@ -104,12 +106,6 @@ img {
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    // vertical-align: middle;
-
-                    // .chef {
-                    //     width: 50px;
-                    //     display: inline-block;
-                    // }
 
                     .logo {
                         display: flex;
@@ -126,6 +122,7 @@ img {
                 }
             }
 
+            // Hamburger Icon Starts
             #hamburger-toggler {
                 position: relative;
                 all: unset;
@@ -147,50 +144,55 @@ img {
                 }
             }
 
+            // Hamburger Icon Ends
+
+            // Menu Area Starts
             .sidenav {
-                // .sidenav-container {
-                    display: flex;
-                    justify-content: space-evenly;
+                display: flex;
+                justify-content: space-evenly;
 
-                    h3 {
+                h3 {
+                    border: none;
+                    padding: 0px 25px;
+
+                    a {
+                        position: relative;
+                        overflow: hidden;
                         border: none;
-                        padding: 0px 25px;
 
-                        a {
-                            position: relative;
-                            overflow: hidden;
+
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            background: $tomato;
+                            height: 5px;
+                            width: 0%;
+                            transform: translateX(-50%);
+                            left: 50%;
+                            bottom: -5px;
                             border: none;
+                            transition: .55s ease-in-out;
+                        }
 
-
-                            &::after {
-                                content: '';
-                                position: absolute;
-                                background: $tomato;
-                                height: 5px;
-                                width: 0%;
-                                transform: translateX(-50%);
-                                left: 50%;
-                                bottom: -5px;
-                                border: none;
-                                transition: .55s ease-in-out;
-                            }
-
-                            &:hover:after {
-                                width: 100%;
-                            }
+                        &:hover:after {
+                            width: 100%;
                         }
                     }
+                }
 
-                    .under-info,
-                    .nav-divider {
-                        display: none;
-                    }
-                // }
+                .under-info,
+                .nav-divider {
+                    display: none;
+                }
             }
+            // Menu Area Ends
         }
     }
 
+    //  Navigation Ends
 }
+
+// Home Page Header Ends
 
 // MAIN AREA BEGINS
 #main-area {
@@ -537,7 +539,7 @@ img {
                 }
 
                 .start-image {
-                    background: $white url('../images/steaks/steaky25.jpg') no-repeat center center / cover;
+                    background: $white url('../images/start/steaky25.jpg') no-repeat center center / cover;
                     height: 300px;
                     width: 100%;
                     position: relative;
