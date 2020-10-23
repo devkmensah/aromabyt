@@ -1437,13 +1437,10 @@ img {
                 border: 1px solid transparent; }
             #main-area #app .container .left #postcode label.input-label ::placeholder {
               color: #0c0c0c;
-              opacity: 1;
-              /* Firefox */ }
+              opacity: 1; }
             #main-area #app .container .left #postcode label.input-label :-ms-input-placeholder {
-              /* Internet Explorer 10-11 */
               color: #0c0c0c; }
             #main-area #app .container .left #postcode label.input-label ::-ms-input-placeholder {
-              /* Microsoft Edge */
               color: #0c0c0c; }
           #main-area #app .container .left #postcode label.button-label button {
             margin-right: 10px;
@@ -1569,13 +1566,10 @@ img {
             border: 1px dashed #FCC000; }
         #main-area #sign-up .container .sign-up-content #sign-up-form ::placeholder {
           color: #0c0c0c;
-          opacity: 1;
-          /* Firefox */ }
+          opacity: 1; }
         #main-area #sign-up .container .sign-up-content #sign-up-form :-ms-input-placeholder {
-          /* Internet Explorer 10-11 */
           color: #0c0c0c; }
         #main-area #sign-up .container .sign-up-content #sign-up-form ::-ms-input-placeholder {
-          /* Microsoft Edge */
           color: #0c0c0c; }
         #main-area #sign-up .container .sign-up-content #sign-up-form .first {
           grid-column: 1 / 2;
