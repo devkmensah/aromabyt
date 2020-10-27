@@ -1,6 +1,6 @@
-//ORDER HEADER STYLING BEGINS
+//Order Header Starts
 #order-header {
-
+    // Navigation Starts
     .order-nav {
         background-color: $dark;
         display: block;
@@ -12,7 +12,7 @@
         width: 100%;
         z-index: 3;
         overflow: hidden;
-
+        // Top Navigation Starts
         .order-top {
             display: flex;
             justify-content: space-between;
@@ -23,17 +23,6 @@
             padding: 6px 100px 0;
 
             .order-logo {
-                // display: flex;
-                // align-items: center;
-                // justify-content: center;
-                // vertical-align: middle;
-                // padding-top: 5px;
-
-                // .order-chef {
-                //     width: 50px;
-                //     display: inline-block;
-                // }
-
                 h1 {
                     font-size: 32px;
                     display: flex;
@@ -87,7 +76,8 @@
                 }
             }
         }
-
+          // Top Navigation Ends 
+        //   Order Type Navigation Starts
         .order-options {
             display: flex;
             align-items: center;
@@ -125,12 +115,14 @@
                 }
             }
         }
+          //   Order Type Navigation Ends
     }
+     // Navigation Ends
 }
 
-//ORDER HEADER STYLING ENDS
+//Order Header Ends
 
-// DELIVERY SECTION BEGINS
+// Delivery Section Starts
 #delivery {
     padding: 120px 70px 0;
     background: $ivory url('../images/menu/steakmenu.png') no-repeat center center / cover;
@@ -159,13 +151,13 @@
     .container {
         max-width: 1200px;
         margin: 0 auto;
-
+        // Delivery Content Starts
         .delivery-content {
             display: grid;
             grid-template-columns: 2fr 1fr;
             grid-column-gap: 20px;
             padding: 50px 0;
-
+            // Delivery Form Content Starts
             .delivery-form-content {
                 padding: 0 25px;
                 text-align: center;
@@ -175,7 +167,7 @@
                     padding-bottom: 25px;
                     text-align: left;
                 }
-
+                // Delivery Form Starts
                 #delivery-form {
                     width: 100%;
 
@@ -249,8 +241,10 @@
                         // font-weight: 800;
                     }
                 }
+                // Delivery Form Ends
             }
-
+             // Delivery Form Content Ends
+            //  Apply Point Starts
             .apply {
                 max-width: 365px;
 
@@ -330,13 +324,15 @@
                     }
                 }
             }
+            //  Apply Point Ends
         }
+        // Delivery Content Ends
     }
 }
 
-// DELIVERY SECTION ENDS
+// Delivery Section Ends
 
-// COLLECT SECTION BEGINS
+// Collect Section Starts
 #collect {
     padding: 120px 70px 0;
     background: $ivory url('../images/menu/t11.png') no-repeat center center / cover;
@@ -344,6 +340,7 @@
     display: none;
     position: relative;
 
+    // Collect Overlay Starts
     &:after {
         content: "";
         position: absolute;
@@ -357,25 +354,27 @@
     * {
         z-index: 2;
     }
+     // Collect Overlay Ends
 
     a {
         color: $dark;
     }
 
     .container {
+        // Collect Starts
         .collect-content {
             display: grid;
             grid-template-columns: 2fr 1fr;
             grid-column-gap: 20px;
             justify-content: space-between;
             padding: 50px 0;
-
+            // Collect Content Starts
             .start-content {
                 h2 {
                     text-transform: uppercase;
                     font-size: 35px;
                 }
-
+                // Collect Form Starts
                 .collect-form {
                     width: 100%;
 
@@ -383,7 +382,7 @@
                         display: flex;
                         align-items: center;
                         margin: 50px 0;
-
+                        // Time Input Starts
                         .time {
                             display: flex;
                             flex-direction: column;
@@ -401,7 +400,8 @@
                                 }
                             }
                         }
-
+                         // Time Input Ends
+                         // Date Input Starts
                         .date {
                             display: flex;
                             flex-direction: column;
@@ -420,7 +420,7 @@
                                 }
                             }
                         }
-
+                         // Date Input Ends
                     }
 
                     .specify {
@@ -438,8 +438,6 @@
                             margin-right: 10px;
                             cursor: pointer;
                         }
-
-                        // change the background color of checkbox Tick
                     }
 
                     button.collect-button {
@@ -455,8 +453,10 @@
                         }
                     }
                 }
+                  // Collect Form Ends
             }
-
+            // Collect Content Ends
+            // Apply Points Start
             .apply {
                 max-width: 365px;
 
@@ -538,15 +538,222 @@
                     }
                 }
             }
+             // Apply Points End
         }
+        // Collect Ends
     }
 }
 
-// COLLECT SECTION ENDS
+// Collect Section Ends
 
 
-// REGISTER, LOG IN BEGINS
-// REGISTER SECTION BEGINS
+
+
+// Log In Form Section Starts
+#login-register {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 6;
+    margin: 0 auto;
+    font-family: 'Oswald', sans-serif;
+    display: none;
+
+    animation-name: smooth-open;
+    animation-duration: 1s;
+
+    // Smooth Transition Open Starts
+    @keyframes smooth-open{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+    // Smooth Transition Open Ends
+
+    a {
+        color: $dark;
+        font-family: 'Oswald', sans-serif;
+    }
+
+    .login-register-content {
+        border-radius: 3px;
+        background-color: $ivory;
+        color: $dark;
+        max-width: 725px;
+        margin: 60px auto 0;
+        width: 100%;
+
+        // Header Area Starts
+        .login-register-header {
+            display: flex;
+            background-color: $tomato;
+            align-items: center;
+            justify-content: space-between;
+            vertical-align: middle;
+            color: $white;
+            text-transform: uppercase;
+            padding: 8px 20px 10px;
+            font-size: 15px;
+            
+            .log-register{
+                display: flex;
+                align-items: center;
+
+                .log-register-divider{
+                    margin: 0 10px;
+                    height: 19px;
+                    width: 1px;
+                    transform: rotate(20deg);
+                    background: $white;
+                }
+            }
+
+            .close {
+                cursor: pointer;
+                font-size: 21px;
+            }
+        }
+        // Header Area Ends
+        // Log In / Register Box Starts
+        .login-register-box {
+            display: grid;
+            grid-template-columns: 48% 2% 48%;
+            padding: 20px 30px;
+            grid-gap: 20px;
+            justify-content: center;
+            // Log In Form Starts
+            #login-form {
+                padding: 0 10px;
+
+                .account-logger{
+                    color: $dark;
+                    text-transform: uppercase;
+                    font-size: 20px;
+                    margin-bottom: 10px;
+                    display: flex;
+                    .into{
+                        display: none;
+                    }
+                }
+
+                input[type="email"],
+                input[type="text"] {
+                    width: 100%;
+                    padding: 18px 10px;
+                    margin: 15px 0;
+                    border: 1px solid rgba(0, 0, 0, 0.1);
+                    font-size: 16px;
+                    color: $dark;
+                    font-family: 'Oswald', sans-serif;
+
+                    &:focus {
+                        outline: none;
+                        border: 1px dashed $yellow;
+                    }
+                }
+
+                .remember {
+                    margin: 10px 0 0;
+                    font-family: 'Oswald', sans-serif;
+                    vertical-align: middle;
+
+                    input[type="checkbox"] {
+                        vertical-align: -11%;
+                        margin: 7px 5px 0 0;
+                        cursor: pointer;
+                        zoom: 1.3;
+                    }
+                }
+
+                .login-btn {
+                    width: 100%;
+                    margin: 30px 0;
+                    padding: 18px 35px;
+                    background-color: $tomato;
+                    border: 1px solid transparent;
+                    color: $white;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                    font-weight: 800;
+                    display: block;
+                    font-family: 'Oswald', sans-serif;
+
+                    &:focus {
+                        outline: none;
+                    }
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+
+                .forgot {
+                    color: $tomato;
+                    font-weight: 100;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+
+                .divider, .mobile-register{
+                    display: none;
+                }
+            }
+             // Log In Form Ends
+            .vertical-line {
+                width: 1px;
+                height: 100%;
+                background-color: $dark;
+            }
+            // Create Your Account / Register Starts
+            .create-alternative {
+                padding-right: 10px;
+
+                .create-header {
+                    color: $tomato;
+                    text-transform: uppercase;
+                    font-size: 20px;
+                    margin-bottom: 16px;
+                }
+
+
+                button {
+                    margin: 30px 0;
+                    padding: 18px 55px;
+                    background-color: $tomato;
+                    border: 1px solid transparent;
+                    color: $white;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                    font-weight: 800;
+                    display: block;
+                    font-family: 'Oswald', sans-serif;
+
+                    &:focus {
+                        outline: none;
+                    }
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+              // Create Your Account / Register Ends
+        }
+        // Log In / Register Box Ends
+    }
+}
+// Log In Form Section Starts
+
+
+
+// Register Form Section Starts
 #register {
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
@@ -561,7 +768,7 @@
     animation-name: smooth-open;
     animation-duration: 1s;
 
-    
+    // Smooth Open Transition Starts 
     @keyframes smooth-open{
         from{
             opacity: 0;
@@ -570,7 +777,7 @@
             opacity: 1;
         }
     }
-    
+       // Smooth Open Transition Ends
     a {
         color: $dark;
     }
@@ -582,7 +789,7 @@
         max-width: 850px;
         margin: 60px auto 0;
         width: 100%;
-
+        // Register Header Starts
         .popup-header {
             display: flex;
             background-color: $tomato;
@@ -599,7 +806,8 @@
                 font-size: 21px;
             }
         }
-
+         // Register Header Ends
+        //  Register Contents Start
         .popup-content {
             padding: 10px 30px;
 
@@ -615,13 +823,13 @@
                 font-size: 25px;
                 padding: 20px 0;
             }
-
+            // Register Form Starts
             #form-register {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 grid-gap: 80px;
                 justify-content: center;
-
+                // Left Input Starts
                 .left-input {
                     display: flex;
                     flex-direction: column;
@@ -645,7 +853,8 @@
                         }
                     }
                 }
-
+                 // Left Input Ends
+                 // Right Input Starts
                 .right-input {
                     input[type="text"] {
                         width: 100%;
@@ -725,211 +934,11 @@
                         }
                     }
                 }
+                 // Right Input Ends
             }
-
+             // Register Form Ends
         }
+        //  Register Contents Ends
     }
 }
-
-// REGISTER SECTION ENDS
-
-// LOGIN SECTION BEGINS
-#login-register {
-    background-color: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    z-index: 6;
-    margin: 0 auto;
-    font-family: 'Oswald', sans-serif;
-    display: none;
-
-    animation-name: smooth-open;
-    animation-duration: 1s;
-
-    @keyframes smooth-open{
-        from{
-            opacity: 0;
-        }
-        to{
-            opacity: 1;
-        }
-    }
-  
-
-    a {
-        color: $dark;
-        font-family: 'Oswald', sans-serif;
-    }
-
-    .login-register-content {
-        border-radius: 3px;
-        background-color: $ivory;
-        color: $dark;
-        max-width: 725px;
-        margin: 60px auto 0;
-        width: 100%;
-
-        .login-register-header {
-            display: flex;
-            background-color: $tomato;
-            align-items: center;
-            justify-content: space-between;
-            vertical-align: middle;
-            color: $white;
-            text-transform: uppercase;
-            padding: 8px 20px 10px;
-            font-size: 15px;
-            
-            .log-register{
-                display: flex;
-                align-items: center;
-
-                .log-register-divider{
-                    margin: 0 10px;
-                    height: 19px;
-                    width: 1px;
-                    transform: rotate(20deg);
-                    background: $white;
-                }
-            }
-
-            .close {
-                cursor: pointer;
-                font-size: 21px;
-            }
-        }
-
-        .login-register-box {
-            display: grid;
-            grid-template-columns: 48% 2% 48%;
-            padding: 20px 30px;
-            grid-gap: 20px;
-            justify-content: center;
-
-            #login-form {
-                padding: 0 10px;
-
-                .account-logger{
-                    color: $dark;
-                    text-transform: uppercase;
-                    font-size: 20px;
-                    margin-bottom: 10px;
-                    display: flex;
-                    .into{
-                        display: none;
-                    }
-                }
-
-                input[type="email"],
-                input[type="text"] {
-                    width: 100%;
-                    padding: 18px 10px;
-                    margin: 15px 0;
-                    border: 1px solid rgba(0, 0, 0, 0.1);
-                    font-size: 16px;
-                    color: $dark;
-                    font-family: 'Oswald', sans-serif;
-
-                    &:focus {
-                        outline: none;
-                        border: 1px dashed $yellow;
-                    }
-                }
-
-                .remember {
-                    margin: 10px 0 0;
-                    font-family: 'Oswald', sans-serif;
-                    vertical-align: middle;
-
-                    input[type="checkbox"] {
-                        vertical-align: -11%;
-                        margin: 7px 5px 0 0;
-                        cursor: pointer;
-                        zoom: 1.3;
-                    }
-                }
-
-                .login-btn {
-                    width: 100%;
-                    margin: 30px 0;
-                    padding: 18px 35px;
-                    background-color: $tomato;
-                    border: 1px solid transparent;
-                    color: $white;
-                    text-transform: uppercase;
-                    cursor: pointer;
-                    font-weight: 800;
-                    display: block;
-                    font-family: 'Oswald', sans-serif;
-
-                    &:focus {
-                        outline: none;
-                    }
-
-                    &:hover {
-                        text-decoration: underline;
-                    }
-                }
-
-                .forgot {
-                    color: $tomato;
-                    font-weight: 100;
-
-                    &:hover {
-                        text-decoration: underline;
-                    }
-                }
-
-                .divider, .mobile-register{
-                    display: none;
-                }
-            }
-
-            .vertical-line {
-                width: 1px;
-                height: 100%;
-                background-color: $dark;
-            }
-
-            .create-alternative {
-                padding-right: 10px;
-
-                .create-header {
-                    color: $tomato;
-                    text-transform: uppercase;
-                    font-size: 20px;
-                    margin-bottom: 16px;
-                }
-
-
-                button {
-                    margin: 30px 0;
-                    padding: 18px 55px;
-                    background-color: $tomato;
-                    border: 1px solid transparent;
-                    color: $white;
-                    text-transform: uppercase;
-                    cursor: pointer;
-                    font-weight: 800;
-                    display: block;
-                    font-family: 'Oswald', sans-serif;
-
-                    &:focus {
-                        outline: none;
-                    }
-
-                    &:hover {
-                        text-decoration: underline;
-                    }
-                }
-            }
-
-        }
-
-    }
-}
-
-// LOGIN SECTION ENDS
-// REGISTER, LOG IN ENDS
+// Register Form Section Ends
