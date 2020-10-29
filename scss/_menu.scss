@@ -1,7 +1,7 @@
-// MENU HEADER BEGINS
-// HEADER STYLING BEGINS
-
+// Header Starts
 #menu-header {
+
+    // Menu Top Navigation Starts
     .top {
         background-color: $dark;
         width: 100%;
@@ -14,9 +14,9 @@
             text-transform: uppercase;
             font-weight: 500;
             font-size: 25px;
-            padding: 25px 0 25px ;
+            padding: 25px 0 25px;
 
-           
+
 
             li {
                 border: none;
@@ -79,13 +79,18 @@
 
     }
 
-    // MENU LIST BEGINS
+    // Menu Top Navigation Ends
+
+    // JavaScript Sticky Effect Starts
     .sticky {
         position: fixed;
         width: 100%;
         top: 0;
     }
 
+    // JavaScript Sticky Effect Ends
+
+    // Menu List Starts
     #menu-list {
         z-index: 2;
         background-color: $tomato;
@@ -148,24 +153,26 @@
                         }
                     }
 
-                    
+
                 }
             }
         }
     }
-    // MENU LIST ENDS
+
+    // Menu List Ends
 }
-// MENU HEADER ENDS
+
+// Header Ends
 
 
 
-// MENU SECTION BEGINS
-// To prevent sudden quick movement of the menu contents under the menu list since the menu-list gets a new position at the top when a class is added to the menu-list id
+// Main area, Menu Section Starts
+// To prevent sudden quick movement of the menu contents under the menu list since the menu-list gets a new position at the top when a class is added to the ID of menu-list class
 .smooth-position {
-    // margin-top: 97px;
     padding-top: 85px;
 }
 
+// Menu Section Starts
 #menu {
     position: relative;
     background-color: $dark;
@@ -174,13 +181,14 @@
         color: $white;
     }
 
-    // LUNCH, DINNER, THE NOT STEAKS MENU STARTS
+    // Lunch, Dinner, The Not Steaks Menu Starts 
     #lunch-menu,
     #dinner-menu,
     #not-steaks-menu {
         color: $white;
         background-color: $dark;
 
+        // Lunch, Dinner, The Not Steaks Header Starts 
         .lunch-header,
         .dinner-header,
         .not-steaks-header {
@@ -190,6 +198,9 @@
             font-size: 22px;
         }
 
+        // Lunch, Dinner, The Not Steaks Header Ends
+
+        // Lunch, Dinner, The Not Steaks Boxes Container Starts
         .lunch-boxes,
         .dinner-boxes,
         .not-steaks-boxes {
@@ -197,6 +208,7 @@
             grid-template-columns: repeat(2, 1fr);
             grid-gap: 3px;
 
+            // Lunch, Dinner, The Not Steaks Individual Box Starts
             .box {
                 .content {
                     overflow: hidden;
@@ -213,6 +225,7 @@
                         font-size: 23px;
                     }
 
+                    // Image Overlay
                     .image-contain {
                         transition: .3s ease-in-out;
 
@@ -234,24 +247,20 @@
 
                         a {
                             img {
-                                // transition: .3s ease-in-out;
                                 display: block;
-
-                                // &:hover{
-                                //     transform: scale(1.06);
-                                // }
                             }
                         }
                     }
                 }
-
-
-
-
             }
+
+            // Lunch, Dinner, The Not Steaks Individual Box Ends
         }
+
+        //   Lunch, Dinner, The Not Steaks Boxes Container Ends
     }
-    // LUNCH, DINNER, THE NOT STEAK MENU ENDS
+
+    // Lunch, Dinner, The Not Steaks Menu Ends
 
     // WINE AREA BEGINS
     #wines,
@@ -320,5 +329,8 @@
             }
         }
     }
+
     // WINE AREA ENDS
 }
+
+// Main area, Menu Section Ends
