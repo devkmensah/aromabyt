@@ -1315,6 +1315,12 @@
                             .pickup {
                                 font-size: 18px;
                                 width: 130px;
+                                z-index: 1;
+                                cursor: pointer;
+
+                                &:hover {
+                                    opacity: 1;
+                                }
                             }
 
                             span {
@@ -1325,7 +1331,7 @@
                     }
 
                     .start-image {
-                        background: $white url('../images/start/start5.jpg') no-repeat center center / cover;
+                        background: $white url('../images/home/mobile_steak.jpg') no-repeat center center / cover;
                         height: 250px;
                         position: static !important;
                     }
@@ -1972,12 +1978,6 @@
                                 padding: 8px 0;
                             }
                         }
-                    }
-
-                    .start-image {
-                        background: $white url('../images/start/start5.jpg') no-repeat center center / cover;
-                        height: 250px;
-                        position: static !important;
                     }
                 }
             }

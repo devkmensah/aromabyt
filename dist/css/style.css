@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 #sign-up-offers {
   padding: 120px 70px 0;
-  background: #FCFCF3 url("../images/offers/offer7.png") no-repeat center center/cover;
+  background: #FCFCF3 url("../images/offers/offer7.jpg") no-repeat center center/cover;
   position: relative; }
   #sign-up-offers::after {
     content: "";
@@ -221,7 +221,7 @@
 
 #delivery {
   padding: 120px 70px 0;
-  background: #FCFCF3 url("../images/menu/steakmenu.png") no-repeat center center/cover;
+  background: #FCFCF3 url("../images/order/sauced.jpg") no-repeat center center/cover;
   color: #fff;
   position: relative; }
   #delivery:after {
@@ -354,7 +354,7 @@
 
 #collect {
   padding: 120px 70px 0;
-  background: #FCFCF3 url("../images/menu/t11.png") no-repeat center center/cover;
+  background: #FCFCF3 url("../images/order/circled.jpg") no-repeat center center/cover;
   color: #fff;
   display: none;
   position: relative; }
@@ -1282,7 +1282,7 @@ img {
       top: 45%;
       right: 17px; }
     #main-area #carousel .slider:first-child {
-      background: url(../images/steaks/steaky12.jpg) no-repeat center center/cover; }
+      background: url(../images/home/ribs.jpg) no-repeat center center/cover; }
       #main-area #carousel .slider:first-child::after {
         content: '';
         position: absolute;
@@ -1296,7 +1296,7 @@ img {
       #main-area #carousel .slider:first-child * {
         z-index: 2; }
     #main-area #carousel .slider:nth-child(2) {
-      background: url(../images/steaks/steaky13.jpg) no-repeat center center/cover; }
+      background: url(../images/home/steak.jpg) no-repeat center center/cover; }
       #main-area #carousel .slider:nth-child(2)::after {
         content: '';
         position: absolute;
@@ -1350,7 +1350,8 @@ img {
             border-radius: 3px;
             width: 150px;
             text-align: center;
-            transition: 0.35s ease-out; }
+            transition: 0.35s ease-out;
+            cursor: pointer; }
             #main-area #start-section .container .start .start-content .options .delivery:hover,
             #main-area #start-section .container .start .start-content .options .pickup:hover {
               background-color: #73020C;
@@ -1358,7 +1359,7 @@ img {
           #main-area #start-section .container .start .start-content .options span {
             margin: 0 10px; }
       #main-area #start-section .container .start .start-image {
-        background: #fff url("../images/start/steaky25.jpg") no-repeat center center/cover;
+        background: #fff url("../images/home/varieties.jpg") no-repeat center center/cover;
         height: 300px;
         width: 100%;
         position: relative; }
@@ -1501,7 +1502,7 @@ img {
             margin-top: 5px;
             border-radius: 3px; }
         #main-area #lunch-dinner .container .lunch-dinner .lunch .lunch-image {
-          background: url("../images/steaks/steak55.jpg") no-repeat center center/cover;
+          background: url("../images/home/circled.jpg") no-repeat center center/cover;
           height: 290px; }
       #main-area #lunch-dinner .container .lunch-dinner .dinner {
         margin-top: 35px;
@@ -1526,7 +1527,7 @@ img {
             margin-top: 5px;
             border-radius: 3px; }
         #main-area #lunch-dinner .container .lunch-dinner .dinner .dinner-image {
-          background: url("../images/steaks/steak26.jpg") no-repeat center center/cover;
+          background: url("../images/home/sauced.jpg") no-repeat center center/cover;
           height: 290px; }
   #main-area #sign-up {
     padding: 0 70px;
@@ -2315,12 +2316,17 @@ img {
         #main-area #start-section .container .start .start-content .options .delivery,
         #main-area #start-section .container .start .start-content .options .pickup {
           font-size: 18px;
-          width: 130px; }
+          width: 130px;
+          z-index: 1;
+          cursor: pointer; }
+          #main-area #start-section .container .start .start-content .options .delivery:hover,
+          #main-area #start-section .container .start .start-content .options .pickup:hover {
+            opacity: 1; }
         #main-area #start-section .container .start .start-content .options span {
           font-weight: 100;
           font-size: 11px; }
     #main-area #start-section .container .start .start-image {
-      background: #fff url("../images/start/start5.jpg") no-repeat center center/cover;
+      background: #fff url("../images/home/mobile_steak.jpg") no-repeat center center/cover;
       height: 250px;
       position: static !important; }
   #steps {
@@ -2590,10 +2596,6 @@ img {
         font-size: 13px;
         width: 80px;
         padding: 8px 0; }
-    #main-area #start-section .container .start .start-image {
-      background: #fff url("../images/start/start5.jpg") no-repeat center center/cover;
-      height: 250px;
-      position: static !important; }
   #main-area #lunch-dinner .container .lunch-dinner .lunch .lunch-content,
   #main-area #lunch-dinner .container .lunch-dinner .lunch .dinner-content,
   #main-area #lunch-dinner .container .lunch-dinner .dinner .lunch-content,

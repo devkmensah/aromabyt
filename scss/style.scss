@@ -436,7 +436,7 @@ img {
         // Slider Images
         // Slider One Starts
         .slider:first-child {
-            background: url(../images/steaks/steaky12.jpg) no-repeat center center/cover;
+            background: url(../images/home/ribs.jpg) no-repeat center center/cover;
 
             &::after {
                 content: '';
@@ -459,7 +459,7 @@ img {
 
         // Slider Two Starts
         .slider:nth-child(2) {
-            background: url(../images/steaks/steaky13.jpg) no-repeat center center/cover;
+            background: url(../images/home/steak.jpg) no-repeat center center/cover;
 
 
 
@@ -540,6 +540,7 @@ img {
                             width: 150px;
                             text-align: center;
                             transition: 0.35s ease-out;
+                            cursor: pointer;
 
                             &:hover {
                                 background-color: $tomato;
@@ -555,7 +556,7 @@ img {
 
                 // Start Order Image Begins
                 .start-image {
-                    background: $white url('../images/start/steaky25.jpg') no-repeat center center / cover;
+                    background: $white url('../images/home/varieties.jpg') no-repeat center center / cover;
                     height: 300px;
                     width: 100%;
                     position: relative;
@@ -795,7 +796,7 @@ img {
 
                     // Lunch Image
                     .lunch-image {
-                        background: url('../images/steaks/steak55.jpg') no-repeat center center / cover;
+                        background: url('../images/home/circled.jpg') no-repeat center center / cover;
                         height: 290px;
                     }
                 }
@@ -837,7 +838,7 @@ img {
 
                     // Dinner Image
                     .dinner-image {
-                        background: url('../images/steaks/steak26.jpg') no-repeat center center / cover;
+                        background: url('../images/home/sauced.jpg') no-repeat center center / cover;
                         height: 290px;
                     }
                 }
