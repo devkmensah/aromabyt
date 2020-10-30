@@ -1,4 +1,6 @@
 @media screen and (min-width: 605px) {
+
+    // Menu Page Starts
     #main-area {
         #lunch-dinner {
             .container {
@@ -119,9 +121,13 @@
             }
         }
     }
+
+    // Menu Page Ends
 }
 
 @media screen and (min-width: 605px) and (max-width: 769px) {
+
+    // Menu Page Starts
     #main-area {
         #lunch-dinner {
             .container {
@@ -149,11 +155,13 @@
             }
         }
     }
+
+    // Menu Page Ends
 }
 
 @media screen and (max-width: 1125px) {
 
-    // OFFERS STEPS
+    // Offer Page Starts
     #steps {
         .container {
             .steps-content {
@@ -165,7 +173,9 @@
         }
     }
 
-    // ORDER HEADER
+    // Offer Page Ends
+
+    // Order Page Header Starts
     #order-header {
         .order-nav {
             .order-top {
@@ -175,8 +185,6 @@
                     padding-top: 0;
 
                     h1 {
-
-                        // font-size: 32px;
                         span {
                             font-size: 7px;
                         }
@@ -194,11 +202,13 @@
             }
         }
     }
+
+    // Order Page Header Ends
 }
 
 @media screen and (max-width: 960px) {
 
-    // MENU LIST
+    // Menu Page Starts
     #menu-header {
         #menu-list {
             .list-items {
@@ -209,12 +219,14 @@
             }
         }
     }
+
+    // Menu Page Ends
 }
 
 @media screen and (max-width: 950px) {
-
-    // HOME PAGE & MENU SIGN UP FOR WEEKLY OFFERS
     #main-area {
+
+        // Menu Sign Up Page For Weekly Offers Starts
         #sign-up {
             .container {
                 .sign-up-content {
@@ -240,8 +252,9 @@
             }
         }
 
+        // Menu Sign Up Page For Weekly Offers Ends
 
-        // APP SECTION STARTS
+        // App Section Starts
         #app {
             .container {
                 display: block;
@@ -281,23 +294,21 @@
                 }
             }
         }
+
+        // App Section Ends
     }
 }
 
 
 @media screen and (max-width: 900px) {
 
-    // ORDER HEADER
+    // Order Header Starts
     #order-header {
         .order-nav {
             .order-top {
 
                 .order-logo {
                     padding-top: 0;
-
-                    // .order-chef {
-                    //     width: 45px;
-                    // }
 
                     h1 {
                         font-size: 22px;
@@ -326,17 +337,20 @@
         }
     }
 
-    // LOGIN SECTION
+    // Order Header Ends
+
+    // Login Section Starts
     #login-register {
         .login-register-content {
             max-width: 90%;
         }
     }
 
-    // REGISTER PAGE
+    // Login Section Ends
+
+    // Register Section Starts
     #register {
         .popup {
-            // max-width: 670px;
             max-width: 90%;
 
             .popup-header {
@@ -413,9 +427,12 @@
         }
     }
 
+    // Register Section Ends
+
+    // Home Page Starts
     #main-area {
 
-        // CAROUSEL
+        // Carousel / Sliders Start
         #carousel {
             .sliders-holder {
                 .slider {
@@ -493,9 +510,13 @@
 
             }
         }
+
+        // Carousel / Sliders End
     }
 
-    // MENU PAGE
+    // Home Page Ends
+
+    // Menu Page Starts
     #menu {
 
         #lunch-menu,
@@ -523,7 +544,9 @@
         }
     }
 
-    // FOOTER
+    // Menu Page Ends
+
+    // Footer Starts
     #footer {
         .container {
             .top {
@@ -537,7 +560,7 @@
                 }
             }
 
-            // BOTTOM AREA
+            // Bottom Area
             .bottom {
                 display: grid;
                 grid-template-columns: 1fr;
@@ -562,6 +585,10 @@
 
         }
     }
+
+    // Footer Ends
+
+    // To prevent sudden quick movement of the menu contents under the menu list since the menu-list gets a new position at the top when a class is added to the ID of menu-list class
     .smooth-position {
         padding-top: 95px;
     }
@@ -569,7 +596,7 @@
 
 @media screen and (max-width: 867px) {
 
-    // MENU
+    // Menu Hedare Starts
     #menu-header {
         .top {
             .navigation {
@@ -588,7 +615,7 @@
             }
         }
 
-        // MENU LIST
+
         #menu-list {
             padding: 10px 0 10px 50px;
 
@@ -614,16 +641,17 @@
         }
     }
 
+    // Menu Header Ends
+
+    // To prevent sudden quick movement of the menu contents under the menu list since the menu-list gets a new position at the top when a class is added to the ID of menu-list class
     .smooth-position {
         padding-top: 95px;
     }
 }
 
 @media screen and (max-width: 800px) {
-    // HOME PAGE FOR LUNCH & DINNER TO GO HERE
 
-
-    // ORDER PAGE, COLLECT SECTION
+    // Order Page, Collect Section Starts
     #collect {
         background: $ivory;
         color: $dark;
@@ -719,22 +747,19 @@
         }
     }
 
-    .smooth-position {
-        // padding-top: 125px;
-    }
+    // Order Page, Collect Section Ends
 }
 
 
 @media (max-width: 769px) {
 
-    // HOME PAGE
+    // Home Page, Header Starts
     #header {
         .top {
             overflow: hidden;
 
             .container {
                 padding: 0 20px;
-                // overflow: hidden;
 
                 .logo-holder {
                     padding-left: 0;
@@ -750,16 +775,13 @@
 
                 .sidenav {
                     position: fixed;
-                    // width: 310px;
                     width: 100%;
                     height: 100%;
                     background-color: $ivory;
                     top: 120px;
-                    // left: -310px;
                     left: -100%;
                     bottom: 0;
                     padding-top: 20px;
-                    // overflow: hidden;
                     overflow: scroll;
                     transition: left .8s ease-in-out;
                     display: block;
@@ -803,7 +825,9 @@
         }
     }
 
-    // OFFERS PAGE (STEPS AREA)
+    // Home Page, Header Ends
+
+    // Offers Page, Steps Area Starts
     #steps {
         padding: 70px 120px 100px;
 
@@ -817,7 +841,9 @@
         }
     }
 
-    // ORDER PAGE, DELIVERY SECTION
+    // Offers Page, Steps Area Ends
+
+    // Order Page, Delivery Section Starts
     #delivery {
         padding: 120px 5px 0;
         background: $ivory;
@@ -871,6 +897,7 @@
         }
     }
 
+    // Order Page, Delivery Section Ends
 
 }
 
@@ -878,7 +905,7 @@
 
 @media screen and (max-width: 700px) {
 
-    // MENU
+    // Menu Page, Header Starts
     #menu-header {
         .top {
             .navigation {
@@ -897,15 +924,15 @@
             }
         }
 
-        // MENU LIST
         #menu-list {
             padding: 10px 0 10px 40px;
         }
     }
 
+    // Menu Page, Header Ends
 
 
-    // OFFERS SIGN UP
+    // Offers Page, Sign Up Starts
     #sign-up-offers {
 
         .container {
@@ -922,11 +949,12 @@
         }
     }
 
+    // Offers Page, Sign Up Ends
 
-    // HOME PAGE & MENU SIGN UP FOR WEEKLY OFFERS
+
     #main-area {
 
-        // CAROUSEL
+        // Carousel / Sliders Start
         #carousel {
             .sliders-holder {
 
@@ -1018,6 +1046,9 @@
             }
         }
 
+        // Carousel / Sliders End
+
+        // Home Page, Start & App Sections Start
         #start-section {
             margin-top: 45px;
             padding: 0 30px;
@@ -1027,12 +1058,16 @@
             padding: 0 30px;
         }
 
+        // Home Page, Start & App Sections End
+
+        // Menu Page, lunch-dinner Section Starts
         #lunch-dinner {
             padding: 0 30px;
         }
 
+        // Menu Page, lunch-dinner Section Ends
 
-
+        // Home Page & Menu Sign Up For Weekly Offers Start
         #sign-up {
             padding: 0 30px;
 
@@ -1077,9 +1112,13 @@
                 }
             }
         }
+
+        // Home Page & Menu Sign Up For Weekly Offers End
     }
 
-    // LOG IN
+
+
+    // Log In Section Starts
     #login-register {
         .login-register-content {
             max-width: 450px;
@@ -1149,7 +1188,9 @@
         }
     }
 
-    // REGISTER PAGE
+    // Log In Section Ends
+
+    // Register Page Starts
     #register {
         .popup {
             .popup-header {
@@ -1232,15 +1273,15 @@
         }
     }
 
+    // Register Page Ends
 
 }
 
 @media screen and (max-width: 605px) {
-
-    // HOME PAGE, START SECTION
     #main-area {
-        #start-section {
 
+        // Home Page, Start Section Starts
+        #start-section {
             .container {
                 .start {
                     height: 450px;
@@ -1284,7 +1325,6 @@
                     }
 
                     .start-image {
-                        // 4, 5, 
                         background: $white url('../images/start/start5.jpg') no-repeat center center / cover;
                         height: 250px;
                         position: static !important;
@@ -1292,14 +1332,18 @@
                 }
             }
         }
+
+        // Home Page, Start Section Ends
     }
 
-    // OFFERS STEPS
+    // Offers Page, Steps Start
     #steps {
         padding: 70px 50px 100px;
     }
 
-    // ORDER HEADER
+    // Offers Page, Steps End
+
+    // Order Header Starts
     #order-header {
         .order-nav {
             .order-top {
@@ -1308,25 +1352,12 @@
                 .order-logo {
                     padding-top: 0;
 
-                    // .order-chef {
-                    //     width: 40px;
-                    // }
-
                     h1 {
                         font-size: 20px;
-
-                        // span {
-                        //     margin-top: -7px;
-                        //     font-size: 5px;
-                        // }
                     }
                 }
 
                 .login-link {
-                    // li:first-child {
-                    //     margin-right: 20px;
-                    // }
-
                     a {
                         font-size: 20px;
                     }
@@ -1343,10 +1374,12 @@
         }
     }
 
-    // MENU PAGE
+    // Order Header Ends
+
+    // Menu Page Starts
     #menu {
 
-        // LUNCH, DINNER, THE NOT STEAKS MENU STARTS
+        // Lunch, Dinner The Not Steaks Start
         #lunch-menu,
         #dinner-menu,
         #not-steaks-menu {
@@ -1365,7 +1398,7 @@
             }
         }
 
-        // LUNCH, DINNER, THE NOT STEAK MENU ENDS
+        // Lunch, Dinner The Not Steaks End
 
         // WINE AREA BEGINS
         #wines,
@@ -1378,6 +1411,7 @@
         }
     }
 
+    // Menu Page Ends
 }
 
 
@@ -1387,22 +1421,22 @@
         padding-top: 125px;
     }
 
+    // Menu Page, Header Starts
     #menu-header {
-
-        // MENU LIST
         #menu-list {
             padding: 10px 30px;
         }
     }
 
-    // FOOTER
+    // Menu Page, Header Ends
+
+    // Footer Starts
     #footer {
         padding: 40px 4px 70px;
 
         .container {
             .top {
                 display: flex;
-                // flex-wrap: nowrap;
                 justify-content: space-evenly;
 
                 .column {
@@ -1434,10 +1468,7 @@
                 }
             }
 
-            // BOTTOM AREA
             .bottom {
-                // display: grid;
-                // grid-template-columns: 1fr;
                 display: block;
                 text-align: center;
 
@@ -1466,15 +1497,15 @@
 
         }
     }
+
+    // Footer Ends
 }
 
 
 @media screen and (max-width: 530px) {
-
-    // HOME PAGE & MENU SIGN UP FOR WEEKLY OFFERS
     #main-area {
 
-        // CAROUSEL
+        // Carousel / Sliders Start
         #carousel {
             .sliders-holder {
                 .slider {
@@ -1568,11 +1599,16 @@
             }
         }
 
+        // Carousel / Sliders End
+
+        //  Home Page, Start Section Starts
         #start-section {
             margin-top: -51px;
         }
 
-        // APP SECTION STARTS
+        //  Home Page, Start Section Ends
+
+        //  Home Page, App Section Starts
         #app {
             .container {
                 display: block;
@@ -1583,10 +1619,6 @@
                     h3 {
                         font-size: 20px;
                         text-align: left;
-                    }
-
-                    .partners {
-                        // grid-template-columns: repeat(4, 1fr);
                     }
 
                     #postcode {
@@ -1641,6 +1673,9 @@
             }
         }
 
+        //  Home Page, App Section Ends
+
+        //  Menu Page, lunch-dinner Starts
         #lunch-dinner {
             .container {
                 .lunch-dinner {
@@ -1666,7 +1701,9 @@
             }
         }
 
-        // MENU PAGE
+        //  Menu Page, lunch-dinner Ends
+
+        //  Menu Page, Wines & Other Starts
         #menu {
 
             #wines,
@@ -1679,15 +1716,14 @@
                 }
             }
         }
+
+        //  Menu Page, Wines & Other Ends
     }
 
-    // MENU
+    //  Menu Page, Header Starts
     #menu-header {
         .top {
             .navigation {
-                // padding-right: 43px;
-                // font-size: 10px;
-
                 .logo-holder {
                     a {
                         .logo {
@@ -1714,7 +1750,9 @@
         }
     }
 
-    // OFFERS SIGN UP AREA
+    //  Menu Page, Header Ends
+
+    // Offers Page, Sign Up Area Starts
     #sign-up-offers {
         padding: 120px 20px 0;
 
@@ -1739,7 +1777,9 @@
         }
     }
 
-    // OFFERS STEPS
+    // Offers Page, Sign Up Area Ends
+
+    // Offers Page, Steps Start
     #steps {
         padding: 70px 20px 100px;
 
@@ -1754,7 +1794,9 @@
         }
     }
 
-    // ORDER PAGE, COLLECT SECTION
+    // Offers Page, Steps End
+
+    // Order Page, Collect Section Starts
     #collect {
         padding: 120px 15px 0;
 
@@ -1821,28 +1863,27 @@
         }
     }
 
+    // Order Page, Collect Section Ends
 
-    // LOG IN
+
+    // log In Page Starts
     #login-register {
         .login-register-content {
             max-width: 90%;
         }
     }
 
-    .smooth-position {
-        // margin-top: 160px;
-    }
+    // log In Page Ends
 }
 
 @media screen and (max-width: 450px) {
 
-    // MAIN HEADER
+    // Home Page, Header Starts
     #header {
         .top {
             overflow: hidden;
 
             .container {
-                // overflow: hidden;
                 font-size: 14px;
 
                 .logo-holder {
@@ -1860,12 +1901,10 @@
 
                 .sidenav {
                     position: fixed;
-                    // width: 310px;
                     width: 100%;
                     height: 100%;
                     background-color: $ivory;
                     top: 120px;
-                    // left: -310px;
                     left: -100%;
                     padding-top: 20px;
                     overflow: scroll;
@@ -1897,15 +1936,22 @@
         }
     }
 
-    #menu-header{
+    // Home Page, Header Ends
+
+    // Menu Page, Header Starts
+    #menu-header {
         #menu-list {
             padding: 10px 40px;
         }
     }
 
-    #main-area {
-        #start-section {
+    // Menu Page, Header Ends
 
+
+    #main-area {
+
+        // Home Page, Start Section Starts
+        #start-section {
             .container {
                 .start {
                     height: 400px;
@@ -1930,7 +1976,6 @@
 
                     .start-image {
                         background: $white url('../images/start/start5.jpg') no-repeat center center / cover;
-                        // height: 200px;
                         height: 250px;
                         position: static !important;
                     }
@@ -1938,6 +1983,9 @@
             }
         }
 
+        // Home Page, Start Section Ends
+
+        //   Menu Page, lunch-dinner Starts
         #lunch-dinner {
 
             .container {
@@ -1964,25 +2012,20 @@
                 }
             }
         }
+
+        //   Menu Page, lunch-dinner Ends
     }
 
-    // ORDER HEADER
+    //Order Page,  Order Header Starts
     #order-header {
         .order-nav {
             .order-top {
-                // font-size: 14px;
                 padding: 16px 20px;
 
                 .order-logo {
                     padding-top: 7px;
 
-                    // .order-chef {
-                    //     width: 35px;
-                    // }
-
                     h1 {
-                        // font-size: 14px;
-
                         span {
                             margin-top: -8px;
                             font-size: 5px;
@@ -1991,10 +2034,6 @@
                 }
 
                 .login-link {
-                    // li:first-child {
-                    //     margin-right: 10px;
-                    // }
-
                     a {
                         &::after {
                             height: 3px;
@@ -2022,7 +2061,9 @@
         }
     }
 
-    // ORDER PAGE, DELIVERY SECTION
+    //Order Page,  Order Header Ends
+
+    // Order Page, Delivery Section Starts
     #delivery {
         padding: 120px 2px 0;
         background: $ivory;
@@ -2036,7 +2077,6 @@
 
                     .form-heading {
                         font-size: 20px;
-                        // text-align: left;
                     }
 
                     #delivery-form {
@@ -2111,7 +2151,9 @@
         }
     }
 
-    // REGISTER PAGE
+    // Order Page, Delivery Section Ends
+
+    // Register Page Starts
     #register {
         .popup {
             .popup-header {
@@ -2194,17 +2236,13 @@
         }
     }
 
-    .smooth-position {
-        // padding-top: 50px;
-    }
+    // Register Page Ends
 }
 
 @media screen and (max-width: 416px) {
-
-    // HOME PAGE & MENU SIGN UP FOR WEEKLY OFFERS
     #main-area {
 
-        // CAROUSEL
+        // Carousel / Sliders Start
         #carousel {
             .sliders-holder {
                 .slider {
@@ -2302,6 +2340,9 @@
             }
         }
 
+        // Carousel / Sliders End
+
+        // Home Page, Start Section Starts
         #start-section {
             padding: 0 15px;
             margin-top: -107px;
@@ -2340,7 +2381,9 @@
             }
         }
 
-        // APP SECTION STARTS
+        // Home Page, Start Section Ends
+
+        // Home Page, App Section Starts
         #app {
             padding: 0 15px;
 
@@ -2357,10 +2400,7 @@
                     }
 
                     .partners {
-                        // NB: MARGIN SHOULD ONLY BE FOR LARGER SCREENS
                         margin: 0;
-                        // display: block;
-                        // padding: 0 70px;
 
                         .partner {
                             margin: 10px 0 12px;
@@ -2386,8 +2426,6 @@
                 }
 
                 .right {
-                    // padding: 40px 0 0;
-
                     h3 {
                         font-size: 25px;
 
@@ -2421,7 +2459,9 @@
             }
         }
 
-        // LUNCH & DINNER
+        // Home Page, App Section Ends
+
+        // Menu Page , Lunch-Dinner Starts
         #lunch-dinner {
             padding: 0 15px;
 
@@ -2456,6 +2496,9 @@
             }
         }
 
+        // Menu Page , Lunch-Dinner Ends
+
+        // Sign Up Page Starts
         #sign-up {
             padding: 0 12px;
             background-color: $dark;
@@ -2480,12 +2523,13 @@
                 }
             }
         }
+
+        // Sign Up Page Ends
     }
 
-    // MENU PAGE
+    // Menu Page, Lunch, Dinner & The Not Steaks Start
     #menu {
 
-        // LUNCH, DINNER, THE NOT STEAKS MENU STARTS
         #lunch-menu,
         #dinner-menu,
         #not-steaks-menu {
@@ -2505,12 +2549,13 @@
         }
     }
 
-    // MENU AREA
-    #menu-header {
+    // Menu Page, Lunch, Dinner & The Not Steaks End
 
-        // MENU LIST
+    // Menu Page, Header Starts
+    #menu-header {
         #menu-list {
             padding: 10px 35px;
+
             .list-items {
                 .items {
                     .item {
@@ -2523,102 +2568,9 @@
         }
     }
 
-    // .sticky {
-    //    background: $dark;
-    // opacity: 0.5;
-    // }
+    // Menu Page, Header Ends
 
-    // #menu-list.sticky {
-    // background-color: $tomato;
-    // opacity: 0.3;
-    // width: 50px;
-    // }
-
-
-
-    // #menu-list {
-    // z-index: 2;
-
-    // color: $white;
-    // max-width: 50px;
-    // height: 60px;
-    // position: fixed;
-    // top: 110px;
-
-    // padding: 10px 70px 30px;
-    // padding: 0;
-
-    // .list-items {
-    // max-width: 50px;
-    // max-height: 50px;
-    // margin: 0 auto;
-    // position: absolute;
-
-
-    // .allergen {
-    // text-align: left;
-    // margin-bottom: 8px;
-
-    // a {
-    //     text-decoration: underline;
-    // }
-    // }
-
-    // .items {
-    // display: flex;
-    // text-transform: uppercase;
-    // justify-content: center;
-    // font-size: 18px;
-    // display: none;
-    // flex-direction: column;
-
-    // .item {
-    // margin-right: 32px;
-
-    // &:last-child {
-    //     margin-right: 0;
-    // }
-
-    // span {
-    //     margin-left: 30px;
-    //     font-weight: 100;
-    //     color: #8a8383;
-    //     display: none;
-    // }
-
-    // a {
-    // position: relative;
-    // overflow: hidden;
-    // border: none;
-
-
-    // &::after {
-    //     content: '';
-    //     position: absolute;
-    //     background: $white;
-    //     height: 1px;
-    //     width: 0%;
-    //     transform: translateX(-50%);
-    //     left: 50%;
-    //     bottom: -5px;
-    //     border: none;
-    //     transition: .55s ease-in-out;
-    // }
-
-    // &:hover:after {
-    //     width: 100%;
-    // }
-    //                 }
-
-
-    //         }
-    //     }
-    // }
-    // }
-
-    // MENU LIST ENDS
-
-    // LOG IN
+    //  Login Page Starts
     #login-register {
         .login-register-content {
             .login-register-header {
@@ -2658,6 +2610,8 @@
 
         }
     }
+
+    //  Login Page Ends
 }
 
 @media screen and (max-width: 338px) {
@@ -2667,6 +2621,8 @@
 }
 
 @media screen and (max-width: 333px) {
+
+    // Menu Page, Lunch-dinner Starts
     #main-area {
         #lunch-dinner {
             .container {
@@ -2685,24 +2641,27 @@
         }
     }
 
-    // MENU
+    // Menu Page, Lunch-dinner Ends
+
+    // Menu Page, Header Starts
     #menu-header {
         .top {
             .navigation {
                 font-size: 15px;
 
-                li{
+                li {
                     padding: 1px 2px;
                 }
             }
         }
     }
 
+    // Menu Page, Header Ends
 }
 
 @media screen and (max-width: 319px) {
 
-    // REGISTER PAGE
+    // Register Page Starts
     #register {
         .popup {
             .popup-header {
@@ -2769,10 +2728,6 @@
                                 vertical-align: 3.69%;
                                 zoom: 0.9;
                             }
-
-                            label.read {
-                                // font-size: 12px;
-                            }
                         }
 
 
@@ -2785,6 +2740,8 @@
             }
         }
     }
+
+    // Register Page Ends
 }
 
 @media screen and (max-width: 274px) {
