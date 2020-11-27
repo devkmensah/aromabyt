@@ -268,6 +268,9 @@
               color: #0c0c0c; }
             #delivery .container .delivery-content .delivery-form-content #delivery-form input:first-child {
               margin-bottom: 8px; }
+            #delivery .container .delivery-content .delivery-form-content #delivery-form input:last-child:focus {
+              outline: none;
+              border: 1px dashed transparent; }
           #delivery .container .delivery-content .delivery-form-content #delivery-form .limited {
             text-transform: uppercase; }
           #delivery .container .delivery-content .delivery-form-content #delivery-form .look-up {
@@ -488,9 +491,12 @@
 
 #login-register {
   background-color: rgba(0, 0, 0, 0.5);
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
   width: 100%;
   z-index: 6;
   margin: 0 auto;
@@ -595,7 +601,8 @@
           font-weight: 100; }
           #login-register .login-register-content .login-register-box #login-form .forgot:hover {
             text-decoration: underline; }
-        #login-register .login-register-content .login-register-box #login-form .divider, #login-register .login-register-content .login-register-box #login-form .mobile-register {
+        #login-register .login-register-content .login-register-box #login-form .divider,
+        #login-register .login-register-content .login-register-box #login-form .mobile-register {
           display: none; }
       #login-register .login-register-content .login-register-box .vertical-line {
         width: 1px;
@@ -626,12 +633,13 @@
 
 #register {
   background-color: rgba(0, 0, 0, 0.5);
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
   width: 100%;
+  height: 100vh;
   z-index: 6;
   margin: 0 auto;
   display: none;

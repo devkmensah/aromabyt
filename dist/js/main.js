@@ -7,6 +7,7 @@ const autoScroll = true;
 const clickPause = false;
 const clickPlay = true;
 const intervalTime = 7000;
+
 let sliderInterval;
 
 const nextSlider = () => {

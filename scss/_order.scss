@@ -1,5 +1,6 @@
 //Order Header Starts
 #order-header {
+
     // Navigation Starts
     .order-nav {
         background-color: $dark;
@@ -12,6 +13,7 @@
         width: 100%;
         z-index: 3;
         overflow: hidden;
+
         // Top Navigation Starts
         .order-top {
             display: flex;
@@ -76,7 +78,8 @@
                 }
             }
         }
-          // Top Navigation Ends 
+
+        // Top Navigation Ends 
         //   Order Type Navigation Starts
         .order-options {
             display: flex;
@@ -115,9 +118,11 @@
                 }
             }
         }
-          //   Order Type Navigation Ends
+
+        //   Order Type Navigation Ends
     }
-     // Navigation Ends
+
+    // Navigation Ends
 }
 
 //Order Header Ends
@@ -151,12 +156,14 @@
     .container {
         max-width: 1200px;
         margin: 0 auto;
+
         // Delivery Content Starts
         .delivery-content {
             display: grid;
             grid-template-columns: 2fr 1fr;
             grid-column-gap: 20px;
             padding: 50px 0;
+
             // Delivery Form Content Starts
             .delivery-form-content {
                 padding: 0 25px;
@@ -167,6 +174,7 @@
                     padding-bottom: 25px;
                     text-align: left;
                 }
+
                 // Delivery Form Starts
                 #delivery-form {
                     width: 100%;
@@ -192,6 +200,13 @@
 
                         &:first-child {
                             margin-bottom: 8px;
+                        }
+
+                        &:last-child {
+                            &:focus {
+                                outline: none;
+                                border: 1px dashed transparent;
+                            }
                         }
                     }
 
@@ -241,9 +256,11 @@
                         // font-weight: 800;
                     }
                 }
+
                 // Delivery Form Ends
             }
-             // Delivery Form Content Ends
+
+            // Delivery Form Content Ends
             //  Apply Point Starts
             .apply {
                 max-width: 365px;
@@ -324,8 +341,10 @@
                     }
                 }
             }
+
             //  Apply Point Ends
         }
+
         // Delivery Content Ends
     }
 }
@@ -354,13 +373,15 @@
     * {
         z-index: 2;
     }
-     // Collect Overlay Ends
+
+    // Collect Overlay Ends
 
     a {
         color: $dark;
     }
 
     .container {
+
         // Collect Starts
         .collect-content {
             display: grid;
@@ -368,12 +389,14 @@
             grid-column-gap: 20px;
             justify-content: space-between;
             padding: 50px 0;
+
             // Collect Content Starts
             .start-content {
                 h2 {
                     text-transform: uppercase;
                     font-size: 35px;
                 }
+
                 // Collect Form Starts
                 .collect-form {
                     width: 100%;
@@ -382,6 +405,7 @@
                         display: flex;
                         align-items: center;
                         margin: 50px 0;
+
                         // Time Input Starts
                         .time {
                             display: flex;
@@ -400,8 +424,9 @@
                                 }
                             }
                         }
-                         // Time Input Ends
-                         // Date Input Starts
+
+                        // Time Input Ends
+                        // Date Input Starts
                         .date {
                             display: flex;
                             flex-direction: column;
@@ -420,7 +445,8 @@
                                 }
                             }
                         }
-                         // Date Input Ends
+
+                        // Date Input Ends
                     }
 
                     .specify {
@@ -453,8 +479,10 @@
                         }
                     }
                 }
-                  // Collect Form Ends
+
+                // Collect Form Ends
             }
+
             // Collect Content Ends
             // Apply Points Start
             .apply {
@@ -538,8 +566,10 @@
                     }
                 }
             }
-             // Apply Points End
+
+            // Apply Points End
         }
+
         // Collect Ends
     }
 }
@@ -552,9 +582,12 @@
 // Log In Form Section Starts
 #login-register {
     background-color: rgba(0, 0, 0, 0.5);
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
     width: 100%;
     z-index: 6;
     margin: 0 auto;
@@ -565,14 +598,16 @@
     animation-duration: 1s;
 
     // Smooth Transition Open Starts
-    @keyframes smooth-open{
-        from{
+    @keyframes smooth-open {
+        from {
             opacity: 0;
         }
-        to{
+
+        to {
             opacity: 1;
         }
     }
+
     // Smooth Transition Open Ends
 
     a {
@@ -587,6 +622,10 @@
         max-width: 725px;
         margin: 60px auto 0;
         width: 100%;
+        // This is for smaller screens, apply this when i revisit
+        // height: 100vh;
+        // max-height: 70%;
+        // overflow-y: scroll;
 
         // Header Area Starts
         .login-register-header {
@@ -599,12 +638,12 @@
             text-transform: uppercase;
             padding: 8px 20px 10px;
             font-size: 15px;
-            
-            .log-register{
+
+            .log-register {
                 display: flex;
                 align-items: center;
 
-                .log-register-divider{
+                .log-register-divider {
                     margin: 0 10px;
                     height: 19px;
                     width: 1px;
@@ -618,6 +657,7 @@
                 font-size: 21px;
             }
         }
+
         // Header Area Ends
         // Log In / Register Box Starts
         .login-register-box {
@@ -626,17 +666,19 @@
             padding: 20px 30px;
             grid-gap: 20px;
             justify-content: center;
+
             // Log In Form Starts
             #login-form {
                 padding: 0 10px;
 
-                .account-logger{
+                .account-logger {
                     color: $dark;
                     text-transform: uppercase;
                     font-size: 20px;
                     margin-bottom: 10px;
                     display: flex;
-                    .into{
+
+                    .into {
                         display: none;
                     }
                 }
@@ -701,16 +743,19 @@
                     }
                 }
 
-                .divider, .mobile-register{
+                .divider,
+                .mobile-register {
                     display: none;
                 }
             }
-             // Log In Form Ends
+
+            // Log In Form Ends
             .vertical-line {
                 width: 1px;
                 height: 100%;
                 background-color: $dark;
             }
+
             // Create Your Account / Register Starts
             .create-alternative {
                 padding-right: 10px;
@@ -744,11 +789,14 @@
                     }
                 }
             }
-              // Create Your Account / Register Ends
+
+            // Create Your Account / Register Ends
         }
+
         // Log In / Register Box Ends
     }
 }
+
 // Log In Form Section Starts
 
 
@@ -756,12 +804,13 @@
 // Register Form Section Starts
 #register {
     background-color: rgba(0, 0, 0, 0.5);
-    position: absolute;
+    position: fixed;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
     width: 100%;
+    height: 100vh;
     z-index: 6;
     margin: 0 auto;
     display: none;
@@ -769,15 +818,17 @@
     animation-duration: 1s;
 
     // Smooth Open Transition Starts 
-    @keyframes smooth-open{
-        from{
+    @keyframes smooth-open {
+        from {
             opacity: 0;
         }
-        to{
+
+        to {
             opacity: 1;
         }
     }
-       // Smooth Open Transition Ends
+
+    // Smooth Open Transition Ends
     a {
         color: $dark;
     }
@@ -789,6 +840,12 @@
         max-width: 850px;
         margin: 60px auto 0;
         width: 100%;
+
+           // This is for smaller screens, apply this when i revisit
+        // height: 100vh;
+        // max-height: 70%;
+        // overflow-y: scroll;
+
         // Register Header Starts
         .popup-header {
             display: flex;
@@ -806,7 +863,8 @@
                 font-size: 21px;
             }
         }
-         // Register Header Ends
+
+        // Register Header Ends
         //  Register Contents Start
         .popup-content {
             padding: 10px 30px;
@@ -823,12 +881,14 @@
                 font-size: 25px;
                 padding: 20px 0;
             }
+
             // Register Form Starts
             #form-register {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 grid-gap: 80px;
                 justify-content: center;
+
                 // Left Input Starts
                 .left-input {
                     display: flex;
@@ -853,8 +913,9 @@
                         }
                     }
                 }
-                 // Left Input Ends
-                 // Right Input Starts
+
+                // Left Input Ends
+                // Right Input Starts
                 .right-input {
                     input[type="text"] {
                         width: 100%;
@@ -934,11 +995,15 @@
                         }
                     }
                 }
-                 // Right Input Ends
+
+                // Right Input Ends
             }
-             // Register Form Ends
+
+            // Register Form Ends
         }
+
         //  Register Contents Ends
     }
 }
+
 // Register Form Section Ends
