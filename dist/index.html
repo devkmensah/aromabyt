@@ -169,7 +169,7 @@
           <div class="start-content">
             <h3>Start Your Order Now</h3>
             <div class="options">
-              <a href="order.html" class="delivery" target="blank">Delivery</a>
+              <a href="order.html#delivery" class="delivery" target="blank">Delivery</a>
               <span>-or-</span>
               <a href="order.html#collect" class="pickup" target="blank">Collect</a>
             </div>
@@ -283,12 +283,30 @@
           <h1>Sign Up For Weekly Offers!</h1>
           <!-- Form Starts -->
           <form action="#" id="sign-up-form">
-            <input type="text" placeholder="First Name" class="first animate__animated animate__shakeX">
-            <input type="text" placeholder="Last Name" class="last animate__animated animate__shakeX">
-            <input type="email" placeholder="Email Address" class="email animate__animated animate__shakeX">
-            <input type="text" placeholder="Post Code" class="post animate__animated animate__shakeX">
-            <input type="tel" placeholder="Phone Number" class="phone animate__animated animate__shakeX">
-            <label for="number" class="number">Your phone number will be used to identify you. No random text
+            <div class="first input-holder  animate__animated animate__headShake">
+              <input type="text" placeholder="First Name" class=" ">
+              <small>Invalid Entry</small>
+              <!-- <span>
+                <i class="fas fa-check"></i>
+              </span> -->
+            </div>
+            <div class="last input-holder  animate__animated animate__headShake">
+              <input type="text" placeholder="Last Name" class=" ">
+              <small>Invalid Entry</small>
+            </div>
+            <div class="email input-holder  animate__animated animate__headShake">
+              <input type="email" placeholder="Email Address" class=" ">
+              <small>Invalid Entry</small>
+            </div>
+            <div class="post input-holder  animate__animated animate__headShake">
+              <input type="text" placeholder="Post Code" class=" ">
+              <small>Invalid Entry</small>
+            </div>
+            <div class="phone input-holder animate__animated animate__headShake">
+              <input type="tel" placeholder="Phone Number" class=" ">
+              <small>Invalid Entry</small>
+            </div>
+            <label for="number" class="number">Phone number will be used to identify you. No random text
               messages.</label>
             <button class="button">Sign Up</button>
             <p for="#" class="terms">By signing up you agree to our <a href="#" class="policy">Terms of Service</a> and

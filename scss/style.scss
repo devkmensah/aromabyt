@@ -599,7 +599,7 @@ img {
                 vertical-align: middle;
                 height: 100%;
                 width: 100%;
-                padding: 0 20px;
+                padding: 0 20px 0 0;
 
                 h3 {
                     line-height: 1.1;
@@ -707,7 +707,7 @@ img {
 
             //  Restaurant App Starts
             .right {
-                padding-right: 20px;
+                padding-right: 0px;
 
                 h3 {
                     font-size: 32px;
@@ -870,17 +870,60 @@ img {
                     font-size: 37px;
                     letter-spacing: 1.4px;
                 }
+
                 // Form Starts
                 #sign-up-form {
                     display: grid;
                     grid-template-columns: repeat(3, 1fr);
                     grid-gap: 10px;
 
+                    //Form Validation Properties Starts
+                    .input-holder.success {
+                        input {
+                            border: 1px dashed $yellow;
+                        }
+                    }
+
+                    .input-holder{
+                        small{
+                            color: $white;
+                            // visibility: hidden;
+                            display: none;
+                        }
+                    }
+
+                    .input-holder.error {
+                        input {
+                            border: 2px solid $tomato;
+                        }
+
+                        ::placeholder {
+                            color: $tomato;
+                            opacity: 1;
+                        }
+
+                        :-ms-input-placeholder {
+                            color: $tomato;
+                        }
+
+                        ::-ms-input-placeholder {
+                            color: $tomato;
+                        }
+
+                        small{
+                            color: $white;
+                            visibility: visible;
+                            display: block;
+                        }
+                    }
+
+                    //Form Validation Properties Ends
+
                     input,
                     label,
                     button,
                     p {
-                        max-width: 100%;
+                        width: 100%;
                     }
 
                     input {
@@ -895,7 +938,7 @@ img {
 
                         &:focus {
                             outline: none;
-                            border: 1px dashed $yellow;
+                            // border: 1px dashed $yellow;
                         }
                     }
 
@@ -916,6 +959,7 @@ img {
                     .first {
                         grid-column: 1 / 2;
                         grid-row: 1 / 2;
+                        position: relative;
                     }
 
                     .last {
@@ -960,7 +1004,8 @@ img {
                         font-weight: 800;
                         color: $dark;
                         cursor: pointer;
-                        height: 100%;
+                        // height: 100%;
+                        height: 72px;
                         font-family: 'Oswald', sans-serif;
                         color: $white;
                         background-color: $dark;
@@ -978,6 +1023,7 @@ img {
                     }
 
                 }
+
                 // Form Ends
             }
 
@@ -1087,8 +1133,10 @@ img {
                     }
                 }
             }
+
             // Column Ends
         }
+
         // Top Area Ends
 
         // Bottom Area Starts
@@ -1126,6 +1174,7 @@ img {
                         }
                     }
                 }
+
                 // App Store Images End
             }
 
@@ -1144,8 +1193,10 @@ img {
                     }
                 }
             }
+
             // Rights / Privacy Ends
         }
+
         // Bottom Area Ends
     }
 }
