@@ -1081,6 +1081,14 @@
                     #sign-up-form {
                         display: block;
 
+                        .input-holder{
+                            small{
+                                color: $white;
+                                display: none;
+                                margin: -10px 0 20px;
+                            }
+                        }
+
                         input,
                         label,
                         button,

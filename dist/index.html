@@ -219,9 +219,9 @@
           </div>
           <!-- Partners Container Ends -->
           <!-- Postcode Form Starts  -->
-          <form action="#" id="postcode" class="animate__animated animate__shakeX">
+          <form action="#" id="postcode" class="">
             <label for="input" class="input-label">
-              <input type="text" placeholder="Enter postcode">
+              <input type="text" placeholder="Enter postcode" id="post-input">
             </label>
             <label for="button" class="button-label">
               <button type="submit" value="submit"><i class="fas fa-angle-right"></i></button>
@@ -283,27 +283,24 @@
           <h1>Sign Up For Weekly Offers!</h1>
           <!-- Form Starts -->
           <form action="#" id="sign-up-form">
-            <div class="first input-holder  animate__animated animate__headShake">
-              <input type="text" placeholder="First Name" class=" ">
-              <small>Invalid Entry</small>
-              <!-- <span>
-                <i class="fas fa-check"></i>
-              </span> -->
-            </div>
-            <div class="last input-holder  animate__animated animate__headShake">
-              <input type="text" placeholder="Last Name" class=" ">
+            <div class="first input-holder " id="input-wrapper">
+              <input type="text" placeholder="First Name" class=" " id="first-name">
               <small>Invalid Entry</small>
             </div>
-            <div class="email input-holder  animate__animated animate__headShake">
-              <input type="email" placeholder="Email Address" class=" ">
+            <div class="last input-holder " id="input-wrapper">
+              <input type="text" placeholder="Last Name" class=" " id="last-name">
               <small>Invalid Entry</small>
             </div>
-            <div class="post input-holder  animate__animated animate__headShake">
-              <input type="text" placeholder="Post Code" class=" ">
+            <div class="email input-holder " id="input-wrapper">
+              <input type="email" placeholder="Email Address" class=" " id="email-info">
               <small>Invalid Entry</small>
             </div>
-            <div class="phone input-holder animate__animated animate__headShake">
-              <input type="tel" placeholder="Phone Number" class=" ">
+            <div class="post input-holder " id="input-wrapper">
+              <input type="text" placeholder="Post Code" class=" " id="postcode-info">
+              <small>Invalid Entry</small>
+            </div>
+            <div class="phone input-holder" id="input-wrapper">
+              <input type="tel" placeholder="Phone Number" class=" " id="phone-info">
               <small>Invalid Entry</small>
             </div>
             <label for="number" class="number">Phone number will be used to identify you. No random text

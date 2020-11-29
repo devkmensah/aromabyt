@@ -1557,7 +1557,8 @@ img {
           border: 1px dashed #FCC000; }
         #main-area #sign-up .container .sign-up-content #sign-up-form .input-holder small {
           color: #fff;
-          display: none; }
+          display: none;
+          margin-bottom: 10px; }
         #main-area #sign-up .container .sign-up-content #sign-up-form .input-holder.error input {
           border: 2px solid #73020C; }
         #main-area #sign-up .container .sign-up-content #sign-up-form .input-holder.error ::placeholder {
@@ -1569,7 +1570,6 @@ img {
           color: #73020C; }
         #main-area #sign-up .container .sign-up-content #sign-up-form .input-holder.error small {
           color: #fff;
-          visibility: visible;
           display: block; }
         #main-area #sign-up .container .sign-up-content #sign-up-form input,
         #main-area #sign-up .container .sign-up-content #sign-up-form label,
@@ -2232,6 +2232,10 @@ img {
       font-size: 27px; }
     #main-area #sign-up .container .sign-up-content #sign-up-form {
       display: block; }
+      #main-area #sign-up .container .sign-up-content #sign-up-form .input-holder small {
+        color: #fff;
+        display: none;
+        margin: -10px 0 20px; }
       #main-area #sign-up .container .sign-up-content #sign-up-form input,
       #main-area #sign-up .container .sign-up-content #sign-up-form label,
       #main-area #sign-up .container .sign-up-content #sign-up-form button,

@@ -887,8 +887,8 @@ img {
                     .input-holder{
                         small{
                             color: $white;
-                            // visibility: hidden;
                             display: none;
+                            margin-bottom: 10px;
                         }
                     }
 
@@ -912,7 +912,7 @@ img {
 
                         small{
                             color: $white;
-                            visibility: visible;
+                            // visibility: visible;
                             display: block;
                         }
                     }
