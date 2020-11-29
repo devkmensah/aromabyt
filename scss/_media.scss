@@ -1089,6 +1089,48 @@
                             }
                         }
 
+                         //Form Validation Properties Starts
+                    .input-holder.success {
+                        input {
+                            border: 1px dashed $yellow;
+                        }
+                    }
+
+                    .input-holder{
+                        small{
+                            color: $white;
+                            display: none;
+                            margin-bottom: 10px;
+                        }
+                    }
+
+                    .input-holder.error {
+                        input {
+                            border: 2px solid $tomato;
+                        }
+
+                        ::placeholder {
+                            color: $tomato;
+                            opacity: 1;
+                        }
+
+                        :-ms-input-placeholder {
+                            color: $tomato;
+                        }
+
+                        ::-ms-input-placeholder {
+                            color: $tomato;
+                        }
+
+                        small{
+                            color: $white;
+                            // visibility: visible;
+                            display: block;
+                        }
+                    }
+
+                    //Form Validation Properties Ends
+
                         input,
                         label,
                         button,

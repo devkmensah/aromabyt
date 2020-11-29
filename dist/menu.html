@@ -446,14 +446,36 @@
                     <h1>Sign Up For Weekly Offers!</h1>
                     <!-- Sign Up For Offers Form Starts -->
                     <form action="#" id="sign-up-form">
-                        <input type="text" placeholder="First Name" class="first animate__animated animate__shakeX">
+                        <div class="first input-holder " id="input-wrapper">
+                            <input type="text" placeholder="First Name" class=" " id="first-name">
+                            <small>Invalid Entry</small>
+                          </div>
+                          <div class="last input-holder " id="input-wrapper">
+                            <input type="text" placeholder="Last Name" class=" " id="last-name">
+                            <small>Invalid Entry</small>
+                          </div>
+                          <div class="email input-holder " id="input-wrapper">
+                            <input type="email" placeholder="Email Address" class=" " id="email-info">
+                            <small>Invalid Entry</small>
+                          </div>
+                          <div class="post input-holder " id="input-wrapper">
+                            <input type="text" placeholder="Post Code" class=" " id="postcode-info">
+                            <small>Invalid Entry</small>
+                          </div>
+                          <div class="phone input-holder" id="input-wrapper">
+                            <input type="tel" placeholder="Phone Number" class=" " id="phone-info">
+                            <small>Invalid Entry</small>
+                          </div>
+                          <label for="number" class="number">Phone number will be used to identify you. No random text
+                            messages.</label>
+                        <!-- <input type="text" placeholder="First Name" class="first animate__animated animate__shakeX">
                         <input type="text" placeholder="Last Name" class="last animate__animated animate__shakeX">
                         <input type="email" placeholder="Email Address" class="email animate__animated animate__shakeX">
                         <input type="text" placeholder="Post Code" class="post animate__animated animate__shakeX">
                         <input type="tel" placeholder="Phone Number" class="phone animate__animated animate__shakeX">
                         <label for="number" class="number">Phone number will be used to identify you. No random
                             text
-                            message.</label>
+                            message.</label> -->
                         <button class="button">Sign Up</button>
                         <p for="#" class="terms">By signing up you agree to our <a href="#" class="policy">Terms of
                                 Service</a> and
@@ -667,6 +689,7 @@
     </footer>
     <!-- Footer Section Ends -->
 
+    <!-- <script src="js/main.js"></script> -->
     <script src=" js/menu.js"> </script>
 </body>
 

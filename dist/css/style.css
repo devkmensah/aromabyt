@@ -36,11 +36,30 @@
         grid-gap: 10px;
         justify-content: center;
         align-items: center; }
+        #sign-up-offers .container .sign-up-content #sign-up-form .input-holder.success input {
+          border: 1px dashed #FCC000; }
+        #sign-up-offers .container .sign-up-content #sign-up-form .input-holder small {
+          color: #fff;
+          display: none; }
+        #sign-up-offers .container .sign-up-content #sign-up-form .input-holder.error {
+          margin-bottom: 10px; }
+          #sign-up-offers .container .sign-up-content #sign-up-form .input-holder.error input {
+            border: 2px solid #73020C; }
+          #sign-up-offers .container .sign-up-content #sign-up-form .input-holder.error ::placeholder {
+            color: #73020C;
+            opacity: 1; }
+          #sign-up-offers .container .sign-up-content #sign-up-form .input-holder.error :-ms-input-placeholder {
+            color: #73020C; }
+          #sign-up-offers .container .sign-up-content #sign-up-form .input-holder.error ::-ms-input-placeholder {
+            color: #73020C; }
+          #sign-up-offers .container .sign-up-content #sign-up-form .input-holder.error small {
+            color: #fff;
+            display: block; }
         #sign-up-offers .container .sign-up-content #sign-up-form input,
         #sign-up-offers .container .sign-up-content #sign-up-form label,
         #sign-up-offers .container .sign-up-content #sign-up-form button,
         #sign-up-offers .container .sign-up-content #sign-up-form p {
-          max-width: 100%; }
+          width: 100%; }
         #sign-up-offers .container .sign-up-content #sign-up-form input {
           padding: 22px 15px;
           text-transform: uppercase;
@@ -51,8 +70,7 @@
           border: 2px solid #73020C;
           color: #0c0c0c; }
           #sign-up-offers .container .sign-up-content #sign-up-form input:focus {
-            outline: none;
-            border: 1px dashed #FCC000; }
+            outline: none; }
         #sign-up-offers .container .sign-up-content #sign-up-form ::placeholder {
           color: #0c0c0c;
           opacity: 1; }
@@ -2236,6 +2254,24 @@ img {
         color: #fff;
         display: none;
         margin: -10px 0 20px; }
+      #main-area #sign-up .container .sign-up-content #sign-up-form .input-holder.success input {
+        border: 1px dashed #FCC000; }
+      #main-area #sign-up .container .sign-up-content #sign-up-form .input-holder small {
+        color: #fff;
+        display: none;
+        margin-bottom: 10px; }
+      #main-area #sign-up .container .sign-up-content #sign-up-form .input-holder.error input {
+        border: 2px solid #73020C; }
+      #main-area #sign-up .container .sign-up-content #sign-up-form .input-holder.error ::placeholder {
+        color: #73020C;
+        opacity: 1; }
+      #main-area #sign-up .container .sign-up-content #sign-up-form .input-holder.error :-ms-input-placeholder {
+        color: #73020C; }
+      #main-area #sign-up .container .sign-up-content #sign-up-form .input-holder.error ::-ms-input-placeholder {
+        color: #73020C; }
+      #main-area #sign-up .container .sign-up-content #sign-up-form .input-holder.error small {
+        color: #fff;
+        display: block; }
       #main-area #sign-up .container .sign-up-content #sign-up-form input,
       #main-area #sign-up .container .sign-up-content #sign-up-form label,
       #main-area #sign-up .container .sign-up-content #sign-up-form button,

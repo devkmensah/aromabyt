@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
         integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
         crossorigin="anonymous" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@200;217;300;400;500;600;700&display=swap"
         rel="stylesheet">
@@ -103,14 +103,38 @@
                     <h1>Sign Up For Weekly Offers!</h1>
                     <!-- Form Starts -->
                     <form action="#" id="sign-up-form">
-                        <input type="text" placeholder="First Name" class="first animate__animated animate__shakeX">
+                        <div class="first input-holder " id="input-wrapper">
+                            <input type="text" placeholder="First Name" class=" " id="first-name">
+                            <small>Invalid Entry</small>
+                        </div>
+                        <div class="last input-holder " id="input-wrapper">
+                            <input type="text" placeholder="Last Name" class=" " id="last-name">
+                            <small>Invalid Entry</small>
+                        </div>
+                        <div class="email input-holder " id="input-wrapper">
+                            <input type="email" placeholder="Email Address" class=" " id="email-info">
+                            <small>Invalid Entry</small>
+                        </div>
+                        <div class="post input-holder " id="input-wrapper">
+                            <input type="text" placeholder="Post Code" class=" " id="postcode-info">
+                            <small>Invalid Entry</small>
+                        </div>
+                        <div class="phone input-holder" id="input-wrapper">
+                            <input type="tel" placeholder="Phone Number" class=" " id="phone-info">
+                            <small>Invalid Entry</small>
+                        </div>
+                       <div class="number">
+                        <label for="number" >Phone number will be used to identify you. No random text
+                            messages.</label>
+                       </div>
+                        <!-- <input type="text" placeholder="First Name" class="first animate__animated animate__shakeX">
                         <input type="text" placeholder="Last Name" class="last animate__animated animate__shakeX">
                         <input type="email" placeholder="Email Address" class="email animate__animated animate__shakeX">
                         <input type="text" placeholder="Post Code" class="post animate__animated animate__shakeX">
                         <input type="tel" placeholder="Phone Number" class="phone animate__animated animate__shakeX">
                         <label for="number" class="number">Phone number will be used to identify you. No random
                             text
-                            message.</label>
+                            message.</label> -->
                         <button class="button">Sign Up</button>
                         <p for="#" class="terms">By signing up you agree to our <a href="#" class="policy">Terms of
                                 Service</a> and

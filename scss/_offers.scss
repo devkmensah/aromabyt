@@ -21,6 +21,7 @@
 
     .container {
         padding: 0 0 70px;
+
         // Sign Up For Offers Content Starts
         .sign-up-content {
             padding: 85px 0 40px;
@@ -37,6 +38,7 @@
                 color: $white;
                 text-align: center;
             }
+
             // Form Starts
             #sign-up-form {
                 display: grid;
@@ -44,13 +46,62 @@
                 grid-gap: 10px;
                 justify-content: center;
                 align-items: center;
+                
+                // .number.error{
+                //    margin-top: -30px;
+                // }
+
+                //Form Validation Properties Starts
+                .input-holder.success {
+                    input {
+                        border: 1px dashed $yellow;
+                    }
+                }
+
+                .input-holder {
+                    // margin-bottom: 10px;
+                    small {
+                        color: $white;
+                        display: none;
+                        // margin-bottom: 10px;
+                    }
+                }
+
+                .input-holder.error {
+                    margin-bottom: 10px;
+                   
+
+                    input {
+                        border: 2px solid $tomato;
+                    }
+
+                    ::placeholder {
+                        color: $tomato;
+                        opacity: 1;
+                    }
+
+                    :-ms-input-placeholder {
+                        color: $tomato;
+                    }
+
+                    ::-ms-input-placeholder {
+                        color: $tomato;
+                    }
+
+                    small {
+                        color: $white;
+                        display: block;
+                    }
+                }
+
+                //Form Validation Properties Ends
 
 
                 input,
                 label,
                 button,
                 p {
-                    max-width: 100%;
+                    width: 100%;
                 }
 
                 input {
@@ -65,7 +116,7 @@
 
                     &:focus {
                         outline: none;
-                        border: 1px dashed $yellow;
+                        // border: 1px dashed $yellow;
                     }
                 }
 
@@ -115,11 +166,14 @@
                     }
                 }
             }
-             // Form Ends
+
+            // Form Ends
         }
+
         // Sign Up For Offers Content Ends
     }
 }
+
 // Sign Up For Offers End
 
 // Steps To Earn Offers Start
@@ -129,6 +183,7 @@
     background: $dark;
 
     .container {
+
         // Steps Content Starts
         .steps-content {
             h3 {
@@ -159,8 +214,8 @@
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
-                   
-                    
+
+
 
                     &:hover {
                         transform: scale(1.02);
@@ -182,10 +237,12 @@
                         }
                     }
 
-                   
+
                 }
-                 // Step Ends
+
+                // Step Ends
             }
+
             // Steps Container Ends
 
             // Steps Button Starts
@@ -213,9 +270,12 @@
                     }
                 }
             }
-             // Steps Button Ends
+
+            // Steps Button Ends
         }
+
         // Steps Content Ends
     }
 }
+
 // Steps To Earn Offers End

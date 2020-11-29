@@ -104,6 +104,26 @@ prevBtn.addEventListener('click', e => {
 
 
 
+// C...... DELIVERY POSTCODE VALIDATION
+const postCode = document.getElementById('postcode');
+const postInput = document.getElementById('post-input');
+// console.log(postCode, postInput);
+
+const deliveryPost = function(){
+    if(postInput.value.trim() === ''){
+        postCode.className = 'animate__animated animate__shakeX';  
+    }
+}
+
+
+
+postCode.addEventListener('submit', (e) => {
+    e.preventDefault();
+    // console.log(deliveryPost.value);
+
+    // postcodeValidation(postInput);
+    deliveryPost(postCode);
+})
 
 
 
@@ -111,7 +131,7 @@ prevBtn.addEventListener('click', e => {
 
 
 
-//C...... FORM VALIDATION 
+//D...... FORM VALIDATION 
 const signUpForm = document.getElementById('sign-up-form');
 const firstName = document.getElementById('first-name');
 const lastName = document.getElementById('last-name');
@@ -224,23 +244,3 @@ signUpForm.addEventListener('submit', (e) => {
 
 
 
-// C...... DELIVERY POSTCODE VALIDATION
-const postCode = document.getElementById('postcode');
-const postInput = document.getElementById('post-input');
-// console.log(postCode, postInput);
-
-const deliveryPost = function(){
-    if(postInput.value.trim() === ''){
-        postCode.className = 'animate__animated animate__shakeX';  
-    }
-}
-
-
-
-postCode.addEventListener('submit', (e) => {
-    e.preventDefault();
-    // console.log(deliveryPost.value);
-
-    // postcodeValidation(postInput);
-    deliveryPost(postCode);
-})
