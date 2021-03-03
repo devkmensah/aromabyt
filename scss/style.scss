@@ -1,16 +1,5 @@
-// Variables
-// colors
+// Color Variables
 $dark: #0c0c0c;
-$light-dark: #24262A;
-$dim-grey: #4F4F59;
-$grey: #5A5A66;
-$dim-dark: #252529;
-$light-grey: #2B2D31;
-$grey-one: #383838;
-$grey-two: #333;
-$grey-three: #8C8C8C;
-$grey-four: #404040;
-$grey-five: #383838;
 $white: #fff;
 $yellow: #FCC000;
 $ivory: #FCFCF3;
@@ -884,8 +873,8 @@ img {
                         }
                     }
 
-                    .input-holder{
-                        small{
+                    .input-holder {
+                        small {
                             color: $white;
                             display: none;
                             margin-bottom: 10px;
@@ -910,7 +899,7 @@ img {
                             color: $tomato;
                         }
 
-                        small{
+                        small {
                             color: $white;
                             // visibility: visible;
                             display: block;
