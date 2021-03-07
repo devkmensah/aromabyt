@@ -94,10 +94,10 @@
                 margin: 0 20px;
                 font-size: 25px;
 
-                a {
+                .order-links {
                     position: relative;
                     overflow: hidden;
-                    border: none;
+                    // border: none;
 
                     &::after {
                         content: '';
@@ -124,8 +124,17 @@
 
     // Navigation Ends
 }
-
 //Order Header Ends
+
+// Show or Hide delivery & collect section starts
+.btn-link-content{
+    display: none;
+}
+
+.btn-link-content-active{
+    display: grid;
+}
+// Show or Hide delivery & collect section ends
 
 // Delivery Section Starts
 #delivery {
@@ -356,7 +365,7 @@
     padding: 120px 70px 0;
     background: $ivory url('../images/order/circled.jpg') no-repeat center center / cover;
     color: $white;
-    display: none;
+    // display: none;
     position: relative;
 
     // Collect Overlay Starts

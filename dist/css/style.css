@@ -1,3 +1,4 @@
+/** @format */
 @import url("https://fonts.googleapis.com/css2?family=Carter+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 #sign-up-offers {
@@ -216,13 +217,12 @@
     #order-header .order-nav .order-options .collect-nav {
       margin: 0 20px;
       font-size: 25px; }
-      #order-header .order-nav .order-options .delivery-nav a,
-      #order-header .order-nav .order-options .collect-nav a {
+      #order-header .order-nav .order-options .delivery-nav .order-links,
+      #order-header .order-nav .order-options .collect-nav .order-links {
         position: relative;
-        overflow: hidden;
-        border: none; }
-        #order-header .order-nav .order-options .delivery-nav a::after,
-        #order-header .order-nav .order-options .collect-nav a::after {
+        overflow: hidden; }
+        #order-header .order-nav .order-options .delivery-nav .order-links::after,
+        #order-header .order-nav .order-options .collect-nav .order-links::after {
           content: '';
           position: absolute;
           background: #73020c;
@@ -233,9 +233,15 @@
           bottom: -5px;
           border: none;
           transition: .55s ease-in-out; }
-        #order-header .order-nav .order-options .delivery-nav a:hover:after,
-        #order-header .order-nav .order-options .collect-nav a:hover:after {
+        #order-header .order-nav .order-options .delivery-nav .order-links:hover:after,
+        #order-header .order-nav .order-options .collect-nav .order-links:hover:after {
           width: 100%; }
+
+.btn-link-content {
+  display: none; }
+
+.btn-link-content-active {
+  display: grid; }
 
 #delivery {
   padding: 120px 70px 0;
@@ -377,7 +383,6 @@
   padding: 120px 70px 0;
   background: #fcfcf3 url("../images/order/circled.jpg") no-repeat center center/cover;
   color: #fff;
-  display: none;
   position: relative; }
   #collect:after {
     content: "";
@@ -1149,7 +1154,7 @@ img {
             left: 50%;
             bottom: -5px;
             border: none;
-            transition: .55s ease-in-out; }
+            transition: 0.55s ease-in-out; }
           #header .top .container .sidenav h3 a:hover:after {
             width: 100%; }
       #header .top .container .sidenav .under-info,
@@ -1445,7 +1450,7 @@ img {
           align-items: center; }
           #main-area #app .container .left #postcode label.input-label {
             width: 100%; }
-            #main-area #app .container .left #postcode label.input-label input[type="text"] {
+            #main-area #app .container .left #postcode label.input-label input[type='text'] {
               width: 100%;
               padding: 20px 10px;
               border: 1px solid transparent;
@@ -1456,7 +1461,7 @@ img {
               background-color: #fcfcf3;
               font-family: 'Oswald', sans-serif;
               vertical-align: middle; }
-              #main-area #app .container .left #postcode label.input-label input[type="text"]:focus {
+              #main-area #app .container .left #postcode label.input-label input[type='text']:focus {
                 outline: none;
                 border: 1px solid transparent; }
             #main-area #app .container .left #postcode label.input-label ::placeholder {
@@ -1649,7 +1654,7 @@ img {
           color: #fff;
           background-color: #0c0c0c;
           border: 2px solid #fff;
-          transition: .3s ease-in-out; }
+          transition: 0.3s ease-in-out; }
           #main-area #sign-up .container .sign-up-content #sign-up-form .button:focus {
             outline: none; }
           #main-area #sign-up .container .sign-up-content #sign-up-form .button:hover {
@@ -1688,7 +1693,7 @@ img {
             width: 45px;
             font-size: 25px;
             line-height: 1.75;
-            transition: .3s ease-out; }
+            transition: 0.3s ease-out; }
           #footer .container .top .column.four .social li a:hover .insta {
             color: #fff;
             background: radial-gradient(circle at 30% 100%, #fed373 4%, #f15245 35%, #d92e7f 60%, #9b36b7 84%, #515ecf);
@@ -2692,8 +2697,8 @@ img {
   #order-header .order-nav .order-options .collect-nav {
     font-size: 14px;
     margin: 0 8px; }
-    #order-header .order-nav .order-options .delivery-nav a::after,
-    #order-header .order-nav .order-options .collect-nav a::after {
+    #order-header .order-nav .order-options .delivery-nav .order-links::after,
+    #order-header .order-nav .order-options .collect-nav .order-links::after {
       height: 3px;
       bottom: -3px; }
   #delivery {

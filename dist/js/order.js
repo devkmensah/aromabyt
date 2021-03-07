@@ -1,4 +1,4 @@
-// LOGIN PAGE 
+// LOGIN PAGE
 const loginRegister = document.querySelector('#login-register');
 const loginLink = document.querySelector('.login-link');
 const close = document.querySelector('.close');
@@ -6,7 +6,7 @@ const close = document.querySelector('.close');
 // Show login area when login link is clicked
 loginLink.addEventListener('click', () => {
     loginRegister.style.display = 'block';
-} );
+});
 
 // Close login area with the x icon on click
 close.addEventListener('click', () => {
@@ -14,15 +14,13 @@ close.addEventListener('click', () => {
 });
 
 // Close login area when the login background is cliked
-loginRegister.addEventListener('click', (e) => {
-    if(e.target.id == 'login-register'){
+loginRegister.addEventListener('click', e => {
+    if (e.target.id == 'login-register') {
         loginRegister.style.display = 'none';
     }
 });
 
-
-
-// REGISTER PAGE 
+// REGISTER PAGE
 const register = document.querySelector('#register');
 const closeRegister = document.querySelector('.close-register');
 const registerLinkOther = document.querySelector('.register-link-other');
@@ -52,15 +50,14 @@ registerLinkOther.addEventListener('click', () => {
 // Close register page when x icon is clicked
 closeRegister.addEventListener('click', () => {
     register.style.display = 'none';
-})
+});
 
 // Close register when background is clicked
-register.addEventListener('click', (e) => {
-    if(e.target.id === 'register'){
+register.addEventListener('click', e => {
+    if (e.target.id === 'register') {
         register.style.display = 'none';
     }
-})
-
+});
 
 // DELIVERY PAGE
 const deliveryNav = document.querySelector('.delivery-nav');
@@ -70,25 +67,29 @@ const collect = document.querySelector('#collect');
 
 console.log(delivery, collect, deliveryNav, collectNav);
 
-deliveryNav.addEventListener('click', (e) => {
-    if(e.target.className = 'delivery-nav'){
+const btn1 = document.querySelector('.btn-delivery')
+btn1.addEventListener('click', e => {
+    e.preventDefault();
+    if ((e.target.className = 'delivery-nav')) {
         delivery.style.display = 'block';
     }
-    if(e.target.className = 'collect-nav'){
+    if ((e.target.className = 'collect-nav')) {
         collect.style.display = 'none';
     }
     // if(e.target.className = 'delivery-nav'){
     //     deliveryNav.style.color = '#73020C';
     // }
-})
+});
 
-
+console.log(btn1, btn2);
+const btn2 = document.querySelector('.btn-collect')
 // COLLECT PAGE
-collectNav.addEventListener('click', (e) => {
-    if(e.target.className = 'collect-nav'){
+btn2.addEventListener('click', e => {
+    e.preventDefault()
+    if ((e.target.className = 'collect-nav')) {
         collect.style.display = 'block';
     }
-    if(e.target.className = 'delivery-nav'){
+    if ((e.target.className = 'delivery-nav')) {
         delivery.style.display = 'none';
     }
-})
+});

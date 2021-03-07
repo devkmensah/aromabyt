@@ -1,381 +1,516 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- DO THE SEO AFTER THE SITE IS COMPLETED -->
     <!-- <meta name="description" content="Best Top 24 Hour London Fitness">
     <meta name="keywords" content="24 Hour, Best, London, Fitness">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
-        crossorigin="anonymous" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@200;217;300;400;500;600;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@200;217;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
     <title>El_Aroma Steakhouse</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Header Starts -->
     <header id="order-header">
-        <!-- Navigation Starts -->
-        <nav class="order-nav">
-            <!-- Top Navigation Starts -->
-            <div class="order-top">
-                <a href="index.html" class="order-logo">
-                    <h1>
-                        El_Aroma
-                        <span>Steakhouse</span>
-                    </h1>
-                </a>
-                <h2 class="login-link">
-                    <a href="#">
-                        Log in
-                    </a>
-                </h2>
-            </div>
-            <!-- Top Navigation Ends -->
-            <!-- Order Type Navigation Starts -->
-            <ul class="order-options">
-                <li class="delivery-nav"><a href="#delivery">Delivery</a></li>
-                <li class="collect-nav"><a href="#collect">I'll Collect</a></li>
-            </ul>
-            <!-- Order Type Navigation Ends -->
-        </nav>
-        <!-- Navigation Ends -->
+      <!-- Navigation Starts -->
+      <nav class="order-nav">
+        <!-- Top Navigation Starts -->
+        <div class="order-top">
+          <a href="index.html" class="order-logo">
+            <h1>
+              El_Aroma
+              <span>Steakhouse</span>
+            </h1>
+          </a>
+          <h2 class="login-link">
+            <a href="#"> Log in </a>
+          </h2>
+        </div>
+        <!-- Top Navigation Ends -->
+
+        <!-- Order Type Navigation Starts -->
+        <ul class="order-options">
+          <li class="btn delivery-nav btn-link-1 btn-link-active" data-tab="1">
+            <a class="order-links" href="#delivery">Delivery</a>
+          </li>
+          <li class="btn collect-nav btn-link-2" data-tab="2">
+            <a class="order-links" href="#collect">I'll Collect</a>
+          </li>
+        </ul>
+        <!-- Order Type Navigation Ends -->
+      </nav>
+      <!-- Navigation Ends -->
     </header>
     <!-- Header Ends -->
 
     <!-- Main Area Starts -->
     <main id="main-area">
-        <!-- Delivery Section Starts -->
-        <section id="delivery">
-            <div class="container">
-                <!-- Delivery Content Starts -->
-                <div class="delivery-content">
-                    <!-- Delivery Form Content Starts -->
-                    <div class="delivery-form-content">
-                        <h2 class="form-heading">Enter Your delivery address.</h2>
-                        <!-- Delivery Form Starts -->
-                        <form action="#" id="delivery-form">
-                            <input type="text" class="delivery-postcode " placeholder="Enter Post Code (Required)">
-                            <label for="text" class="limited">(Delivery is limited to London)</label>
+      <!-- Delivery Section Starts -->
+      <section
+        id="delivery"
+        class="btn-link-content btn-link-content-1 btn-link-content-active"
+      >
+        <div class="container">
+          <!-- Delivery Content Starts -->
+          <div class="delivery-content">
+            <!-- Delivery Form Content Starts -->
+            <div class="delivery-form-content">
+              <h2 class="form-heading">Enter Your delivery address.</h2>
+              <!-- Delivery Form Starts -->
+              <form action="#" id="delivery-form">
+                <input
+                  type="text"
+                  class="delivery-postcode"
+                  placeholder="Enter Post Code (Required)"
+                />
+                <label for="text" class="limited"
+                  >(Delivery is limited to London)</label
+                >
 
-                            <div class="look-up">
-                                <button class="delivery-button">Search For Address</button>
-                                <button class="cancel">Cancel</button>
-                            </div>
-
-                            <input type="text" placeholder="Gate Code, Apt #, etc" class="access ">
-
-                            <input type="tel" name="phone" id="phone" placeholder="Phone # Required" class="phone ">
-
-                            <input type="submit" value="Use This Address" class="use">
-                        </form>
-                        <!-- Delivery Form Ends -->
-                        <p>El_Aroma does not sell, rent or trade your personal data to any third party. Any
-                            information collected is purposely used
-                            solely to provide you the best quality of service you request of us.
-                        </p>
-                        <br>
-                    </div>
-                    <!-- Delivery Form Content Ends -->
-
-                    <!-- Apply Point Starts -->
-                    <div class="apply">
-                        <hr>
-                        <h3 class="redeem-points">
-                            <span class="redeem">Redeem</span>
-                            <br>
-                            <span class="points">Points</span>
-                        </h3>
-                        <h3 class="member">Do you have points?</h3>
-                        <p>Enter your phone number to redeem your points.</p>
-
-                        <div class="redeem-input">
-                            <input required type="tel" placeholder="Phone Number" class="">
-                            <a href="#">redeem</a>
-                        </div>
-
-                        <p>Get offers, earn points, fast food delivery to your doorstep, and much more
-                            by creating account with us.</p>
-                        <p class="yet">Not a member yet? <a href="#" class="yet-link">Click here to sign up!</a></p>
-                    </div>
-                    <!-- Apply Point Ends -->
+                <div class="look-up">
+                  <button class="delivery-button">Search For Address</button>
+                  <button class="cancel">Cancel</button>
                 </div>
-                <!-- Delivery Content Ends -->
+
+                <input
+                  type="text"
+                  placeholder="Gate Code, Apt #, etc"
+                  class="access"
+                />
+
+                <input
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  placeholder="Phone # Required"
+                  class="phone"
+                />
+
+                <input type="submit" value="Use This Address" class="use" />
+              </form>
+              <!-- Delivery Form Ends -->
+              <p>
+                El_Aroma does not sell, rent or trade your personal data to any
+                third party. Any information collected is purposely used solely
+                to provide you the best quality of service you request of us.
+              </p>
+              <br />
             </div>
-        </section>
-        <!-- Delivery Section Ends -->
+            <!-- Delivery Form Content Ends -->
 
-        <!-- Collect Section Starts -->
-        <section id="collect">
-            <div class="container">
-                <!-- Collect Starts -->
-                <div class="collect-content">
-                    <!--  Collect Content Starts -->
-                    <div class="start-content">
-                        <h2>Want to collect your order!</h2>
-                        <p class="start">Start by choosing when you want to collect, and your meal will be ready for
-                            you.</p>
-                            <!-- Collect Form Starts -->
-                        <form class="collect-form">
-                            <div class="time-input">
-                                <!-- Time Input Starts -->
-                                <div class="time">
-                                    <label for="time">Time</label>
-                                    <input type="time" value="12:30" name="date-time" id="date-time" class="">
-                                </div>
-                                 <!-- Time Input Ends -->
-                                 <!-- Date Input Starts -->
-                                <div class="date">
-                                    <label for="date">Date</label>
-                                    <input type="date" value="2020-09-10" name="date" id="date" class="">
-                                </div>
-                                 <!-- Date Input Ends -->
-                            </div>
+            <!-- Apply Point Starts -->
+            <div class="apply">
+              <hr />
+              <h3 class="redeem-points">
+                <span class="redeem">Redeem</span>
+                <br />
+                <span class="points">Points</span>
+              </h3>
+              <h3 class="member">Do you have points?</h3>
+              <p>Enter your phone number to redeem your points.</p>
 
-                            <div class="specify">
-                                <input type="checkbox" name="checkbox">
-                                <label for="checkbox">Tick here to continue</label>
-                            </div>
-                            <button class="collect-button">continue</button>
-                        </form>
-                          <!-- Collect Form Ends -->
-                    </div>
-                    <!-- Collect Content Ends -->
+              <div class="redeem-input">
+                <input
+                  required
+                  type="tel"
+                  placeholder="Phone Number"
+                  class=""
+                />
+                <a href="#">redeem</a>
+              </div>
 
-
-                    <!-- Apply Points Start -->
-                    <div class="apply">
-                        <hr>
-                        <h3 class="redeem-points">
-                            <span class="redeem">Redeem</span>
-                            <br>
-                            <span class="points">Points</span>
-                        </h3>
-                        <h3 class="member">Do you have points?</h3>
-                        <p>Enter your phone number to redeem your points.</p>
-
-                        <div class="redeem-input">
-                            <input required type="tel" placeholder="Phone Number" class="">
-                            <a href="#">redeem</a>
-                        </div>
-
-                        <p>Get offers, earn points, fast food delivery to your doorstep, and much more
-                            by creating account with us.</p>
-                        <p class="yet">Not a member yet? <a href="#">Click here to sign up!</a></p>
-
-                    </div>
-                    <!-- Apply Points Start -->
-                </div>
-                <!-- Collect Ends -->
+              <p>
+                Get offers, earn points, fast food delivery to your doorstep,
+                and much more by creating account with us.
+              </p>
+              <p class="yet">
+                Not a member yet?
+                <a href="#" class="yet-link">Click here to sign up!</a>
+              </p>
             </div>
-        </section>
-        <!-- Collect Section Ends -->
-        
-        <!-- Log In Form Section Starts -->
-        <section id="login-register">
-            <div class="login-register-content">
-                <!-- Header Area Starts -->
-                <div class="login-register-header">
-                    <div class="log-register">
-                        <h2>Log in </h2>
-                        <span class="log-register-divider"></span>
-                        <h2>Register an Account</h2>
-                    </div>
-                    <span class="close"><i class="fas fa-times"></i></span>
+            <!-- Apply Point Ends -->
+          </div>
+          <!-- Delivery Content Ends -->
+        </div>
+      </section>
+      <!-- Delivery Section Ends -->
+
+      <!-- Collect Section Starts -->
+      <section id="collect" class="btn-link-content btn-link-content-2">
+        <div class="container">
+          <!-- Collect Starts -->
+          <div class="collect-content">
+            <!--  Collect Content Starts -->
+            <div class="start-content">
+              <h2>Want to collect your order!</h2>
+              <p class="start">
+                Start by choosing when you want to collect, and your meal will
+                be ready for you.
+              </p>
+              <!-- Collect Form Starts -->
+              <form class="collect-form">
+                <div class="time-input">
+                  <!-- Time Input Starts -->
+                  <div class="time">
+                    <label for="time">Time</label>
+                    <input
+                      type="time"
+                      value="12:30"
+                      name="date-time"
+                      id="date-time"
+                      class=""
+                    />
+                  </div>
+                  <!-- Time Input Ends -->
+                  <!-- Date Input Starts -->
+                  <div class="date">
+                    <label for="date">Date</label>
+                    <input
+                      type="date"
+                      value="2020-09-10"
+                      name="date"
+                      id="date"
+                      class=""
+                    />
+                  </div>
+                  <!-- Date Input Ends -->
                 </div>
-                 <!-- Header Area Ends -->
-                 <!-- Log In / Register Box Starts -->
-                <div class="login-register-box">
-                    <!-- Log In Form Starts -->
-                    <form action="#" id="login-form">
-                        <div class="account-logger">
-                            <h4 class="login">log in</h4>
-                            <h4 class="into">Log into Account</h4>
-                        </div>
 
-                        <input type="email" name="email" id="email" placeholder="Email Address (Required)" class="">
-                        <input type="text" name="text" id="text" placeholder="Password (Required)" class="">
-
-                        <div class="remember">
-                            <input type="checkbox" name="checkbox" id="checkbox">
-                            <label for="checkbox">Remember this email</label>
-                        </div>
-
-                        <button type="submit" class="login-btn">Login</button>
-                        <a href="#" class="forgot">Forgot Password?</a>
-                        <span class="divider">|</span>
-                        <a href="#" class="mobile-register">Register Account</a>
-                    </form>
-                      <!-- Log In Form Ends -->
-                    <div class="vertical-line"> </div>
-                    <!-- Create Your Account / Register Starts -->
-                    <div class="create-alternative">
-                        <h4 class="create-header">Create Your Account</h4>
-                        <p class="info">Simply register for an account to have faster and easy access on your
-                            next visit.</p>
-                        <button type="submit" class="register-link-other">Register</button>
-                    </div>
-                     <!-- Create Your Account / Register Ends -->
+                <div class="specify">
+                  <input type="checkbox" name="checkbox" />
+                  <label for="checkbox">Tick here to continue</label>
                 </div>
-                <!-- Log In / Register Box Ends -->
+                <button class="collect-button">continue</button>
+              </form>
+              <!-- Collect Form Ends -->
             </div>
-        </section>
-        <!-- Log In Form Section Ends -->
+            <!-- Collect Content Ends -->
 
-        <!-- Register Form Section Starts-->
-        <section id="register">
-            <div class="popup">
-                <!-- Register Header Starts -->
-                <div class="popup-header">
-                    <h2>Create Your Account</h2>
-                    <span class="close-register"><i class="fas fa-times"></i></span>
-                </div>
-                 <!-- Register Header Ends -->
-                 <!-- Register Contents Start -->
-                <div class="popup-content">
-                    <h4 class="easy">Create an account for easy access</h4>
-                    <h4 class="now">Register Now</h4>
+            <!-- Apply Points Start -->
+            <div class="apply">
+              <hr />
+              <h3 class="redeem-points">
+                <span class="redeem">Redeem</span>
+                <br />
+                <span class="points">Points</span>
+              </h3>
+              <h3 class="member">Do you have points?</h3>
+              <p>Enter your phone number to redeem your points.</p>
 
-                    <!-- Register Form Starts-->
-                    <form action="#" id="form-register">
-                        <!-- Left Input Starts-->
-                        <div class="left-input">
-                            <input type="text" name="f-name" id="f-name" placeholder="First Name (Required)" class="">
-                            <input type="text" name="l-name" id="l-name" placeholder="Last Name (Required)" class="">
-                            <input type="email" name="email" id="email" placeholder="Email Address (Required)" class="">
-                            <input type="tel" name="tel" id="tel" placeholder="Phone Number" class="">
-                        </div>
-                        <!-- Left Input Ends-->
-                        <!-- Right Input Starts-->
-                        <div class="right-input">
-                            <input type="text" name="text" id="text" placeholder="Password (Required)" class="">
-                            <label class="text-label" for="password">Password must be between 8 and 20
-                                characters containing
-                                numbers,
-                                letters of uppercase & lowercase.</label>
+              <div class="redeem-input">
+                <input
+                  required
+                  type="tel"
+                  placeholder="Phone Number"
+                  class=""
+                />
+                <a href="#">redeem</a>
+              </div>
 
-                            <input type="text" name="text" id="text2" placeholder="Confirm Password (Required)" class="">
-
-                            <div class="receive">
-                                <input type="checkbox" name="checkbox" id="checkbox">
-                                <label for="checkbox" class="of-age">I acknowlodge that I am 18 years of age or older,
-                                    and
-                                    want
-                                    to
-                                    receive email offers from El_Aroma.</label>
-                            </div>
-
-                            <div class="creating">
-                                <input type="checkbox" name="checkbox" id="checkbox">
-                                <label for="checkbox" class="read">I have read the <a href="#">Terms
-                                        and Conditions</a> and want to create this account.</label>
-                            </div>
-                            <button type="submit" class="btn-register">Register</button>
-                        </div>
-                         <!-- Right Input Ends-->
-                    </form>
-                    <!-- Register Form Ends-->
-                </div>
-                   <!-- Register Contents End -->
+              <p>
+                Get offers, earn points, fast food delivery to your doorstep,
+                and much more by creating account with us.
+              </p>
+              <p class="yet">
+                Not a member yet? <a href="#">Click here to sign up!</a>
+              </p>
             </div>
-        </section>
-        <!-- Register Form Section Ends-->
+            <!-- Apply Points Start -->
+          </div>
+          <!-- Collect Ends -->
+        </div>
+      </section>
+      <!-- Collect Section Ends -->
+
+      <!-- Log In Form Section Starts -->
+      <section id="login-register">
+        <div class="login-register-content">
+          <!-- Header Area Starts -->
+          <div class="login-register-header">
+            <div class="log-register">
+              <h2>Log in</h2>
+              <span class="log-register-divider"></span>
+              <h2>Register an Account</h2>
+            </div>
+            <span class="close"><i class="fas fa-times"></i></span>
+          </div>
+          <!-- Header Area Ends -->
+          <!-- Log In / Register Box Starts -->
+          <div class="login-register-box">
+            <!-- Log In Form Starts -->
+            <form action="#" id="login-form">
+              <div class="account-logger">
+                <h4 class="login">log in</h4>
+                <h4 class="into">Log into Account</h4>
+              </div>
+
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email Address (Required)"
+                class=""
+              />
+              <input
+                type="text"
+                name="text"
+                id="text"
+                placeholder="Password (Required)"
+                class=""
+              />
+
+              <div class="remember">
+                <input type="checkbox" name="checkbox" id="checkbox" />
+                <label for="checkbox">Remember this email</label>
+              </div>
+
+              <button type="submit" class="login-btn">Login</button>
+              <a href="#" class="forgot">Forgot Password?</a>
+              <span class="divider">|</span>
+              <a href="#" class="mobile-register">Register Account</a>
+            </form>
+            <!-- Log In Form Ends -->
+            <div class="vertical-line"></div>
+            <!-- Create Your Account / Register Starts -->
+            <div class="create-alternative">
+              <h4 class="create-header">Create Your Account</h4>
+              <p class="info">
+                Simply register for an account to have faster and easy access on
+                your next visit.
+              </p>
+              <button type="submit" class="register-link-other">
+                Register
+              </button>
+            </div>
+            <!-- Create Your Account / Register Ends -->
+          </div>
+          <!-- Log In / Register Box Ends -->
+        </div>
+      </section>
+      <!-- Log In Form Section Ends -->
+
+      <!-- Register Form Section Starts-->
+      <section id="register">
+        <div class="popup">
+          <!-- Register Header Starts -->
+          <div class="popup-header">
+            <h2>Create Your Account</h2>
+            <span class="close-register"><i class="fas fa-times"></i></span>
+          </div>
+          <!-- Register Header Ends -->
+          <!-- Register Contents Start -->
+          <div class="popup-content">
+            <h4 class="easy">Create an account for easy access</h4>
+            <h4 class="now">Register Now</h4>
+
+            <!-- Register Form Starts-->
+            <form action="#" id="form-register">
+              <!-- Left Input Starts-->
+              <div class="left-input">
+                <input
+                  type="text"
+                  name="f-name"
+                  id="f-name"
+                  placeholder="First Name (Required)"
+                  class=""
+                />
+                <input
+                  type="text"
+                  name="l-name"
+                  id="l-name"
+                  placeholder="Last Name (Required)"
+                  class=""
+                />
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Email Address (Required)"
+                  class=""
+                />
+                <input
+                  type="tel"
+                  name="tel"
+                  id="tel"
+                  placeholder="Phone Number"
+                  class=""
+                />
+              </div>
+              <!-- Left Input Ends-->
+              <!-- Right Input Starts-->
+              <div class="right-input">
+                <input
+                  type="text"
+                  name="text"
+                  id="text"
+                  placeholder="Password (Required)"
+                  class=""
+                />
+                <label class="text-label" for="password"
+                  >Password must be between 8 and 20 characters containing
+                  numbers, letters of uppercase & lowercase.</label
+                >
+
+                <input
+                  type="text"
+                  name="text"
+                  id="text2"
+                  placeholder="Confirm Password (Required)"
+                  class=""
+                />
+
+                <div class="receive">
+                  <input type="checkbox" name="checkbox" id="checkbox" />
+                  <label for="checkbox" class="of-age"
+                    >I acknowlodge that I am 18 years of age or older, and want
+                    to receive email offers from El_Aroma.</label
+                  >
+                </div>
+
+                <div class="creating">
+                  <input type="checkbox" name="checkbox" id="checkbox" />
+                  <label for="checkbox" class="read"
+                    >I have read the <a href="#">Terms and Conditions</a> and
+                    want to create this account.</label
+                  >
+                </div>
+                <button type="submit" class="btn-register">Register</button>
+              </div>
+              <!-- Right Input Ends-->
+            </form>
+            <!-- Register Form Ends-->
+          </div>
+          <!-- Register Contents End -->
+        </div>
+      </section>
+      <!-- Register Form Section Ends-->
     </main>
     <!-- Main Area Ends -->
 
     <!-- Footer Section Starts -->
     <footer id="footer">
-        <div class="container">
-            <!-- Top Area Starts -->
-            <div class="top">
-                <!-- Coloumn One Starts -->
-                <div class="column one">
-                    <ul>
-                        <li><a href="menu.html">Our Menu</a></li>
-                        <li><a href="offers.html">Offers</a></li>
-                        <li><a href="#">About Us</a></li>
-                    </ul>
-                </div>
-                <!-- Coloumn One Ends -->
-                <!-- Coloumn Two Starts -->
-                <div class="column two">
-                    <ul>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Contact & Help</a></li>
-                        <li><a href="#">FAQs</a></li>
-                    </ul>
-                </div>
-                <!-- Coloumn Two Ends -->
-                <!-- Coloumn Three Starts -->
-                <div class="column three">
-                    <ul>
-                        <li>25 Northen Avenue</li>
-                        <li>Earlsfield, London</li>
-                        <li>SW15 5EJ</li>
-                    </ul>
-                </div>
-                <!-- Coloumn Three Ends -->
-                <!-- Coloumn Four Starts -->
-                <div class="column four">
-                    <h3>Follow Us:</h3>
-                    <ul class="social">
-                        <li><a href="https://www.twitter.com/" target="blank"><i class="fab twit fa-twitter"></i></a>
-                        </li>
-                        <li><a href="https://www.instagram.com/" target="blank"><i
-                                    class="fab insta fa-instagram"></i></a></li>
-                        <li><a href="https://www.facebook.com/" target="blank"><i class="fab face fa-facebook"></i></a>
-                        </li>
-                        <li><a href="https://www.snapchat.com/" target="blank"><i class="fab snap fa-snapchat"></i></a>
-                        </li>
-                        <li><a href="https://www.pinterest.com/" target="blank"><i class="fab pin fa-pinterest"></i></a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Coloumn Four Ends -->
-            </div>
-            <!-- Top Area Ends -->
-            <hr>
-            <!-- Bottom Area Starts -->
-            <div class="bottom">
-                <div class="bottom-logo">
-                    <a href="#">
-                        <h1 class="logo">
-                            El_Aroma
-                        </h1>
-                    </a>
-                    <!-- App Store Images Start -->
-                    <ul class="store">
-                        <li> <a href="https://play.google.com/store/apps?gl=GB" target="blank"><img
-                                    src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/cf6dad406fdfdcd290fd40de9008ae50.png"
-                                    alt=""></a></li>
-                        <li> <a href="https://www.apple.com/ios/app-store/" target="blank"><img
-                                    src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/d0558d91063038236b60e3ef71fdc1fd.svg"
-                                    alt=""></a></li>
-                    </ul>
-                    <!-- App Store Images End -->
-                </div>
-
-                <!-- Rights / Privacy Starts -->
-                <ul class="rights">
-                    <li><a href="#">Terms</a></li>
-                    <li><a href="#">Privacy</a></li>
-                    <li><a href="#"> &copy 2020 All Rights Reserved</a></li>
-                </ul>
-                <!-- Rights / Privacy Ends -->
-            </div>
-            <!-- Bottom Area Ends -->
+      <div class="container">
+        <!-- Top Area Starts -->
+        <div class="top">
+          <!-- Coloumn One Starts -->
+          <div class="column one">
+            <ul>
+              <li><a href="menu.html">Our Menu</a></li>
+              <li><a href="offers.html">Offers</a></li>
+              <li><a href="#">About Us</a></li>
+            </ul>
+          </div>
+          <!-- Coloumn One Ends -->
+          <!-- Coloumn Two Starts -->
+          <div class="column two">
+            <ul>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Contact & Help</a></li>
+              <li><a href="#">FAQs</a></li>
+            </ul>
+          </div>
+          <!-- Coloumn Two Ends -->
+          <!-- Coloumn Three Starts -->
+          <div class="column three">
+            <ul>
+              <li>25 Northen Avenue</li>
+              <li>Earlsfield, London</li>
+              <li>SW15 5EJ</li>
+            </ul>
+          </div>
+          <!-- Coloumn Three Ends -->
+          <!-- Coloumn Four Starts -->
+          <div class="column four">
+            <h3>Follow Us:</h3>
+            <ul class="social">
+              <li>
+                <a href="https://www.twitter.com/" target="blank"
+                  ><i class="fab twit fa-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/" target="blank"
+                  ><i class="fab insta fa-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/" target="blank"
+                  ><i class="fab face fa-facebook"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.snapchat.com/" target="blank"
+                  ><i class="fab snap fa-snapchat"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.pinterest.com/" target="blank"
+                  ><i class="fab pin fa-pinterest"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <!-- Coloumn Four Ends -->
         </div>
+        <!-- Top Area Ends -->
+        <hr />
+        <!-- Bottom Area Starts -->
+        <div class="bottom">
+          <div class="bottom-logo">
+            <a href="#">
+              <h1 class="logo">El_Aroma</h1>
+            </a>
+            <!-- App Store Images Start -->
+            <ul class="store">
+              <li>
+                <a
+                  href="https://play.google.com/store/apps?gl=GB"
+                  target="blank"
+                  ><img
+                    src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/cf6dad406fdfdcd290fd40de9008ae50.png"
+                    alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.apple.com/ios/app-store/" target="blank"
+                  ><img
+                    src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/d0558d91063038236b60e3ef71fdc1fd.svg"
+                    alt=""
+                /></a>
+              </li>
+            </ul>
+            <!-- App Store Images End -->
+          </div>
+
+          <!-- Rights / Privacy Starts -->
+          <ul class="rights">
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#"> &copy 2020 All Rights Reserved</a></li>
+          </ul>
+          <!-- Rights / Privacy Ends -->
+        </div>
+        <!-- Bottom Area Ends -->
+      </div>
     </footer>
     <!-- Footer Section Ends -->
 
-    <script src="js/order.js"></script>
-</body>
-
+    <!-- <script src="js/order.js"></script> -->
+  </body>
 </html>

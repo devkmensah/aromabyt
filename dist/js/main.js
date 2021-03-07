@@ -124,16 +124,6 @@ const postcodeInfo = document.getElementById('postcode-info');
 const phoneInfo = document.getElementById('phone-info');
 const inputWrapper = document.getElementById('input-wrapper');
 
-console.log(
-  signUpForm,
-  firstName,
-  lastName,
-  emailInfo,
-  postcodeInfo,
-  phoneInfo,
-  inputWrapper
-);
-
 // 7. a
 const postcodeValidation = function (postField) {
   const postRegex = /^([Gg][Ii][Rr] 0[Aa]{2})|((([A-Za-z][0-9]{1,2})|(([A-Za-z][A-Ha-hJ-Yj-y][0-9]{1,2})|(([A-Za-z][0-9][A-Za-z])|([A-Za-z][A-Ha-hJ-Yj-y][0-9]?[A-Za-z])))) [0-9][A-Za-z]{2})$/;
@@ -215,12 +205,6 @@ const allInputCheck = function (inputFieldArray) {
 // 1. Submit Event Listener
 signUpForm.addEventListener('submit', e => {
   e.preventDefault();
-
-  // console.log(firstName.value);
-  // console.log(lastName.value);
-  // console.log(emailInfo.value);
-  // console.log(postcodeInfo.value);
-  // console.log(phoneInfo.value);
 
   //1.b. All Input field entry check
   allInputCheck([firstName, lastName, emailInfo, postcodeInfo, phoneInfo]);
