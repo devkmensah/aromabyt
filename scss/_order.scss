@@ -94,7 +94,7 @@
                 margin: 0 20px;
                 font-size: 25px;
 
-                .order-links {
+                .order-link {
                     position: relative;
                     overflow: hidden;
                     // border: none;
@@ -127,11 +127,11 @@
 //Order Header Ends
 
 // Show or Hide delivery & collect section starts
-.btn-link-content{
+.order-link-content{
     display: none;
 }
 
-.btn-link-content-active{
+.order-link-content-active{
     display: grid;
 }
 // Show or Hide delivery & collect section ends

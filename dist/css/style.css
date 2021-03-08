@@ -217,12 +217,12 @@
     #order-header .order-nav .order-options .collect-nav {
       margin: 0 20px;
       font-size: 25px; }
-      #order-header .order-nav .order-options .delivery-nav .order-links,
-      #order-header .order-nav .order-options .collect-nav .order-links {
+      #order-header .order-nav .order-options .delivery-nav .order-link,
+      #order-header .order-nav .order-options .collect-nav .order-link {
         position: relative;
         overflow: hidden; }
-        #order-header .order-nav .order-options .delivery-nav .order-links::after,
-        #order-header .order-nav .order-options .collect-nav .order-links::after {
+        #order-header .order-nav .order-options .delivery-nav .order-link::after,
+        #order-header .order-nav .order-options .collect-nav .order-link::after {
           content: '';
           position: absolute;
           background: #73020c;
@@ -233,14 +233,14 @@
           bottom: -5px;
           border: none;
           transition: .55s ease-in-out; }
-        #order-header .order-nav .order-options .delivery-nav .order-links:hover:after,
-        #order-header .order-nav .order-options .collect-nav .order-links:hover:after {
+        #order-header .order-nav .order-options .delivery-nav .order-link:hover:after,
+        #order-header .order-nav .order-options .collect-nav .order-link:hover:after {
           width: 100%; }
 
-.btn-link-content {
+.order-link-content {
   display: none; }
 
-.btn-link-content-active {
+.order-link-content-active {
   display: grid; }
 
 #delivery {
@@ -2697,8 +2697,8 @@ img {
   #order-header .order-nav .order-options .collect-nav {
     font-size: 14px;
     margin: 0 8px; }
-    #order-header .order-nav .order-options .delivery-nav .order-links::after,
-    #order-header .order-nav .order-options .collect-nav .order-links::after {
+    #order-header .order-nav .order-options .delivery-nav .order-link::after,
+    #order-header .order-nav .order-options .collect-nav .order-link::after {
       height: 3px;
       bottom: -3px; }
   #delivery {
