@@ -63,26 +63,26 @@ document.addEventListener('keydown', e => {
   if (e.key === 'Escape') hideRegister();
 });
 
-//3. STICK MENU-LIST AREA TO THE TOP OF SCREEN ON SCROLL
-// & PREVENT SUDDEN QUICK MOVEMENT OF LUNCH MENU HEADER TITLE UNDER MENU-LIST WHEN FIXED EFFECT IS ADDED TO THE MENU-LIST ID
-const menuList = document.querySelector('#menu-list');
-const pageTop = menuList.offsetTop;
-const smoothPosition = document.querySelector('#menu');
-console.log(smoothPosition, pageTop);
+//3. STICKY MENU-LIST NAVIGATION
+// const menuListContainer = document.querySelector('#menu-list');
+// const pageTop = menuListContainer.offsetTop;
+// const smoothPosition = document.querySelector('#menu');
+// // console.log(smoothPosition, pageTop);
 
-const stickMenu = () => {
-  if (pageYOffset >= pageTop) {
-    menuList.classList.add('sticky');
-    smoothPosition.classList.add('smooth-position');
-  } else {
-    menuList.classList.remove('sticky');
-    smoothPosition.classList.remove('smooth-position');
-  }
-};
+// const stickMenu = () => {
+//   if (pageYOffset >= pageTop) {
+//     menuListContainer.classList.add('sticky');
+//     smoothPosition.classList.add('smooth-position');
+//   } else {
+//     menuListContainer.classList.remove('sticky');
+//     smoothPosition.classList.remove('smooth-position');
+//   }
+// };
 
-onscroll = () => {
-  stickMenu();
-};
+// onscroll = () => {
+//   stickMenu();
+// };
+// console.log(menuListContainer, pageTop, smoothPosition);
 
 //D...... FORM VALIDATION
 const signUpForm = document.getElementById('sign-up-form');
