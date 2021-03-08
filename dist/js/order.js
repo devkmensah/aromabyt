@@ -63,7 +63,7 @@ document.addEventListener('keydown', e => {
   if (e.key === 'Escape') hideRegister();
 });
 
-// 3. DELIVERY OR I'LL COLLECT ORDER
+// 3. DELIVERY OR I'LL COLLECT ORDER LINKS
 const orderOptions = document.querySelector('.order-options');
 const orderLinks = document.querySelectorAll('.order-link');
 const orderContent = document.querySelectorAll('.order-link-content');
