@@ -2,13 +2,13 @@
     "liveServer.settings.port": 5504,
     "files.autoSave": "onWindowChange",
     "editor.wordWrap": "bounded",
-    "editor.defaultFormatter": "SimonSiefke.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
     "[scss]": {
         "editor.defaultFormatter": "SimonSiefke.prettier-vscode"
     },
     "[javascript]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[html]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"

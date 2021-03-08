@@ -1,22 +1,26 @@
-// LOGIN FORM 
+// LOGIN FORM
 const loginRegister = document.querySelector('#login-register');
 const loginLink = document.querySelector('.login-link');
-const close = document.querySelector('.close');
+const xClose = document.querySelector('.close');
 
-loginLink.addEventListener('click', e => {
-    loginRegister.style.display = 'block';
-});
+const display = e => {
+  loginRegister.style.display = 'block';
+};
+const hide = e => {
+  loginRegister.style.display = 'none';
+};
 
-close.addEventListener('click', () => {
-    loginRegister.style.display = 'none';
-});
+loginLink.addEventListener('click', e => display());
+
+xClose.addEventListener('click', () => hide());
 
 loginRegister.addEventListener('click', e => {
-    if (e.target.id === 'login-register') {
-        loginRegister.style.display = 'none';
-    }
+  if (e.target.id === 'login-register') hide();
 });
 
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') hide();
+});
 // // REGISTER FORM
 // const register = document.querySelector('#register');
 // const closeRegister = document.querySelector('.close-register');
@@ -62,17 +66,17 @@ const orderLinks = document.querySelectorAll('.order-link');
 const orderContent = document.querySelectorAll('.order-link-content');
 console.log(orderOptions, orderLinks, orderContent);
 orderOptions.addEventListener('click', function (e) {
-    e.preventDefault();
-    const clicked = e.target.closest('.order-link');
-    console.log(clicked);
+  e.preventDefault();
+  const clicked = e.target.closest('.order-link');
+  console.log(clicked);
 
-    if (!clicked) return;
-    orderLinks.forEach(link => link.classList.remove('order-link-active'));
-    orderContent.forEach(content =>
-        content.classList.remove('order-link-content-active')
-    );
-    clicked.classList.add('order-link-active');
-    const activeContent = document
-        .querySelector(`.order-link-content-${clicked.dataset.tab}`)
-        .classList.add('order-link-content-active');
+  if (!clicked) return;
+  orderLinks.forEach(link => link.classList.remove('order-link-active'));
+  orderContent.forEach(content =>
+    content.classList.remove('order-link-content-active')
+  );
+  clicked.classList.add('order-link-active');
+  const activeContent = document
+    .querySelector(`.order-link-content-${clicked.dataset.tab}`)
+    .classList.add('order-link-content-active');
 });
