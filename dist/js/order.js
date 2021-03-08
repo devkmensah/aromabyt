@@ -1,70 +1,73 @@
-// LOGIN FORM
+// 1. LOGIN FORM
 const loginRegister = document.querySelector('#login-register');
 const loginLink = document.querySelector('.login-link');
-const xClose = document.querySelector('.close');
+const xCloseLogin = document.querySelector('.close');
 
-const display = e => {
+const displayLogin = e => {
   loginRegister.style.display = 'block';
 };
-const hide = e => {
+
+const hideLogin = e => {
   loginRegister.style.display = 'none';
 };
 
-loginLink.addEventListener('click', e => display());
+loginLink.addEventListener('click', e => {
+  e.preventDefault();
+  displayLogin();
+});
 
-xClose.addEventListener('click', () => hide());
+xCloseLogin.addEventListener('click', () => hideLogin());
 
 loginRegister.addEventListener('click', e => {
-  if (e.target.id === 'login-register') hide();
+  if (!e.target) return;
+  if (e.target.id === 'login-register') hideLogin();
 });
 
 document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') hide();
+  if (e.key === 'Escape') hideLogin();
 });
-// // REGISTER FORM
-// const register = document.querySelector('#register');
-// const closeRegister = document.querySelector('.close-register');
-// const registerLinkOther = document.querySelector('.register-link-other');
-// // const createAccount = document.querySelector('.create');
-// const yetLink = document.querySelector('.yet-link');
 
-// // Show register page when register link is clicked
-// // registerLink.addEventListener('click', () => {
-// //     register.style.display = 'block';
-// // });
+// 2. REGISTER / SIGN UP FORM
+const signUpLink = document.querySelectorAll('.sign-up-link');
+const register = document.querySelector('#register');
+const xCloseRegister = document.querySelector('.close-register');
 
-// // Show register page when create class is clicked
-// // createAccount.addEventListener('click', () => {
-// //     register.style.display = 'block';
-// // });
+const displayRegister = e => {
+  register.style.display = 'block';
+};
 
-// // Show register page when yet link is clicked
-// yetLink.addEventListener('click', () => {
-//     register.style.display = 'block';
-// });
+const hideRegister = e => {
+  register.style.display = 'none';
+};
 
-// // Show register page when register link is clicked on the login page
-// registerLinkOther.addEventListener('click', () => {
-//     register.style.display = 'block';
-// });
+signUpLink.forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    displayRegister();
+  });
+});
 
-// // Close register page when x icon is clicked
-// closeRegister.addEventListener('click', () => {
-//     register.style.display = 'none';
-// });
+xCloseRegister.addEventListener('click', e => {
+  hideLogin();
+  hideRegister();
+});
 
-// // Close register when background is clicked
-// register.addEventListener('click', e => {
-//     if (e.target.id === 'register') {
-//         register.style.display = 'none';
-//     }
-// });
+register.addEventListener('click', e => {
+  hideLogin();
+  if (!e.target.id) return;
+  if (e.target.id === 'register') hideRegister();
+});
 
-// DELIVERY OR I'LL COLLECT ORDER
+document.addEventListener('keydown', e => {
+  hideLogin();
+  if (e.key === 'Escape') hideRegister();
+});
+
+// 3. DELIVERY OR I'LL COLLECT ORDER
 const orderOptions = document.querySelector('.order-options');
 const orderLinks = document.querySelectorAll('.order-link');
 const orderContent = document.querySelectorAll('.order-link-content');
-console.log(orderOptions, orderLinks, orderContent);
+// console.log(orderOptions, orderLinks, orderContent);
 orderOptions.addEventListener('click', function (e) {
   e.preventDefault();
   const clicked = e.target.closest('.order-link');
