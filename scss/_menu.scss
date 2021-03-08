@@ -83,12 +83,13 @@
 
     // JavaScript Sticky Effect Starts
     .sticky {
-        position: fixed;
+        position: fixed !important;
         width: 100%;
-        top: 0;
+        top: 0 !important;
     }
-
     // JavaScript Sticky Effect Ends
+
+    
 
     // Menu List Starts
     #menu-list {
@@ -168,8 +169,12 @@
 
 // Main area, Menu Section Starts
 // To prevent sudden quick movement of the menu contents under the menu list since the menu-list gets a new position at the top when a class is added to the ID of menu-list class
-.smooth-position {
-    padding-top: 85px;
+// .smooth-position {
+//     padding-top: 85px;
+// }
+
+.m-top{
+    margin-top: 100px;
 }
 
 // Menu Section Starts

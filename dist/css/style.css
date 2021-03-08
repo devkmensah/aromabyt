@@ -829,9 +829,9 @@
           font-family: 'Oswald', sans-serif; }
 
 #menu-header .sticky {
-  position: fixed;
+  position: fixed !important;
   width: 100%;
-  top: 0; }
+  top: 0 !important; }
 
 #menu-header #menu-list {
   z-index: 2;
@@ -877,8 +877,8 @@
           #menu-header #menu-list .list-items .items .item a:hover:after {
             width: 100%; }
 
-.smooth-position {
-  padding-top: 85px; }
+.m-top {
+  margin-top: 100px; }
 
 #menu {
   position: relative;
@@ -2024,9 +2024,7 @@ img {
       justify-content: center; }
     #footer .container .bottom .rights {
       display: flex;
-      justify-self: center; }
-  .smooth-position {
-    padding-top: 95px; } }
+      justify-self: center; } }
 
 @media screen and (max-width: 867px) {
   #menu-header .top .navigation {
@@ -2045,9 +2043,7 @@ img {
       #menu-header #menu-list .list-items .items .item {
         margin-bottom: 10px; }
         #menu-header #menu-list .list-items .items .item span {
-          display: none; }
-  .smooth-position {
-    padding-top: 95px; } }
+          display: none; } }
 
 @media screen and (max-width: 800px) {
   #collect {
@@ -2430,8 +2426,6 @@ img {
     grid-template-columns: repeat(3, 1fr); } }
 
 @media screen and (max-width: 550px) {
-  .smooth-position {
-    padding-top: 125px; }
   #menu-header #menu-list {
     padding: 10px 30px; }
   #footer {
@@ -2962,10 +2956,6 @@ img {
     #login-register .login-register-content .login-register-box .create-alternative {
       display: none; } }
 
-@media screen and (max-width: 338px) {
-  .smooth-position {
-    padding-top: 166px; } }
-
 @media screen and (max-width: 333px) {
   #main-area #lunch-dinner .container .lunch-dinner .dinner .dinner-content {
     padding: 10px 15px 0; }
@@ -3012,7 +3002,3 @@ img {
     zoom: 0.9; }
   #register .popup .popup-content #form-register .right-input button.btn-register {
     font-size: 10px; } }
-
-@media screen and (max-width: 274px) {
-  .smooth-position {
-    padding-top: 206px; } }

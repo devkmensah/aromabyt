@@ -101,8 +101,8 @@ console.log(
   smoothKickIn
 );
 
-menuNavContainer.classList.remove('sticky');
-smoothKickIn.classList.remove('smooth-position');
+// menuNavContainer.classList.remove('sticky');
+// smoothKickIn.classList.remove('smooth-position');
 
 const menuHeaderObserver = new IntersectionObserver(
   function (entries) {
@@ -111,16 +111,33 @@ const menuHeaderObserver = new IntersectionObserver(
 
     if (!entry.isIntersecting) {
       menuNavContainer.classList.add('sticky');
-      smoothKickIn.classList.add('smooth-position');
+      mainArea.classList.add('m-top');
+      //   smoothKickIn.classList.add('smooth-position');
     } else {
       menuNavContainer.classList.remove('sticky');
-      smoothKickIn.classList.remove('smooth-position');
+      mainArea.classList.remove('m-top');
+      //   mainArea.style.marginTop = `-${100}px`;
+      //   smoothKickIn.classList.remove('smooth-position');
     }
   },
   { root: null, threshold: 0, rootMargin: `-${menuNavHeight}px` }
 );
 
 menuHeaderObserver.observe(menuHeader);
+
+// 4. MENU-LIST SMOOTH NAVIGATION LINKS
+const menuListWrapper = document.querySelector('.items');
+console.log(menuListWrapper);
+
+menuListWrapper.addEventListener('click', function (e) {
+  e.preventDefault();
+
+  if (e.target.classList.contains('item-link')) {
+    const links = e.target.getAttribute('href');
+    console.log(links);
+    document.querySelector(links).scrollIntoView({ behavior: 'smooth' });
+  }
+});
 
 //D...... FORM VALIDATION
 const signUpForm = document.getElementById('sign-up-form');
@@ -131,15 +148,15 @@ const postcodeInfo = document.getElementById('postcode-info');
 const phoneInfo = document.getElementById('phone-info');
 const inputWrapper = document.getElementById('input-wrapper');
 
-console.log(
-  signUpForm,
-  firstName,
-  lastName,
-  emailInfo,
-  postcodeInfo,
-  phoneInfo,
-  inputWrapper
-);
+// console.log(
+//   signUpForm,
+//   firstName,
+//   lastName,
+//   emailInfo,
+//   postcodeInfo,
+//   phoneInfo,
+//   inputWrapper
+// );
 
 // 7. a
 const postcodeValidation = function (postField) {
