@@ -63,19 +63,20 @@ document.addEventListener('keydown', e => {
   if (e.key === 'Escape') hideRegister();
 });
 
+FIXME: console.log('fix');
 //3. STICKY MENU-LIST NAVIGATION
 // const menuListContainer = document.querySelector('#menu-list');
 // const pageTop = menuListContainer.offsetTop;
-// const smoothPosition = document.querySelector('#menu');
+// // const smoothPosition = document.querySelector('#menu');
 // // console.log(smoothPosition, pageTop);
 
 // const stickMenu = () => {
 //   if (pageYOffset >= pageTop) {
 //     menuListContainer.classList.add('sticky');
-//     smoothPosition.classList.add('smooth-position');
+//     // smoothPosition.classList.add('smooth-position');
 //   } else {
 //     menuListContainer.classList.remove('sticky');
-//     smoothPosition.classList.remove('smooth-position');
+//     // smoothPosition.classList.remove('smooth-position');
 //   }
 // };
 
@@ -83,6 +84,43 @@ document.addEventListener('keydown', e => {
 //   stickMenu();
 // };
 // console.log(menuListContainer, pageTop, smoothPosition);
+
+TODO: console.log('do');
+const menuNavContainer = document.querySelector('#menu-list');
+const smoothKickIn = document.querySelector('#menu');
+const mainArea = document.querySelector('#main-area');
+const mainAreaHeight = mainArea.getBoundingClientRect();
+const menuNavHeight = menuNavContainer.getBoundingClientRect().height;
+const menuHeader = document.querySelector('#menu-header');
+console.log(
+  menuNavContainer,
+  menuNavHeight,
+  menuHeader,
+  mainArea,
+  mainAreaHeight,
+  smoothKickIn
+);
+
+menuNavContainer.classList.remove('sticky');
+smoothKickIn.classList.remove('smooth-position');
+
+const menuHeaderObserver = new IntersectionObserver(
+  function (entries) {
+    const [entry] = entries;
+    console.log(entry);
+
+    if (!entry.isIntersecting) {
+      menuNavContainer.classList.add('sticky');
+      smoothKickIn.classList.add('smooth-position');
+    } else {
+      menuNavContainer.classList.remove('sticky');
+      smoothKickIn.classList.remove('smooth-position');
+    }
+  },
+  { root: null, threshold: 0, rootMargin: `-${menuNavHeight}px` }
+);
+
+menuHeaderObserver.observe(menuHeader);
 
 //D...... FORM VALIDATION
 const signUpForm = document.getElementById('sign-up-form');
