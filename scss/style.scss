@@ -37,7 +37,9 @@ body {
   color: $white;
   line-height: 1.6;
   font-family: 'Oswald', sans-serif;
+  overflow-x: hidden;
 }
+
 
 
 
@@ -190,11 +192,19 @@ img {
     top: 120px;
     overflow: hidden;
     height: 530px;
-    width: 100vw;
+    // width: 100vw;
+    width: 100%;
     z-index: 1;
 
     // Sliders Container Starts
     .sliders-holder {
+      // position: relative;
+      // top: 120px;
+      // overflow: hidden;
+      // height: 530px;
+      // width: 100vw;
+      // z-index: 1;
+
       .slider.current .translate {
         transform: translateX(0px);
         transition: all 0.7s ease-in-out 0.3s;
@@ -550,10 +560,11 @@ img {
     padding: 0 70px;
     color: $dark;
     background: $ivory;
-    overflow-x: hidden;
+    overflow: hidden;
 
     .container {
       padding: 40px 0 60px;
+      overflow: hidden;
 
       a {
         color: $dark;
@@ -605,6 +616,7 @@ img {
               img {
                 display: block;
                 border-radius: 10%;
+               width: 100%;
               }
             }
           }
