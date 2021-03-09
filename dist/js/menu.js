@@ -111,19 +111,17 @@ const menuHeaderObserver = new IntersectionObserver(
 
     if (!entry.isIntersecting) {
       menuNavContainer.classList.add('sticky');
-      mainArea.classList.add('m-top');
-      //   smoothKickIn.classList.add('smooth-position');
+      //   mainArea.classList.add('m-top');
     } else {
+      //   mainArea.classList.remove('m-top');
       menuNavContainer.classList.remove('sticky');
-      mainArea.classList.remove('m-top');
-      //   mainArea.style.marginTop = `-${100}px`;
-      //   smoothKickIn.classList.remove('smooth-position');
     }
   },
   { root: null, threshold: 0, rootMargin: `-${menuNavHeight}px` }
 );
 
 menuHeaderObserver.observe(menuHeader);
+// menuHeaderObserver.unobserve(menuHeader);
 
 // 4. MENU-LIST SMOOTH NAVIGATION LINKS
 const menuListWrapper = document.querySelector('.items');

@@ -39,6 +39,8 @@ body {
   font-family: 'Oswald', sans-serif;
 }
 
+
+
 a {
   text-decoration: none;
   cursor: pointer;
@@ -548,6 +550,7 @@ img {
     padding: 0 70px;
     color: $dark;
     background: $ivory;
+    overflow-x: hidden;
 
     .container {
       padding: 40px 0 60px;
