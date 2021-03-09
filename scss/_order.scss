@@ -1,1018 +1,1019 @@
+body.hide-background-scroll {
+  overflow-y: hidden;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 //Order Header Starts
 #order-header {
+  // Navigation Starts
+  .order-nav {
+    background-color: $dark;
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 120px;
+    width: 100%;
+    z-index: 3;
+    overflow: hidden;
 
-    // Navigation Starts
-    .order-nav {
-        background-color: $dark;
-        display: block;
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        height: 120px;
-        width: 100%;
-        z-index: 3;
-        overflow: hidden;
+    // Top Navigation Starts
+    .order-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 500;
+      padding: 6px 100px 0;
 
-        // Top Navigation Starts
-        .order-top {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            text-align: center;
-            text-transform: uppercase;
-            font-weight: 500;
-            padding: 6px 100px 0;
+      .order-logo {
+        h1 {
+          font-size: 32px;
+          display: flex;
+          flex-direction: column;
+          font-family: 'Carter One', cursive;
 
-            .order-logo {
-                h1 {
-                    font-size: 32px;
-                    display: flex;
-                    flex-direction: column;
-                    font-family: 'Carter One', cursive;
-
-                    span {
-                        margin-top: -12px;
-                        font-size: 9px;
-                        letter-spacing: 2px;
-                        font-family: 'Oswald', sans-serif;
-                    }
-                }
-            }
-
-
-
-            .login-link {
-                // display: flex;
-                // vertical-align: middle;
-                // padding-right: 15px;
-
-                // li:first-child {
-                //     margin-right: 40px;
-                // }
-
-                a {
-                    position: relative;
-                    overflow: hidden;
-                    border: none;
-                    font-size: 32px;
-                    font-family: 'Carter One', cursive;
-
-
-                    &::after {
-                        content: '';
-                        position: absolute;
-                        background: $tomato;
-                        height: 5px;
-                        width: 0%;
-                        transform: translateX(-50%);
-                        left: 50%;
-                        bottom: -1px;
-                        border: none;
-                        transition: .55s ease-in-out;
-                    }
-
-                    &:hover:after {
-                        width: 100%;
-                    }
-                }
-            }
+          span {
+            margin-top: -12px;
+            font-size: 9px;
+            letter-spacing: 2px;
+            font-family: 'Oswald', sans-serif;
+          }
         }
+      }
 
-        // Top Navigation Ends 
-        //   Order Type Navigation Starts
-        .order-options {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-transform: uppercase;
-            text-align: center;
-            font-weight: 500;
+      .login-link {
+        // display: flex;
+        // vertical-align: middle;
+        // padding-right: 15px;
 
-            .delivery-nav,
-            .collect-nav {
-                margin: 0 20px;
-                font-size: 25px;
+        // li:first-child {
+        //     margin-right: 40px;
+        // }
 
-                .order-link {
-                    position: relative;
-                    overflow: hidden;
-                    // border: none;
+        a {
+          position: relative;
+          overflow: hidden;
+          border: none;
+          font-size: 32px;
+          font-family: 'Carter One', cursive;
 
-                    &::after {
-                        content: '';
-                        position: absolute;
-                        background: $tomato;
-                        height: 5px;
-                        width: 0%;
-                        transform: translateX(-50%);
-                        left: 50%;
-                        bottom: -5px;
-                        border: none;
-                        transition: .55s ease-in-out;
-                    }
+          &::after {
+            content: '';
+            position: absolute;
+            background: $tomato;
+            height: 5px;
+            width: 0%;
+            transform: translateX(-50%);
+            left: 50%;
+            bottom: -1px;
+            border: none;
+            transition: 0.55s ease-in-out;
+          }
 
-                    &:hover:after {
-                        width: 100%;
-                    }
-                }
-            }
+          &:hover:after {
+            width: 100%;
+          }
         }
-
-        //   Order Type Navigation Ends
+      }
     }
 
-    // Navigation Ends
+    // Top Navigation Ends
+    //   Order Type Navigation Starts
+    .order-options {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: 500;
+
+      .delivery-nav,
+      .collect-nav {
+        margin: 0 20px;
+        font-size: 25px;
+
+        .order-link {
+          position: relative;
+          overflow: hidden;
+          // border: none;
+
+          &::after {
+            content: '';
+            position: absolute;
+            background: $tomato;
+            height: 5px;
+            width: 0%;
+            transform: translateX(-50%);
+            left: 50%;
+            bottom: -5px;
+            border: none;
+            transition: 0.55s ease-in-out;
+          }
+
+          &:hover:after {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    //   Order Type Navigation Ends
+  }
+
+  // Navigation Ends
 }
 //Order Header Ends
 
 // Show or Hide delivery & collect section starts
-.order-link-content{
-    display: none;
+.order-link-content {
+  display: none;
 }
 
-.order-link-content-active{
-    display: grid;
+.order-link-content-active {
+  display: grid;
 }
 // Show or Hide delivery & collect section ends
 
 // Delivery Section Starts
 #delivery {
-    padding: 120px 70px 0;
-    background: $ivory url('../images/order/sauced.jpg') no-repeat center center / cover;
-    color: $white;
-    position: relative;
+  padding: 120px 70px 0;
+  background: $ivory url('../images/order/sauced.jpg') no-repeat center center /
+    cover;
+  color: $white;
+  position: relative;
 
-    &:after {
-        content: "";
-        position: absolute;
-        background-color: rgba(0, 0, 0, 0.3);
-        width: 100%;
-        top: 0;
-        bottom: 0;
-        left: 0;
-    }
+  &:after {
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+  }
 
-    * {
-        z-index: 2;
-    }
+  * {
+    z-index: 2;
+  }
 
+  a {
+    color: $dark;
+  }
 
-    a {
-        color: $dark;
-    }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
 
-    .container {
-        max-width: 1200px;
-        margin: 0 auto;
+    // Delivery Content Starts
+    .delivery-content {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-column-gap: 20px;
+      padding: 50px 0;
 
-        // Delivery Content Starts
-        .delivery-content {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            grid-column-gap: 20px;
-            padding: 50px 0;
+      // Delivery Form Content Starts
+      .delivery-form-content {
+        padding: 0 25px;
+        text-align: center;
 
-            // Delivery Form Content Starts
-            .delivery-form-content {
-                padding: 0 25px;
-                text-align: center;
-
-                .form-heading {
-                    text-transform: uppercase;
-                    padding-bottom: 25px;
-                    text-align: left;
-                }
-
-                // Delivery Form Starts
-                #delivery-form {
-                    width: 100%;
-
-                    input {
-                        width: 100%;
-                        padding: 13px 10px;
-                        font-family: 'Oswald', sans-serif;
-                        border: 1px solid $tomato;
-                        color: $dark;
-                        font-size: 16px;
-                        font-weight: 400;
-
-                        &:focus {
-                            outline: none;
-                            border: 1px dashed $yellow;
-                        }
-
-                        &::placeholder {
-                            color: $dark;
-
-                        }
-
-                        &:first-child {
-                            margin-bottom: 8px;
-                        }
-
-                        &:last-child {
-                            &:focus {
-                                outline: none;
-                                border: 1px dashed transparent;
-                            }
-                        }
-                    }
-
-                    .limited {
-                        text-transform: uppercase;
-                    }
-
-                    .look-up {
-                        margin: 16px 0 30px;
-                        text-align: left;
-
-
-                        .delivery-button,
-                        .cancel {
-                            padding: 10px 12px;
-                            text-transform: uppercase;
-                            font-size: 12px;
-                            font-weight: 800;
-                            background: $tomato;
-                            color: $white;
-                            cursor: pointer;
-                            border: 1px solid transparent;
-
-                            &:focus {
-                                outline: none;
-                            }
-                        }
-
-                        .cancel {
-                            background: $dark;
-                            margin: 0 3px;
-                        }
-                    }
-
-
-
-                    .phone {
-                        margin: 20px 0;
-                    }
-
-                    input.use {
-                        color: $white;
-                        background: $tomato;
-                        cursor: pointer;
-                        margin-bottom: 20px;
-                        text-transform: uppercase;
-                        // font-weight: 800;
-                    }
-                }
-
-                // Delivery Form Ends
-            }
-
-            // Delivery Form Content Ends
-            //  Apply Point Starts
-            .apply {
-                max-width: 365px;
-
-                hr {
-                    display: none;
-                }
-
-                .redeem-points {
-                    text-transform: uppercase;
-                    line-height: 1.1;
-                    font-weight: 800;
-                    font-size: 25px;
-                    border-bottom: 1px solid $tomato;
-                    padding-bottom: 14px;
-                }
-
-                .member {
-                    padding-top: 10px;
-                    text-transform: uppercase;
-                }
-
-                .redeem-input {
-                    margin: 20px 0;
-                    width: 100%;
-                    display: block;
-
-                    input {
-                        padding: 13px 10px;
-                        width: 70%;
-                        vertical-align: middle;
-                        display: inline-block;
-                        font-family: 'Oswald', sans-serif;
-                        border: 1px solid $tomato;
-                        color: $dark;
-                        font-size: 16px;
-                        font-weight: 400;
-
-                        &:focus {
-                            outline: none;
-                            border: 1px dashed $yellow;
-                        }
-
-                        &::placeholder {
-                            color: $dark;
-                        }
-                    }
-
-                    a {
-                        vertical-align: middle;
-                        display: inline-block;
-                        border: 1px solid $tomato;
-                        width: 130px;
-                        height: 51.5px;
-                        text-align: center;
-                        line-height: 3.0;
-                        text-transform: uppercase;
-                        transition: .3s ease-in-out;
-                        max-width: 28%;
-                        overflow: hidden;
-
-                        &:hover {
-                            color: $white;
-                            background-color: $tomato;
-                            border: 1px solid transparent;
-                        }
-                    }
-                }
-
-                .yet {
-                    a {
-                        color: $tomato;
-                        text-transform: capitalize;
-
-                        &:hover {
-                            text-decoration: underline;
-                        }
-                    }
-                }
-            }
-
-            //  Apply Point Ends
+        .form-heading {
+          text-transform: uppercase;
+          padding-bottom: 25px;
+          text-align: left;
         }
 
-        // Delivery Content Ends
+        // Delivery Form Starts
+        #delivery-form {
+          width: 100%;
+
+          input {
+            width: 100%;
+            padding: 13px 10px;
+            font-family: 'Oswald', sans-serif;
+            border: 1px solid $tomato;
+            color: $dark;
+            font-size: 16px;
+            font-weight: 400;
+
+            &:focus {
+              outline: none;
+              border: 1px dashed $yellow;
+            }
+
+            &::placeholder {
+              color: $dark;
+            }
+
+            &:first-child {
+              margin-bottom: 8px;
+            }
+
+            &:last-child {
+              &:focus {
+                outline: none;
+                border: 1px dashed transparent;
+              }
+            }
+          }
+
+          .limited {
+            text-transform: uppercase;
+          }
+
+          .look-up {
+            margin: 16px 0 30px;
+            text-align: left;
+
+            .delivery-button,
+            .cancel {
+              padding: 10px 12px;
+              text-transform: uppercase;
+              font-size: 12px;
+              font-weight: 800;
+              background: $tomato;
+              color: $white;
+              cursor: pointer;
+              border: 1px solid transparent;
+
+              &:focus {
+                outline: none;
+              }
+            }
+
+            .cancel {
+              background: $dark;
+              margin: 0 3px;
+            }
+          }
+
+          .phone {
+            margin: 20px 0;
+          }
+
+          input.use {
+            color: $white;
+            background: $tomato;
+            cursor: pointer;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            // font-weight: 800;
+          }
+        }
+
+        // Delivery Form Ends
+      }
+
+      // Delivery Form Content Ends
+      //  Apply Point Starts
+      .apply {
+        max-width: 365px;
+
+        hr {
+          display: none;
+        }
+
+        .redeem-points {
+          text-transform: uppercase;
+          line-height: 1.1;
+          font-weight: 800;
+          font-size: 25px;
+          border-bottom: 1px solid $tomato;
+          padding-bottom: 14px;
+        }
+
+        .member {
+          padding-top: 10px;
+          text-transform: uppercase;
+        }
+
+        .redeem-input {
+          margin: 20px 0;
+          width: 100%;
+          display: block;
+
+          input {
+            padding: 13px 10px;
+            width: 70%;
+            vertical-align: middle;
+            display: inline-block;
+            font-family: 'Oswald', sans-serif;
+            border: 1px solid $tomato;
+            color: $dark;
+            font-size: 16px;
+            font-weight: 400;
+
+            &:focus {
+              outline: none;
+              border: 1px dashed $yellow;
+            }
+
+            &::placeholder {
+              color: $dark;
+            }
+          }
+
+          a {
+            vertical-align: middle;
+            display: inline-block;
+            border: 1px solid $tomato;
+            width: 130px;
+            height: 51.5px;
+            text-align: center;
+            line-height: 3;
+            text-transform: uppercase;
+            transition: 0.3s ease-in-out;
+            max-width: 28%;
+            overflow: hidden;
+
+            &:hover {
+              color: $white;
+              background-color: $tomato;
+              border: 1px solid transparent;
+            }
+          }
+        }
+
+        .yet {
+          a {
+            color: $tomato;
+            text-transform: capitalize;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+
+      //  Apply Point Ends
     }
+
+    // Delivery Content Ends
+  }
 }
 
 // Delivery Section Ends
 
 // Collect Section Starts
 #collect {
-    padding: 120px 70px 0;
-    background: $ivory url('../images/order/circled.jpg') no-repeat center center / cover;
-    color: $white;
-    // display: none;
-    position: relative;
+  padding: 120px 70px 0;
+  background: $ivory url('../images/order/circled.jpg') no-repeat center center /
+    cover;
+  color: $white;
+  // display: none;
+  position: relative;
 
-    // Collect Overlay Starts
-    &:after {
-        content: "";
-        position: absolute;
-        background-color: rgba(0, 0, 0, 0.3);
-        width: 100%;
-        top: 0;
-        bottom: 0;
-        left: 0;
-    }
+  // Collect Overlay Starts
+  &:after {
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+  }
 
-    * {
-        z-index: 2;
-    }
+  * {
+    z-index: 2;
+  }
 
-    // Collect Overlay Ends
+  // Collect Overlay Ends
 
-    a {
-        color: $dark;
-    }
+  a {
+    color: $dark;
+  }
 
-    .container {
+  .container {
+    // Collect Starts
+    .collect-content {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-column-gap: 20px;
+      justify-content: space-between;
+      padding: 50px 0;
 
-        // Collect Starts
-        .collect-content {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            grid-column-gap: 20px;
-            justify-content: space-between;
-            padding: 50px 0;
-
-            // Collect Content Starts
-            .start-content {
-                h2 {
-                    text-transform: uppercase;
-                    font-size: 35px;
-                }
-
-                // Collect Form Starts
-                .collect-form {
-                    width: 100%;
-
-                    .time-input {
-                        display: flex;
-                        align-items: center;
-                        margin: 50px 0;
-
-                        // Time Input Starts
-                        .time {
-                            display: flex;
-                            flex-direction: column;
-
-                            input[type="time"] {
-                                padding: 25px 10px;
-                                width: 220px;
-                                height: 45px;
-                                border: 1px solid $tomato;
-                                font-size: 16px;
-
-                                &:focus {
-                                    outline: none;
-                                    border: 1px dashed $yellow;
-                                }
-                            }
-                        }
-
-                        // Time Input Ends
-                        // Date Input Starts
-                        .date {
-                            display: flex;
-                            flex-direction: column;
-                            margin: 0 0 0 10px;
-
-                            input[type="date"] {
-                                padding: 25px 10px;
-                                width: 220px;
-                                height: 45px;
-                                border: 1px solid $tomato;
-                                font-size: 16px;
-
-                                &:focus {
-                                    outline: none;
-                                    border: 1px dashed $yellow;
-                                }
-                            }
-                        }
-
-                        // Date Input Ends
-                    }
-
-                    .specify {
-                        display: block;
-                        width: 100%;
-                        text-transform: capitalize;
-                        font-size: 16px;
-                        margin-bottom: 20px;
-
-
-                        input[type="checkbox"] {
-                            width: 18px;
-                            height: 18px;
-                            vertical-align: -23%;
-                            margin-right: 10px;
-                            cursor: pointer;
-                        }
-                    }
-
-                    button.collect-button {
-                        color: $white;
-                        background: $tomato;
-                        padding: 15px 50px;
-                        text-transform: uppercase;
-                        cursor: pointer;
-                        border: 1px solid transparent;
-
-                        &:focus {
-                            outline: none;
-                        }
-                    }
-                }
-
-                // Collect Form Ends
-            }
-
-            // Collect Content Ends
-            // Apply Points Start
-            .apply {
-                max-width: 365px;
-
-                hr {
-                    display: none;
-                }
-
-                .redeem-points {
-                    text-transform: uppercase;
-                    line-height: 1.1;
-                    font-weight: 800;
-                    font-size: 25px;
-                    border-bottom: 1px solid $tomato;
-                    padding-bottom: 14px;
-                }
-
-                .member {
-                    padding-top: 10px;
-                    text-transform: uppercase;
-                }
-
-
-
-                .redeem-input {
-                    margin: 20px 0;
-                    width: 100%;
-                    display: block;
-
-                    input {
-                        padding: 13px 10px;
-                        width: 70%;
-                        vertical-align: middle;
-                        display: inline-block;
-                        font-family: 'Oswald', sans-serif;
-                        border: 1px solid $tomato;
-                        color: $dark;
-                        font-size: 16px;
-                        font-weight: 400;
-
-                        &:focus {
-                            outline: none;
-                            border: 1px dashed $yellow;
-                        }
-
-                        &::placeholder {
-                            color: $dark;
-                        }
-                    }
-
-                    a {
-                        vertical-align: middle;
-                        display: inline-block;
-                        border: 1px solid $tomato;
-                        width: 130px;
-                        height: 51.5px;
-                        text-align: center;
-                        line-height: 3.0;
-                        text-transform: uppercase;
-                        transition: .3s ease-in-out;
-                        max-width: 28%;
-                        overflow: hidden;
-
-                        &:hover {
-                            color: $white;
-                            background-color: $tomato;
-                            border: 1px solid transparent;
-                        }
-                    }
-                }
-
-                .yet {
-                    a {
-                        color: $tomato;
-                        text-transform: capitalize;
-
-                        &:hover {
-                            text-decoration: underline;
-                        }
-                    }
-                }
-            }
-
-            // Apply Points End
+      // Collect Content Starts
+      .start-content {
+        h2 {
+          text-transform: uppercase;
+          font-size: 35px;
         }
 
-        // Collect Ends
+        // Collect Form Starts
+        .collect-form {
+          width: 100%;
+
+          .time-input {
+            display: flex;
+            align-items: center;
+            margin: 50px 0;
+
+            // Time Input Starts
+            .time {
+              display: flex;
+              flex-direction: column;
+
+              input[type='time'] {
+                padding: 25px 10px;
+                width: 220px;
+                height: 45px;
+                border: 1px solid $tomato;
+                font-size: 16px;
+
+                &:focus {
+                  outline: none;
+                  border: 1px dashed $yellow;
+                }
+              }
+            }
+
+            // Time Input Ends
+            // Date Input Starts
+            .date {
+              display: flex;
+              flex-direction: column;
+              margin: 0 0 0 10px;
+
+              input[type='date'] {
+                padding: 25px 10px;
+                width: 220px;
+                height: 45px;
+                border: 1px solid $tomato;
+                font-size: 16px;
+
+                &:focus {
+                  outline: none;
+                  border: 1px dashed $yellow;
+                }
+              }
+            }
+
+            // Date Input Ends
+          }
+
+          .specify {
+            display: block;
+            width: 100%;
+            text-transform: capitalize;
+            font-size: 16px;
+            margin-bottom: 20px;
+
+            input[type='checkbox'] {
+              width: 18px;
+              height: 18px;
+              vertical-align: -23%;
+              margin-right: 10px;
+              cursor: pointer;
+            }
+          }
+
+          button.collect-button {
+            color: $white;
+            background: $tomato;
+            padding: 15px 50px;
+            text-transform: uppercase;
+            cursor: pointer;
+            border: 1px solid transparent;
+
+            &:focus {
+              outline: none;
+            }
+          }
+        }
+
+        // Collect Form Ends
+      }
+
+      // Collect Content Ends
+      // Apply Points Start
+      .apply {
+        max-width: 365px;
+
+        hr {
+          display: none;
+        }
+
+        .redeem-points {
+          text-transform: uppercase;
+          line-height: 1.1;
+          font-weight: 800;
+          font-size: 25px;
+          border-bottom: 1px solid $tomato;
+          padding-bottom: 14px;
+        }
+
+        .member {
+          padding-top: 10px;
+          text-transform: uppercase;
+        }
+
+        .redeem-input {
+          margin: 20px 0;
+          width: 100%;
+          display: block;
+
+          input {
+            padding: 13px 10px;
+            width: 70%;
+            vertical-align: middle;
+            display: inline-block;
+            font-family: 'Oswald', sans-serif;
+            border: 1px solid $tomato;
+            color: $dark;
+            font-size: 16px;
+            font-weight: 400;
+
+            &:focus {
+              outline: none;
+              border: 1px dashed $yellow;
+            }
+
+            &::placeholder {
+              color: $dark;
+            }
+          }
+
+          a {
+            vertical-align: middle;
+            display: inline-block;
+            border: 1px solid $tomato;
+            width: 130px;
+            height: 51.5px;
+            text-align: center;
+            line-height: 3;
+            text-transform: uppercase;
+            transition: 0.3s ease-in-out;
+            max-width: 28%;
+            overflow: hidden;
+
+            &:hover {
+              color: $white;
+              background-color: $tomato;
+              border: 1px solid transparent;
+            }
+          }
+        }
+
+        .yet {
+          a {
+            color: $tomato;
+            text-transform: capitalize;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+
+      // Apply Points End
     }
+
+    // Collect Ends
+  }
 }
 
 // Collect Section Ends
 
-
-
-
 // Log In Form Section Starts
 #login-register {
-    background-color: rgba(0, 0, 0, 0.5);
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100vh;
-    width: 100%;
-    z-index: 6;
-    margin: 0 auto;
-    font-family: 'Oswald', sans-serif;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 6;
+  margin: 0 auto;
+  font-family: 'Oswald', sans-serif;
+  display: none;
+  overflow-y: scroll;
+
+  animation-name: smooth-open;
+  animation-duration: 1s;
+
+  &::-webkit-scrollbar {
     display: none;
+  }
 
-    animation-name: smooth-open;
-    animation-duration: 1s;
-
-    // Smooth Transition Open Starts
-    @keyframes smooth-open {
-        from {
-            opacity: 0;
-        }
-
-        to {
-            opacity: 1;
-        }
+  // Smooth Transition Open Starts
+  @keyframes smooth-open {
+    from {
+      opacity: 0;
     }
 
-    // Smooth Transition Open Ends
+    to {
+      opacity: 1;
+    }
+  }
 
-    a {
-        color: $dark;
-        font-family: 'Oswald', sans-serif;
+  // Smooth Transition Open Ends
+
+  a {
+    color: $dark;
+    font-family: 'Oswald', sans-serif;
+  }
+
+  .login-register-content {
+    border-radius: 3px;
+    background-color: $ivory;
+    color: $dark;
+    max-width: 725px;
+    margin: 60px auto 0;
+    width: 100%;
+    // This is for smaller screens, apply this when i revisit
+    // height: 100vh;
+    // max-height: 70%;
+    // overflow-y: scroll;
+
+    // Header Area Starts
+    .login-register-header {
+      display: flex;
+      background-color: $tomato;
+      align-items: center;
+      justify-content: space-between;
+      vertical-align: middle;
+      color: $white;
+      text-transform: uppercase;
+      padding: 8px 20px 10px;
+      font-size: 15px;
+
+      .log-register {
+        display: flex;
+        align-items: center;
+
+        .log-register-divider {
+          margin: 0 10px;
+          height: 19px;
+          width: 1px;
+          transform: rotate(20deg);
+          background: $white;
+        }
+      }
+
+      .close {
+        cursor: pointer;
+        font-size: 21px;
+      }
     }
 
-    .login-register-content {
-        border-radius: 3px;
-        background-color: $ivory;
-        color: $dark;
-        max-width: 725px;
-        margin: 60px auto 0;
-        width: 100%;
-        // This is for smaller screens, apply this when i revisit
-        // height: 100vh;
-        // max-height: 70%;
+    // Header Area Ends
+    // Log In / Register Box Starts
+    .login-register-box {
+      display: grid;
+      grid-template-columns: 48% 2% 48%;
+      padding: 20px 30px;
+      grid-gap: 20px;
+      justify-content: center;
+
+      // Log In Form Starts
+      #login-form {
         // overflow-y: scroll;
+        padding: 0 10px;
 
-        // Header Area Starts
-        .login-register-header {
-            display: flex;
-            background-color: $tomato;
-            align-items: center;
-            justify-content: space-between;
-            vertical-align: middle;
-            color: $white;
-            text-transform: uppercase;
-            padding: 8px 20px 10px;
-            font-size: 15px;
+        .account-logger {
+          color: $dark;
+          text-transform: uppercase;
+          font-size: 20px;
+          margin-bottom: 10px;
+          display: flex;
 
-            .log-register {
-                display: flex;
-                align-items: center;
-
-                .log-register-divider {
-                    margin: 0 10px;
-                    height: 19px;
-                    width: 1px;
-                    transform: rotate(20deg);
-                    background: $white;
-                }
-            }
-
-            .close {
-                cursor: pointer;
-                font-size: 21px;
-            }
+          .into {
+            display: none;
+          }
         }
 
-        // Header Area Ends
-        // Log In / Register Box Starts
-        .login-register-box {
-            display: grid;
-            grid-template-columns: 48% 2% 48%;
-            padding: 20px 30px;
-            grid-gap: 20px;
-            justify-content: center;
+        input[type='email'],
+        input[type='text'] {
+          width: 100%;
+          padding: 18px 10px;
+          margin: 15px 0;
+          border: 1px solid rgba(0, 0, 0, 0.1);
+          font-size: 16px;
+          color: $dark;
+          font-family: 'Oswald', sans-serif;
 
-            // Log In Form Starts
-            #login-form {
-                padding: 0 10px;
-
-                .account-logger {
-                    color: $dark;
-                    text-transform: uppercase;
-                    font-size: 20px;
-                    margin-bottom: 10px;
-                    display: flex;
-
-                    .into {
-                        display: none;
-                    }
-                }
-
-                input[type="email"],
-                input[type="text"] {
-                    width: 100%;
-                    padding: 18px 10px;
-                    margin: 15px 0;
-                    border: 1px solid rgba(0, 0, 0, 0.1);
-                    font-size: 16px;
-                    color: $dark;
-                    font-family: 'Oswald', sans-serif;
-
-                    &:focus {
-                        outline: none;
-                        border: 1px dashed $yellow;
-                    }
-                }
-
-                .remember {
-                    margin: 10px 0 0;
-                    font-family: 'Oswald', sans-serif;
-                    vertical-align: middle;
-
-                    input[type="checkbox"] {
-                        vertical-align: -11%;
-                        margin: 7px 5px 0 0;
-                        cursor: pointer;
-                        zoom: 1.3;
-                    }
-                }
-
-                .login-btn {
-                    width: 100%;
-                    margin: 30px 0;
-                    padding: 18px 35px;
-                    background-color: $tomato;
-                    border: 1px solid transparent;
-                    color: $white;
-                    text-transform: uppercase;
-                    cursor: pointer;
-                    font-weight: 800;
-                    display: block;
-                    font-family: 'Oswald', sans-serif;
-
-                    &:focus {
-                        outline: none;
-                    }
-
-                    &:hover {
-                        text-decoration: underline;
-                    }
-                }
-
-                .forgot {
-                    color: $tomato;
-                    font-weight: 100;
-
-                    &:hover {
-                        text-decoration: underline;
-                    }
-                }
-
-                .divider,
-                .mobile-register {
-                    display: none;
-                }
-            }
-
-            // Log In Form Ends
-            .vertical-line {
-                width: 1px;
-                height: 100%;
-                background-color: $dark;
-            }
-
-            // Create Your Account / Register Starts
-            .create-alternative {
-                padding-right: 10px;
-
-                .create-header {
-                    color: $tomato;
-                    text-transform: uppercase;
-                    font-size: 20px;
-                    margin-bottom: 16px;
-                }
-
-
-                button {
-                    margin: 30px 0;
-                    padding: 18px 55px;
-                    background-color: $tomato;
-                    border: 1px solid transparent;
-                    color: $white;
-                    text-transform: uppercase;
-                    cursor: pointer;
-                    font-weight: 800;
-                    display: block;
-                    font-family: 'Oswald', sans-serif;
-
-                    &:focus {
-                        outline: none;
-                    }
-
-                    &:hover {
-                        text-decoration: underline;
-                    }
-                }
-            }
-
-            // Create Your Account / Register Ends
+          &:focus {
+            outline: none;
+            border: 1px dashed $yellow;
+          }
         }
 
-        // Log In / Register Box Ends
+        .remember {
+          margin: 10px 0 0;
+          font-family: 'Oswald', sans-serif;
+          vertical-align: middle;
+
+          input[type='checkbox'] {
+            vertical-align: -11%;
+            margin: 7px 5px 0 0;
+            cursor: pointer;
+            zoom: 1.3;
+          }
+        }
+
+        .login-btn {
+          width: 100%;
+          margin: 30px 0;
+          padding: 18px 35px;
+          background-color: $tomato;
+          border: 1px solid transparent;
+          color: $white;
+          text-transform: uppercase;
+          cursor: pointer;
+          font-weight: 800;
+          display: block;
+          font-family: 'Oswald', sans-serif;
+
+          &:focus {
+            outline: none;
+          }
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+
+        .forgot {
+          color: $tomato;
+          font-weight: 100;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+
+        .divider,
+        .mobile-register {
+          display: none;
+        }
+      }
+
+      // Log In Form Ends
+      .vertical-line {
+        width: 1px;
+        height: 100%;
+        background-color: $dark;
+      }
+
+      // Create Your Account / Register Starts
+      .create-alternative {
+        padding-right: 10px;
+
+        .create-header {
+          color: $tomato;
+          text-transform: uppercase;
+          font-size: 20px;
+          margin-bottom: 16px;
+        }
+
+        button {
+          margin: 30px 0;
+          padding: 18px 55px;
+          background-color: $tomato;
+          border: 1px solid transparent;
+          color: $white;
+          text-transform: uppercase;
+          cursor: pointer;
+          font-weight: 800;
+          display: block;
+          font-family: 'Oswald', sans-serif;
+
+          &:focus {
+            outline: none;
+          }
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      // Create Your Account / Register Ends
     }
+
+    // Log In / Register Box Ends
+  }
 }
 
 // Log In Form Section Starts
 
-
-
 // Register Form Section Starts
 #register {
-    background-color: rgba(0, 0, 0, 0.5);
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100vh;
-    z-index: 6;
-    margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 6;
+  margin: 0 auto;
+  display: none;
+  animation-name: smooth-open;
+  animation-duration: 1s;
+
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
     display: none;
-    animation-name: smooth-open;
-    animation-duration: 1s;
+  }
 
-    // Smooth Open Transition Starts 
-    @keyframes smooth-open {
-        from {
-            opacity: 0;
-        }
-
-        to {
-            opacity: 1;
-        }
+  // Smooth Open Transition Starts
+  @keyframes smooth-open {
+    from {
+      opacity: 0;
     }
 
-    // Smooth Open Transition Ends
-    a {
-        color: $dark;
+    to {
+      opacity: 1;
+    }
+  }
+
+  // Smooth Open Transition Ends
+  a {
+    color: $dark;
+  }
+
+  .popup {
+    border-radius: 3px;
+    background-color: $ivory;
+    color: $dark;
+    max-width: 850px;
+    margin: 60px auto 0;
+    width: 100%;
+
+    // This is for smaller screens, apply this when i revisit
+    // height: 100vh;
+    // max-height: 70%;
+    // overflow-y: scroll;
+
+    // Register Header Starts
+    .popup-header {
+      display: flex;
+      background-color: $tomato;
+      align-items: center;
+      justify-content: space-between;
+      vertical-align: middle;
+      color: $white;
+      text-transform: uppercase;
+      padding: 8px 20px 10px;
+      font-size: 18px;
+
+      .close-register {
+        cursor: pointer;
+        font-size: 21px;
+      }
     }
 
-    .popup {
-        border-radius: 3px;
-        background-color: $ivory;
-        color: $dark;
-        max-width: 850px;
-        margin: 60px auto 0;
-        width: 100%;
+    // Register Header Ends
+    //  Register Contents Start
+    .popup-content {
+      padding: 10px 30px;
 
-        // This is for smaller screens, apply this when i revisit
-        // height: 100vh;
-        // max-height: 70%;
-        // overflow-y: scroll;
+      .easy {
+        text-transform: uppercase;
+        font-size: 20px;
+        border-bottom: 1px solid $tomato;
+        padding: 12px 0 22px;
+      }
 
-        // Register Header Starts
-        .popup-header {
-            display: flex;
-            background-color: $tomato;
-            align-items: center;
-            justify-content: space-between;
+      .now {
+        text-transform: uppercase;
+        font-size: 25px;
+        padding: 20px 0;
+      }
+
+      // Register Form Starts
+      #form-register {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 80px;
+        justify-content: center;
+
+        // Left Input Starts
+        .left-input {
+          display: flex;
+          flex-direction: column;
+
+          input {
+            padding: 18px 10px;
+            margin-bottom: 30px;
+            width: 100%;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            font-size: 16px;
+            color: $dark;
+            font-family: 'Oswald', sans-serif;
+
+            &:focus {
+              outline: none;
+              border: 1px dashed $yellow;
+            }
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+
+        // Left Input Ends
+        // Right Input Starts
+        .right-input {
+          input[type='text'] {
+            width: 100%;
+            padding: 18px 10px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            font-size: 16px;
+            color: $dark;
+            font-family: 'Oswald', sans-serif;
+
+            &:focus {
+              outline: none;
+              border: 1px dashed $yellow;
+            }
+
+            &:first-child {
+              margin-bottom: 10px;
+            }
+          }
+
+          .text-label {
+            color: $tomato;
+          }
+
+          #text2 {
+            margin: 30px 0;
+          }
+
+          .receive {
+            margin: 20px 0 35px;
+
+            input[type='checkbox'] {
+              vertical-align: -11%;
+              margin-right: 10px;
+              cursor: pointer;
+              zoom: 1.3;
+            }
+          }
+
+          .creating {
             vertical-align: middle;
+
+            input[type='checkbox'] {
+              vertical-align: -11%;
+              margin-right: 10px;
+              cursor: pointer;
+              zoom: 1.3;
+            }
+
+            label {
+              a {
+                color: $tomato;
+                text-decoration: underline;
+              }
+            }
+          }
+
+          button.btn-register {
+            margin: 30px 0;
+            padding: 16px 55px;
+            background-color: $tomato;
+            border: 1px solid transparent;
             color: $white;
             text-transform: uppercase;
-            padding: 8px 20px 10px;
-            font-size: 18px;
+            cursor: pointer;
+            font-weight: 800;
+            letter-spacing: 0.9px;
+            display: block;
+            font-family: 'Oswald', sans-serif;
 
-            .close-register {
-                cursor: pointer;
-                font-size: 21px;
+            &:focus {
+              outline: none;
             }
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
         }
 
-        // Register Header Ends
-        //  Register Contents Start
-        .popup-content {
-            padding: 10px 30px;
+        // Right Input Ends
+      }
 
-            .easy {
-                text-transform: uppercase;
-                font-size: 20px;
-                border-bottom: 1px solid $tomato;
-                padding: 12px 0 22px;
-            }
-
-            .now {
-                text-transform: uppercase;
-                font-size: 25px;
-                padding: 20px 0;
-            }
-
-            // Register Form Starts
-            #form-register {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                grid-gap: 80px;
-                justify-content: center;
-
-                // Left Input Starts
-                .left-input {
-                    display: flex;
-                    flex-direction: column;
-
-                    input {
-                        padding: 18px 10px;
-                        margin-bottom: 30px;
-                        width: 100%;
-                        border: 1px solid rgba(0, 0, 0, 0.1);
-                        font-size: 16px;
-                        color: $dark;
-                        font-family: 'Oswald', sans-serif;
-
-                        &:focus {
-                            outline: none;
-                            border: 1px dashed $yellow;
-                        }
-
-                        &:last-child {
-                            margin-bottom: 0;
-                        }
-                    }
-                }
-
-                // Left Input Ends
-                // Right Input Starts
-                .right-input {
-                    input[type="text"] {
-                        width: 100%;
-                        padding: 18px 10px;
-                        border: 1px solid rgba(0, 0, 0, 0.1);
-                        font-size: 16px;
-                        color: $dark;
-                        font-family: 'Oswald', sans-serif;
-
-                        &:focus {
-                            outline: none;
-                            border: 1px dashed $yellow;
-                        }
-
-                        &:first-child {
-                            margin-bottom: 10px;
-                        }
-                    }
-
-                    .text-label {
-                        color: $tomato;
-                    }
-
-                    #text2 {
-                        margin: 30px 0;
-                    }
-
-                    .receive {
-                        margin: 20px 0 35px;
-
-                        input[type="checkbox"] {
-                            vertical-align: -11%;
-                            margin-right: 10px;
-                            cursor: pointer;
-                            zoom: 1.3;
-                        }
-                    }
-
-                    .creating {
-                        vertical-align: middle;
-
-                        input[type="checkbox"] {
-                            vertical-align: -11%;
-                            margin-right: 10px;
-                            cursor: pointer;
-                            zoom: 1.3;
-                        }
-
-                        label {
-                            a {
-                                color: $tomato;
-                                text-decoration: underline;
-                            }
-                        }
-                    }
-
-
-                    button.btn-register {
-                        margin: 30px 0;
-                        padding: 16px 55px;
-                        background-color: $tomato;
-                        border: 1px solid transparent;
-                        color: $white;
-                        text-transform: uppercase;
-                        cursor: pointer;
-                        font-weight: 800;
-                        letter-spacing: 0.9px;
-                        display: block;
-                        font-family: 'Oswald', sans-serif;
-
-                        &:focus {
-                            outline: none;
-                        }
-
-                        &:hover {
-                            text-decoration: underline;
-                        }
-                    }
-                }
-
-                // Right Input Ends
-            }
-
-            // Register Form Ends
-        }
-
-        //  Register Contents Ends
+      // Register Form Ends
     }
+
+    //  Register Contents Ends
+  }
 }
 
 // Register Form Section Ends
