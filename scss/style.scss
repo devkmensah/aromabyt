@@ -38,8 +38,11 @@ body {
   line-height: 1.6;
   font-family: 'Oswald', sans-serif;
   overflow-x: hidden;
-}
 
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
 
 
 
@@ -138,6 +141,10 @@ img {
       .sidenav {
         display: flex;
         justify-content: space-evenly;
+
+        &::-webkit-scrollbar {
+          display: none;
+        }
 
         h3 {
           border: none;
