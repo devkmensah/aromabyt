@@ -13,26 +13,37 @@ const hideLogin = e => {
   loginRegister.style.display = 'none';
 };
 
+const hideBodyScroll = e => {
+  body.style.overflow = 'hidden';
+};
+
+const unHideBodyScroll = e => {
+  body.style.overflow = 'scroll';
+};
+
 loginLink.addEventListener('click', e => {
   e.preventDefault();
+  hideBodyScroll();
+  loginRegister.style.overflowY = 'scroll';
   displayLogin();
-  body.classList.add('hide-background-scroll');
 });
 
 xCloseLogin.addEventListener('click', () => {
+  unHideBodyScroll();
   hideLogin();
-  body.classList.remove('hide-background-scroll');
 });
 
 loginRegister.addEventListener('click', e => {
-  if (!e.target) return;
-  if (e.target.id === 'login-register') hideLogin();
-  body.classList.remove('hide-background-scroll');
+  if (e.target.id === 'login-register') {
+    console.log('clicked');
+    hideLogin();
+    unHideBodyScroll();
+  }
 });
 
 document.addEventListener('keydown', e => {
   if (e.key === 'Escape') hideLogin();
-  body.classList.remove('hide-background-scroll');
+  unHideBodyScroll();
 });
 
 // 2. REGISTER / SIGN UP FORM
@@ -48,42 +59,40 @@ const hideRegister = e => {
   register.style.display = 'none';
 };
 
-const hideBodyScroll = e => {
-  body.classList.add('hide-background-scroll');
-};
-const unHideBodyScroll = e => {
-  body.classList.remove('hide-background-scroll');
-};
-
-TODO: console.log('TODO');
 const mainArea = document.querySelector('#main-area');
 console.log(mainArea);
 signUpLink.forEach(link => {
   link.addEventListener('click', e => {
     e.preventDefault();
-    // hideLogin();
     hideBodyScroll();
+    register.style.overflowY = 'scroll';
+    hideLogin();
     displayRegister();
   });
 });
 
 xCloseRegister.addEventListener('click', e => {
+  unHideBodyScroll();
   hideLogin();
   hideRegister();
-  unHideBodyScroll();
 });
 
 register.addEventListener('click', e => {
-  hideLogin();
-  if (!e.target.id) return;
-  if (e.target.id === 'register') hideRegister();
-  unHideBodyScroll();
+  if (e.target.id === 'register') {
+    console.log('clicking');
+    hideLogin();
+    unHideBodyScroll();
+    hideRegister();
+  }
 });
 
 document.addEventListener('keydown', e => {
-  hideLogin();
-  if (e.key === 'Escape') hideRegister();
-  unHideBodyScroll();
+  // hideLogin();
+  if (e.key === 'Escape') {
+    hideLogin();
+    unHideBodyScroll();
+    hideRegister();
+  }
 });
 
 // 3. DELIVERY OR I'LL COLLECT ORDER LINKS
