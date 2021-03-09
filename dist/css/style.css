@@ -158,11 +158,6 @@
         background: #73020c;
         border: 1px solid transparent; }
 
-body.hide-background-scroll {
-  overflow-y: hidden; }
-  body.hide-background-scroll::-webkit-scrollbar {
-    display: none; }
-
 #order-header .order-nav {
   background-color: #0c0c0c;
   display: block;
@@ -818,7 +813,7 @@ body.hide-background-scroll {
           left: 50%;
           bottom: -5px;
           border: none;
-          transition: .55s ease-in-out; }
+          transition: 0.55s ease-in-out; }
         #menu-header .top .navigation li a:hover:after {
           width: 100%; }
     #menu-header .top .navigation .logo-holder a {
@@ -884,7 +879,7 @@ body.hide-background-scroll {
             left: 50%;
             bottom: -5px;
             border: none;
-            transition: .55s ease-in-out; }
+            transition: 0.55s ease-in-out; }
           #menu-header #menu-list .list-items .items .item a:hover:after {
             width: 100%; }
 
@@ -962,7 +957,7 @@ body.hide-background-scroll {
         #menu #not-steaks-menu .lunch-boxes .box .content .image-contain,
         #menu #not-steaks-menu .dinner-boxes .box .content .image-contain,
         #menu #not-steaks-menu .not-steaks-boxes .box .content .image-contain {
-          transition: .3s ease-in-out; }
+          transition: 0.3s ease-in-out; }
           #menu #lunch-menu .lunch-boxes .box .content .image-contain::after,
           #menu #lunch-menu .dinner-boxes .box .content .image-contain::after,
           #menu #lunch-menu .not-steaks-boxes .box .content .image-contain::after,
@@ -972,7 +967,7 @@ body.hide-background-scroll {
           #menu #not-steaks-menu .lunch-boxes .box .content .image-contain::after,
           #menu #not-steaks-menu .dinner-boxes .box .content .image-contain::after,
           #menu #not-steaks-menu .not-steaks-boxes .box .content .image-contain::after {
-            content: "";
+            content: '';
             position: absolute;
             top: 0;
             left: 0;
@@ -1043,12 +1038,12 @@ body.hide-background-scroll {
         #menu #wines .other-boxes .box .content .image-contain,
         #menu #other .wine-boxes .box .content .image-contain,
         #menu #other .other-boxes .box .content .image-contain {
-          transition: .3s ease-in-out; }
+          transition: 0.3s ease-in-out; }
           #menu #wines .wine-boxes .box .content .image-contain::after,
           #menu #wines .other-boxes .box .content .image-contain::after,
           #menu #other .wine-boxes .box .content .image-contain::after,
           #menu #other .other-boxes .box .content .image-contain::after {
-            content: "";
+            content: '';
             position: absolute;
             top: 0;
             left: 0;

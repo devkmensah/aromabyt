@@ -1,173 +1,162 @@
+// body.hide-background-scroll {
+//   overflow-y: hidden;
 
+// }
 
 // Header Starts
 #menu-header {
+  // Menu Top Navigation Starts
+  .top {
+    background-color: $dark;
+    width: 100%;
 
-    // Menu Top Navigation Starts
-    .top {
-        background-color: $dark;
-        width: 100%;
+    .navigation {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 25px;
+      padding: 25px 0 25px;
 
-        .navigation {
+      li {
+        border: none;
+        padding: 1px 15px;
+
+        a {
+          position: relative;
+          overflow: hidden;
+          border: none;
+
+          &::after {
+            content: '';
+            position: absolute;
+            background: $tomato;
+            height: 5px;
+            width: 0%;
+            transform: translateX(-50%);
+            left: 50%;
+            bottom: -5px;
+            border: none;
+            transition: 0.55s ease-in-out;
+          }
+
+          &:hover:after {
+            width: 100%;
+          }
+        }
+      }
+
+      .logo-holder {
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          vertical-align: middle;
+
+          .chef {
+            width: 50px;
+            display: inline-block;
+          }
+
+          .logo {
             display: flex;
-            justify-content: space-around;
-            align-items: center;
-            text-align: center;
-            text-transform: uppercase;
-            font-weight: 500;
-            font-size: 25px;
-            padding: 25px 0 25px;
+            flex-direction: column;
+            font-family: 'Carter One', cursive;
 
-
-
-            li {
-                border: none;
-                padding: 1px 15px;
-
-                a {
-                    position: relative;
-                    overflow: hidden;
-                    border: none;
-
-
-                    &::after {
-                        content: '';
-                        position: absolute;
-                        background: $tomato;
-                        height: 5px;
-                        width: 0%;
-                        transform: translateX(-50%);
-                        left: 50%;
-                        bottom: -5px;
-                        border: none;
-                        transition: .55s ease-in-out;
-                    }
-
-                    &:hover:after {
-                        width: 100%;
-                    }
-
-
-                }
+            span {
+              margin-top: -12px;
+              font-size: 9px;
+              letter-spacing: 2px;
+              font-family: 'Oswald', sans-serif;
             }
-
-            .logo-holder {
-                a {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    vertical-align: middle;
-
-                    .chef {
-                        width: 50px;
-                        display: inline-block;
-                    }
-
-                    .logo {
-                        display: flex;
-                        flex-direction: column;
-                        font-family: 'Carter One', cursive;
-
-                        span {
-                            margin-top: -12px;
-                            font-size: 9px;
-                            letter-spacing: 2px;
-                            font-family: 'Oswald', sans-serif;
-                        }
-                    }
-                }
-            }
+          }
         }
-
+      }
     }
+  }
 
-    // Menu Top Navigation Ends
+  // Menu Top Navigation Ends
 
-    // JavaScript Sticky Effect Starts
-    .sticky {
-        position: fixed !important;
-        width: 100%;
-        top: 0 !important;
-    }
-    // JavaScript Sticky Effect Ends
+  // JavaScript Sticky Effect Starts
+  .sticky {
+    position: fixed !important;
+    width: 100%;
+    top: 0 !important;
+  }
+  // JavaScript Sticky Effect Ends
 
-    
+  // Menu List Starts
+  #menu-list {
+    z-index: 2;
+    background-color: $tomato;
+    color: $white;
+    padding: 10px 70px 30px;
 
-    // Menu List Starts
-    #menu-list {
-        z-index: 2;
-        background-color: $tomato;
-        color: $white;
-        padding: 10px 70px 30px;
+    .list-items {
+      max-width: 905px;
+      margin: 0 auto;
 
-        .list-items {
-            max-width: 905px;
-            margin: 0 auto;
+      .allergen {
+        text-align: left;
+        margin-bottom: 8px;
 
-            .allergen {
-                text-align: left;
-                margin-bottom: 8px;
-
-                a {
-                    text-decoration: underline;
-                }
-            }
-
-            .items {
-                display: flex;
-                text-transform: uppercase;
-                justify-content: center;
-                font-size: 18px;
-
-                .item {
-                    margin-right: 32px;
-
-                    &:last-child {
-                        margin-right: 0;
-                    }
-
-                    span {
-                        margin-left: 30px;
-                        font-weight: 100;
-                        color: #8a8383;
-                    }
-
-                    a {
-                        position: relative;
-                        overflow: hidden;
-                        border: none;
-
-
-                        &::after {
-                            content: '';
-                            position: absolute;
-                            background: $white;
-                            height: 1px;
-                            width: 0%;
-                            transform: translateX(-50%);
-                            left: 50%;
-                            bottom: -5px;
-                            border: none;
-                            transition: .55s ease-in-out;
-                        }
-
-                        &:hover:after {
-                            width: 100%;
-                        }
-                    }
-
-
-                }
-            }
+        a {
+          text-decoration: underline;
         }
-    }
+      }
 
-    // Menu List Ends
+      .items {
+        display: flex;
+        text-transform: uppercase;
+        justify-content: center;
+        font-size: 18px;
+
+        .item {
+          margin-right: 32px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          span {
+            margin-left: 30px;
+            font-weight: 100;
+            color: #8a8383;
+          }
+
+          a {
+            position: relative;
+            overflow: hidden;
+            border: none;
+
+            &::after {
+              content: '';
+              position: absolute;
+              background: $white;
+              height: 1px;
+              width: 0%;
+              transform: translateX(-50%);
+              left: 50%;
+              bottom: -5px;
+              border: none;
+              transition: 0.55s ease-in-out;
+            }
+
+            &:hover:after {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Menu List Ends
 }
 
 // Header Ends
-
-
 
 // Main area, Menu Section Starts
 // To prevent sudden quick movement of the menu contents under the menu list since the menu-list gets a new position at the top when a class is added to the ID of menu-list class
@@ -175,8 +164,8 @@
 //     padding-top: 85px;
 // }
 
-.m-top{
-    margin-top: 97px;
+.m-top {
+  margin-top: 97px;
 }
 
 // #main-area{
@@ -185,163 +174,161 @@
 
 // Menu Section Starts
 #menu {
-    position: relative;
+  position: relative;
+  background-color: $dark;
+
+  a {
+    color: $white;
+  }
+
+  // Lunch, Dinner, The Not Steaks Menu Starts
+  #lunch-menu,
+  #dinner-menu,
+  #not-steaks-menu {
+    color: $white;
     background-color: $dark;
 
-    a {
-        color: $white;
+    // Lunch, Dinner, The Not Steaks Header Starts
+    .lunch-header,
+    .dinner-header,
+    .not-steaks-header {
+      padding: 32px 70px;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 22px;
     }
 
-    // Lunch, Dinner, The Not Steaks Menu Starts 
-    #lunch-menu,
-    #dinner-menu,
-    #not-steaks-menu {
-        color: $white;
-        background-color: $dark;
+    // Lunch, Dinner, The Not Steaks Header Ends
 
-        // Lunch, Dinner, The Not Steaks Header Starts 
-        .lunch-header,
-        .dinner-header,
-        .not-steaks-header {
-            padding: 32px 70px;
-            text-align: center;
-            text-transform: uppercase;
-            font-size: 22px;
-        }
+    // Lunch, Dinner, The Not Steaks Boxes Container Starts
+    .lunch-boxes,
+    .dinner-boxes,
+    .not-steaks-boxes {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 3px;
 
-        // Lunch, Dinner, The Not Steaks Header Ends
+      // Lunch, Dinner, The Not Steaks Individual Box Starts
+      .box {
+        .content {
+          overflow: hidden;
+          width: 100%;
+          height: 100%;
+          position: relative;
 
-        // Lunch, Dinner, The Not Steaks Boxes Container Starts
-        .lunch-boxes,
-        .dinner-boxes,
-        .not-steaks-boxes {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-gap: 3px;
+          h3 {
+            position: absolute;
+            left: 10px;
+            bottom: 1px;
+            z-index: 1;
+            font-size: 23px;
+          }
 
-            // Lunch, Dinner, The Not Steaks Individual Box Starts
-            .box {
-                .content {
-                    overflow: hidden;
-                    width: 100%;
-                    height: 100%;
-                    position: relative;
+          // Image Overlay
+          .image-contain {
+            transition: 0.3s ease-in-out;
 
-
-                    h3 {
-                        position: absolute;
-                        left: 10px;
-                        bottom: 1px;
-                        z-index: 1;
-                        font-size: 23px;
-                    }
-
-                    // Image Overlay
-                    .image-contain {
-                        transition: .3s ease-in-out;
-
-                        &::after {
-                            content: "";
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-                            width: 100%;
-                            height: 100%;
-                            display: block;
-                            background-color: rgba(0, 0, 0, 0.2);
-                            cursor: pointer;
-                        }
-
-                        &:hover {
-                            transform: scale(1.06);
-                        }
-
-                        a {
-                            img {
-                                display: block;
-                            }
-                        }
-                    }
-                }
+            &::after {
+              content: '';
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              display: block;
+              background-color: rgba(0, 0, 0, 0.2);
+              cursor: pointer;
             }
 
-            // Lunch, Dinner, The Not Steaks Individual Box Ends
-        }
-
-        //   Lunch, Dinner, The Not Steaks Boxes Container Ends
-    }
-
-    // Lunch, Dinner, The Not Steaks Menu Ends
-
-    // WINE AREA BEGINS
-    #wines,
-    #other {
-        color: $white;
-        background-color: $dark;
-
-        .wines-header,
-        .other-header {
-            padding: 32px 70px;
-            text-align: center;
-            text-transform: uppercase;
-            font-size: 22px;
-        }
-
-        .wine-boxes,
-        .other-boxes {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            grid-gap: 3px;
-
-            .box {
-                .content {
-                    overflow: hidden;
-                    width: 100%;
-                    height: 100%;
-                    position: relative;
-
-
-                    h3 {
-                        position: absolute;
-                        left: 10px;
-                        bottom: 1px;
-                        z-index: 1;
-                        font-size: 18px;
-                        line-height: 1.3;
-                        color: $white;
-                    }
-
-                    .image-contain {
-                        transition: .3s ease-in-out;
-
-                        &::after {
-                            content: "";
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-                            width: 100%;
-                            height: 100%;
-                            display: block;
-                            background-color: rgba(0, 0, 0, 0.2);
-                            cursor: pointer;
-                        }
-
-                        &:hover {
-                            transform: scale(1.06);
-                        }
-
-                        a {
-                            img {
-                                display: block;
-                            }
-                        }
-                    }
-                }
+            &:hover {
+              transform: scale(1.06);
             }
+
+            a {
+              img {
+                display: block;
+              }
+            }
+          }
         }
+      }
+
+      // Lunch, Dinner, The Not Steaks Individual Box Ends
     }
 
-    // WINE AREA ENDS
+    //   Lunch, Dinner, The Not Steaks Boxes Container Ends
+  }
+
+  // Lunch, Dinner, The Not Steaks Menu Ends
+
+  // WINE AREA BEGINS
+  #wines,
+  #other {
+    color: $white;
+    background-color: $dark;
+
+    .wines-header,
+    .other-header {
+      padding: 32px 70px;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 22px;
+    }
+
+    .wine-boxes,
+    .other-boxes {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-gap: 3px;
+
+      .box {
+        .content {
+          overflow: hidden;
+          width: 100%;
+          height: 100%;
+          position: relative;
+
+          h3 {
+            position: absolute;
+            left: 10px;
+            bottom: 1px;
+            z-index: 1;
+            font-size: 18px;
+            line-height: 1.3;
+            color: $white;
+          }
+
+          .image-contain {
+            transition: 0.3s ease-in-out;
+
+            &::after {
+              content: '';
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              display: block;
+              background-color: rgba(0, 0, 0, 0.2);
+              cursor: pointer;
+            }
+
+            &:hover {
+              transform: scale(1.06);
+            }
+
+            a {
+              img {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // WINE AREA ENDS
 }
 
 // Main area, Menu Section Ends

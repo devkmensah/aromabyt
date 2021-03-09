@@ -1,7 +1,74 @@
+// // 1. LOGIN FORM
+// const loginRegister = document.querySelector('#login-register');
+// const loginLink = document.querySelector('.login-link');
+// const xCloseLogin = document.querySelector('.close');
+
+// const displayLogin = e => {
+//   loginRegister.style.display = 'block';
+// };
+
+// const hideLogin = e => {
+//   loginRegister.style.display = 'none';
+// };
+
+// loginLink.addEventListener('click', e => {
+//   e.preventDefault();
+//   displayLogin();
+// });
+
+// xCloseLogin.addEventListener('click', () => hideLogin());
+
+// loginRegister.addEventListener('click', e => {
+//   if (!e.target) return;
+//   if (e.target.id === 'login-register') hideLogin();
+// });
+
+// document.addEventListener('keydown', e => {
+//   if (e.key === 'Escape') hideLogin();
+// });
+
+// // 2. REGISTER / SIGN UP FORM
+// const signUpLink = document.querySelectorAll('.sign-up-link');
+// const register = document.querySelector('#register');
+// const xCloseRegister = document.querySelector('.close-register');
+
+// const displayRegister = e => {
+//   register.style.display = 'block';
+// };
+
+// const hideRegister = e => {
+//   register.style.display = 'none';
+// };
+
+// signUpLink.forEach(link => {
+//   link.addEventListener('click', e => {
+//     e.preventDefault();
+//     displayRegister();
+//   });
+// });
+
+// xCloseRegister.addEventListener('click', e => {
+//   hideLogin();
+//   hideRegister();
+// });
+
+// register.addEventListener('click', e => {
+//   hideLogin();
+//   if (!e.target.id) return;
+//   if (e.target.id === 'register') hideRegister();
+// });
+
+// document.addEventListener('keydown', e => {
+//   hideLogin();
+//   if (e.key === 'Escape') hideRegister();
+// });
+
 // 1. LOGIN FORM
 const loginRegister = document.querySelector('#login-register');
 const loginLink = document.querySelector('.login-link');
 const xCloseLogin = document.querySelector('.close');
+const body = document.querySelector('body');
+console.log(body);
 
 const displayLogin = e => {
   loginRegister.style.display = 'block';
@@ -11,20 +78,37 @@ const hideLogin = e => {
   loginRegister.style.display = 'none';
 };
 
+const hideBodyScroll = e => {
+  body.style.overflow = 'hidden';
+};
+
+const unHideBodyScroll = e => {
+  body.style.overflow = 'scroll';
+};
+
 loginLink.addEventListener('click', e => {
   e.preventDefault();
+  hideBodyScroll();
+  loginRegister.style.overflowY = 'scroll';
   displayLogin();
 });
 
-xCloseLogin.addEventListener('click', () => hideLogin());
+xCloseLogin.addEventListener('click', () => {
+  unHideBodyScroll();
+  hideLogin();
+});
 
 loginRegister.addEventListener('click', e => {
-  if (!e.target) return;
-  if (e.target.id === 'login-register') hideLogin();
+  if (e.target.id === 'login-register') {
+    console.log('clicked');
+    hideLogin();
+    unHideBodyScroll();
+  }
 });
 
 document.addEventListener('keydown', e => {
   if (e.key === 'Escape') hideLogin();
+  unHideBodyScroll();
 });
 
 // 2. REGISTER / SIGN UP FORM
@@ -40,27 +124,40 @@ const hideRegister = e => {
   register.style.display = 'none';
 };
 
+const mainArea = document.querySelector('#main-area');
+console.log(mainArea);
 signUpLink.forEach(link => {
   link.addEventListener('click', e => {
     e.preventDefault();
+    hideBodyScroll();
+    register.style.overflowY = 'scroll';
+    hideLogin();
     displayRegister();
   });
 });
 
 xCloseRegister.addEventListener('click', e => {
+  unHideBodyScroll();
   hideLogin();
   hideRegister();
 });
 
 register.addEventListener('click', e => {
-  hideLogin();
-  if (!e.target.id) return;
-  if (e.target.id === 'register') hideRegister();
+  if (e.target.id === 'register') {
+    console.log('clicking');
+    hideLogin();
+    unHideBodyScroll();
+    hideRegister();
+  }
 });
 
 document.addEventListener('keydown', e => {
-  hideLogin();
-  if (e.key === 'Escape') hideRegister();
+  // hideLogin();
+  if (e.key === 'Escape') {
+    hideLogin();
+    unHideBodyScroll();
+    hideRegister();
+  }
 });
 
 FIXME: console.log('fix');
@@ -88,16 +185,16 @@ FIXME: console.log('fix');
 TODO: console.log('do');
 const menuNavContainer = document.querySelector('#menu-list');
 const smoothKickIn = document.querySelector('#menu');
-const mainArea = document.querySelector('#main-area');
-const mainAreaHeight = mainArea.getBoundingClientRect();
+// const mainArea = document.querySelector('#main-area');
+// const mainAreaHeight = mainArea.getBoundingClientRect();
 const menuNavHeight = menuNavContainer.getBoundingClientRect().height;
 const menuHeader = document.querySelector('#menu-header');
 console.log(
   menuNavContainer,
   menuNavHeight,
   menuHeader,
-  mainArea,
-  mainAreaHeight,
+  // mainArea,
+  // mainAreaHeight,
   smoothKickIn
 );
 

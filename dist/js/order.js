@@ -61,7 +61,7 @@ console.log(mainArea);
 signUpLink.forEach(link => {
   link.addEventListener('click', e => {
     e.preventDefault();
-    hideLogin();
+    // hideLogin();
     hideBodyScroll();
     displayRegister();
   });
