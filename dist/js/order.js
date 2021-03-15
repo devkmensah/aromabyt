@@ -1,3 +1,4 @@
+'use strict';
 // 1. LOGIN FORM
 const loginRegister = document.querySelector('#login-register');
 const loginLink = document.querySelector('.login-link');

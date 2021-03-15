@@ -1,2801 +1,2674 @@
 @media screen and (min-width: 605px) {
+  // Menu Page Starts
+  #main-area {
+    #lunch-dinner {
+      .container {
+        .lunch-dinner {
+          br {
+            display: block;
+          }
 
-    // Menu Page Starts
-    #main-area {
-        #lunch-dinner {
-            .container {
-                .lunch-dinner {
-                    br {
-                        display: block;
-                    }
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          justify-content: center;
+          align-items: center;
+          grid-gap: 20px;
 
-                    display: grid;
-                    grid-template-columns: repeat(2, 1fr);
-                    justify-content: center;
-                    align-items: center;
-                    grid-gap: 20px;
+          .lunch {
+            height: 290px;
+            color: $white;
+            position: relative;
 
-                    .lunch {
-                        height: 290px;
-                        color: $white;
-                        position: relative;
+            .lunch-content {
+              height: 0;
+              color: $white;
+              background: transparent;
+              padding: 0 0 0 20px;
+              width: 100%;
+              position: absolute;
+              z-index: 1;
 
-                        .lunch-content {
-                            height: 0;
-                            color: $white;
-                            background: transparent;
-                            padding: 0 0 0 20px;
-                            width: 100%;
-                            position: absolute;
-                            z-index: 1;
+              h2 {
+                line-height: 1.2;
+                font-size: 36px;
+                text-transform: uppercase;
+                padding: 25px 0 20px;
+              }
 
-                            h2 {
-                                line-height: 1.2;
-                                font-size: 36px;
-                                text-transform: uppercase;
-                                padding: 25px 0 20px;
-                            }
-
-                            a {
-                                display: inline-block;
-                                padding: 2px 10px;
-                                font-size: 25px;
-                                text-transform: uppercase;
-                                border: 1px solid $white;
-                                font-weight: 400;
-                                color: $white;
-                                border-radius: 0;
-                                margin-top: 0;
-                            }
-                        }
-
-                        .lunch-image {
-                            height: 100%;
-
-                            &::before {
-                                content: "";
-                                top: 0;
-                                bottom: 0;
-                                left: 0;
-                                right: 0;
-                                width: 100%;
-                                position: absolute;
-                                background-color: rgba(0, 0, 0, 0.1);
-                            }
-                        }
-
-                    }
-
-                    .dinner {
-                        margin-top: 0;
-                        height: 290px;
-                        color: $white;
-                        position: relative;
-
-                        .dinner-content {
-                            height: 0;
-                            color: $white;
-                            background: transparent;
-                            padding: 0 0 0 20px;
-                            width: 100%;
-                            position: absolute;
-                            z-index: 1;
-
-                            h2 {
-                                line-height: 1.2;
-                                font-size: 36px;
-                                text-transform: uppercase;
-                                padding: 25px 0 20px;
-                            }
-
-                            a {
-                                display: inline-block;
-                                padding: 2px 10px;
-                                font-size: 25px;
-                                text-transform: uppercase;
-                                border: 1px solid $white;
-                                font-weight: 400;
-                                color: $white;
-                                border-radius: 0;
-                                margin-top: 0;
-                            }
-                        }
-
-                        .dinner-image {
-                            height: 100%;
-
-                            &::before {
-                                content: "";
-                                top: 0;
-                                bottom: 0;
-                                left: 0;
-                                right: 0;
-                                width: 100%;
-                                position: absolute;
-                                background-color: rgba(0, 0, 0, 0.1);
-                            }
-                        }
-
-                    }
-                }
+              a {
+                display: inline-block;
+                padding: 2px 10px;
+                font-size: 25px;
+                text-transform: uppercase;
+                border: 1px solid $white;
+                font-weight: 400;
+                color: $white;
+                border-radius: 0;
+                margin-top: 0;
+              }
             }
-        }
-    }
 
-    // Menu Page Ends
+            .lunch-image {
+              height: 100%;
+
+              &::before {
+                content: '';
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                width: 100%;
+                position: absolute;
+                background-color: rgba(0, 0, 0, 0.1);
+              }
+            }
+          }
+
+          .dinner {
+            margin-top: 0;
+            height: 290px;
+            color: $white;
+            position: relative;
+
+            .dinner-content {
+              height: 0;
+              color: $white;
+              background: transparent;
+              padding: 0 0 0 20px;
+              width: 100%;
+              position: absolute;
+              z-index: 1;
+
+              h2 {
+                line-height: 1.2;
+                font-size: 36px;
+                text-transform: uppercase;
+                padding: 25px 0 20px;
+              }
+
+              a {
+                display: inline-block;
+                padding: 2px 10px;
+                font-size: 25px;
+                text-transform: uppercase;
+                border: 1px solid $white;
+                font-weight: 400;
+                color: $white;
+                border-radius: 0;
+                margin-top: 0;
+              }
+            }
+
+            .dinner-image {
+              height: 100%;
+
+              &::before {
+                content: '';
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                width: 100%;
+                position: absolute;
+                background-color: rgba(0, 0, 0, 0.1);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Menu Page Ends
 }
 
 @media screen and (min-width: 605px) and (max-width: 769px) {
+  // Menu Page Starts
+  #main-area {
+    #lunch-dinner {
+      .container {
+        .lunch-dinner {
+          .lunch,
+          .dinner {
+            .lunch-content,
+            .dinner-content {
+              padding: 0 0 0 10px;
 
-    // Menu Page Starts
-    #main-area {
-        #lunch-dinner {
-            .container {
-                .lunch-dinner {
+              h2 {
+                line-height: 1.5;
+                font-size: 30px;
+                padding: 25px 0;
+              }
 
-                    .lunch,
-                    .dinner {
-
-                        .lunch-content,
-                        .dinner-content {
-                            padding: 0 0 0 10px;
-
-                            h2 {
-                                line-height: 1.5;
-                                font-size: 30px;
-                                padding: 25px 0;
-                            }
-
-                            a {
-                                font-size: 20px;
-                            }
-                        }
-                    }
-                }
+              a {
+                font-size: 20px;
+              }
             }
+          }
         }
+      }
     }
+  }
 
-    // Menu Page Ends
+  // Menu Page Ends
 }
 
 @media screen and (max-width: 1125px) {
-
-    // Offer Page Starts
-    #steps {
-        .container {
-            .steps-content {
-                .steps {
-                    display: grid;
-                    grid-template-columns: repeat(2, 1fr);
-                }
-            }
+  // Offer Page Starts
+  #steps {
+    .container {
+      .steps-content {
+        .steps {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
         }
+      }
     }
+  }
 
-    // Offer Page Ends
+  // Offer Page Ends
 
-    // Order Page Header Starts
-    #order-header {
-        .order-nav {
-            .order-top {
-                padding: 12px 25px 0;
+  // Order Page Header Starts
+  #order-header {
+    .order-nav {
+      .order-top {
+        padding: 12px 25px 0;
 
-                .order-logo {
-                    padding-top: 0;
+        .order-logo {
+          padding-top: 0;
 
-                    h1 {
-                        span {
-                            font-size: 7px;
-                        }
-                    }
-                }
+          h1 {
+            span {
+              font-size: 7px;
             }
-
-            .order-options {
-
-                .delivery-nav,
-                .collect-nav {
-                    // margin: 80px 10px 0;
-                    font-size: 22px;
-                }
-            }
+          }
         }
-    }
+      }
 
-    // Order Page Header Ends
+      .order-options {
+        .delivery-nav,
+        .collect-nav {
+          // margin: 80px 10px 0;
+          font-size: 22px;
+        }
+      }
+    }
+  }
+
+  // Order Page Header Ends
 }
 
 @media screen and (max-width: 960px) {
-
-    // Menu Page Starts
-    #menu-header {
-        #menu-list {
-            .list-items {
-                .items {
-                    flex-wrap: wrap;
-                    justify-content: flex-start;
-                }
-            }
+  // Menu Page Starts
+  #menu-header {
+    #menu-list {
+      .list-items {
+        .items {
+          flex-wrap: wrap;
+          justify-content: flex-start;
         }
+      }
     }
+  }
 
-    // Menu Page Ends
+  // Menu Page Ends
 }
 
 @media screen and (max-width: 950px) {
-    #main-area {
+  #main-area {
+    // Menu Sign Up Page For Weekly Offers Starts
+    #sign-up {
+      .container {
+        .sign-up-content {
+          #sign-up-form {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
 
-        // Menu Sign Up Page For Weekly Offers Starts
-        #sign-up {
-            .container {
-                .sign-up-content {
-
-                    #sign-up-form {
-                        display: grid;
-                        grid-template-columns: repeat(2, 1fr);
-
-                        .terms {
-                            grid-column: 2 / 3;
-                            grid-row: 4 / 5;
-                        }
-
-
-                        .button {
-                            grid-column: 1 / 2;
-                            grid-row: 4 / 5;
-                            padding: 14px 15px;
-                        }
-
-                    }
-                }
+            .terms {
+              grid-column: 2 / 3;
+              grid-row: 4 / 5;
             }
-        }
 
-        // Menu Sign Up Page For Weekly Offers Ends
-
-        // App Section Starts
-        #app {
-            .container {
-                display: block;
-
-                .left {
-                    padding: 0;
-                }
-
-                .right {
-                    padding: 40px 0 0;
-
-                    h3 {
-                        br {
-                            display: none;
-                        }
-                    }
-
-
-                    p.convenience {
-                        font-size: 16px;
-
-                        br {
-                            display: none;
-                        }
-                    }
-
-                    p.cost {
-                        margin: 0px 0 30px;
-                        font-size: 16px;
-                    }
-
-
-                    a {
-                        display: block;
-                        width: 100%;
-                    }
-                }
+            .button {
+              grid-column: 1 / 2;
+              grid-row: 4 / 5;
+              padding: 14px 15px;
             }
+          }
         }
-
-        // App Section Ends
+      }
     }
+
+    // Menu Sign Up Page For Weekly Offers Ends
+
+    // App Section Starts
+    #app {
+      .container {
+        display: block;
+
+        .left {
+          padding: 0;
+        }
+
+        .right {
+          padding: 40px 0 0;
+
+          h3 {
+            br {
+              display: none;
+            }
+          }
+
+          p.convenience {
+            font-size: 16px;
+
+            br {
+              display: none;
+            }
+          }
+
+          p.cost {
+            margin: 0px 0 30px;
+            font-size: 16px;
+          }
+
+          a {
+            display: block;
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    // App Section Ends
+  }
 }
 
-
 @media screen and (max-width: 900px) {
+  // Order Header Starts
+  #order-header {
+    .order-nav {
+      .order-top {
+        .order-logo {
+          padding-top: 0;
 
-    // Order Header Starts
-    #order-header {
-        .order-nav {
-            .order-top {
+          h1 {
+            font-size: 22px;
 
-                .order-logo {
-                    padding-top: 0;
-
-                    h1 {
-                        font-size: 22px;
-
-                        span {
-                            margin-top: -7px;
-                            font-size: 6px;
-                        }
-                    }
-                }
-
-                .login-link {
-                    a {
-                        font-size: 22px;
-                    }
-                }
+            span {
+              margin-top: -7px;
+              font-size: 6px;
             }
-
-            .order-options {
-
-                .delivery-nav,
-                .collect-nav {
-                    font-size: 22px;
-                }
-            }
+          }
         }
+
+        .login-link {
+          a {
+            font-size: 22px;
+          }
+        }
+      }
+
+      .order-options {
+        .delivery-nav,
+        .collect-nav {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+
+  // Order Header Ends
+
+  // Login Section Starts
+  #login-register {
+    .login-register-content {
+      max-width: 90%;
+    }
+  }
+
+  // Login Section Ends
+
+  // Register Section Starts
+  #register {
+    .popup {
+      max-width: 90%;
+
+      .popup-header {
+        padding: 8px 7px 10px;
+
+        .close-register {
+          font-size: 18px;
+        }
+      }
+
+      .popup-content {
+        padding: 10px 14px;
+
+        .easy {
+          font-size: 18px;
+        }
+
+        .now {
+          font-size: 23px;
+          padding: 20px 0;
+        }
+
+        #form-register {
+          grid-gap: 20px;
+
+          .left-input {
+            input {
+              padding: 18px 8px;
+              font-size: 16px;
+            }
+          }
+
+          .right-input {
+            input[type='text'] {
+              padding: 18px 8px;
+              font-size: 16px;
+            }
+
+            .text-label {
+              font-size: 16px;
+            }
+
+            .receive {
+              margin: 18px 0 33px;
+
+              input[type='checkbox'] {
+                zoom: 1.3;
+              }
+
+              label.of-age {
+                font-size: 16px;
+              }
+            }
+
+            .creating {
+              input[type='checkbox'] {
+                zoom: 1.3;
+              }
+
+              label.read {
+                font-size: 16px;
+              }
+            }
+
+            button.btn-register {
+              font-size: 13px;
+              letter-spacing: 0.9px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Register Section Ends
+
+  // Home Page Starts
+  #main-area {
+    // Carousel / Sliders Start
+    #carousel {
+      .sliders-holder {
+        .slider {
+          .content.delicious {
+            h3 {
+              font-size: 55px;
+              line-height: 1.4;
+            }
+
+            a {
+              font-size: 30px;
+            }
+          }
+
+          .content.break {
+            h3 {
+              font-size: 55px;
+              line-height: 1.1;
+            }
+
+            a {
+              font-size: 30px;
+              margin: 20px 0 20px;
+            }
+          }
+
+          .content.corona {
+            h3 {
+              padding: 10px 5px 0;
+              font-size: 60px;
+              line-height: 1.2;
+            }
+
+            p {
+              margin: 30px 0 15px;
+              padding: 0 80px;
+              font-size: 20px;
+            }
+
+            .measures {
+              margin: 30px 0 0;
+
+              .measure {
+                i {
+                  width: 125px;
+                  height: 125px;
+                  font-size: 45px;
+                  line-height: 125px;
+                }
+
+                .guidelines {
+                  font-size: 15px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .buttons {
+        button {
+          padding: 12px 12px 10px;
+        }
+
+        .previous {
+          left: 7px;
+        }
+
+        .next {
+          right: 7px;
+        }
+      }
     }
 
-    // Order Header Ends
+    // Carousel / Sliders End
+  }
 
-    // Login Section Starts
-    #login-register {
-        .login-register-content {
-            max-width: 90%;
+  // Home Page Ends
+
+  // Menu Page Starts
+  #menu {
+    #lunch-menu,
+    #dinner-menu,
+    #not-steaks-menu {
+      .lunch-boxes,
+      .dinner-boxes,
+      .not-steaks-boxes {
+        display: block;
+
+        .box {
+          margin: 3px;
         }
+      }
     }
 
-    // Login Section Ends
-
-    // Register Section Starts
-    #register {
-        .popup {
-            max-width: 90%;
-
-            .popup-header {
-                padding: 8px 7px 10px;
-
-                .close-register {
-                    font-size: 18px;
-                }
-            }
-
-            .popup-content {
-                padding: 10px 14px;
-
-                .easy {
-                    font-size: 18px;
-                }
-
-                .now {
-                    font-size: 23px;
-                    padding: 20px 0;
-                }
-
-                #form-register {
-                    grid-gap: 20px;
-
-                    .left-input {
-                        input {
-                            padding: 18px 8px;
-                            font-size: 16px;
-                        }
-                    }
-
-                    .right-input {
-                        input[type="text"] {
-                            padding: 18px 8px;
-                            font-size: 16px;
-                        }
-
-                        .text-label {
-                            font-size: 16px;
-                        }
-
-                        .receive {
-                            margin: 18px 0 33px;
-
-                            input[type="checkbox"] {
-                                zoom: 1.3;
-                            }
-
-                            label.of-age {
-                                font-size: 16px;
-                            }
-                        }
-
-                        .creating {
-                            input[type="checkbox"] {
-                                zoom: 1.3;
-                            }
-
-                            label.read {
-                                font-size: 16px;
-                            }
-                        }
-
-
-                        button.btn-register {
-                            font-size: 13px;
-                            letter-spacing: 0.9px;
-                        }
-                    }
-                }
-
-            }
-        }
+    #wines,
+    #other {
+      .wine-boxes,
+      .other-boxes {
+        grid-template-columns: repeat(4, 1fr);
+      }
     }
+  }
 
-    // Register Section Ends
+  // Menu Page Ends
 
-    // Home Page Starts
-    #main-area {
+  // Footer Starts
+  #footer {
+    .container {
+      .top {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
 
-        // Carousel / Sliders Start
-        #carousel {
-            .sliders-holder {
-                .slider {
-                    .content.delicious {
-                        h3 {
-                            font-size: 55px;
-                            line-height: 1.4;
-                        }
+        .column {
+          margin: 10px 20px;
+        }
+      }
 
-                        a {
-                            font-size: 30px;
-                        }
-                    }
+      // Bottom Area
+      .bottom {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
 
-
-
-                    .content.break {
-                        h3 {
-                            font-size: 55px;
-                            line-height: 1.1;
-                        }
-
-                        a {
-                            font-size: 30px;
-                            margin: 20px 0 20px;
-                        }
-                    }
-
-                    .content.corona {
-                        h3 {
-                            padding: 10px 5px 0;
-                            font-size: 60px;
-                            line-height: 1.2;
-                        }
-
-                        p {
-                            margin: 30px 0 15px;
-                            padding: 0 80px;
-                            font-size: 20px;
-                        }
-
-                        .measures {
-                            margin: 30px 0 0;
-
-                            .measure {
-                                i {
-                                    width: 125px;
-                                    height: 125px;
-                                    font-size: 45px;
-                                    line-height: 125px;
-                                }
-
-                                .guidelines {
-                                    font-size: 15px;
-                                }
-                            }
-                        }
-                    }
-
-                }
-            }
-
-            .buttons {
-                button {
-                    padding: 12px 12px 10px;
-                }
-
-                .previous {
-                    left: 7px;
-                }
-
-                .next {
-                    right: 7px;
-                }
-
-            }
+        .bottom-logo {
+          .store {
+            display: flex;
+            margin: 20px 0 20px;
+            align-items: center;
+            justify-content: center;
+          }
         }
 
-        // Carousel / Sliders End
+        .rights {
+          display: flex;
+          justify-self: center;
+        }
+      }
     }
+  }
 
-    // Home Page Ends
+  // Footer Ends
 
-    // Menu Page Starts
-    #menu {
-
-        #lunch-menu,
-        #dinner-menu,
-        #not-steaks-menu {
-
-            .lunch-boxes,
-            .dinner-boxes,
-            .not-steaks-boxes {
-                display: block;
-
-                .box {
-                    margin: 3px;
-                }
-            }
-        }
-
-        #wines,
-        #other {
-
-            .wine-boxes,
-            .other-boxes {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    }
-
-    // Menu Page Ends
-
-    // Footer Starts
-    #footer {
-        .container {
-            .top {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-evenly;
-                align-items: center;
-
-                .column {
-                    margin: 10px 20px;
-                }
-            }
-
-            // Bottom Area
-            .bottom {
-                display: grid;
-                grid-template-columns: 1fr;
-                text-align: center;
-
-
-
-                .bottom-logo {
-                    .store {
-                        display: flex;
-                        margin: 20px 0 20px;
-                        align-items: center;
-                        justify-content: center;
-                    }
-                }
-
-                .rights {
-                    display: flex;
-                    justify-self: center;
-                }
-            }
-
-        }
-    }
-
-    // Footer Ends
-
-    // To prevent sudden quick movement of the menu contents under the menu list since the menu-list gets a new position at the top when a class is added to the ID of menu-list class
-    // .smooth-position {
-    //     padding-top: 95px;
-    // }
+  // To prevent sudden quick movement of the menu contents under the menu list since the menu-list gets a new position at the top when a class is added to the ID of menu-list class
+  .smooth-position {
+    padding-top: 95px;
+  }
 }
 
 @media screen and (max-width: 867px) {
+  // Menu Hedare Starts
+  #menu-header {
+    .top {
+      .navigation {
+        font-size: 16px;
 
-    // Menu Hedare Starts
-    #menu-header {
-        .top {
-            .navigation {
-                font-size: 16px;
-
-                .logo-holder {
-                    a {
-                        .logo {
-                            span {
-                                margin-top: -7px;
-                                font-size: 6px;
-                            }
-                        }
-                    }
-                }
+        .logo-holder {
+          a {
+            .logo {
+              span {
+                margin-top: -7px;
+                font-size: 6px;
+              }
             }
+          }
         }
-
-
-        #menu-list {
-            padding: 10px 0 10px 50px;
-
-            .list-items {
-                .allergen {
-                    margin: 10px 0 8px;
-                }
-
-                .items {
-                    flex-wrap: wrap;
-                    justify-content: flex-start;
-                    font-size: 15px;
-
-                    .item {
-                        margin-bottom: 10px;
-
-                        span {
-                            display: none;
-                        }
-                    }
-                }
-            }
-        }
+      }
     }
 
-    // Menu Header Ends
+    #menu-list {
+      padding: 10px 0 10px 50px;
 
-    // To prevent sudden quick movement of the menu contents under the menu list since the menu-list gets a new position at the top when a class is added to the ID of menu-list class
-    // .smooth-position {
-    //     padding-top: 95px;
-    // }
+      .list-items {
+        .allergen {
+          margin: 10px 0 8px;
+        }
+
+        .items {
+          flex-wrap: wrap;
+          justify-content: flex-start;
+          font-size: 15px;
+
+          .item {
+            margin-bottom: 10px;
+
+            span {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Menu Header Ends
+
+  // To prevent sudden quick movement of the menu contents under the menu list since the menu-list gets a new position at the top when a class is added to the ID of menu-list class
+  .smooth-position {
+    padding-top: 95px;
+  }
 }
 
 @media screen and (max-width: 800px) {
+  // Order Page, Collect Section Starts
+  #collect {
+    background: $ivory;
+    color: $dark;
 
-    // Order Page, Collect Section Starts
-    #collect {
-        background: $ivory;
-        color: $dark;
-
-        &:after {
-            content: "";
-            display: none;
-        }
-
-        .container {
-            .collect-content {
-                display: block;
-
-                .start-content {
-
-                    h2,
-                    p {
-                        text-align: center;
-                    }
-
-                    .collect-form {
-                        .time-input {
-                            display: block;
-                            width: 100%;
-                            margin: 50px 0;
-                            background: rgba(0, 0, 0, 0.1);
-                            padding: 20px 15px 28px;
-
-                            .time {
-                                width: 100%;
-                                margin-bottom: 20px;
-
-                                input[type="time"] {
-                                    width: 100%;
-                                }
-                            }
-
-                            .date {
-                                margin: 0;
-
-                                input[type="date"] {
-                                    width: 100%;
-                                }
-                            }
-
-                        }
-
-                        button.collect-button {
-                            display: block;
-                            width: 100%;
-                        }
-                    }
-                }
-
-                .apply {
-                    max-width: 100%;
-                    margin-top: 62px;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-
-                    hr {
-                        width: 100%;
-                        display: block;
-                        height: 1px;
-                        background-color: $tomato;
-                        border: none;
-                    }
-
-                    .redeem-points {
-                        padding: 35px 0 15px;
-                    }
-
-                    .redeem-input {
-                        input {
-                            width: 100%;
-                            font-weight: 400;
-                        }
-
-                        a {
-                            margin-top: 15px;
-                            display: block;
-                            min-width: 100%;
-                            overflow: auto;
-                        }
-                    }
-
-                    p {
-                        text-align: center;
-                    }
-                }
-            }
-        }
+    &:after {
+      content: '';
+      display: none;
     }
 
-    // Order Page, Collect Section Ends
-}
+    .container {
+      .collect-content {
+        display: block;
 
+        .start-content {
+          h2,
+          p {
+            text-align: center;
+          }
+
+          .collect-form {
+            .time-input {
+              display: block;
+              width: 100%;
+              margin: 50px 0;
+              background: rgba(0, 0, 0, 0.1);
+              padding: 20px 15px 28px;
+
+              .time {
+                width: 100%;
+                margin-bottom: 20px;
+
+                input[type='time'] {
+                  width: 100%;
+                }
+              }
+
+              .date {
+                margin: 0;
+
+                input[type='date'] {
+                  width: 100%;
+                }
+              }
+            }
+
+            button.collect-button {
+              display: block;
+              width: 100%;
+            }
+          }
+        }
+
+        .apply {
+          max-width: 100%;
+          margin-top: 62px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          hr {
+            width: 100%;
+            display: block;
+            height: 1px;
+            background-color: $tomato;
+            border: none;
+          }
+
+          .redeem-points {
+            padding: 35px 0 15px;
+          }
+
+          .redeem-input {
+            input {
+              width: 100%;
+              font-weight: 400;
+            }
+
+            a {
+              margin-top: 15px;
+              display: block;
+              min-width: 100%;
+              overflow: auto;
+            }
+          }
+
+          p {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+
+  // Order Page, Collect Section Ends
+}
 
 @media (max-width: 769px) {
+  // Home Page, Header Starts
+  #header {
+    .top {
+      overflow: hidden;
 
-    // Home Page, Header Starts
-    #header {
-        .top {
-            overflow: hidden;
+      .container {
+        padding: 0 20px;
 
-            .container {
-                padding: 0 20px;
+        .logo-holder {
+          padding-left: 0;
 
-                .logo-holder {
-                    padding-left: 0;
-
-                    a {
-                        .logo {
-                            span {
-                                font-size: 7px;
-                            }
-                        }
-                    }
-                }
-
-                .sidenav {
-                    position: fixed;
-                    width: 100%;
-                    height: 100%;
-                    background-color: $ivory;
-                    top: 120px;
-                    left: -100%;
-                    bottom: 0;
-                    padding-top: 20px;
-                    overflow: scroll;
-                    transition: left .8s ease-in-out;
-                    display: block;
-                    text-align: left;
-                    padding-bottom: 700px;
-
-                    h3 {
-                        padding: 10px 25px;
-                        width: 100%;
-                    }
-
-                    &.show {
-                        left: 0;
-                    }
-
-                    a {
-                        color: $dark;
-                    }
-
-                    .nav-divider {
-                        display: block;
-                        background: rgba(0, 0, 0, 0.1);
-                        width: 97%;
-                        height: 1px;
-                        margin: 23px auto 25px;
-                    }
-
-                    .under-info {
-                        display: block;
-
-                        h6 {
-                            padding: 10px 25px;
-                            width: 100%;
-                            font-weight: 300;
-                            text-transform: uppercase;
-                            font-size: 12px;
-                        }
-                    }
-                }
+          a {
+            .logo {
+              span {
+                font-size: 7px;
+              }
             }
+          }
         }
+
+        .sidenav {
+          position: fixed;
+          width: 100%;
+          height: 100%;
+          background-color: $ivory;
+          top: 120px;
+          left: -100%;
+          bottom: 0;
+          padding-top: 20px;
+          overflow: scroll;
+          transition: left 0.8s ease-in-out;
+          display: block;
+          text-align: left;
+          padding-bottom: 700px;
+
+          h3 {
+            padding: 10px 25px;
+            width: 100%;
+          }
+
+          &.show {
+            left: 0;
+          }
+
+          a {
+            color: $dark;
+          }
+
+          .nav-divider {
+            display: block;
+            background: rgba(0, 0, 0, 0.1);
+            width: 97%;
+            height: 1px;
+            margin: 23px auto 25px;
+          }
+
+          .under-info {
+            display: block;
+
+            h6 {
+              padding: 10px 25px;
+              width: 100%;
+              font-weight: 300;
+              text-transform: uppercase;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Home Page, Header Ends
+
+  // Offers Page, Steps Area Starts
+  #steps {
+    padding: 70px 120px 100px;
+
+    .container {
+      .steps-content {
+        .steps {
+          display: grid;
+          grid-template-columns: 1fr;
+        }
+      }
+    }
+  }
+
+  // Offers Page, Steps Area Ends
+
+  // Order Page, Delivery Section Starts
+  #delivery {
+    padding: 120px 5px 0;
+    background: $ivory;
+    color: $dark;
+
+    &:after {
+      content: '';
+      display: none;
     }
 
-    // Home Page, Header Ends
+    .container {
+      .delivery-content {
+        display: block;
 
-    // Offers Page, Steps Area Starts
-    #steps {
-        padding: 70px 120px 100px;
+        .apply {
+          max-width: 100%;
+          padding: 0 25px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
 
-        .container {
-            .steps-content {
-                .steps {
-                    display: grid;
-                    grid-template-columns: 1fr;
-                }
+          hr {
+            width: 100%;
+            display: block;
+            height: 1px;
+            background-color: $tomato;
+            border: none;
+            margin: 15px 0 35px;
+          }
+
+          .redeem-input {
+            input {
+              width: 100%;
+              font-weight: 400;
             }
-        }
-    }
 
-    // Offers Page, Steps Area Ends
-
-    // Order Page, Delivery Section Starts
-    #delivery {
-        padding: 120px 5px 0;
-        background: $ivory;
-        color: $dark;
-
-        &:after {
-            content: "";
-            display: none;
-        }
-
-        .container {
-
-            .delivery-content {
-                display: block;
-
-                .apply {
-                    max-width: 100%;
-                    padding: 0 25px;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-
-                    hr {
-                        width: 100%;
-                        display: block;
-                        height: 1px;
-                        background-color: $tomato;
-                        border: none;
-                        margin: 15px 0 35px;
-                    }
-
-                    .redeem-input {
-                        input {
-                            width: 100%;
-                            font-weight: 400;
-                        }
-
-                        a {
-                            margin-top: 15px;
-                            display: block;
-                            min-width: 100%;
-                            overflow: auto;
-                        }
-                    }
-
-                    p {
-                        text-align: center;
-                    }
-                }
+            a {
+              margin-top: 15px;
+              display: block;
+              min-width: 100%;
+              overflow: auto;
             }
+          }
+
+          p {
+            text-align: center;
+          }
         }
+      }
     }
+  }
 
-    // Order Page, Delivery Section Ends
-
+  // Order Page, Delivery Section Ends
 }
 
-
-
 @media screen and (max-width: 700px) {
+  // Menu Page, Header Starts
+  #menu-header {
+    .top {
+      .navigation {
+        font-size: 16px;
 
-    // Menu Page, Header Starts
-    #menu-header {
-        .top {
-            .navigation {
-                font-size: 16px;
-
-                .logo-holder {
-                    a {
-                        .logo {
-                            span {
-                                margin-top: -7px;
-                                font-size: 5px;
-                            }
-                        }
-                    }
-                }
+        .logo-holder {
+          a {
+            .logo {
+              span {
+                margin-top: -7px;
+                font-size: 5px;
+              }
             }
+          }
         }
-
-        #menu-list {
-            padding: 10px 0 10px 40px;
-        }
+      }
     }
 
-    // Menu Page, Header Ends
+    #menu-list {
+      padding: 10px 0 10px 40px;
+    }
+  }
 
+  // Menu Page, Header Ends
 
-    // Offers Page, Sign Up Starts
-    #sign-up-offers {
-
-        .container {
-            .sign-up-content {
-                h1 {
-                    font-size: 30px;
-                }
-
-                #sign-up-form {
-                    grid-template-columns: 1fr;
-                    width: 100%;
-                }
-            }
+  // Offers Page, Sign Up Starts
+  #sign-up-offers {
+    .container {
+      .sign-up-content {
+        h1 {
+          font-size: 30px;
         }
+
+        #sign-up-form {
+          grid-template-columns: 1fr;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  // Offers Page, Sign Up Ends
+
+  #main-area {
+    // Carousel / Sliders Start
+    #carousel {
+      .sliders-holder {
+        .slider {
+          max-height: 400px;
+          width: 100%;
+
+          .content.delicious {
+            h3 {
+              font-size: 40px;
+              line-height: 1.4;
+            }
+
+            a {
+              padding: 8px 35px;
+              font-size: 22px;
+            }
+          }
+
+          .content.break {
+            h3 {
+              font-size: 40px;
+              line-height: 1.2;
+            }
+
+            p {
+              font-size: 14px;
+            }
+
+            a {
+              padding: 8px 35px;
+              font-size: 22px;
+              margin: 20px 0 20px;
+            }
+          }
+
+          .content.corona {
+            h3 {
+              padding: 10px 4px 0;
+              font-size: 40px;
+              line-height: 1.2;
+            }
+
+            p {
+              margin: 35px 0 10px;
+              padding: 0 35px;
+              font-size: 16px;
+            }
+
+            .measures {
+              margin: 30px 0 0;
+
+              .measure {
+                i {
+                  width: 95px;
+                  height: 95px;
+                  font-size: 40px;
+                  line-height: 95px;
+                }
+
+                .guidelines {
+                  font-size: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .buttons {
+        button {
+          padding: 4px 4px 2px;
+        }
+
+        .previous {
+          top: 33%;
+          left: 7px;
+        }
+
+        .next {
+          top: 33%;
+          right: 7px;
+        }
+      }
     }
 
-    // Offers Page, Sign Up Ends
+    // Carousel / Sliders End
 
-
-    #main-area {
-
-        // Carousel / Sliders Start
-        #carousel {
-            .sliders-holder {
-
-                .slider {
-                    max-height: 400px;
-                    width: 100%;
-
-                    .content.delicious {
-                        h3 {
-                            font-size: 40px;
-                            line-height: 1.4;
-                        }
-
-                        a {
-                            padding: 8px 35px;
-                            font-size: 22px;
-                        }
-                    }
-
-
-
-                    .content.break {
-                        h3 {
-                            font-size: 40px;
-                            line-height: 1.2;
-                        }
-
-                        p {
-                            font-size: 14px;
-                        }
-
-                        a {
-                            padding: 8px 35px;
-                            font-size: 22px;
-                            margin: 20px 0 20px;
-                        }
-                    }
-
-                    .content.corona {
-                        h3 {
-                            padding: 10px 4px 0;
-                            font-size: 40px;
-                            line-height: 1.2;
-                        }
-
-                        p {
-                            margin: 35px 0 10px;
-                            padding: 0 35px;
-                            font-size: 16px;
-                        }
-
-                        .measures {
-                            margin: 30px 0 0;
-
-                            .measure {
-
-                                i {
-                                    width: 95px;
-                                    height: 95px;
-                                    font-size: 40px;
-                                    line-height: 95px;
-                                }
-
-                                .guidelines {
-                                    font-size: 10px;
-                                }
-                            }
-                        }
-                    }
-
-                }
-            }
-
-            .buttons {
-                button {
-                    padding: 4px 4px 2px;
-                }
-
-                .previous {
-                    top: 33%;
-                    left: 7px;
-                }
-
-                .next {
-                    top: 33%;
-                    right: 7px;
-                }
-
-            }
-        }
-
-        // Carousel / Sliders End
-
-        // Home Page, Start & App Sections Start
-        #start-section {
-            margin-top: 45px;
-            padding: 0 30px;
-        }
-
-        #app {
-            padding: 0 30px;
-        }
-
-        // Home Page, Start & App Sections End
-
-        // Menu Page, lunch-dinner Section Starts
-        #lunch-dinner {
-            padding: 0 30px;
-        }
-
-        // Menu Page, lunch-dinner Section Ends
-
-        // Home Page & Menu Sign Up For Weekly Offers Start
-        #sign-up {
-            padding: 0 30px;
-
-            .container {
-
-                .sign-up-content {
-                    h1 {
-                        font-size: 27px;
-                    }
-
-                    #sign-up-form {
-                        display: block;
-
-                        .input-holder{
-                            small{
-                                color: $white;
-                                display: none;
-                                margin: -10px 0 20px;
-                            }
-                        }
-
-                         //Form Validation Properties Starts
-                    .input-holder.success {
-                        input {
-                            border: 1px dashed $yellow;
-                        }
-                    }
-
-                    .input-holder{
-                        small{
-                            color: $white;
-                            display: none;
-                            margin-bottom: 10px;
-                        }
-                    }
-
-                    .input-holder.error {
-                        input {
-                            border: 2px solid $tomato;
-                        }
-
-                        ::placeholder {
-                            color: $tomato;
-                            opacity: 1;
-                        }
-
-                        :-ms-input-placeholder {
-                            color: $tomato;
-                        }
-
-                        ::-ms-input-placeholder {
-                            color: $tomato;
-                        }
-
-                        small{
-                            color: $white;
-                            // visibility: visible;
-                            display: block;
-                        }
-                    }
-
-                    //Form Validation Properties Ends
-
-                        input,
-                        label,
-                        button,
-                        p {
-                            margin-bottom: 15px;
-                        }
-
-                        p,
-                        label {
-                            font-size: 12px;
-                        }
-
-                        button.button {
-                            margin-top: 15px;
-                        }
-
-                        input {
-                            width: 100%;
-                            font-size: 14px;
-                        }
-
-                        .button {
-                            width: 100%;
-                            display: block;
-                            font-size: 20px;
-                        }
-
-                    }
-                }
-            }
-        }
-
-        // Home Page & Menu Sign Up For Weekly Offers End
+    // Home Page, Start & App Sections Start
+    #start-section {
+      margin-top: 45px;
+      padding: 0 30px;
     }
 
+    #app {
+      padding: 0 30px;
+    }
 
+    // Home Page, Start & App Sections End
 
-    // Log In Section Starts
-    #login-register {
-        .login-register-content {
-            max-width: 450px;
+    // Menu Page, lunch-dinner Section Starts
+    #lunch-dinner {
+      padding: 0 30px;
+    }
 
-            .login-register-header {
-                .log-register {
-                    .log-register-divider {
-                        display: none;
-                    }
+    // Menu Page, lunch-dinner Section Ends
 
-                    h2:last-child {
-                        display: none;
-                    }
-                }
+    // Home Page & Menu Sign Up For Weekly Offers Start
+    #sign-up {
+      padding: 0 30px;
+
+      .container {
+        .sign-up-content {
+          h1 {
+            font-size: 27px;
+          }
+
+          #sign-up-form {
+            display: block;
+
+            .input-holder {
+              small {
+                color: $white;
+                display: none;
+                margin: -10px 0 20px;
+              }
             }
 
-            .login-register-box {
+            //Form Validation Properties Starts
+            .input-holder.success {
+              input {
+                border: 1px dashed $yellow;
+              }
+            }
+
+            .input-holder {
+              small {
+                color: $white;
+                display: none;
+                margin-bottom: 10px;
+              }
+            }
+
+            .input-holder.error {
+              input {
+                border: 2px solid $tomato;
+              }
+
+              ::placeholder {
+                color: $tomato;
+                opacity: 1;
+              }
+
+              :-ms-input-placeholder {
+                color: $tomato;
+              }
+
+              ::-ms-input-placeholder {
+                color: $tomato;
+              }
+
+              small {
+                color: $white;
+                // visibility: visible;
                 display: block;
-
-                #login-form {
-                    .account-logger {
-                        .into {
-                            display: block;
-                        }
-
-                        .login {
-                            display: none;
-                        }
-                    }
-
-                    .remember {
-                        input[type="checkbox"] {
-                            vertical-align: -7%;
-                            zoom: 1.0;
-                        }
-
-                        label {
-                            font-size: 14px;
-                        }
-                    }
-
-
-                    .divider {
-                        vertical-align: 5%;
-                        font-weight: 100;
-                        margin: 0 5px;
-                        display: inline;
-                    }
-
-                    .mobile-register {
-                        color: $tomato;
-                        font-weight: 100;
-                        display: inline;
-                    }
-                }
-
-                .vertical-line {
-                    display: none;
-                }
-
-                .create-alternative {
-                    display: none;
-                }
-
+              }
             }
 
+            //Form Validation Properties Ends
+
+            input,
+            label,
+            button,
+            p {
+              margin-bottom: 15px;
+            }
+
+            p,
+            label {
+              font-size: 12px;
+            }
+
+            button.button {
+              margin-top: 15px;
+            }
+
+            input {
+              width: 100%;
+              font-size: 14px;
+            }
+
+            .button {
+              width: 100%;
+              display: block;
+              font-size: 20px;
+            }
+          }
         }
+      }
     }
 
-    // Log In Section Ends
+    // Home Page & Menu Sign Up For Weekly Offers End
+  }
 
-    // Register Page Starts
-    #register {
-        .popup {
-            .popup-header {
-                .close-register {
-                    font-size: 18px;
-                }
-            }
+  // Log In Section Starts
+  #login-register {
+    .login-register-content {
+      max-width: 450px;
 
-            .popup-content {
-                padding: 10px 14px;
+      .login-register-header {
+        .log-register {
+          .log-register-divider {
+            display: none;
+          }
 
-                .easy {
-                    font-size: 18px;
-                }
-
-                .now {
-                    font-size: 23px;
-                }
-
-                #form-register {
-                    display: block;
-
-                    .left-input {
-                        input {
-                            padding: 18px 8px;
-                            font-size: 14px;
-
-                            &:last-child {
-                                margin-bottom: 30px;
-                            }
-                        }
-                    }
-
-                    .right-input {
-                        input[type="text"] {
-                            padding: 18px 8px;
-                            font-size: 14px;
-
-                            &:first-child {
-                                margin-bottom: 10px;
-                            }
-                        }
-
-                        .text-label {
-                            font-size: 14px;
-                        }
-
-                        .receive {
-                            margin: 18px 0 33px;
-
-                            input[type="checkbox"] {
-                                zoom: 1.1;
-                                vertical-align: -9.37%;
-                            }
-
-                            label.of-age {
-                                font-size: 14px;
-                            }
-                        }
-
-                        .creating {
-                            input[type="checkbox"] {
-                                zoom: 1.1;
-                                vertical-align: -9.37%;
-                            }
-
-                            label.read {
-                                font-size: 14px;
-                            }
-                        }
-
-
-                        button.btn-register {
-                            font-size: 13px;
-                        }
-                    }
-                }
-
-            }
+          h2:last-child {
+            display: none;
+          }
         }
+      }
+
+      .login-register-box {
+        display: block;
+
+        #login-form {
+          .account-logger {
+            .into {
+              display: block;
+            }
+
+            .login {
+              display: none;
+            }
+          }
+
+          .remember {
+            input[type='checkbox'] {
+              vertical-align: -7%;
+              zoom: 1;
+            }
+
+            label {
+              font-size: 14px;
+            }
+          }
+
+          .divider {
+            vertical-align: 5%;
+            font-weight: 100;
+            margin: 0 5px;
+            display: inline;
+          }
+
+          .mobile-register {
+            color: $tomato;
+            font-weight: 100;
+            display: inline;
+          }
+        }
+
+        .vertical-line {
+          display: none;
+        }
+
+        .create-alternative {
+          display: none;
+        }
+      }
     }
+  }
 
-    // Register Page Ends
+  // Log In Section Ends
 
+  // Register Page Starts
+  #register {
+    .popup {
+      .popup-header {
+        .close-register {
+          font-size: 18px;
+        }
+      }
+
+      .popup-content {
+        padding: 10px 14px;
+
+        .easy {
+          font-size: 18px;
+        }
+
+        .now {
+          font-size: 23px;
+        }
+
+        #form-register {
+          display: block;
+
+          .left-input {
+            input {
+              padding: 18px 8px;
+              font-size: 14px;
+
+              &:last-child {
+                margin-bottom: 30px;
+              }
+            }
+          }
+
+          .right-input {
+            input[type='text'] {
+              padding: 18px 8px;
+              font-size: 14px;
+
+              &:first-child {
+                margin-bottom: 10px;
+              }
+            }
+
+            .text-label {
+              font-size: 14px;
+            }
+
+            .receive {
+              margin: 18px 0 33px;
+
+              input[type='checkbox'] {
+                zoom: 1.1;
+                vertical-align: -9.37%;
+              }
+
+              label.of-age {
+                font-size: 14px;
+              }
+            }
+
+            .creating {
+              input[type='checkbox'] {
+                zoom: 1.1;
+                vertical-align: -9.37%;
+              }
+
+              label.read {
+                font-size: 14px;
+              }
+            }
+
+            button.btn-register {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Register Page Ends
 }
 
 @media screen and (max-width: 605px) {
-    #main-area {
+  #main-area {
+    // Home Page, Start Section Starts
+    #start-section {
+      .container {
+        .start {
+          height: 450px;
 
-        // Home Page, Start Section Starts
-        #start-section {
-            .container {
-                .start {
-                    height: 450px;
+          .start-content {
+            position: static !important;
+            height: 200px;
+            margin-top: 0px;
+            background: $white;
+            -webkit-box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.14);
+            -moz-box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.14);
+            box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.14);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
 
-                    .start-content {
-                        position: static !important;
-                        height: 200px;
-                        margin-top: 0px;
-                        background: $white;
-                        -webkit-box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.14);
-                        -moz-box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.14);
-                        box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.14);
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        justify-content: center;
-
-
-                        h3 {
-                            font-size: 28px;
-                            color: $dark;
-                            margin-bottom: 12px;
-                            line-height: 1.1;
-                        }
-
-                        .options {
-                            margin-top: 12px;
-                            color: $dark;
-
-                            .delivery,
-                            .pickup {
-                                font-size: 18px;
-                                width: 130px;
-                                z-index: 1;
-                                cursor: pointer;
-
-                                &:hover {
-                                    opacity: 1;
-                                }
-                            }
-
-                            span {
-                                font-weight: 100;
-                                font-size: 11px;
-                            }
-                        }
-                    }
-
-                    .start-image {
-                        background: $white url('../images/home/mobile_steak.jpg') no-repeat center center / cover;
-                        height: 250px;
-                        position: static !important;
-                    }
-                }
+            h3 {
+              font-size: 28px;
+              color: $dark;
+              margin-bottom: 12px;
+              line-height: 1.1;
             }
-        }
 
-        // Home Page, Start Section Ends
+            .options {
+              margin-top: 12px;
+              color: $dark;
+
+              .delivery,
+              .pickup {
+                font-size: 18px;
+                width: 130px;
+                z-index: 1;
+                cursor: pointer;
+
+                &:hover {
+                  opacity: 1;
+                }
+              }
+
+              span {
+                font-weight: 100;
+                font-size: 11px;
+              }
+            }
+          }
+
+          .start-image {
+            background: $white url('../images/home/mobile_steak.jpg') no-repeat
+              center center / cover;
+            height: 250px;
+            position: static !important;
+          }
+        }
+      }
     }
 
-    // Offers Page, Steps Start
-    #steps {
-        padding: 70px 50px 100px;
-    }
+    // Home Page, Start Section Ends
+  }
 
-    // Offers Page, Steps End
+  // Offers Page, Steps Start
+  #steps {
+    padding: 70px 50px 100px;
+  }
 
-    // Order Header Starts
-    #order-header {
-        .order-nav {
-            .order-top {
-                padding-bottom: 12px;
+  // Offers Page, Steps End
 
-                .order-logo {
-                    padding-top: 0;
+  // Order Header Starts
+  #order-header {
+    .order-nav {
+      .order-top {
+        padding-bottom: 12px;
 
-                    h1 {
-                        font-size: 20px;
-                    }
-                }
+        .order-logo {
+          padding-top: 0;
 
-                .login-link {
-                    a {
-                        font-size: 20px;
-                    }
-                }
-            }
-
-            .order-options {
-
-                .delivery-nav,
-                .collect-nav {
-                    font-size: 20px;
-                }
-            }
-        }
-    }
-
-    // Order Header Ends
-
-    // Menu Page Starts
-    #menu {
-
-        // Lunch, Dinner The Not Steaks Start
-        #lunch-menu,
-        #dinner-menu,
-        #not-steaks-menu {
-
-            .lunch-boxes,
-            .dinner-boxes,
-            .not-steaks-boxes {
-                .box {
-                    .content {
-
-                        h3 {
-                            font-size: 20px;
-                        }
-                    }
-                }
-            }
+          h1 {
+            font-size: 20px;
+          }
         }
 
-        // Lunch, Dinner The Not Steaks End
-
-        // WINE AREA BEGINS
-        #wines,
-        #other {
-
-            .wine-boxes,
-            .other-boxes {
-                grid-template-columns: repeat(3, 1fr);
-            }
+        .login-link {
+          a {
+            font-size: 20px;
+          }
         }
+      }
+
+      .order-options {
+        .delivery-nav,
+        .collect-nav {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  // Order Header Ends
+
+  // Menu Page Starts
+  #menu {
+    // Lunch, Dinner The Not Steaks Start
+    #lunch-menu,
+    #dinner-menu,
+    #not-steaks-menu {
+      .lunch-boxes,
+      .dinner-boxes,
+      .not-steaks-boxes {
+        .box {
+          .content {
+            h3 {
+              font-size: 20px;
+            }
+          }
+        }
+      }
     }
 
-    // Menu Page Ends
+    // Lunch, Dinner The Not Steaks End
+
+    // WINE AREA BEGINS
+    #wines,
+    #other {
+      .wine-boxes,
+      .other-boxes {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  }
+
+  // Menu Page Ends
 }
-
-
 
 @media screen and (max-width: 550px) {
-    // .smooth-position {
-    //     padding-top: 125px;
-    // }
+  .smooth-position {
+    padding-top: 125px;
+  }
 
-    // Menu Page, Header Starts
-    #menu-header {
-        #menu-list {
-            padding: 10px 30px;
-        }
+  // Menu Page, Header Starts
+  #menu-header {
+    #menu-list {
+      padding: 10px 30px;
     }
+  }
 
-    // Menu Page, Header Ends
+  // Menu Page, Header Ends
 
-    // Footer Starts
-    #footer {
-        padding: 40px 4px 70px;
+  // Footer Starts
+  #footer {
+    padding: 40px 4px 70px;
 
-        .container {
-            .top {
-                display: flex;
-                justify-content: space-evenly;
+    .container {
+      .top {
+        display: flex;
+        justify-content: space-evenly;
 
-                .column {
-                    margin: 10px 5px;
+        .column {
+          margin: 10px 5px;
 
-                    ul {
-                        li {
-                            font-size: 14px;
-                        }
-                    }
-                }
-
-                .column.four {
-                    .social {
-                        li {
-                            a {
-                                .fab {
-                                    border: 1px solid $dark;
-                                    border-radius: 50%;
-                                    height: 35px;
-                                    width: 35px;
-                                    font-size: 18px;
-                                    line-height: 1.85;
-                                    transition: .3s ease-out;
-                                }
-                            }
-                        }
-                    }
-                }
+          ul {
+            li {
+              font-size: 14px;
             }
-
-            .bottom {
-                display: block;
-                text-align: center;
-
-
-
-                .bottom-logo {
-                    .store {
-                        display: flex;
-                        margin: 20px 0 20px 9.98px;
-                        align-items: center;
-                        justify-content: center;
-                        text-align: center;
-                    }
-                }
-
-                .rights {
-                    display: flex;
-                    justify-content: space-evenly;
-                    text-align: center;
-
-                    li {
-                        font-size: 14px;
-                    }
-                }
-            }
-
+          }
         }
-    }
 
-    // Footer Ends
+        .column.four {
+          .social {
+            li {
+              a {
+                .fab {
+                  border: 1px solid $dark;
+                  border-radius: 50%;
+                  height: 35px;
+                  width: 35px;
+                  font-size: 18px;
+                  line-height: 1.85;
+                  transition: 0.3s ease-out;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .bottom {
+        display: block;
+        text-align: center;
+
+        .bottom-logo {
+          .store {
+            display: flex;
+            margin: 20px 0 20px 9.98px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+          }
+        }
+
+        .rights {
+          display: flex;
+          justify-content: space-evenly;
+          text-align: center;
+
+          li {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  // Footer Ends
 }
 
-
 @media screen and (max-width: 530px) {
-    #main-area {
+  #main-area {
+    // Carousel / Sliders Start
+    #carousel {
+      .sliders-holder {
+        .slider {
+          max-height: 300px;
+          width: 100%;
 
-        // Carousel / Sliders Start
-        #carousel {
-            .sliders-holder {
-                .slider {
-                    max-height: 300px;
-                    width: 100%;
-
-                    .content.delicious {
-                        h3 {
-                            margin: 10px 0 0;
-                            font-size: 32px;
-                            line-height: 1.4;
-                        }
-
-                        a {
-                            padding: 8px 35px;
-                            font-size: 18px;
-                            margin: 15px 0 20px;
-                        }
-                    }
-
-
-
-                    .content.break {
-                        h3 {
-                            font-size: 32px;
-                            line-height: 1.1;
-                            margin-top: 13px;
-                        }
-
-                        p {
-                            margin: 8px 0 -10px;
-                            font-size: 10px;
-                        }
-
-                        a {
-                            padding: 8px 35px;
-                            font-size: 18px;
-                            margin: 20px 0 20px;
-                        }
-                    }
-
-                    .content.corona {
-                        h3 {
-                            padding: 25px 4px 0;
-                            font-size: 30px;
-                            line-height: 1.2;
-                        }
-
-                        p {
-                            margin: 21px 0 0px;
-                            padding: 0 27px;
-                            font-size: 12px;
-                        }
-
-                        .measures {
-                            margin: 30px 0 0;
-
-                            .measure {
-                                i {
-                                    width: 70px;
-                                    height: 70px;
-                                    font-size: 30px;
-                                    line-height: 73px;
-                                }
-
-                                .guidelines {
-                                    font-size: 10px;
-                                }
-                            }
-                        }
-                    }
-
-                }
+          .content.delicious {
+            h3 {
+              margin: 10px 0 0;
+              font-size: 32px;
+              line-height: 1.4;
             }
 
-            .buttons {
-                button {
-                    padding: 3px 3px 1px;
-                }
-
-                .previous {
-                    top: 24.5%;
-                    left: 5px;
-                }
-
-                .next {
-                    top: 24.5%;
-                    right: 5px;
-                }
-
+            a {
+              padding: 8px 35px;
+              font-size: 18px;
+              margin: 15px 0 20px;
             }
-        }
+          }
 
-        // Carousel / Sliders End
-
-        //  Home Page, Start Section Starts
-        #start-section {
-            margin-top: -51px;
-        }
-
-        //  Home Page, Start Section Ends
-
-        //  Home Page, App Section Starts
-        #app {
-            .container {
-                display: block;
-
-                .left {
-                    padding: 0;
-
-                    h3 {
-                        font-size: 20px;
-                        text-align: left;
-                    }
-
-                    #postcode {
-                        label.input-label {
-                            input[type="text"] {
-                                font-size: 17px;
-                            }
-                        }
-
-                        label.button-label {
-                            button {
-                                padding: 15px 35px;
-                            }
-                        }
-                    }
-                }
-
-                .right {
-                    padding-right: 0px;
-                    padding-top: 40px;
-
-                    h3 {
-                        font-size: 27px;
-
-                        br {
-                            display: none;
-                        }
-                    }
-
-
-
-                    p.convenience {
-                        font-size: 16px;
-
-                        br {
-                            display: none;
-                        }
-                    }
-
-                    p.cost {
-                        margin: 0px 0 30px;
-                        font-size: 16px;
-                    }
-
-
-                    a {
-                        display: block;
-                        width: 100%;
-                        font-size: 15px;
-                    }
-                }
+          .content.break {
+            h3 {
+              font-size: 32px;
+              line-height: 1.1;
+              margin-top: 13px;
             }
-        }
 
-        //  Home Page, App Section Ends
-
-        //  Menu Page, lunch-dinner Starts
-        #lunch-dinner {
-            .container {
-                .lunch-dinner {
-
-                    .lunch,
-                    .dinner {
-
-                        .lunch-content,
-                        .dinner-content {
-                            padding-top: 18px;
-
-                            h2 {
-                                font-size: 25px;
-                                padding-bottom: 8px;
-                            }
-
-                            a {
-                                font-size: 18px;
-                            }
-                        }
-                    }
-                }
+            p {
+              margin: 8px 0 -10px;
+              font-size: 10px;
             }
-        }
 
-        //  Menu Page, lunch-dinner Ends
-
-        //  Menu Page, Wines & Other Starts
-        #menu {
-
-            #wines,
-            #other {
-
-                .wine-boxes,
-                .other-boxes {
-                    display: grid;
-                    grid-template-columns: repeat(2, 1fr);
-                }
+            a {
+              padding: 8px 35px;
+              font-size: 18px;
+              margin: 20px 0 20px;
             }
+          }
+
+          .content.corona {
+            h3 {
+              padding: 25px 4px 0;
+              font-size: 30px;
+              line-height: 1.2;
+            }
+
+            p {
+              margin: 21px 0 0px;
+              padding: 0 27px;
+              font-size: 12px;
+            }
+
+            .measures {
+              margin: 30px 0 0;
+
+              .measure {
+                i {
+                  width: 70px;
+                  height: 70px;
+                  font-size: 30px;
+                  line-height: 73px;
+                }
+
+                .guidelines {
+                  font-size: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .buttons {
+        button {
+          padding: 3px 3px 1px;
         }
 
-        //  Menu Page, Wines & Other Ends
+        .previous {
+          top: 24.5%;
+          left: 5px;
+        }
+
+        .next {
+          top: 24.5%;
+          right: 5px;
+        }
+      }
     }
 
-    //  Menu Page, Header Starts
-    #menu-header {
-        .top {
-            .navigation {
-                .logo-holder {
-                    a {
-                        .logo {
-                            span {
-                                margin-top: -6px;
-                                font-size: 4px;
-                            }
-                        }
-                    }
-                }
+    // Carousel / Sliders End
 
-                li {
+    //  Home Page, Start Section Starts
+    #start-section {
+      margin-top: -51px;
+    }
 
-                    &:nth-child(2),
-                    &:nth-child(3) {
-                        display: none;
-                    }
-                }
+    //  Home Page, Start Section Ends
+
+    //  Home Page, App Section Starts
+    #app {
+      .container {
+        display: block;
+
+        .left {
+          padding: 0;
+
+          h3 {
+            font-size: 20px;
+            text-align: left;
+          }
+
+          #postcode {
+            label.input-label {
+              input[type='text'] {
+                font-size: 17px;
+              }
             }
-        }
 
-        #menu-list {
-            padding: 10px 55px;
-        }
-    }
-
-    //  Menu Page, Header Ends
-
-    // Offers Page, Sign Up Area Starts
-    #sign-up-offers {
-        padding: 120px 20px 0;
-
-        .container {
-            .sign-up-content {
-                h1 {
-                    font-size: 25px;
-                }
-
-                #sign-up-form {
-                    input {
-                        padding: 22px 15px;
-                        font-size: 15px;
-                    }
-
-                    .button {
-                        font-size: 18px;
-                    }
-
-                }
+            label.button-label {
+              button {
+                padding: 15px 35px;
+              }
             }
+          }
         }
-    }
 
-    // Offers Page, Sign Up Area Ends
+        .right {
+          padding-right: 0px;
+          padding-top: 40px;
 
-    // Offers Page, Steps Start
-    #steps {
-        padding: 70px 20px 100px;
+          h3 {
+            font-size: 27px;
 
-        .container {
-            .steps-content {
-                .steps-button {
-                    a {
-                        font-size: 20px;
-                    }
-                }
+            br {
+              display: none;
             }
-        }
-    }
+          }
 
-    // Offers Page, Steps End
+          p.convenience {
+            font-size: 16px;
 
-    // Order Page, Collect Section Starts
-    #collect {
-        padding: 120px 15px 0;
-
-        a {
-            color: $dark;
-        }
-
-        .container {
-            .collect-content {
-                display: block;
-                padding: 50px 0;
-
-                .start-content {
-                    h2 {
-                        text-transform: uppercase;
-                        font-size: 20px;
-                        text-align: center;
-                    }
-
-                    p {
-                        text-align: center;
-                        font-size: 12px;
-                    }
-
-                    .collect-form {
-                        .time-input {
-                            display: block;
-                            width: 100%;
-                            margin: 50px 0;
-                            background: rgba(0, 0, 0, 0.1);
-                            padding: 20px 15px 28px;
-
-                            .time {
-
-                                input[type="time"] {
-                                    font-size: 14px;
-                                }
-                            }
-                        }
-
-                        .specify {
-                            font-size: 12px;
-
-                            input[type="checkbox"] {
-                                width: 15px;
-                                height: 15px;
-                                vertical-align: -17%;
-                            }
-                        }
-                    }
-                }
-
-                .apply {
-                    p {
-                        font-size: 12px;
-                    }
-
-                    .redeem-points {
-                        font-size: 20px;
-                        padding: 35px 0 15px;
-                    }
-                }
+            br {
+              display: none;
             }
+          }
+
+          p.cost {
+            margin: 0px 0 30px;
+            font-size: 16px;
+          }
+
+          a {
+            display: block;
+            width: 100%;
+            font-size: 15px;
+          }
         }
+      }
     }
 
-    // Order Page, Collect Section Ends
+    //  Home Page, App Section Ends
 
+    //  Menu Page, lunch-dinner Starts
+    #lunch-dinner {
+      .container {
+        .lunch-dinner {
+          .lunch,
+          .dinner {
+            .lunch-content,
+            .dinner-content {
+              padding-top: 18px;
 
-    // log In Page Starts
-    #login-register {
-        .login-register-content {
-            max-width: 90%;
+              h2 {
+                font-size: 25px;
+                padding-bottom: 8px;
+              }
+
+              a {
+                font-size: 18px;
+              }
+            }
+          }
         }
+      }
     }
 
-    // log In Page Ends
+    //  Menu Page, lunch-dinner Ends
+
+    //  Menu Page, Wines & Other Starts
+    #menu {
+      #wines,
+      #other {
+        .wine-boxes,
+        .other-boxes {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    }
+
+    //  Menu Page, Wines & Other Ends
+  }
+
+  //  Menu Page, Header Starts
+  #menu-header {
+    .top {
+      .navigation {
+        .logo-holder {
+          a {
+            .logo {
+              span {
+                margin-top: -6px;
+                font-size: 4px;
+              }
+            }
+          }
+        }
+
+        li {
+          &:nth-child(2),
+          &:nth-child(3) {
+            display: none;
+          }
+        }
+      }
+    }
+
+    #menu-list {
+      padding: 10px 55px;
+    }
+  }
+
+  //  Menu Page, Header Ends
+
+  // Offers Page, Sign Up Area Starts
+  #sign-up-offers {
+    padding: 120px 20px 0;
+
+    .container {
+      .sign-up-content {
+        h1 {
+          font-size: 25px;
+        }
+
+        #sign-up-form {
+          input {
+            padding: 22px 15px;
+            font-size: 15px;
+          }
+
+          .button {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+
+  // Offers Page, Sign Up Area Ends
+
+  // Offers Page, Steps Start
+  #steps {
+    padding: 70px 20px 100px;
+
+    .container {
+      .steps-content {
+        .steps-button {
+          a {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  // Offers Page, Steps End
+
+  // Order Page, Collect Section Starts
+  #collect {
+    padding: 120px 15px 0;
+
+    a {
+      color: $dark;
+    }
+
+    .container {
+      .collect-content {
+        display: block;
+        padding: 50px 0;
+
+        .start-content {
+          h2 {
+            text-transform: uppercase;
+            font-size: 20px;
+            text-align: center;
+          }
+
+          p {
+            text-align: center;
+            font-size: 12px;
+          }
+
+          .collect-form {
+            .time-input {
+              display: block;
+              width: 100%;
+              margin: 50px 0;
+              background: rgba(0, 0, 0, 0.1);
+              padding: 20px 15px 28px;
+
+              .time {
+                input[type='time'] {
+                  font-size: 14px;
+                }
+              }
+            }
+
+            .specify {
+              font-size: 12px;
+
+              input[type='checkbox'] {
+                width: 15px;
+                height: 15px;
+                vertical-align: -17%;
+              }
+            }
+          }
+        }
+
+        .apply {
+          p {
+            font-size: 12px;
+          }
+
+          .redeem-points {
+            font-size: 20px;
+            padding: 35px 0 15px;
+          }
+        }
+      }
+    }
+  }
+
+  // Order Page, Collect Section Ends
+
+  // log In Page Starts
+  #login-register {
+    .login-register-content {
+      max-width: 90%;
+    }
+  }
+
+  // log In Page Ends
 }
 
 @media screen and (max-width: 450px) {
+  // Home Page, Header Starts
+  #header {
+    .top {
+      overflow: hidden;
 
-    // Home Page, Header Starts
-    #header {
-        .top {
-            overflow: hidden;
+      .container {
+        font-size: 14px;
 
-            .container {
-                font-size: 14px;
-
-                .logo-holder {
-                    a {
-                        .logo {
-                            span {
-                                margin-top: -7px;
-                                font-size: 5px;
-                            }
-                        }
-                    }
-                }
-
-
-
-                .sidenav {
-                    position: fixed;
-                    width: 100%;
-                    height: 100%;
-                    background-color: $ivory;
-                    top: 120px;
-                    left: -100%;
-                    padding-top: 20px;
-                    overflow: scroll;
-                    transition: left .8s ease-in-out;
-                    display: block;
-                    text-align: left;
-                    padding-bottom: 700px;
-
-                    h3 {
-                        padding: 10px 25px;
-                        width: 100%;
-                    }
-
-                    &.show {
-                        left: 0;
-                    }
-
-                    a {
-                        color: $dark;
-                    }
-
-                    .under-info {
-                        h6 {
-                            font-size: 10px;
-                        }
-                    }
-                }
+        .logo-holder {
+          a {
+            .logo {
+              span {
+                margin-top: -7px;
+                font-size: 5px;
+              }
             }
+          }
         }
+
+        .sidenav {
+          position: fixed;
+          width: 100%;
+          height: 100%;
+          background-color: $ivory;
+          top: 120px;
+          left: -100%;
+          padding-top: 20px;
+          overflow: scroll;
+          transition: left 0.8s ease-in-out;
+          display: block;
+          text-align: left;
+          padding-bottom: 700px;
+
+          h3 {
+            padding: 10px 25px;
+            width: 100%;
+          }
+
+          &.show {
+            left: 0;
+          }
+
+          a {
+            color: $dark;
+          }
+
+          .under-info {
+            h6 {
+              font-size: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Home Page, Header Ends
+
+  // Menu Page, Header Starts
+  #menu-header {
+    #menu-list {
+      padding: 10px 40px;
+    }
+  }
+
+  // Menu Page, Header Ends
+
+  #main-area {
+    // Home Page, Start Section Starts
+    #start-section {
+      .container {
+        .start {
+          height: 400px;
+
+          .start-content {
+            height: 150px;
+
+            h3 {
+              font-size: 20px;
+            }
+
+            .options {
+              .delivery,
+              .pickup {
+                font-size: 13px;
+                width: 80px;
+                padding: 8px 0;
+              }
+            }
+          }
+        }
+      }
     }
 
-    // Home Page, Header Ends
+    // Home Page, Start Section Ends
 
-    // Menu Page, Header Starts
-    #menu-header {
-        #menu-list {
-            padding: 10px 40px;
+    //   Menu Page, lunch-dinner Starts
+    #lunch-dinner {
+      .container {
+        .lunch-dinner {
+          .lunch,
+          .dinner {
+            .lunch-content,
+            .dinner-content {
+              padding: 18px 15px 0;
+
+              h2 {
+                font-size: 24px;
+                padding-bottom: 8px;
+              }
+
+              a {
+                padding: 5px 12px;
+              }
+            }
+          }
         }
+      }
     }
 
-    // Menu Page, Header Ends
+    //   Menu Page, lunch-dinner Ends
+  }
 
+  //Order Page,  Order Header Starts
+  #order-header {
+    .order-nav {
+      .order-top {
+        padding: 16px 20px;
 
-    #main-area {
+        .order-logo {
+          padding-top: 7px;
 
-        // Home Page, Start Section Starts
-        #start-section {
-            .container {
-                .start {
-                    height: 400px;
-
-                    .start-content {
-                        height: 150px;
-
-                        h3 {
-                            font-size: 20px;
-                        }
-
-                        .options {
-
-                            .delivery,
-                            .pickup {
-                                font-size: 13px;
-                                width: 80px;
-                                padding: 8px 0;
-                            }
-                        }
-                    }
-                }
+          h1 {
+            span {
+              margin-top: -8px;
+              font-size: 5px;
             }
+          }
         }
 
-        // Home Page, Start Section Ends
-
-        //   Menu Page, lunch-dinner Starts
-        #lunch-dinner {
-
-            .container {
-
-                .lunch-dinner {
-
-                    .lunch,
-                    .dinner {
-
-                        .lunch-content,
-                        .dinner-content {
-                            padding: 18px 15px 0;
-
-                            h2 {
-                                font-size: 24px;
-                                padding-bottom: 8px;
-                            }
-
-                            a {
-                                padding: 5px 12px;
-                            }
-                        }
-                    }
-                }
+        .login-link {
+          a {
+            &::after {
+              height: 3px;
+              bottom: -3px;
             }
+          }
         }
+      }
 
-        //   Menu Page, lunch-dinner Ends
+      .order-options {
+        .delivery-nav,
+        .collect-nav {
+          font-size: 14px;
+          margin: 0 8px;
+
+          .order-link {
+            &::after {
+              height: 3px;
+              bottom: -3px;
+            }
+          }
+        }
+      }
     }
+  }
 
-    //Order Page,  Order Header Starts
-    #order-header {
-        .order-nav {
-            .order-top {
-                padding: 16px 20px;
+  //Order Page,  Order Header Ends
 
-                .order-logo {
-                    padding-top: 7px;
+  // Order Page, Delivery Section Starts
+  #delivery {
+    padding: 120px 2px 0;
+    background: $ivory;
 
-                    h1 {
-                        span {
-                            margin-top: -8px;
-                            font-size: 5px;
-                        }
-                    }
-                }
+    .container {
+      .delivery-content {
+        display: block;
 
-                .login-link {
-                    a {
-                        &::after {
-                            height: 3px;
-                            bottom: -3px;
-                        }
-                    }
-                }
+        .delivery-form-content {
+          padding: 0 12px;
+
+          .form-heading {
+            font-size: 20px;
+          }
+
+          #delivery-form {
+            input {
+              font-size: 14px;
+              font-weight: 400;
+
+              &:first-child {
+                margin-bottom: 1px;
+              }
             }
 
-            .order-options {
-
-                .delivery-nav,
-                .collect-nav {
-                    font-size: 14px;
-                    margin: 0 8px;
-
-                    .order-link {
-                        &::after {
-                            height: 3px;
-                            bottom: -3px;
-                        }
-                    }
-                }
+            .limited {
+              font-size: 10px;
             }
+
+            .look-up {
+              .delivery-button,
+              .cancel {
+                font-size: 9px;
+              }
+            }
+          }
+
+          p {
+            font-size: 12px;
+          }
         }
-    }
 
-    //Order Page,  Order Header Ends
+        .apply {
+          max-width: 100%;
+          padding: 0 12px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
 
-    // Order Page, Delivery Section Starts
-    #delivery {
-        padding: 120px 2px 0;
-        background: $ivory;
+          hr {
+            width: 100%;
+            display: block;
+            height: 1px;
+            background-color: $tomato;
+            border: none;
+            margin: 15px 0 35px;
+          }
 
-        .container {
-            .delivery-content {
-                display: block;
+          .redeem-points {
+            font-size: 20px;
+          }
 
-                .delivery-form-content {
-                    padding: 0 12px;
-
-                    .form-heading {
-                        font-size: 20px;
-                    }
-
-                    #delivery-form {
-                        input {
-                            font-size: 14px;
-                            font-weight: 400;
-
-                            &:first-child {
-                                margin-bottom: 1px;
-                            }
-                        }
-
-                        .limited {
-                            font-size: 10px;
-                        }
-
-                        .look-up {
-
-                            .delivery-button,
-                            .cancel {
-                                font-size: 9px;
-                            }
-                        }
-                    }
-
-                    p {
-                        font-size: 12px;
-                    }
-                }
-
-                .apply {
-                    max-width: 100%;
-                    padding: 0 12px;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-
-                    hr {
-                        width: 100%;
-                        display: block;
-                        height: 1px;
-                        background-color: $tomato;
-                        border: none;
-                        margin: 15px 0 35px;
-                    }
-
-                    .redeem-points {
-                        font-size: 20px;
-                    }
-
-                    .redeem-input {
-                        input {
-                            width: 100%;
-                            font-size: 14px;
-                            font-weight: 400;
-                        }
-
-                        a {
-                            margin-top: 15px;
-                            display: block;
-                            min-width: 100%;
-                            overflow: auto;
-                        }
-                    }
-
-                    p {
-                        text-align: center;
-                        font-size: 12px;
-                    }
-                }
+          .redeem-input {
+            input {
+              width: 100%;
+              font-size: 14px;
+              font-weight: 400;
             }
+
+            a {
+              margin-top: 15px;
+              display: block;
+              min-width: 100%;
+              overflow: auto;
+            }
+          }
+
+          p {
+            text-align: center;
+            font-size: 12px;
+          }
         }
+      }
     }
+  }
 
-    // Order Page, Delivery Section Ends
+  // Order Page, Delivery Section Ends
 
-    // Register Page Starts
-    #register {
-        .popup {
-            .popup-header {
-                font-size: 14px;
+  // Register Page Starts
+  #register {
+    .popup {
+      .popup-header {
+        font-size: 14px;
 
-                .close-register {
-                    font-size: 12px;
-                }
-            }
-
-            .popup-content {
-                .easy {
-                    font-size: 16px;
-                    padding: 10px 0 20px;
-                }
-
-                .now {
-                    font-size: 21px;
-                    padding: 18px 0;
-                }
-
-                #form-register {
-                    .left-input {
-                        input {
-                            padding: 16px 6px;
-                            font-size: 12px;
-                        }
-                    }
-
-                    .right-input {
-                        input[type="text"] {
-                            padding: 16px 6px;
-                            font-size: 12px;
-
-                            &:first-child {
-                                margin-bottom: 4px;
-                            }
-                        }
-
-                        .text-label {
-                            font-size: 12px;
-                        }
-
-                        input#text2 {
-                            margin: 22px 0 22px;
-                        }
-
-                        .receive {
-                            margin: 18px 0 23px;
-
-                            input[type="checkbox"] {
-                                vertical-align: 3.69%;
-                                zoom: 0.9;
-                            }
-
-                            label.of-age {
-                                font-size: 12px;
-                            }
-                        }
-
-                        .creating {
-                            input[type="checkbox"] {
-                                vertical-align: 3.69%;
-                                zoom: 0.9;
-                            }
-
-                            label.read {
-                                font-size: 12px;
-                            }
-                        }
-
-
-                        button.btn-register {
-                            font-size: 11px;
-                        }
-                    }
-                }
-
-            }
+        .close-register {
+          font-size: 12px;
         }
-    }
+      }
 
-    // Register Page Ends
+      .popup-content {
+        .easy {
+          font-size: 16px;
+          padding: 10px 0 20px;
+        }
+
+        .now {
+          font-size: 21px;
+          padding: 18px 0;
+        }
+
+        #form-register {
+          .left-input {
+            input {
+              padding: 16px 6px;
+              font-size: 12px;
+            }
+          }
+
+          .right-input {
+            input[type='text'] {
+              padding: 16px 6px;
+              font-size: 12px;
+
+              &:first-child {
+                margin-bottom: 4px;
+              }
+            }
+
+            .text-label {
+              font-size: 12px;
+            }
+
+            input#text2 {
+              margin: 22px 0 22px;
+            }
+
+            .receive {
+              margin: 18px 0 23px;
+
+              input[type='checkbox'] {
+                vertical-align: 3.69%;
+                zoom: 0.9;
+              }
+
+              label.of-age {
+                font-size: 12px;
+              }
+            }
+
+            .creating {
+              input[type='checkbox'] {
+                vertical-align: 3.69%;
+                zoom: 0.9;
+              }
+
+              label.read {
+                font-size: 12px;
+              }
+            }
+
+            button.btn-register {
+              font-size: 11px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Register Page Ends
 }
 
 @media screen and (max-width: 416px) {
-    #main-area {
+  #main-area {
+    // Carousel / Sliders Start
+    #carousel {
+      .sliders-holder {
+        .slider {
+          max-height: 250px;
+          width: 100%;
 
-        // Carousel / Sliders Start
-        #carousel {
-            .sliders-holder {
-                .slider {
-                    max-height: 250px;
-                    width: 100%;
-
-                    .content.delicious {
-                        h3 {
-                            margin: 10px 0 0;
-                            font-size: 22px;
-                            line-height: 1.4;
-                        }
-
-                        a {
-                            padding: 8px 25px;
-                            font-size: 14px;
-                            margin: 15px 0 20px;
-                        }
-                    }
-
-
-
-                    .content.break {
-                        margin-left: 5px;
-
-                        h3 {
-                            font-size: 22px;
-                            line-height: 1.1;
-                            margin-top: 13px;
-                        }
-
-                        p {
-                            margin: 8px 0 -10px;
-                            font-size: 9px;
-                        }
-
-                        a {
-                            padding: 8px 25px;
-                            font-size: 14px;
-                            margin: 20px 0 20px;
-                        }
-                    }
-
-                    .content.corona {
-                        h3 {
-                            padding: 27px 4px 0;
-                            font-size: 22px;
-                            line-height: 1.2;
-                        }
-
-                        p {
-                            margin: 25px 0 0px;
-                            padding: 0 27px;
-                            font-size: 10px;
-                        }
-
-                        .measures {
-                            margin: 30px 0 0;
-
-                            .measure {
-                                margin: 0 10px;
-
-                                i {
-                                    width: 50px;
-                                    height: 50px;
-                                    font-size: 22px;
-                                    line-height: 55px;
-                                }
-
-                                .guidelines {
-                                    font-size: 8px;
-                                }
-                            }
-                        }
-                    }
-
-                }
+          .content.delicious {
+            h3 {
+              margin: 10px 0 0;
+              font-size: 22px;
+              line-height: 1.4;
             }
 
-            .buttons {
-                button {
-                    padding: 3px 3px 1px;
-                }
-
-                .previous {
-                    top: 20.5%;
-                    left: 5px;
-                }
-
-                .next {
-                    top: 20.5%;
-                    right: 5px;
-                }
-
+            a {
+              padding: 8px 25px;
+              font-size: 14px;
+              margin: 15px 0 20px;
             }
+          }
+
+          .content.break {
+            margin-left: 5px;
+
+            h3 {
+              font-size: 22px;
+              line-height: 1.1;
+              margin-top: 13px;
+            }
+
+            p {
+              margin: 8px 0 -10px;
+              font-size: 9px;
+            }
+
+            a {
+              padding: 8px 25px;
+              font-size: 14px;
+              margin: 20px 0 20px;
+            }
+          }
+
+          .content.corona {
+            h3 {
+              padding: 27px 4px 0;
+              font-size: 22px;
+              line-height: 1.2;
+            }
+
+            p {
+              margin: 25px 0 0px;
+              padding: 0 27px;
+              font-size: 10px;
+            }
+
+            .measures {
+              margin: 30px 0 0;
+
+              .measure {
+                margin: 0 10px;
+
+                i {
+                  width: 50px;
+                  height: 50px;
+                  font-size: 22px;
+                  line-height: 55px;
+                }
+
+                .guidelines {
+                  font-size: 8px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .buttons {
+        button {
+          padding: 3px 3px 1px;
         }
 
-        // Carousel / Sliders End
-
-        // Home Page, Start Section Starts
-        #start-section {
-            padding: 0 15px;
-            margin-top: -107px;
-
-            .container {
-                .start {
-                    height: 310px;
-
-                    .start-content {
-                        height: 120px;
-
-                        h3 {
-                            font-size: 18px;
-                            padding-left: 2px;
-                        }
-
-                        .options {
-                            margin-top: 5px;
-
-                            .delivery,
-                            .pickup {
-                                font-size: 12px;
-                                padding: 7px 0;
-                            }
-
-                            span {
-                                font-size: 10px;
-                            }
-                        }
-                    }
-
-                    .start-image {
-                        height: 190px;
-                    }
-                }
-            }
+        .previous {
+          top: 20.5%;
+          left: 5px;
         }
 
-        // Home Page, Start Section Ends
-
-        // Home Page, App Section Starts
-        #app {
-            padding: 0 15px;
-
-            .container {
-                display: block;
-
-                .left {
-                    padding: 15px 0 0;
-
-                    h3 {
-                        line-height: 1.3;
-                        font-size: 18px;
-                        text-align: left;
-                    }
-
-                    .partners {
-                        margin: 0;
-
-                        .partner {
-                            margin: 10px 0 12px;
-                        }
-                    }
-
-                    #postcode {
-                        border: 4px solid $tomato;
-
-                        label.input-label {
-
-                            input[type="text"] {
-                                font-size: 15px;
-                            }
-                        }
-
-                        label.button-label {
-                            button {
-                                padding: 15px 30px;
-                            }
-                        }
-                    }
-                }
-
-                .right {
-                    h3 {
-                        font-size: 25px;
-
-                        br {
-                            display: none;
-                        }
-                    }
-
-
-
-                    p.convenience {
-                        font-size: 15px;
-
-                        br {
-                            display: none;
-                        }
-                    }
-
-                    p.cost {
-                        margin: 0px 0 18px;
-                        font-size: 16px;
-                    }
-
-
-                    a {
-                        display: block;
-                        width: 100%;
-                        font-size: 15px;
-                    }
-                }
-            }
+        .next {
+          top: 20.5%;
+          right: 5px;
         }
-
-        // Home Page, App Section Ends
-
-        // Menu Page , Lunch-Dinner Starts
-        #lunch-dinner {
-            padding: 0 15px;
-
-            .container {
-                .lunch-dinner {
-
-                    .lunch,
-                    .dinner {
-                        height: 298px;
-
-                        .lunch-content,
-                        .dinner-content {
-                            height: 108px;
-                            padding: 18px 15px 0;
-
-                            h2 {
-                                font-size: 18px;
-                                padding-bottom: 8px;
-                            }
-
-                            a {
-                                font-size: 12px;
-                            }
-                        }
-
-                        .lunch-image,
-                        .dinner-image {
-                            height: 190px;
-                        }
-                    }
-                }
-            }
-        }
-
-        // Menu Page , Lunch-Dinner Ends
-
-        // Sign Up Page Starts
-        #sign-up {
-            padding: 0 12px;
-            background-color: $dark;
-
-            .container {
-                .sign-up-content {
-                    h1 {
-                        font-size: 22px;
-                    }
-
-                    #sign-up-form {
-
-                        p,
-                        label {
-                            font-size: 10px;
-                        }
-
-                        input {
-                            font-size: 13px;
-                        }
-                    }
-                }
-            }
-        }
-
-        // Sign Up Page Ends
+      }
     }
 
-    // Menu Page, Lunch, Dinner & The Not Steaks Start
-    #menu {
+    // Carousel / Sliders End
 
-        #lunch-menu,
-        #dinner-menu,
-        #not-steaks-menu {
+    // Home Page, Start Section Starts
+    #start-section {
+      padding: 0 15px;
+      margin-top: -107px;
 
-            .lunch-boxes,
-            .dinner-boxes,
-            .not-steaks-boxes {
-                .box {
-                    .content {
+      .container {
+        .start {
+          height: 310px;
 
-                        h3 {
-                            font-size: 18px;
-                        }
-                    }
-                }
+          .start-content {
+            height: 120px;
+
+            h3 {
+              font-size: 18px;
+              padding-left: 2px;
             }
+
+            .options {
+              margin-top: 5px;
+
+              .delivery,
+              .pickup {
+                font-size: 12px;
+                padding: 7px 0;
+              }
+
+              span {
+                font-size: 10px;
+              }
+            }
+          }
+
+          .start-image {
+            height: 190px;
+          }
         }
+      }
     }
 
-    // Menu Page, Lunch, Dinner & The Not Steaks End
+    // Home Page, Start Section Ends
 
-    // Menu Page, Header Starts
-    #menu-header {
-        #menu-list {
-            padding: 10px 35px;
+    // Home Page, App Section Starts
+    #app {
+      padding: 0 15px;
 
-            .list-items {
-                .items {
-                    .item {
-                        span {
-                            display: none;
-                        }
-                    }
-                }
+      .container {
+        display: block;
+
+        .left {
+          padding: 15px 0 0;
+
+          h3 {
+            line-height: 1.3;
+            font-size: 18px;
+            text-align: left;
+          }
+
+          .partners {
+            margin: 0;
+
+            .partner {
+              margin: 10px 0 12px;
             }
+          }
+
+          #postcode {
+            border: 4px solid $tomato;
+
+            label.input-label {
+              input[type='text'] {
+                font-size: 15px;
+              }
+            }
+
+            label.button-label {
+              button {
+                padding: 15px 30px;
+              }
+            }
+          }
         }
+
+        .right {
+          h3 {
+            font-size: 25px;
+
+            br {
+              display: none;
+            }
+          }
+
+          p.convenience {
+            font-size: 15px;
+
+            br {
+              display: none;
+            }
+          }
+
+          p.cost {
+            margin: 0px 0 18px;
+            font-size: 16px;
+          }
+
+          a {
+            display: block;
+            width: 100%;
+            font-size: 15px;
+          }
+        }
+      }
     }
 
-    // Menu Page, Header Ends
+    // Home Page, App Section Ends
 
-    //  Login Page Starts
-    #login-register {
-        .login-register-content {
-            .login-register-header {
-                padding: 8px 10px 10px;
-                font-size: 14px;
+    // Menu Page , Lunch-Dinner Starts
+    #lunch-dinner {
+      padding: 0 15px;
 
-                .close {
-                    font-size: 18px;
-                }
+      .container {
+        .lunch-dinner {
+          .lunch,
+          .dinner {
+            height: 298px;
+
+            .lunch-content,
+            .dinner-content {
+              height: 108px;
+              padding: 18px 15px 0;
+
+              h2 {
+                font-size: 18px;
+                padding-bottom: 8px;
+              }
+
+              a {
+                font-size: 12px;
+              }
             }
 
-            .login-register-box {
-                padding: 20px 10px;
-
-                #login-form {
-
-                    input[type="email"],
-                    input[type="text"] {
-                        padding: 16px 10px;
-                        font-size: 14px;
-                    }
-
-                    .login-btn {
-                        padding: 16px 35px;
-                    }
-                }
-
-                .vertical-line {
-                    display: none;
-                }
-
-                .create-alternative {
-                    display: none;
-                }
-
+            .lunch-image,
+            .dinner-image {
+              height: 190px;
             }
-
+          }
         }
+      }
     }
 
-    //  Login Page Ends
+    // Menu Page , Lunch-Dinner Ends
+
+    // Sign Up Page Starts
+    #sign-up {
+      padding: 0 12px;
+      background-color: $dark;
+
+      .container {
+        .sign-up-content {
+          h1 {
+            font-size: 22px;
+          }
+
+          #sign-up-form {
+            p,
+            label {
+              font-size: 10px;
+            }
+
+            input {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+
+    // Sign Up Page Ends
+  }
+
+  // Menu Page, Lunch, Dinner & The Not Steaks Start
+  #menu {
+    #lunch-menu,
+    #dinner-menu,
+    #not-steaks-menu {
+      .lunch-boxes,
+      .dinner-boxes,
+      .not-steaks-boxes {
+        .box {
+          .content {
+            h3 {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Menu Page, Lunch, Dinner & The Not Steaks End
+
+  // Menu Page, Header Starts
+  #menu-header {
+    #menu-list {
+      padding: 10px 35px;
+
+      .list-items {
+        .items {
+          .item {
+            span {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Menu Page, Header Ends
+
+  //  Login Page Starts
+  #login-register {
+    .login-register-content {
+      .login-register-header {
+        padding: 8px 10px 10px;
+        font-size: 14px;
+
+        .close {
+          font-size: 18px;
+        }
+      }
+
+      .login-register-box {
+        padding: 20px 10px;
+
+        #login-form {
+          input[type='email'],
+          input[type='text'] {
+            padding: 16px 10px;
+            font-size: 14px;
+          }
+
+          .login-btn {
+            padding: 16px 35px;
+          }
+        }
+
+        .vertical-line {
+          display: none;
+        }
+
+        .create-alternative {
+          display: none;
+        }
+      }
+    }
+  }
+
+  //  Login Page Ends
 }
 
 @media screen and (max-width: 338px) {
-    // .smooth-position {
-    //     padding-top: 166px;
-    // }
+  .smooth-position {
+    padding-top: 166px;
+  }
 }
 
 @media screen and (max-width: 333px) {
+  // Menu Page, Lunch-dinner Starts
+  #main-area {
+    #lunch-dinner {
+      .container {
+        .lunch-dinner {
+          .dinner {
+            .dinner-content {
+              padding: 10px 15px 0;
 
-    // Menu Page, Lunch-dinner Starts
-    #main-area {
-        #lunch-dinner {
-            .container {
-                .lunch-dinner {
-                    .dinner {
-                        .dinner-content {
-                            padding: 10px 15px 0;
-
-                            h2 {
-                                line-height: 1.3;
-                            }
-                        }
-                    }
-                }
+              h2 {
+                line-height: 1.3;
+              }
             }
+          }
         }
+      }
     }
+  }
 
-    // Menu Page, Lunch-dinner Ends
+  // Menu Page, Lunch-dinner Ends
 
-    // Menu Page, Header Starts
-    #menu-header {
-        .top {
-            .navigation {
-                font-size: 15px;
+  // Menu Page, Header Starts
+  #menu-header {
+    .top {
+      .navigation {
+        font-size: 15px;
 
-                li {
-                    padding: 1px 2px;
-                }
-            }
+        li {
+          padding: 1px 2px;
         }
+      }
     }
+  }
 
-    // Menu Page, Header Ends
+  // Menu Page, Header Ends
 }
 
 @media screen and (max-width: 319px) {
+  // Register Page Starts
+  #register {
+    .popup {
+      .popup-header {
+        font-size: 10px;
 
-    // Register Page Starts
-    #register {
-        .popup {
-            .popup-header {
-                font-size: 10px;
-
-                .close-register {
-                    cursor: pointer;
-                    font-size: 9px;
-                }
-            }
-
-            .popup-content {
-                .easy {
-                    font-size: 12px;
-                    padding: 6px 0 16px;
-                }
-
-                .now {
-                    font-size: 17px;
-                    padding: 14px 0;
-                }
-
-                #form-register {
-                    .left-input {
-                        input {
-                            padding: 16px 6px;
-                            font-size: 12px;
-                        }
-                    }
-
-                    .right-input {
-                        input[type="text"] {
-                            padding: 16px 6px;
-                            font-size: 12px;
-
-                            &:first-child {
-                                margin-bottom: 4px;
-                            }
-                        }
-
-                        .text-label {
-                            font-size: 12px;
-                        }
-
-                        input#text2 {
-                            margin: 22px 0 22px;
-                        }
-
-                        .receive {
-                            margin: 18px 0 23px;
-
-                            input[type="checkbox"] {
-                                vertical-align: 3.69%;
-                                zoom: 0.9;
-                            }
-
-                            label.of-age {
-                                font-size: 12px;
-                            }
-                        }
-
-                        .creating {
-                            input[type="checkbox"] {
-                                vertical-align: 3.69%;
-                                zoom: 0.9;
-                            }
-                        }
-
-
-                        button.btn-register {
-                            font-size: 10px;
-                        }
-                    }
-                }
-
-            }
+        .close-register {
+          cursor: pointer;
+          font-size: 9px;
         }
-    }
+      }
 
-    // Register Page Ends
+      .popup-content {
+        .easy {
+          font-size: 12px;
+          padding: 6px 0 16px;
+        }
+
+        .now {
+          font-size: 17px;
+          padding: 14px 0;
+        }
+
+        #form-register {
+          .left-input {
+            input {
+              padding: 16px 6px;
+              font-size: 12px;
+            }
+          }
+
+          .right-input {
+            input[type='text'] {
+              padding: 16px 6px;
+              font-size: 12px;
+
+              &:first-child {
+                margin-bottom: 4px;
+              }
+            }
+
+            .text-label {
+              font-size: 12px;
+            }
+
+            input#text2 {
+              margin: 22px 0 22px;
+            }
+
+            .receive {
+              margin: 18px 0 23px;
+
+              input[type='checkbox'] {
+                vertical-align: 3.69%;
+                zoom: 0.9;
+              }
+
+              label.of-age {
+                font-size: 12px;
+              }
+            }
+
+            .creating {
+              input[type='checkbox'] {
+                vertical-align: 3.69%;
+                zoom: 0.9;
+              }
+            }
+
+            button.btn-register {
+              font-size: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Register Page Ends
 }
 
 @media screen and (max-width: 274px) {
-    // .smooth-position {
-    //     padding-top: 206px;
-    // }
+  .smooth-position {
+    padding-top: 206px;
+  }
 }

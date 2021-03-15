@@ -1,4 +1,7 @@
+'use strict';
+/* ----------------------------------------------------------- */
 // 1. LOGIN FORM
+/* ----------------------------------------------------------- */
 const loginRegister = document.querySelector('#login-register');
 const loginLink = document.querySelector('.login-link');
 const xCloseLogin = document.querySelector('.close');
@@ -46,7 +49,9 @@ document.addEventListener('keydown', e => {
   unHideBodyScroll();
 });
 
+/* ----------------------------------------------------------- */
 // 2. REGISTER / SIGN UP FORM
+/* ----------------------------------------------------------- */
 const signUpLink = document.querySelectorAll('.sign-up-link');
 const register = document.querySelector('#register');
 const xCloseRegister = document.querySelector('.close-register');
@@ -96,63 +101,57 @@ document.addEventListener('keydown', e => {
 });
 
 FIXME: console.log('fix');
+/* ----------------------------------------------------------- */
 //3. STICKY MENU-LIST NAVIGATION
-// const menuListContainer = document.querySelector('#menu-list');
-// const pageTop = menuListContainer.offsetTop;
-// // const smoothPosition = document.querySelector('#menu');
-// // console.log(smoothPosition, pageTop);
+/* ----------------------------------------------------------- */
+const menuListContainer = document.querySelector('#menu-list');
+const pageTop = menuListContainer.offsetTop;
+const smoothPosition = document.querySelector('#menu');
+// console.log(smoothPosition, pageTop);
 
-// const stickMenu = () => {
-//   if (pageYOffset >= pageTop) {
-//     menuListContainer.classList.add('sticky');
-//     // smoothPosition.classList.add('smooth-position');
-//   } else {
-//     menuListContainer.classList.remove('sticky');
-//     // smoothPosition.classList.remove('smooth-position');
-//   }
-// };
+const stickMenu = () => {
+  if (pageYOffset >= pageTop) {
+    menuListContainer.classList.add('sticky');
+    smoothPosition.classList.add('smooth-position');
+  } else {
+    menuListContainer.classList.remove('sticky');
+    smoothPosition.classList.remove('smooth-position');
+  }
+};
 
-// onscroll = () => {
-//   stickMenu();
-// };
-// console.log(menuListContainer, pageTop, smoothPosition);
+onscroll = () => {
+  stickMenu();
+};
+console.log(menuListContainer, pageTop, smoothPosition);
 
 TODO: console.log('do');
-const menuNavContainer = document.querySelector('#menu-list');
-const smoothKickIn = document.querySelector('#menu');
-// const mainArea = document.querySelector('#main-area');
-// const mainAreaHeight = mainArea.getBoundingClientRect();
-const menuNavHeight = menuNavContainer.getBoundingClientRect().height;
-const menuHeader = document.querySelector('#menu-header');
-console.log(
-  menuNavContainer,
-  menuNavHeight,
-  menuHeader,
-  // mainArea,
-  // mainAreaHeight,
-  smoothKickIn
-);
+// const menuNavContainer = document.querySelector('#menu-list');
+// const smoothKickIn = document.querySelector('#menu');
+// // const mainArea = document.querySelector('#main-area');
+// // const mainAreaHeight = mainArea.getBoundingClientRect();
+// const menuNavHeight = menuNavContainer.getBoundingClientRect().height;
+// const menuHeader = document.querySelector('#menu-header');
 
-// menuNavContainer.classList.remove('sticky');
-// smoothKickIn.classList.remove('smooth-position');
+// // menuNavContainer.classList.remove('sticky');
+// // smoothKickIn.classList.remove('smooth-position');
 
-const menuHeaderObserver = new IntersectionObserver(
-  function (entries) {
-    const [entry] = entries;
-    console.log(entry);
+// const menuHeaderObserver = new IntersectionObserver(
+//   function (entries) {
+//     const [entry] = entries;
+//     console.log(entry);
 
-    if (!entry.isIntersecting) {
-      menuNavContainer.classList.add('sticky');
-      //   mainArea.classList.add('m-top');
-    } else {
-      //   mainArea.classList.remove('m-top');
-      menuNavContainer.classList.remove('sticky');
-    }
-  },
-  { root: null, threshold: 0, rootMargin: `-${menuNavHeight}px` }
-);
+//     if (!entry.isIntersecting) {
+//       menuNavContainer.classList.add('sticky');
+//       //   mainArea.classList.add('m-top');
+//     } else {
+//       //   mainArea.classList.remove('m-top');
+//       menuNavContainer.classList.remove('sticky');
+//     }
+//   },
+//   { root: null, threshold: 0, rootMargin: `-${menuNavHeight}px` }
+// );
 
-menuHeaderObserver.observe(menuHeader);
+// menuHeaderObserver.observe(menuHeader);
 // menuHeaderObserver.unobserve(menuHeader);
 
 // 4. MENU-LIST SMOOTH NAVIGATION LINKS

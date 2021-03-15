@@ -1,3 +1,4 @@
+'use strict';
 //A...... HAMBURGER MENU
 const openHamburger = document.querySelector('#hamburger-toggler');
 const mobileNav = document.querySelector('.sidenav');
@@ -95,6 +96,21 @@ prevBtn.addEventListener('click', e => {
     sliderInterval = setInterval(nextSlider, intervalTime);
   }
 });
+
+// Dots Funtionality
+// const slides = document.querySelectorAll('.slider');
+// const dotsWrapper = document.querySelector('.dots');
+// console.log(slides, dotsWrapper);
+
+// const createDots = e => {
+//   slides.forEach((_, index) => {
+//     dotsWrapper.insertAdjacentHTML(
+//       'beforeend',
+//       `<button class="each-dot" data-slide="${index}"></button>`
+//     );
+//   });
+// };
+// createDots();
 
 // C...... DELIVERY POSTCODE VALIDATION
 const postCode = document.getElementById('postcode');
