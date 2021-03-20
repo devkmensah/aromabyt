@@ -1503,7 +1503,8 @@ img {
         padding-right: 0px; }
         #main-area #app .container .right h3 {
           font-size: 32px;
-          margin-bottom: 12px; }
+          margin-bottom: 12px;
+          text-transform: capitalize; }
         #main-area #app .container .right p.convenience {
           font-family: 'Open Sans', sans-serif; }
         #main-area #app .container .right p.cost {
