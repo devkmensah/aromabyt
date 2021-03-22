@@ -38,7 +38,7 @@ if (autoScroll) {
   sliderInterval = setInterval(nextSlider, intervalTime);
 }
 
-// Buttons event
+// BUTTONS EVENT
 nextBtn.addEventListener('click', e => {
   nextSlider();
   if (autoScroll) {

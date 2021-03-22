@@ -1,5 +1,7 @@
 'use strict';
+/* ----------------------------------------------------------- */
 // 1. LOGIN FORM
+/* ----------------------------------------------------------- */
 const loginRegister = document.querySelector('#login-register');
 const loginLink = document.querySelector('.login-link');
 const xCloseLogin = document.querySelector('.close');
@@ -47,7 +49,9 @@ document.addEventListener('keydown', e => {
   unHideBodyScroll();
 });
 
+/* ----------------------------------------------------------- */
 // 2. REGISTER / SIGN UP FORM
+/* ----------------------------------------------------------- */
 const signUpLink = document.querySelectorAll('.sign-up-link');
 const register = document.querySelector('#register');
 const xCloseRegister = document.querySelector('.close-register');
@@ -88,7 +92,6 @@ register.addEventListener('click', e => {
 });
 
 document.addEventListener('keydown', e => {
-  // hideLogin();
   if (e.key === 'Escape') {
     hideLogin();
     unHideBodyScroll();
@@ -96,11 +99,12 @@ document.addEventListener('keydown', e => {
   }
 });
 
+/* ----------------------------------------------------------- */
 // 3. DELIVERY OR I'LL COLLECT ORDER LINKS
+/* ----------------------------------------------------------- */
 const orderOptions = document.querySelector('.order-options');
 const orderLinks = document.querySelectorAll('.order-link');
 const orderContent = document.querySelectorAll('.order-link-content');
-// console.log(orderOptions, orderLinks, orderContent);
 orderOptions.addEventListener('click', function (e) {
   e.preventDefault();
   const clicked = e.target.closest('.order-link');
