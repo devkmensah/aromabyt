@@ -1,4 +1,5 @@
 'use strict';
+
 // FORM VALIDATION
 const signUpForm = document.getElementById('sign-up-form');
 const firstName = document.getElementById('first-name');
@@ -74,17 +75,11 @@ const emailValidation = emailField => {
   }
 };
 
-TODO: console.log('names to strings');
 // 4. Max & Min input field names
 const lengthCheck = (input, min, max) => {
   if (input.value === '') {
     errorMessage(input, `${inputFieldName(input)} required`);
-  }
-  // else if (Number.isFinite(input.value)) {
-  //   // console.log('Name cannot include number');
-  //   errorMessage(input, `${inputFieldName(input)} cannot include a number`);
-  // }
-  else if (input.value.length < min) {
+  } else if (input.value.length < min) {
     errorMessage(
       input,
       `${inputFieldName(input)} must be at least ${min} characters`
@@ -99,7 +94,7 @@ const lengthCheck = (input, min, max) => {
   }
 };
 
-// 1. Submit Form Hnadler
+// 1. Form Submit Handler
 signUpForm.addEventListener('submit', function (e) {
   e.preventDefault();
 
