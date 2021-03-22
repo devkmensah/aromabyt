@@ -1,6 +1,8 @@
 'use strict';
 
+/* ----------------------------------------------------------- */
 // FORM VALIDATION
+/* ----------------------------------------------------------- */
 const signUpForm = document.getElementById('sign-up-form');
 const firstName = document.getElementById('first-name');
 const lastName = document.getElementById('last-name');
