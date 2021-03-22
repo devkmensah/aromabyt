@@ -1,33 +1,21 @@
 'use strict';
-//A...... HAMBURGER MENU
+
+/* ----------------------------------------------------------- */
+// HAMBURGER MENU
+/* ----------------------------------------------------------- */
 const openHamburger = document.querySelector('#hamburger-toggler');
 const mobileNav = document.querySelector('.sidenav');
 
-function openMenu(e) {
+const openMenu = function (e) {
   this.querySelector('.burger-icon').classList.toggle('fa-bars');
   this.querySelector('.burger-icon').classList.toggle('fa-times');
   mobileNav.classList.toggle('show');
-}
-
+};
 openHamburger.addEventListener('click', openMenu);
 
-console.log(openHamburger, mobileNav);
-
-// HAMBURGER MENU
-// const openHamburger = document.querySelector('#hamburger-toggler');
-// const navBtnClose = document.querySelector('.sidenav-close');
-// const hiddenNav = document.querySelector('.sidenav');
-// console.log(openHamburger, hiddenNav, navBtnClose);
-
-// openHamburger.addEventListener('click', () => {
-//     hiddenNav.style.width = "100%";
-// })
-
-// navBtnClose.addEventListener('click', () => {
-//     hiddenNav.style.width = "0%";
-// })
-
-//B..... SLIDER
+/* ----------------------------------------------------------- */
+// SLIDER
+/* ----------------------------------------------------------- */
 const sliders = document.querySelectorAll('.slider');
 const nextBtn = document.querySelector('.next');
 const prevBtn = document.querySelector('.previous');
@@ -39,49 +27,34 @@ const intervalTime = 7000;
 let sliderInterval;
 
 const nextSlider = () => {
-  // Get Current Class
   const current = document.querySelector('.current');
-  // Remove current class
   current.classList.remove('current');
-  // check for next slide
   if (current.nextElementSibling) {
-    // Add current to next sibling
     current.nextElementSibling.classList.add('current');
   } else {
-    // Add current to start
     sliders[0].classList.add('current');
   }
   setTimeout(() => current.classList.remove('current'));
 };
 
 const prevSlider = () => {
-  // Get Current Class
   const current = document.querySelector('.current');
-  // Remove current class
   current.classList.remove('current');
-  // check for prev slide
   if (current.previousElementSibling) {
-    // Add current to prev sibling
     current.previousElementSibling.classList.add('current');
   } else {
-    // Add current to last
     sliders[sliders.length - 1].classList.add('current');
   }
   setTimeout(() => current.classList.remove('current'));
 };
 
-// this section is for when the page or scrolling function is set to auto scroll and the cont auto is = true, if you do not want the butons to auto scroll, comment it out
-// Auto slide
 if (autoScroll) {
-  // Run next slide at interval time
   sliderInterval = setInterval(nextSlider, intervalTime);
 }
 
-// Button events
+// Buttons event
 nextBtn.addEventListener('click', e => {
   nextSlider();
-
-  // this section is to make the images move smoothly rather than fast when the buttons are set to auto scroll, it will wait 5s for the next image to come in as is been set for the autos croll button
   if (autoScroll) {
     clearInterval(sliderInterval);
     sliderInterval = setInterval(nextSlider, intervalTime);
@@ -90,32 +63,17 @@ nextBtn.addEventListener('click', e => {
 
 prevBtn.addEventListener('click', e => {
   prevSlider();
-  // this section is to make the images move smoothly rather than fast when the buttons are set to auto scroll, it will wait 5s for the next image to come in as is been set for the autos croll button
   if (autoScroll) {
     clearInterval(sliderInterval);
     sliderInterval = setInterval(nextSlider, intervalTime);
   }
 });
 
-// Dots Funtionality
-// const slides = document.querySelectorAll('.slider');
-// const dotsWrapper = document.querySelector('.dots');
-// console.log(slides, dotsWrapper);
-
-// const createDots = e => {
-//   slides.forEach((_, index) => {
-//     dotsWrapper.insertAdjacentHTML(
-//       'beforeend',
-//       `<button class="each-dot" data-slide="${index}"></button>`
-//     );
-//   });
-// };
-// createDots();
-
-// C...... DELIVERY POSTCODE VALIDATION
+/* ----------------------------------------------------------- */
+// DELIVERY POSTCODE VALIDATION
+/* ----------------------------------------------------------- */
 const postCode = document.getElementById('postcode');
 const postInput = document.getElementById('post-input');
-// console.log(postCode, postInput);
 
 const deliveryPost = function () {
   if (postInput.value.trim() === '') {
@@ -125,8 +83,5 @@ const deliveryPost = function () {
 
 postCode.addEventListener('submit', e => {
   e.preventDefault();
-  // console.log(deliveryPost.value);
-
-  // postcodeValidation(postInput);
   deliveryPost(postCode);
 });
