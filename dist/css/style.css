@@ -6,7 +6,7 @@
   background: #fcfcf3 url("../images/offers/offer7.jpg") no-repeat center center/cover;
   position: relative; }
   #sign-up-offers::after {
-    content: "";
+    content: '';
     position: absolute;
     background-color: rgba(0, 0, 0, 0.4);
     top: 0;
@@ -94,7 +94,7 @@
           color: #fff;
           background-color: transparent;
           border: 2px solid #fff;
-          transition: .3s ease-in-out; }
+          transition: 0.3s ease-in-out; }
           #sign-up-offers .container .sign-up-content #sign-up-form .button:focus {
             outline: none; }
           #sign-up-offers .container .sign-up-content #sign-up-form .button:hover {
@@ -122,7 +122,7 @@
       width: 100%;
       background: #fff;
       color: #0c0c0c;
-      transition: .3s ease-in-out;
+      transition: 0.3s ease-in-out;
       border-radius: 2px;
       display: flex;
       flex-direction: column;
@@ -152,7 +152,7 @@
       color: #fff;
       text-align: center;
       font-weight: 800;
-      transition: .3s ease-in-out; }
+      transition: 0.3s ease-in-out; }
       #steps .container .steps-content .steps-button a:hover {
         color: #fff;
         background: #73020c;
