@@ -1150,9 +1150,7 @@ img {
         margin-left: 5px; }
       @media screen and (max-width: 769px) {
         #header .top .container #hamburger-toggler {
-          display: flex;
-          display: -webkit-box;
-          display: -webkit-flex; } }
+          display: flex; } }
     #header .top .container .sidenav {
       display: flex;
       justify-content: space-evenly; }
@@ -2149,7 +2147,10 @@ img {
         padding-top: 20px;
         overflow: scroll;
         transition: left 0.8s ease-in-out;
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
         text-align: left;
         padding-bottom: 700px; }
         #header .top .container .sidenav h3 {
@@ -2664,7 +2665,10 @@ img {
         padding-top: 20px;
         overflow: scroll;
         transition: left 0.8s ease-in-out;
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
         text-align: left;
         padding-bottom: 700px; }
         #header .top .container .sidenav h3 {

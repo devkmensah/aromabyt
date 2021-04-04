@@ -746,7 +746,12 @@
           padding-top: 20px;
           overflow: scroll;
           transition: left 0.8s ease-in-out;
-          display: block;
+          // display: block;
+          // display: -webkit-box;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
           text-align: left;
           padding-bottom: 700px;
 
@@ -1873,7 +1878,12 @@
           padding-top: 20px;
           overflow: scroll;
           transition: left 0.8s ease-in-out;
-          display: block;
+          // display: block;
+          // display: -webkit-box;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
           text-align: left;
           padding-bottom: 700px;
 

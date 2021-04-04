@@ -131,9 +131,6 @@ img {
 
         @media screen and (max-width: 769px) {
           display: flex;
-          // Safari
-          display: -webkit-box;
-          display: -webkit-flex;
         }
       }
 
@@ -143,6 +140,9 @@ img {
       .sidenav {
         display: flex;
         justify-content: space-evenly;
+        // Safari
+        // display: -webkit-box;
+        // display: -webkit-flex;
 
         &::-webkit-scrollbar {
           display: none;
