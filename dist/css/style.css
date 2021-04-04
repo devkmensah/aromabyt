@@ -1145,7 +1145,9 @@ img {
         margin-left: 5px; }
       @media screen and (max-width: 769px) {
         #header .top .container #hamburger-toggler {
-          display: flex; } }
+          display: flex;
+          display: -webkit-box;
+          display: -webkit-flex; } }
     #header .top .container .sidenav {
       display: flex;
       justify-content: space-evenly; }

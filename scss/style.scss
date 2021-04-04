@@ -131,6 +131,9 @@ img {
 
         @media screen and (max-width: 769px) {
           display: flex;
+          // Safari
+          display: -webkit-box;
+          display: -webkit-flex;
         }
       }
 
