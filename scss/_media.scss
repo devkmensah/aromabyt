@@ -1587,7 +1587,8 @@
     //  Home Page, App Section Starts
     #app {
       .container {
-        display: block;
+        // display: block;
+        // grid-template-columns: 1fr;
 
         .left {
           padding: 0;
@@ -2328,7 +2329,8 @@
       padding: 0 15px;
 
       .container {
-        display: block;
+        // display: block;
+        // grid-template-columns: 1fr;
 
         .left {
           padding: 15px 0 0;

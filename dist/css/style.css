@@ -2537,35 +2537,33 @@ img {
     right: 5px; }
   #main-area #start-section {
     margin-top: -51px; }
-  #main-area #app .container {
-    display: block; }
-    #main-area #app .container .left {
-      padding: 0; }
-      #main-area #app .container .left h3 {
-        font-size: 20px;
-        text-align: left; }
-      #main-area #app .container .left #postcode label.input-label input[type='text'] {
-        font-size: 17px; }
-      #main-area #app .container .left #postcode label.button-label button {
-        padding: 15px 35px; }
-    #main-area #app .container .right {
-      padding-right: 0px;
-      padding-top: 40px; }
-      #main-area #app .container .right h3 {
-        font-size: 27px; }
-        #main-area #app .container .right h3 br {
-          display: none; }
-      #main-area #app .container .right p.convenience {
-        font-size: 16px; }
-        #main-area #app .container .right p.convenience br {
-          display: none; }
-      #main-area #app .container .right p.cost {
-        margin: 0px 0 30px;
-        font-size: 16px; }
-      #main-area #app .container .right a {
-        display: block;
-        width: 100%;
-        font-size: 15px; }
+  #main-area #app .container .left {
+    padding: 0; }
+    #main-area #app .container .left h3 {
+      font-size: 20px;
+      text-align: left; }
+    #main-area #app .container .left #postcode label.input-label input[type='text'] {
+      font-size: 17px; }
+    #main-area #app .container .left #postcode label.button-label button {
+      padding: 15px 35px; }
+  #main-area #app .container .right {
+    padding-right: 0px;
+    padding-top: 40px; }
+    #main-area #app .container .right h3 {
+      font-size: 27px; }
+      #main-area #app .container .right h3 br {
+        display: none; }
+    #main-area #app .container .right p.convenience {
+      font-size: 16px; }
+      #main-area #app .container .right p.convenience br {
+        display: none; }
+    #main-area #app .container .right p.cost {
+      margin: 0px 0 30px;
+      font-size: 16px; }
+    #main-area #app .container .right a {
+      display: block;
+      width: 100%;
+      font-size: 15px; }
   #main-area #lunch-dinner .container .lunch-dinner .lunch .lunch-content,
   #main-area #lunch-dinner .container .lunch-dinner .lunch .dinner-content,
   #main-area #lunch-dinner .container .lunch-dinner .dinner .lunch-content,
@@ -2880,39 +2878,37 @@ img {
         height: 190px; }
   #main-area #app {
     padding: 0 15px; }
-    #main-area #app .container {
-      display: block; }
-      #main-area #app .container .left {
-        padding: 15px 0 0; }
-        #main-area #app .container .left h3 {
-          line-height: 1.3;
-          font-size: 18px;
-          text-align: left; }
-        #main-area #app .container .left .partners {
-          margin: 0; }
-          #main-area #app .container .left .partners .partner {
-            margin: 10px 0 12px; }
-        #main-area #app .container .left #postcode {
-          border: 4px solid #73020c; }
-          #main-area #app .container .left #postcode label.input-label input[type='text'] {
-            font-size: 15px; }
-          #main-area #app .container .left #postcode label.button-label button {
-            padding: 15px 30px; }
-      #main-area #app .container .right h3 {
-        font-size: 25px; }
-        #main-area #app .container .right h3 br {
-          display: none; }
-      #main-area #app .container .right p.convenience {
-        font-size: 15px; }
-        #main-area #app .container .right p.convenience br {
-          display: none; }
-      #main-area #app .container .right p.cost {
-        margin: 0px 0 18px;
-        font-size: 16px; }
-      #main-area #app .container .right a {
-        display: block;
-        width: 100%;
-        font-size: 15px; }
+    #main-area #app .container .left {
+      padding: 15px 0 0; }
+      #main-area #app .container .left h3 {
+        line-height: 1.3;
+        font-size: 18px;
+        text-align: left; }
+      #main-area #app .container .left .partners {
+        margin: 0; }
+        #main-area #app .container .left .partners .partner {
+          margin: 10px 0 12px; }
+      #main-area #app .container .left #postcode {
+        border: 4px solid #73020c; }
+        #main-area #app .container .left #postcode label.input-label input[type='text'] {
+          font-size: 15px; }
+        #main-area #app .container .left #postcode label.button-label button {
+          padding: 15px 30px; }
+    #main-area #app .container .right h3 {
+      font-size: 25px; }
+      #main-area #app .container .right h3 br {
+        display: none; }
+    #main-area #app .container .right p.convenience {
+      font-size: 15px; }
+      #main-area #app .container .right p.convenience br {
+        display: none; }
+    #main-area #app .container .right p.cost {
+      margin: 0px 0 18px;
+      font-size: 16px; }
+    #main-area #app .container .right a {
+      display: block;
+      width: 100%;
+      font-size: 15px; }
   #main-area #lunch-dinner {
     padding: 0 15px; }
     #main-area #lunch-dinner .container .lunch-dinner .lunch,
