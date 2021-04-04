@@ -1896,7 +1896,7 @@ img {
       grid-row: 4 / 5;
       padding: 14px 15px; }
   #main-area #app .container {
-    display: block; }
+    grid-template-columns: 1fr; }
     #main-area #app .container .left {
       padding: 0; }
     #main-area #app .container .right {

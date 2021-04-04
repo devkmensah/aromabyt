@@ -244,7 +244,8 @@
     // App Section Starts
     #app {
       .container {
-        display: block;
+        // display: block;
+        grid-template-columns: 1fr;
 
         .left {
           padding: 0;
