@@ -18,19 +18,24 @@
     z-index: 1; }
   #sign-up-offers .container {
     padding: 0 0 70px; }
-    #sign-up-offers .container .sign-up-content {
-      padding: 85px 0 40px;
+    #sign-up-offers .container .offers-header {
       display: flex;
-      flex-direction: column;
+      color: #fff;
+      text-align: center;
       align-items: center;
-      justify-content: center; }
-      #sign-up-offers .container .sign-up-content h1 {
-        margin-bottom: 35px;
+      justify-content: center;
+      margin: 80px 0 -40px; }
+      #sign-up-offers .container .offers-header h1 {
         text-transform: uppercase;
         font-size: 37px;
         letter-spacing: 1.4px;
         color: #fff;
         text-align: center; }
+    #sign-up-offers .container .sign-up-content {
+      padding: 85px 0 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
       #sign-up-offers .container .sign-up-content #sign-up-form {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -2214,11 +2219,10 @@ img {
       font-size: 5px; }
   #menu-header #menu-list {
     padding: 10px 0 10px 40px; }
-  #sign-up-offers .container .sign-up-content h1 {
+  #sign-up-offers .container .offers-header h1 {
     font-size: 30px; }
   #sign-up-offers .container .sign-up-content #sign-up-form {
-    grid-template-columns: 1fr;
-    width: 100%; }
+    grid-template-columns: 1fr; }
   #main-area #carousel .sliders-holder .slider {
     max-height: 400px;
     width: 100%; }
@@ -2595,7 +2599,7 @@ img {
     padding: 10px 55px; }
   #sign-up-offers {
     padding: 120px 20px 0; }
-    #sign-up-offers .container .sign-up-content h1 {
+    #sign-up-offers .container .offers-header h1 {
       font-size: 25px; }
     #sign-up-offers .container .sign-up-content #sign-up-form input {
       padding: 22px 15px;

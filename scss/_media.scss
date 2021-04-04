@@ -891,14 +891,14 @@
   // Offers Page, Sign Up Starts
   #sign-up-offers {
     .container {
-      .sign-up-content {
+      .offers-header {
         h1 {
           font-size: 30px;
         }
-
+      }
+      .sign-up-content {
         #sign-up-form {
           grid-template-columns: 1fr;
-          width: 100%;
         }
       }
     }
@@ -1726,11 +1726,12 @@
     padding: 120px 20px 0;
 
     .container {
-      .sign-up-content {
+      .offers-header {
         h1 {
           font-size: 25px;
         }
-
+      }
+      .sign-up-content {
         #sign-up-form {
           input {
             padding: 22px 15px;
