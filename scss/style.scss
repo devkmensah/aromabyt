@@ -140,9 +140,6 @@ img {
       .sidenav {
         display: flex;
         justify-content: space-evenly;
-        // Safari
-        // display: -webkit-box;
-        // display: -webkit-flex;
 
         &::-webkit-scrollbar {
           display: none;

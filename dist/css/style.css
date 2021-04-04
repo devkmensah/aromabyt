@@ -2147,10 +2147,7 @@ img {
         padding-top: 20px;
         overflow: scroll;
         transition: left 0.8s ease-in-out;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
+        display: block;
         text-align: left;
         padding-bottom: 700px; }
         #header .top .container .sidenav h3 {
@@ -2665,10 +2662,7 @@ img {
         padding-top: 20px;
         overflow: scroll;
         transition: left 0.8s ease-in-out;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
+        display: block;
         text-align: left;
         padding-bottom: 700px; }
         #header .top .container .sidenav h3 {
